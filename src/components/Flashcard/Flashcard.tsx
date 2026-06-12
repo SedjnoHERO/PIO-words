@@ -1,11 +1,18 @@
 import type { CSSProperties } from 'react';
 import type { StudyMode, WordEntry } from '../../types/vocabulary';
-import { getBackLines, getFrontText } from '../../utils/deckBuilder';
+import {
+  getBackLang,
+  getBackLines,
+  getFrontLang,
+  getFrontText,
+  getLangLabel,
+} from '../../utils/deckBuilder';
 
 interface FlashcardProps {
   word: WordEntry;
   mode: StudyMode;
   isFlipped: boolean;
+  showRevealShine: boolean;
   onFlip: () => void;
 }
 
@@ -15,6 +22,7 @@ const CARD_WRAP_STYLE: CSSProperties = {
   width: '100%',
   minHeight: '280px',
   perspective: '1000px',
+  position: 'relative',
 };
 
 const CARD_INNER_STYLE = (isFlipped: boolean): CSSProperties => ({
@@ -34,7 +42,7 @@ const FACE_BASE: CSSProperties = {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '12px',
-  padding: '28px 20px',
+  padding: '28px 16px',
   borderRadius: '24px',
   backfaceVisibility: 'hidden',
   WebkitBackfaceVisibility: 'hidden',
@@ -66,7 +74,7 @@ const LABEL_STYLE: CSSProperties = {
 
 const WORD_STYLE: CSSProperties = {
   margin: 0,
-  fontSize: '32px',
+  fontSize: '30px',
   fontWeight: 800,
   color: 'var(--text)',
   textAlign: 'center',
@@ -91,7 +99,7 @@ const TRANSLATIONS_LIST_STYLE: CSSProperties = {
 
 const TRANSLATION_ITEM_STYLE: CSSProperties = {
   margin: 0,
-  fontSize: '24px',
+  fontSize: '22px',
   fontWeight: 700,
   color: 'var(--text)',
   textAlign: 'center',
@@ -106,54 +114,51 @@ const BADGE_STYLE: CSSProperties = {
   borderRadius: '20px',
 };
 
-const getFrontLabel = (mode: StudyMode): string => {
-  if (mode === 'en-to-ru' || mode === 'multi-translation') {
-    return 'English';
-  }
-
-  return 'Русский';
-};
-
-const getBackLabel = (mode: StudyMode): string => {
-  if (mode === 'en-to-ru' || mode === 'multi-translation') {
-    return mode === 'multi-translation' ? 'Все переводы' : 'Русский';
-  }
-
-  return 'English';
-};
+const getBackLabel = (mode: StudyMode): string =>
+  mode === 'multi-translation' ? 'Все переводы' : '';
 
 export const Flashcard = ({
   word,
   mode,
   isFlipped,
+  showRevealShine,
   onFlip,
 }: FlashcardProps) => {
   const backLines = getBackLines(word, mode);
+  const frontLang = getFrontLang(word, mode);
+  const backLang = getBackLang(word, mode);
+  const backLabel =
+    mode === 'multi-translation'
+      ? getBackLabel(mode)
+      : getLangLabel(backLang);
   const showMultiBadge =
     mode === 'multi-translation' || backLines.length > 1;
+  const flipLabel = isFlipped ? 'Скрыть перевод' : 'Показать перевод';
+
+  const wrapClass = showRevealShine && isFlipped ? 'card-reveal-shine' : '';
 
   return (
-    <div style={CARD_WRAP_STYLE}>
+    <div style={CARD_WRAP_STYLE} className={wrapClass}>
       <button
         type="button"
         style={CARD_INNER_STYLE(isFlipped)}
         onClick={onFlip}
-        aria-label={isFlipped ? 'Скрыть перевод' : 'Показать перевод'}
+        aria-label={flipLabel}
       >
-        <span style={FRONT_STYLE}>
-          <span style={LABEL_STYLE}>{getFrontLabel(mode)}</span>
+        <span className="flashcard-face" style={FRONT_STYLE}>
+          <span style={LABEL_STYLE}>{getLangLabel(frontLang)}</span>
           <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
           <p style={HINT_STYLE}>Нажми, чтобы перевернуть</p>
         </span>
 
-        <span style={BACK_STYLE}>
-          <span style={LABEL_STYLE}>{getBackLabel(mode)}</span>
+        <span className="flashcard-face" style={BACK_STYLE}>
+          <span style={LABEL_STYLE}>{backLabel}</span>
           {showMultiBadge ? (
             <span style={BADGE_STYLE}>{backLines.length} варианта</span>
           ) : null}
           <span style={TRANSLATIONS_LIST_STYLE}>
-            {backLines.map((line) => (
-              <p key={line} style={TRANSLATION_ITEM_STYLE}>
+            {backLines.map((line, index) => (
+              <p key={`${line}-${index}`} style={TRANSLATION_ITEM_STYLE}>
                 {line}
               </p>
             ))}

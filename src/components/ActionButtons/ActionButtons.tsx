@@ -71,8 +71,13 @@ export const ActionButtons = ({
     >
       ← Назад
     </button>
-    <button type="button" style={FLIP_BTN} onClick={onFlip}>
-      {isFlipped ? 'Скрыть' : 'Ответ'}
+    <button
+      type="button"
+      className={isFlipped ? '' : 'answer-btn-glow'}
+      style={FLIP_BTN}
+      onClick={onFlip}
+    >
+      {isFlipped ? 'Скрыть' : 'Ответ ✨'}
     </button>
     <button
       type="button"

@@ -53,7 +53,7 @@ export const HomeScreen = ({ onSelectMode }: HomeScreenProps) => (
         ✨
       </span>
       <p style={HERO_TEXT}>
-        Выбери режим и учи слова в удобном темпе. Работает на iPhone и iPad.
+        Выбери режим и учи слова в удобном темпе. Ты умница — у тебя всё получится! 💕
       </p>
     </div>
     <div style={MODES_STYLE}>
