@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+tools/.docx-temp
+temp-docx/
+tools/document.xml
+tools/parsed-preview.json
+tools/inspect-output.txt
