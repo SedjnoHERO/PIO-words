@@ -273,3 +273,84 @@
 .answer-btn-glow {
   animation: answer-btn-pulse 2s ease-in-out infinite;
 }
+
+@keyframes firework-ring-expand-grand {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(6);
+    opacity: 0;
+  }
+}
+
+@keyframes firework-screen-flash-grand {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.55;
+  }
+
+  35% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes finish-mega-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(232, 93, 138, 0.4),
+      0 8px 32px rgba(232, 93, 138, 0.2);
+  }
+
+  50% {
+    box-shadow:
+      0 0 48px 16px rgba(232, 93, 138, 0.35),
+      0 0 96px 32px rgba(255, 209, 102, 0.25);
+  }
+}
+
+.firework-particle--grand {
+  animation: firework-particle-burst ease-out forwards;
+}
+
+.firework-spark--grand {
+  animation: firework-spark-burst ease-out forwards;
+}
+
+.firework-ring--grand {
+  animation: firework-ring-expand-grand 1.2s ease-out forwards;
+  border-width: 4px;
+}
+
+.firework-ring--gold {
+  border-color: rgba(255, 209, 102, 0.95);
+  animation: firework-ring-expand-grand 1.4s ease-out forwards;
+}
+
+.firework-flash--grand {
+  animation: firework-screen-flash-grand 1.8s ease-out forwards;
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(255, 220, 235, 0.95) 0%,
+    rgba(255, 209, 102, 0.2) 40%,
+    rgba(255, 232, 240, 0) 70%
+  );
+}
+
+.finish-card--mega {
+  animation: finish-mega-glow 2s ease-in-out infinite;
+}
+
+.finish-screen-wrap {
+  z-index: 1;
+}

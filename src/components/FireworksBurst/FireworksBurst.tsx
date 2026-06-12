@@ -3,20 +3,22 @@ import type { CSSProperties } from 'react';
 import {
   createFireworkParticles,
   createFireworkSparks,
-  FIREWORK_BURST_POINTS,
+  getBurstPoints,
+  type FireworkIntensity,
 } from '../../data/fireworksConfig';
 
 interface FireworksBurstProps {
   burstId: number;
+  intensity?: FireworkIntensity;
 }
 
-const WRAP_STYLE: CSSProperties = {
+const WRAP_STYLE = (intensity: FireworkIntensity): CSSProperties => ({
   position: 'fixed',
   inset: 0,
   overflow: 'hidden',
   pointerEvents: 'none',
-  zIndex: 850,
-};
+  zIndex: intensity === 'grand' ? 1100 : 850,
+});
 
 const BURST_STYLE = (x: string, y: string): CSSProperties => ({
   position: 'absolute',
@@ -53,42 +55,61 @@ const RING_STYLE: CSSProperties = {
   transform: 'translate(-50%, -50%)',
 };
 
-export const FireworksBurst = ({ burstId }: FireworksBurstProps) => {
+export const FireworksBurst = ({
+  burstId,
+  intensity = 'normal',
+}: FireworksBurstProps) => {
+  const burstPoints = useMemo(() => getBurstPoints(intensity), [intensity]);
   const particles = useMemo(
-    () => createFireworkParticles(burstId),
-    [burstId],
+    () => createFireworkParticles(burstId, intensity),
+    [burstId, intensity],
   );
-  const sparks = useMemo(() => createFireworkSparks(burstId), [burstId]);
+  const sparks = useMemo(
+    () => createFireworkSparks(burstId, intensity),
+    [burstId, intensity],
+  );
 
   if (burstId === 0) {
     return null;
   }
 
+  const flashClass =
+    intensity === 'grand' ? 'firework-flash firework-flash--grand' : 'firework-flash';
+
   return (
-    <div key={burstId} style={WRAP_STYLE} aria-hidden="true">
-      {FIREWORK_BURST_POINTS.map((point, index) => (
+    <div key={burstId} style={WRAP_STYLE(intensity)} aria-hidden="true">
+      {burstPoints.map((point, index) => (
         <div
           key={`${burstId}-burst-${index}`}
           style={BURST_STYLE(point.x, point.y)}
         >
           <span
-            className="firework-ring"
+            className={intensity === 'grand' ? 'firework-ring firework-ring--grand' : 'firework-ring'}
             style={{
               ...RING_STYLE,
-              animationDelay: `${index * 0.07}s`,
+              animationDelay: point.waveDelay,
             }}
           />
           <span
             className="firework-ring firework-ring--soft"
             style={{
               ...RING_STYLE,
-              animationDelay: `${0.12 + index * 0.07}s`,
+              animationDelay: `${parseFloat(point.waveDelay) + 0.12}s`,
             }}
           />
+          {intensity === 'grand' ? (
+            <span
+              className="firework-ring firework-ring--gold"
+              style={{
+                ...RING_STYLE,
+                animationDelay: `${parseFloat(point.waveDelay) + 0.22}s`,
+              }}
+            />
+          ) : null}
         </div>
       ))}
 
-      {FIREWORK_BURST_POINTS.map((point, pointIndex) => (
+      {burstPoints.map((point, pointIndex) => (
         <div
           key={`${burstId}-particles-${pointIndex}`}
           style={BURST_STYLE(point.x, point.y)}
@@ -98,7 +119,11 @@ export const FireworksBurst = ({ burstId }: FireworksBurstProps) => {
             .map((particle) => (
               <span
                 key={particle.id}
-                className="firework-particle"
+                className={
+                  intensity === 'grand'
+                    ? 'firework-particle firework-particle--grand'
+                    : 'firework-particle'
+                }
                 style={{
                   ...PARTICLE_ORIGIN,
                   width: `${particle.size}px`,
@@ -114,7 +139,7 @@ export const FireworksBurst = ({ burstId }: FireworksBurstProps) => {
         </div>
       ))}
 
-      {FIREWORK_BURST_POINTS.map((point, pointIndex) => (
+      {burstPoints.map((point, pointIndex) => (
         <div
           key={`${burstId}-sparks-${pointIndex}`}
           style={BURST_STYLE(point.x, point.y)}
@@ -124,7 +149,9 @@ export const FireworksBurst = ({ burstId }: FireworksBurstProps) => {
             .map((spark) => (
               <span
                 key={spark.id}
-                className="firework-spark"
+                className={
+                  intensity === 'grand' ? 'firework-spark firework-spark--grand' : 'firework-spark'
+                }
                 style={{
                   ...SPARK_ORIGIN,
                   fontSize: `${spark.size}px`,
@@ -139,7 +166,7 @@ export const FireworksBurst = ({ burstId }: FireworksBurstProps) => {
         </div>
       ))}
 
-      <div className="firework-flash" />
+      <div className={flashClass} />
     </div>
   );
 };

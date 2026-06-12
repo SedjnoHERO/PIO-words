@@ -3,11 +3,10 @@ import type { CSSProperties } from 'react';
 import {
   FINISH_BADGES,
   FINISH_MESSAGES,
-  FINISH_TITLE,
+  FINISH_TITLES,
   pickRandom,
 } from '../../data/praiseMessages';
-import { Confetti } from '../Confetti/Confetti';
-import { FloatingHearts } from '../FloatingHearts/FloatingHearts';
+import { GrandSalute } from '../GrandSalute/GrandSalute';
 
 interface FinishScreenProps {
   total: number;
@@ -39,6 +38,7 @@ const CARD_STYLE: CSSProperties = {
   borderRadius: '24px',
   background: 'linear-gradient(145deg, #ffffff, #fff5f9)',
   border: '2px solid var(--accent-soft)',
+  zIndex: 1,
 };
 
 const EMOJI_ROW: CSSProperties = {
@@ -100,6 +100,7 @@ const BTN_ROW: CSSProperties = {
   gap: '10px',
   width: '100%',
   marginTop: '4px',
+  zIndex: 1,
 };
 
 const PRIMARY_BTN: CSSProperties = {
@@ -128,29 +129,29 @@ export const FinishScreen = ({
   onRestart,
   onHome,
 }: FinishScreenProps) => {
+  const title = useMemo(() => pickRandom(FINISH_TITLES), []);
   const subtitle = useMemo(() => pickRandom(FINISH_MESSAGES), []);
 
   useEffect(() => {
     if (typeof navigator !== 'undefined' && navigator.vibrate) {
-      navigator.vibrate([50, 40, 50, 40, 80]);
+      navigator.vibrate([60, 50, 60, 50, 100, 80, 120]);
     }
   }, []);
 
   return (
     <>
-      <Confetti count={56} />
-      <div style={WRAP_STYLE}>
-        <FloatingHearts count={16} />
-        <div className="finish-hero finish-card" style={CARD_STYLE}>
+      <GrandSalute />
+      <div style={WRAP_STYLE} className="finish-screen-wrap">
+        <div className="finish-hero finish-card finish-card--mega" style={CARD_STYLE}>
           <div style={EMOJI_ROW} aria-hidden="true">
-            <span className="finish-sparkle">✨</span>
-            <span>🎉</span>
+            <span className="finish-sparkle">🐷</span>
+            <span>🎆</span>
             <span className="finish-sparkle">💕</span>
           </div>
-          <h2 style={TITLE_STYLE}>{FINISH_TITLE}</h2>
+          <h2 style={TITLE_STYLE}>{title}</h2>
           <p style={TEXT_STYLE}>{subtitle}</p>
           <p style={COUNT_STYLE}>
-            Все {total} карточек пройдены — ты молодец!
+            Все {total} карточек пройдены — супер-пупер салют тебе!
           </p>
           <div style={BADGES_ROW}>
             {FINISH_BADGES.map((badge, index) => (
@@ -159,7 +160,7 @@ export const FinishScreen = ({
                 className="finish-badge"
                 style={{
                   ...BADGE_STYLE,
-                  animationDelay: `${0.15 + index * 0.1}s`,
+                  animationDelay: `${0.15 + index * 0.08}s`,
                 }}
               >
                 {badge}
@@ -169,7 +170,7 @@ export const FinishScreen = ({
         </div>
         <div style={BTN_ROW}>
           <button type="button" style={PRIMARY_BTN} onClick={onRestart}>
-            Ещё разок? 💪
+            Ещё разок, свинюшка? 🐽
           </button>
           <button type="button" style={SECONDARY_BTN} onClick={onHome}>
             На главную
