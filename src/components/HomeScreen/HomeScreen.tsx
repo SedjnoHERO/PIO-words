@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 import { MODE_OPTIONS } from '../../data/modes';
-import { TOTAL_WORDS } from '../../data/vocabulary';
+import { TOTAL_WORDS, VOCABULARY } from '../../data/vocabulary';
 import type { StudyMode } from '../../types/vocabulary';
 import { Header } from '../Header/Header';
 import { ModeCard } from '../ModeCard/ModeCard';
@@ -47,7 +47,7 @@ const MODES_STYLE: CSSProperties = {
 
 export const HomeScreen = ({ onSelectMode }: HomeScreenProps) => (
   <section style={SCREEN_STYLE}>
-    <Header title="Немецкий квиз" subtitle={`${TOTAL_WORDS} слов · 8 блоков`} />
+    <Header title="Немецкий квиз" subtitle={`${TOTAL_WORDS} слов · ${VOCABULARY.length} блоков`} />
     <div style={HERO_STYLE}>
       <span style={HERO_EMOJI} aria-hidden="true">
         ✨

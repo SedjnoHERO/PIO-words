@@ -1,6 +1,9 @@
 {
-  "source": "G:\\dinara-exam\\exam.docx",
-  "total": 440,
+  "source": [
+    "G:\\dinara-exam\\exam.docx",
+    "G:\\dinara-exam\\tools\\exam-blocks-9-12.md"
+  ],
+  "total": 651,
   "countByBlock": {
     "1": 58,
     "2": 59,
@@ -9,7 +12,11 @@
     "5": 57,
     "6": 54,
     "7": 54,
-    "8": 53
+    "8": 53,
+    "9": 54,
+    "10": 49,
+    "11": 53,
+    "12": 55
   },
   "entries": [
     {
@@ -2484,6 +2491,1223 @@
       "de": "Ich wollte arbeiten, sonst nichts.",
       "ru": "Я хотел работать, и ничего больше.",
       "block": 8,
+      "oral": true
+    },
+    {
+      "de": "das Instrument, -e",
+      "ru": "инструмент",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "Spielst du ein Instrument?",
+      "ru": "Ты играешь на каком-нибудь инструменте?",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "teamfähig",
+      "ru": "способный работать в команде",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Erziehung (Sg.)",
+      "ru": "воспитание",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "staatlich",
+      "ru": "государственный",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "anerkennen (erkannte an, hat anerkannt)",
+      "ru": "признавать",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Kompetenz, -en",
+      "ru": "компетенция",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "das Organisationstalent (Sg.)",
+      "ru": "организаторский талант",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "das Talent, -e",
+      "ru": "талант",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "zuständig",
+      "ru": "ответственный, компетентный",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "Er ist für das Kinderprogramm zuständig.",
+      "ru": "Он отвечает за детскую программу.",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "leiten",
+      "ru": "руководить, возглавлять",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "das Zertifikat, -e",
+      "ru": "сертификат",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "nötig",
+      "ru": "необходимый",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Erzieher, -",
+      "ru": "воспитатель",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Erzieherin, -nen",
+      "ru": "воспитательница",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Tänzer, -",
+      "ru": "танцор",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Tänzerin, -nen",
+      "ru": "танцовщица",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "unterrichten",
+      "ru": "преподавать",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Jugendliche, -n",
+      "ru": "подросток (юноша)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Jugendliche, -n",
+      "ru": "подросток (девушка)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "das Vorstellungsgespräch, -e",
+      "ru": "собеседование при приёме на работу",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "nachdem",
+      "ru": "после того как",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "sich bewerben (bewirbt sich, bewarb sich, hat beworben)",
+      "ru": "подавать заявку",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Zusage, -n",
+      "ru": "положительный ответ",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Absage, -n",
+      "ru": "отказ",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Stellenanzeige, -n",
+      "ru": "объявление о вакансии",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Bewerbung, -en",
+      "ru": "заявка, заявление",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "(sich) begrüßen",
+      "ru": "приветствовать (друг друга)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Arbeitgeber, -",
+      "ru": "работодатель",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Arbeitgeberin, -nen",
+      "ru": "работодательница",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Bewerber, -",
+      "ru": "соискатель, кандидат",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Bewerberin, -nen",
+      "ru": "соискательница",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Verlag, -e",
+      "ru": "издательство",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Tätigkeit, -en",
+      "ru": "деятельность, работа",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Lebenslauf, -äu-e",
+      "ru": "резюме, биография",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "jobben (в тексте опечатка: jöbben)",
+      "ru": "подрабатывать (неофициально)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "gleichzeitig",
+      "ru": "одновременно",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "nacheinander",
+      "ru": "один за другим",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "bestehen (bestand, hat bestanden)",
+      "ru": "выдержать, сдать (экзамен)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "das Diplom, -e",
+      "ru": "диплом",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "vermeiden (vermied, hat vermieden)",
+      "ru": "избегать",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Umschlag, -ü-e",
+      "ru": "конверт; обложка",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "verwechseln",
+      "ru": "перепутать",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "Ich habe die Namen verwechselt.",
+      "ru": "Я перепутал имена.",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "wirken",
+      "ru": "действовать, производить впечатление",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "umgekehrt",
+      "ru": "наоборот",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "abschaffen",
+      "ru": "отменять, упразднять",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "Sie haben die Grenzen abgeschafft.",
+      "ru": "Они отменили границы.",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Franken, -",
+      "ru": "франк (валюта)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "darstellen",
+      "ru": "изображать, представлять",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Praktikant, -en",
+      "ru": "практикант, стажёр",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "die Praktikantin, -nen",
+      "ru": "практикантка, стажёрка",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "dolmetschen",
+      "ru": "переводить (устно)",
+      "block": 9,
+      "oral": true
+    },
+    {
+      "de": "der Friseur, -e",
+      "ru": "парикмахер",
+      "block": 10
+    },
+    {
+      "de": "die Friseurin, -nen",
+      "ru": "парикмахерша",
+      "block": 10
+    },
+    {
+      "de": "die Reinigung, -en",
+      "ru": "химчистка, чистка",
+      "block": 10
+    },
+    {
+      "de": "sich erkundigen nach",
+      "ru": "осведомляться, справляться (о чём-л.)",
+      "block": 10
+    },
+    {
+      "de": "Ich erkundige mich nach den Öffnungszeiten.",
+      "ru": "Я спрашиваю о часах работы.",
+      "block": 10
+    },
+    {
+      "de": "der Automat, -en",
+      "ru": "автомат, банкомат",
+      "block": 10
+    },
+    {
+      "de": "der Schlüsseldienst, -e",
+      "ru": "служба вскрытия замков",
+      "block": 10
+    },
+    {
+      "de": "(sich) notieren",
+      "ru": "записывать (себе)",
+      "block": 10
+    },
+    {
+      "de": "Ich notiere mir den Termin.",
+      "ru": "Я записываю себе дату / время встречи.",
+      "block": 10
+    },
+    {
+      "de": "(he)reinkommen (kam rein, ist reingekommen)",
+      "ru": "входить, заходить",
+      "block": 10
+    },
+    {
+      "de": "(sich) aussuchen",
+      "ru": "выбирать (себе)",
+      "block": 10
+    },
+    {
+      "de": "Ich suche mir ein Buch aus.",
+      "ru": "Я выбираю себе книгу.",
+      "block": 10
+    },
+    {
+      "de": "(sich) überlegen",
+      "ru": "обдумывать, придумывать",
+      "block": 10
+    },
+    {
+      "de": "Ich überlege mir einen Plan.",
+      "ru": "Я придумываю план.",
+      "block": 10
+    },
+    {
+      "de": "(sich) wünschen",
+      "ru": "желать (себе)",
+      "block": 10
+    },
+    {
+      "de": "Ich wünsche mir ein Auto.",
+      "ru": "Я хочу (себе) машину.",
+      "block": 10
+    },
+    {
+      "de": "Ich wünsche mir, dass du kommst.",
+      "ru": "Я хочу, чтобы ты пришёл(а).",
+      "block": 10
+    },
+    {
+      "de": "sich merken",
+      "ru": "запоминать",
+      "block": 10
+    },
+    {
+      "de": "Ich kann mir ihren Namen nicht merken.",
+      "ru": "Я не могу запомнить её имя.",
+      "block": 10
+    },
+    {
+      "de": "(sich) ausleihen (lieh aus, hat ausgeliehen)",
+      "ru": "брать на время / одалживать (себе)",
+      "block": 10
+    },
+    {
+      "de": "Ich leihe mir ein Buch aus.",
+      "ru": "Я беру книгу (напр., в библиотеке).",
+      "block": 10
+    },
+    {
+      "de": "innerhalb",
+      "ru": "внутри, в пределах",
+      "block": 10
+    },
+    {
+      "de": "der Haupteingang, -ä-e",
+      "ru": "главный вход",
+      "block": 10
+    },
+    {
+      "de": "zurückgeben (gibt zurück, gab zurück, hat zurückgegeben)",
+      "ru": "возвращать",
+      "block": 10
+    },
+    {
+      "de": "die Ausleihzeit, -en",
+      "ru": "срок выдачи (книги и т.п.)",
+      "block": 10
+    },
+    {
+      "de": "verlängern",
+      "ru": "продлевать",
+      "block": 10
+    },
+    {
+      "de": "telefonisch",
+      "ru": "по телефону",
+      "block": 10
+    },
+    {
+      "de": "erfahren (erfährt, erfuhr, hat erfahren)",
+      "ru": "узнавать, выяснять",
+      "block": 10
+    },
+    {
+      "de": "der Austausch (Sg.)",
+      "ru": "обмен",
+      "block": 10
+    },
+    {
+      "de": "still",
+      "ru": "тихий, спокойный",
+      "block": 10
+    },
+    {
+      "de": "zahlreich",
+      "ru": "многочисленный",
+      "block": 10
+    },
+    {
+      "de": "die Weiterbildung, -en",
+      "ru": "повышение квалификации, доп. образование",
+      "block": 10
+    },
+    {
+      "de": "die Digitalisierung, -en",
+      "ru": "цифровизация",
+      "block": 10
+    },
+    {
+      "de": "programmieren",
+      "ru": "программировать",
+      "block": 10
+    },
+    {
+      "de": "der Bildschirm, -e",
+      "ru": "экран (монитор)",
+      "block": 10
+    },
+    {
+      "de": "der Flüchtling, -e",
+      "ru": "беженец",
+      "block": 10
+    },
+    {
+      "de": "der Asylsuchende, -n",
+      "ru": "соискатель убежища",
+      "block": 10
+    },
+    {
+      "de": "die Asylsuchende, -n",
+      "ru": "соискательница убежища",
+      "block": 10
+    },
+    {
+      "de": "das Asyl, -e",
+      "ru": "убежище",
+      "block": 10
+    },
+    {
+      "de": "die Kommunikation (Sg.)",
+      "ru": "коммуникация, общение",
+      "block": 10
+    },
+    {
+      "de": "der Treffpunkt, -e",
+      "ru": "место встречи",
+      "block": 10
+    },
+    {
+      "de": "(sich) austauschen",
+      "ru": "обмениваться (мнениями)",
+      "block": 10
+    },
+    {
+      "de": "ärgerlich",
+      "ru": "досадный, неприятный",
+      "block": 10
+    },
+    {
+      "de": "Das ist wirklich ärgerlich!",
+      "ru": "Это действительно досадно!",
+      "block": 10
+    },
+    {
+      "de": "das Bargeld (Sg.)",
+      "ru": "наличные деньги",
+      "block": 10
+    },
+    {
+      "de": "die EC-Karte, -n",
+      "ru": "банковская карта (EC)",
+      "block": 10
+    },
+    {
+      "de": "umtauschen",
+      "ru": "обменивать (товар, деньги)",
+      "block": 10
+    },
+    {
+      "de": "der Umtausch, -äu-e / -üu-e",
+      "ru": "обмен",
+      "block": 10
+    },
+    {
+      "de": "das Personal (Sg.)",
+      "ru": "персонал, сотрудники",
+      "block": 10
+    },
+    {
+      "de": "der Fußboden, -ö-",
+      "ru": "пол",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "wischen",
+      "ru": "вытирать, протирать",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "bügeln",
+      "ru": "гладить (утюгом)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "abwaschen (wäscht ab, wusch ab, hat abgewaschen)",
+      "ru": "мыть (посуду)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "wegbringen (brachte weg, hat weggebracht)",
+      "ru": "уносить, относить",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Verbrauch (Sg.)",
+      "ru": "потребление, расход",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "Wie hoch ist der Stromverbrauch?",
+      "ru": "Насколько высоко потребление электроэнергии?",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Garantie, -n",
+      "ru": "гарантия",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "Auf das Gerät gibt es zwei Jahre Garantie.",
+      "ru": "На прибор даётся два года гарантии.",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Mehrwertsteuer (MwSt.), -n",
+      "ru": "налог на добавленную стоимость (НДС)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Fernbedienung, -en",
+      "ru": "пульт дистанционного управления",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Schüssel, -n",
+      "ru": "миска",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Mahlzeit, -en",
+      "ru": "еда, приём пищи",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Rate, -n",
+      "ru": "рассрочка, взнос; тариф",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "Sie können in monatlichen Raten bezahlen.",
+      "ru": "Вы можете платить ежемесячными взносами.",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Rabatt, -e",
+      "ru": "скидка",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Zinsen (Pl.)",
+      "ru": "проценты (банковские)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Staubsauger, -",
+      "ru": "пылесос",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Leistung, -en",
+      "ru": "мощность; производительность",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "gering",
+      "ru": "невысокий, малый",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "sparsam",
+      "ru": "экономный",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Waschmaschine, -n",
+      "ru": "стиральная машина",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "vor Kurzem",
+      "ru": "недавно",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Verabredung, -en",
+      "ru": "встреча (договорённость)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "überraschen",
+      "ru": "удивлять",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "das Missverständnis, -se",
+      "ru": "недоразумение, недопонимание",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "klären",
+      "ru": "выяснять, прояснять",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Überweisung, -en",
+      "ru": "банковский перевод",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "überweisen (überwies, hat überwiesen)",
+      "ru": "переводить (деньги)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die IBAN, -s",
+      "ru": "международный номер банковского счёта (IBAN)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "vereinbaren (в тексте опечатка: verginbaren)",
+      "ru": "договариваться",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "anschließen (schloss an, hat angeschlossen)",
+      "ru": "подключать, присоединять",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "einräumen",
+      "ru": "выделять, предоставлять (например, место); признавать",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Kauf, -äu-e",
+      "ru": "покупка",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "zurückbringen (brachte zurück, hat zurückgebracht)",
+      "ru": "возвращать (покупку)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Zahlung, -en",
+      "ru": "платёж, оплата",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Scheck, -s",
+      "ru": "чек (денежный)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "auf Rechnung kaufen",
+      "ru": "покупать по счёту (без предоплаты)",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "automatisch",
+      "ru": "автоматически",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Chip, -s",
+      "ru": "чип",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die PIN-Nummer, -n (auch PIN, -s)",
+      "ru": "ПИН-код",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "bereit",
+      "ru": "готовый",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "Sie sind bereit, auf Bargeld zu verzichten.",
+      "ru": "Вы готовы отказаться от наличных.",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "mindestens",
+      "ru": "по крайней мере, минимум",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "kompliziert",
+      "ru": "сложный, запутанный",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "(sich) fürchten",
+      "ru": "бояться",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "missbrauchen",
+      "ru": "злоупотреблять; неправильно использовать",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "bestätigen",
+      "ru": "подтверждать",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "der Schal, -s",
+      "ru": "шарф",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "betreuen",
+      "ru": "заботиться, курировать",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Reservierung, -en",
+      "ru": "бронирование",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "werktags",
+      "ru": "в рабочие дни",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Selbstständigkeit (Sg.)",
+      "ru": "самостоятельность; независимость",
+      "block": 11,
+      "oral": true
+    },
+    {
+      "de": "die Fahrschule, -n",
+      "ru": "автошкола",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Führerschein, -e",
+      "ru": "водительские права",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Sie hat vor Kurzem den Führerschein gemacht.",
+      "ru": "Она недавно получила водительские права.",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Reparatur, -en",
+      "ru": "ремонт",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "spontan",
+      "ru": "спонтанный, непредвиденный",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "ab und zu",
+      "ru": "время от времени",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Wir können ab und zu Carsharing machen.",
+      "ru": "Мы можем время от времени пользоваться каршерингом.",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Garage, -n",
+      "ru": "гараж",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "zu weit gehen",
+      "ru": "заходить слишком далеко",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Das geht zu weit!",
+      "ru": "Это слишком далеко! / Это уже чересчур!",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Das ist ausgeschlossen!",
+      "ru": "Это исключено!",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "(sich) aufregen",
+      "ru": "волноваться, возмущаться",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Das regt mich auf!",
+      "ru": "Это меня возмущает!",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Reifen, -",
+      "ru": "шина",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Bremse, -n",
+      "ru": "тормоз",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "das Gas (Sg.)",
+      "ru": "газ",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Gas geben",
+      "ru": "нажать на газ, ускориться",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "bremsen",
+      "ru": "тормозить",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "hupen",
+      "ru": "сигналить",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Gebrauchtwagen, -",
+      "ru": "подержанный автомобиль",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Wagen, -",
+      "ru": "машина, автомобиль",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Marke, -n",
+      "ru": "марка",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "passend",
+      "ru": "подходящий",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der TÜV (Sg.)",
+      "ru": "техосмотр (немецкая организация технадзора)",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "weitersuchen",
+      "ru": "искать дальше",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "gründlich",
+      "ru": "тщательно",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Lack, -e",
+      "ru": "лак, краска",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Roststelle, -n",
+      "ru": "место ржавчины",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "abnutzen",
+      "ru": "изнашивать(ся)",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Die Reifen sind abgenutzt.",
+      "ru": "Шины изношены.",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "das Fahrzeug, -e",
+      "ru": "транспортное средство",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Fahrzeugpapiere (Pl.)",
+      "ru": "документы на автомобиль",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Probefahrt, -en",
+      "ru": "пробная поездка, тест-драйв",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "angehen (ging an, ist angegangen)",
+      "ru": "заводиться (о двигателе), включаться",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "das Geräusch, -e",
+      "ru": "шум, звук",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Kilometerstand, -stände",
+      "ru": "пробег (километраж)",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Erstzulassung, -en",
+      "ru": "первая регистрация (дата первого допуска к движению)",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "überprüfen",
+      "ru": "проверять",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Zustand, -ä-e",
+      "ru": "состояние",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Der Wagen ist in gutem Zustand.",
+      "ru": "Машина в хорошем состоянии.",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "vergleichen (verglich, hat verglichen)",
+      "ru": "сравнивать",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Besichtigung, -en",
+      "ru": "осмотр",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Schaden, -ä-",
+      "ru": "ущерб, повреждение",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "eintragen (trägt ein, trug ein, hat eingetragen)",
+      "ru": "вносить, записывать (в документы)",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Gang, -ä-e",
+      "ru": "передача (в коробке передач)",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "das WC, -s",
+      "ru": "туалет",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "der Sonderpreis, -e",
+      "ru": "специальная цена",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "das Benzin (Sg.)",
+      "ru": "бензин",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "(sich) schonen",
+      "ru": "беречь себя, щадить",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "steil",
+      "ru": "крутой",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "die Geschwindigkeit, -en",
+      "ru": "скорость",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "begrenzen",
+      "ru": "ограничивать",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "Die Geschwindigkeit der E-Bikes ist begrenzt.",
+      "ru": "Скорость электровелосипедов ограничена.",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "ausschalten",
+      "ru": "выключать",
+      "block": 12,
+      "oral": true
+    },
+    {
+      "de": "durchschnittlich",
+      "ru": "средний",
+      "block": 12,
       "oral": true
     }
   ]

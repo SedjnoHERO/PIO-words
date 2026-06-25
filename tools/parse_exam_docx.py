@@ -15,7 +15,7 @@ OUT_TS = Path(__file__).resolve().parent.parent / "src" / "data" / "vocabulary.t
 LATIN_RE = re.compile(r"[A-Za-zÄÖÜäöüß]")
 CYRILLIC_RE = re.compile(r"[А-Яа-яЁё]")
 SKIP_RU = {"немецкий", "русский", "german", "russian"}
-ORAL_BLOCKS = {1, 3, 5, 7, 8}
+ORAL_BLOCKS = {1, 3, 5, 7, 8, 9, 11, 12}
 
 BLOCK_TITLES: dict[int, str] = {
     1: "Блок 1 · темы 1 и 2/8",
@@ -26,7 +26,13 @@ BLOCK_TITLES: dict[int, str] = {
     6: "Блок 6",
     7: "Блок 7 · устное",
     8: "Блок 8 · устное 5/8",
+    9: "Блок 9 · устное 6/8",
+    10: "Блок 10",
+    11: "Блок 11 · устное 7/8",
+    12: "Блок 12 · устное 8/8",
 }
+
+SUPPLEMENT_DEFAULT = Path(__file__).resolve().parent / "exam-blocks-9-12.md"
 
 
 def extract_docx_text(docx_path: Path) -> str:
@@ -49,6 +55,18 @@ def extract_docx_text(docx_path: Path) -> str:
                     texts.append(node.tail)
             parts.append("".join(texts))
     return "\n".join(parts)
+
+
+def load_sources(docx_path: Path, supplements: list[Path]) -> str:
+    parts: list[str] = []
+    if docx_path.exists():
+        parts.append(extract_docx_text(docx_path))
+    for path in supplements:
+        if path.exists():
+            parts.append(path.read_text(encoding="utf-8"))
+    if not parts:
+        raise FileNotFoundError("No vocabulary sources found")
+    return "\n\n".join(parts)
 
 
 def normalize_text(text: str) -> str:
@@ -97,6 +115,24 @@ def split_blocks(text: str) -> list[tuple[int, str]]:
 
 def parse_markdown_table(segment: str) -> list[tuple[str, str]]:
     pairs: list[tuple[str, str]] = []
+
+    for line in segment.splitlines():
+        line = line.strip().strip("|").strip()
+        if not line or re.search(r"-{3,}", line):
+            continue
+        if "|" not in line:
+            continue
+        cells = [cell.strip() for cell in line.split("|") if cell.strip()]
+        if len(cells) < 2:
+            continue
+        de, ru = cells[0], cells[1]
+        if not is_valid_pair(de, ru):
+            continue
+        pairs.append((de, ru))
+
+    if pairs:
+        return pairs
+
     rows = re.split(r"\|\|+", segment)
     for row in rows:
         row = row.strip().strip("|").strip()
@@ -237,14 +273,18 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description="Parse exam.docx vocabulary")
     parser.add_argument("--docx", type=Path, default=DOCX_DEFAULT)
+    parser.add_argument(
+        "--supplement",
+        type=Path,
+        action="append",
+        default=[SUPPLEMENT_DEFAULT],
+        help="Additional markdown source (repeatable)",
+    )
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-ts", type=Path, default=OUT_TS)
     args = parser.parse_args()
 
-    if not args.docx.exists():
-        raise FileNotFoundError(f"DOCX not found: {args.docx}")
-
-    raw = extract_docx_text(args.docx)
+    raw = load_sources(args.docx, args.supplement)
     entries = parse_blocks(raw)
 
     by_block: dict[int, int] = {}
@@ -252,7 +292,7 @@ def main() -> None:
         by_block[entry["block"]] = by_block.get(entry["block"], 0) + 1
 
     payload = {
-        "source": str(args.docx),
+        "source": [str(args.docx), *[str(path) for path in args.supplement if path.exists()]],
         "total": len(entries),
         "countByBlock": {str(k): by_block[k] for k in sorted(by_block)},
         "entries": entries,
@@ -261,7 +301,7 @@ def main() -> None:
     args.out_json.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     args.out_ts.write_text(build_vocabulary_ts(entries), encoding="utf-8")
 
-    print(f"Parsed {len(entries)} words from {args.docx.name}")
+    print(f"Parsed {len(entries)} words")
     for block_num in sorted(by_block):
         oral = "oral" if block_num in ORAL_BLOCKS else "extra"
         print(f"  Block {block_num}: {by_block[block_num]} ({oral})")
