@@ -2,3284 +2,3871 @@ import type { TopicGroup } from '../types/vocabulary';
 
 export const VOCABULARY: TopicGroup[] = [
   {
-    "id": "innovation-medicine-and-health",
-    "title": "Innovation medicine and health",
+    "id": "block-1",
+    "title": "Блок 1 · темы 1 и 2/8",
     "words": [
       {
-        "id": "innovation-medicine-and-health-1",
-        "ru": "ультразвук",
-        "en": [
-          "ultrasound"
+        "id": "block-1-1",
+        "ru": "отношения на расстоянии",
+        "de": [
+          "die Fernbeziehung, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-2",
-        "ru": "конечность (рука или нога)",
-        "en": [
-          "limb"
+        "id": "block-1-2",
+        "ru": "отношения",
+        "de": [
+          "die Beziehung, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-3",
-        "ru": "протез",
-        "en": [
-          "prosthesis"
+        "id": "block-1-3",
+        "ru": "вести",
+        "de": [
+          "führen"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-4",
-        "ru": "биопсия",
-        "en": [
-          "biopsy"
+        "id": "block-1-4",
+        "ru": "Они поддерживают отношения на расстоянии.",
+        "de": [
+          "Sie führen eine Fernbeziehung."
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-5",
-        "ru": "биосовместимый",
-        "en": [
-          "biocompatible"
+        "id": "block-1-5",
+        "ru": "разрыв, расставание",
+        "de": [
+          "die Trennung, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-6",
-        "ru": "МРТ (магнитно-резонансная томография)",
-        "en": [
-          "MRI (magnetic resonance imaging)"
+        "id": "block-1-6",
+        "ru": "тем не менее, всё равно",
+        "de": [
+          "trotzdem"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-7",
-        "ru": "CRISPR (метод генного редактирования)",
-        "en": [
-          "CRISPR (clustered regularly interspaced short palindromic repeat)"
+        "id": "block-1-7",
+        "ru": "чувство",
+        "de": [
+          "das Gefühl, -e"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-8",
-        "ru": "ДНК (дезоксирибонуклеиновая кислота)",
-        "en": [
-          "DNA (deoxyribonucleic acid)"
+        "id": "block-1-8",
+        "ru": "дискуссия, обсуждение",
+        "de": [
+          "die Diskussion, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-9",
-        "ru": "РНК (рибонуклеиновая кислота)",
-        "en": [
-          "RNA (ribonucleic acid)"
+        "id": "block-1-9",
+        "ru": "зависимый",
+        "de": [
+          "abhängig"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-10",
-        "ru": "артрит",
-        "en": [
-          "arthritis"
+        "id": "block-1-10",
+        "ru": "Он зависит от своих родителей.",
+        "de": [
+          "Er ist von seinen Eltern abhängig."
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-11",
-        "ru": "рентгеновские лучи",
-        "en": [
-          "X-rays"
+        "id": "block-1-11",
+        "ru": "стройка, строительная площадка",
+        "de": [
+          "die Baustelle, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-12",
-        "ru": "КТ (компьютерная томография)",
-        "en": [
-          "CAT scans"
+        "id": "block-1-12",
+        "ru": "заметили",
+        "de": [
+          "bemerkten (Präteritum von bemerken)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-13",
-        "ru": "клиническое применение",
-        "en": [
-          "clinical application"
+        "id": "block-1-13",
+        "ru": "работающий, имеющий работу",
+        "de": [
+          "berufstätig"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-1",
+        "oral": true
       },
       {
-        "id": "innovation-medicine-and-health-14",
-        "ru": "визуализировать",
-        "en": [
-          "to image"
+        "id": "block-1-14",
+        "ru": "договариваться, приходить к согласию",
+        "de": [
+          "sich einigen"
         ],
-        "topic": "innovation-medicine-and-health",
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-15",
+        "ru": "трудный, сложный",
+        "de": [
+          "schwierig"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-16",
+        "ru": "одинокий",
+        "de": [
+          "einsam"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-17",
+        "ru": "тесный, близкий",
+        "de": [
+          "eng"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-18",
+        "ru": "взрослый",
+        "de": [
+          "erwachsen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-19",
+        "ru": "гибкий",
+        "de": [
+          "flexibel"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-20",
+        "ru": "привыкать к",
+        "de": [
+          "(sich) gewöhnen an"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-21",
+        "ru": "жёсткий, тяжёлый",
+        "de": [
+          "hart"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-22",
+        "ru": "увольнять",
+        "de": [
+          "kündigen"
+        ],
+        "topic": "block-1",
         "ruVariants": [
-          "визуализировать",
-          "получать изображение"
+          "увольнять",
+          "расторгать договор"
+        ],
+        "oral": true
+      },
+      {
+        "id": "block-1-23",
+        "ru": "ложь",
+        "de": [
+          "die Lüge, -n"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-24",
+        "ru": "лгать",
+        "de": [
+          "lügen, er/sie hat gelogen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-25",
+        "ru": "странный, любопытный",
+        "de": [
+          "merkwürdig"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-26",
+        "ru": "открытый",
+        "de": [
+          "offen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-27",
+        "ru": "сердитый, злой",
+        "de": [
+          "sauer"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-28",
+        "ru": "ценить, оценивать",
+        "de": [
+          "schätzen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-29",
+        "ru": "По оценкам, около 8% живут в отношениях на расстоянии.",
+        "de": [
+          "Man schätzt, dass ca. 8% in einer Fernbeziehung leben."
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-30",
+        "ru": "связь, соединение",
+        "de": [
+          "die Verbindung, -en"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-31",
+        "ru": "скучать (по кому-то/чему-то)",
+        "de": [
+          "vermissen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-32",
+        "ru": "доверять друг другу",
+        "de": [
+          "(sich) vertrauen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-33",
+        "ru": "яростный, взбешённый",
+        "de": [
+          "wütend"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-34",
+        "ru": "негативный",
+        "de": [
+          "negativ"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-35",
+        "ru": "позитивный",
+        "de": [
+          "positiv"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-36",
+        "ru": "ревнивый",
+        "de": [
+          "eifersüchtig"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-37",
+        "ru": "серьёзный",
+        "de": [
+          "ernst"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-38",
+        "ru": "старательный, трудолюбивый",
+        "de": [
+          "fleißig"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-39",
+        "ru": "вежливый",
+        "de": [
+          "höflich"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-40",
+        "ru": "аккуратный, организованный",
+        "de": [
+          "ordentlich"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-41",
+        "ru": "верный, преданный",
+        "de": [
+          "treu"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-42",
+        "ru": "никто",
+        "de": [
+          "niemand"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-43",
+        "ru": "заботиться о (ком-то/чём-то)",
+        "de": [
+          "sich kümmern um"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-44",
+        "ru": "договариваться о встрече (с)",
+        "de": [
+          "(sich) verabreden (mit)"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-45",
+        "ru": "внешность",
+        "de": [
+          "das Aussehen (Sg.)"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-46",
+        "ru": "исследование",
+        "de": [
+          "die Studie, -n"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-47",
+        "ru": "фигура (телосложение)",
+        "de": [
+          "die Figur, -en"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-48",
+        "ru": "причёска",
+        "de": [
+          "die Frisur, -en"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-49",
+        "ru": "отдел, отделение",
+        "de": [
+          "die Abteilung, -en"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-50",
+        "ru": "слепой",
+        "de": [
+          "blind"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-51",
+        "ru": "предложение (фраза)",
+        "de": [
+          "der Satz, ä-e"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-52",
+        "ru": "издалека",
+        "de": [
+          "von Weitem"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-53",
+        "ru": "успокаиваться",
+        "de": [
+          "(sich) beruhigen"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-54",
+        "ru": "вход",
+        "de": [
+          "der Eingang, -ä-e"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-55",
+        "ru": "ожидать",
+        "de": [
+          "erwarten"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-56",
+        "ru": "страдать (от чего-л.)",
+        "de": [
+          "leiden (an), er/sie hat gelitten"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-57",
+        "ru": "движение",
+        "de": [
+          "die Bewegung, -en"
+        ],
+        "topic": "block-1",
+        "oral": true
+      },
+      {
+        "id": "block-1-58",
+        "ru": "развивать",
+        "de": [
+          "entwickeln"
+        ],
+        "topic": "block-1",
+        "oral": true
+      }
+    ],
+    "oral": true
+  },
+  {
+    "id": "block-2",
+    "title": "Блок 2",
+    "words": [
+      {
+        "id": "block-2-1",
+        "ru": "съезжать, переезжать (из квартиры)",
+        "de": [
+          "ausziehen (ist ausgezogen)"
+        ],
+        "topic": "block-2"
+      },
+      {
+        "id": "block-2-2",
+        "ru": "владеть, иметь",
+        "de": [
+          "besitzen (hat besessen)"
+        ],
+        "topic": "block-2"
+      },
+      {
+        "id": "block-2-3",
+        "ru": "*(вероятно, опечатка: Bohrmaschine)* – дрель",
+        "de": [
+          "die Bghrmaschine, -n"
+        ],
+        "topic": "block-2"
+      },
+      {
+        "id": "block-2-4",
+        "ru": "*(вероятно, Dienstleistung)* – услуга",
+        "de": [
+          "die Dignstleistung, -en"
+        ],
+        "topic": "block-2"
+      },
+      {
+        "id": "block-2-5",
+        "ru": "лестница (стремянка)",
+        "de": [
+          "die Leiter, -n"
+        ],
+        "topic": "block-2"
+      },
+      {
+        "id": "block-2-6",
+        "ru": "хватать, быть достаточным",
+        "de": [
+          "reichen"
+        ],
+        "topic": "block-2"
+      },
+      {
+        "id": "block-2-7",
+        "ru": "Хватит.",
+        "de": [
+          "Es reicht."
+        ],
+        "topic": "block-2",
+        "ruVariants": [
+          "Хватит.",
+          "Достаточно."
         ]
       },
       {
-        "id": "innovation-medicine-and-health-15",
-        "ru": "воспалительные процессы",
-        "en": [
-          "inflammatory processes"
+        "id": "block-2-8",
+        "ru": "штекер, вилка",
+        "de": [
+          "der Stecker, -"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-16",
-        "ru": "вызывать воспаление тканей",
-        "en": [
-          "to inflame the tissues"
+        "id": "block-2-9",
+        "ru": "налог; руль (в контексте транспорта – но здесь, вероятно, налог)",
+        "de": [
+          "die Steuer, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-17",
-        "ru": "аномальные клетки",
-        "en": [
-          "abnormal cells"
+        "id": "block-2-10",
+        "ru": "сдавать в аренду",
+        "de": [
+          "vermieten"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-18",
-        "ru": "ревматоидный артрит",
-        "en": [
-          "rheumatoid arthritis"
+        "id": "block-2-11",
+        "ru": "страховка",
+        "de": [
+          "die Versicherung, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-19",
-        "ru": "сердечно-сосудистое заболевание",
-        "en": [
-          "cardiovascular disease"
+        "id": "block-2-12",
+        "ru": "инструмент",
+        "de": [
+          "das Werkzeug, -e"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-20",
-        "ru": "потеря зрения",
-        "en": [
-          "loss of vision"
+        "id": "block-2-13",
+        "ru": "лампочка",
+        "de": [
+          "die Glühbirne, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-21",
-        "ru": "туберкулёз",
-        "en": [
-          "tuberculosis"
+        "id": "block-2-14",
+        "ru": "молоток",
+        "de": [
+          "der Hammer, -ä-"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-22",
-        "ru": "недостаточность функции щитовидной железы",
-        "en": [
-          "thyroid function deficiency"
+        "id": "block-2-15",
+        "ru": "звонок (дверной)",
+        "de": [
+          "die Klingel, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-23",
-        "ru": "недостаточность функции лёгких",
-        "en": [
-          "pulmonary function deficiency"
+        "id": "block-2-16",
+        "ru": "выключатель",
+        "de": [
+          "der Schalter, -"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-24",
-        "ru": "аневризма",
-        "en": [
-          "aneurysm"
+        "id": "block-2-17",
+        "ru": "розетка",
+        "de": [
+          "die Steckdose, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-25",
-        "ru": "заболевание глаз",
-        "en": [
-          "ocular disease"
+        "id": "block-2-18",
+        "ru": "ступенька",
+        "de": [
+          "die Stufe, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-26",
-        "ru": "опухоли",
-        "en": [
-          "tumors"
+        "id": "block-2-19",
+        "ru": "лестничная клетка, подъезд",
+        "de": [
+          "das Treppenhaus, -äu-er"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-27",
-        "ru": "кровоток",
-        "en": [
-          "blood flow"
+        "id": "block-2-20",
+        "ru": "плоскогубцы, щипцы",
+        "de": [
+          "die Zange, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-28",
-        "ru": "желчный пузырь",
-        "en": [
-          "gallbladder"
+        "id": "block-2-21",
+        "ru": "сообщество жильцов дома",
+        "de": [
+          "die Hausgemeinschaft, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-29",
-        "ru": "см. 26",
-        "en": [
-          "tumors (повтор)"
+        "id": "block-2-22",
+        "ru": "общество, сообщество",
+        "de": [
+          "die Gemeinschaft, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-30",
-        "ru": "пищевод",
-        "en": [
-          "esophagus"
+        "id": "block-2-23",
+        "ru": "домоуправитель, дворник",
+        "de": [
+          "der Hausmeister, -"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-31",
-        "ru": "кишечник",
-        "en": [
-          "intestine"
+        "id": "block-2-24",
+        "ru": "домоуправительница",
+        "de": [
+          "die Hausmeisterin, -nen"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-32",
-        "ru": "почечная недостаточность",
-        "en": [
-          "kidney deficiency"
+        "id": "block-2-25",
+        "ru": "обдумывать; (как прилагательное) превосходный",
+        "de": [
+          "überlegen"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-33",
-        "ru": "перелом кости",
-        "en": [
-          "bone fracture"
+        "id": "block-2-26",
+        "ru": "въезжать (в квартиру)",
+        "de": [
+          "einziehen (ist eingezogen)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-34",
-        "ru": "полиомиелит",
-        "en": [
-          "poliomyelitis"
+        "id": "block-2-27",
+        "ru": "переживать, испытывать",
+        "de": [
+          "erleben"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-35",
-        "ru": "йод",
-        "en": [
-          "iodine"
+        "id": "block-2-28",
+        "ru": "на (время)",
+        "de": [
+          "für (Zeit)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-36",
-        "ru": "вены",
-        "en": [
-          "veins"
+        "id": "block-2-29",
+        "ru": "Я останусь здесь навсегда.",
+        "de": [
+          "Ich bleibe hier für immer."
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-37",
-        "ru": "артерии",
-        "en": [
-          "arteries"
+        "id": "block-2-30",
+        "ru": "громкоговоритель, колонка",
+        "de": [
+          "der Lautsprecher, -"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-38",
-        "ru": "кровеносные сосуды",
-        "en": [
-          "blood vessels"
+        "id": "block-2-31",
+        "ru": "друг с другом, вместе",
+        "de": [
+          "miteinander"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-39",
-        "ru": "метаболическая активность",
-        "en": [
-          "metabolic activity"
+        "id": "block-2-32",
+        "ru": "пенсионер",
+        "de": [
+          "der Rentner, -"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-40",
-        "ru": "фермент",
-        "en": [
-          "enzyme"
+        "id": "block-2-33",
+        "ru": "пенсионерка",
+        "de": [
+          "die Rentnerin, -nen"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-41",
-        "ru": "лимфатическая система",
-        "en": [
-          "lymphatic system"
+        "id": "block-2-34",
+        "ru": "свыше, более",
+        "de": [
+          "über (= mehr als)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-42",
-        "ru": "клаустрофобия",
-        "en": [
-          "claustrophobia"
+        "id": "block-2-35",
+        "ru": "с ... (начиная с какого-то момента)",
+        "de": [
+          "von ... an (Zeit)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-43",
-        "ru": "стационарная клиника",
-        "en": [
-          "in-patient clinic"
+        "id": "block-2-36",
+        "ru": "мастерская",
+        "de": [
+          "die Werkstatt, -ä-en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-44",
-        "ru": "химиотерапия",
-        "en": [
-          "chemotherapy"
+        "id": "block-2-37",
+        "ru": "транспортировать, перевозить",
+        "de": [
+          "transportieren"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-45",
-        "ru": "гепатит",
-        "en": [
-          "hepatitis"
+        "id": "block-2-38",
+        "ru": "меняться, изменяться",
+        "de": [
+          "(sich) ändern"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-46",
-        "ru": "анемия",
-        "en": [
-          "anemia"
+        "id": "block-2-39",
+        "ru": "соответственно, или же",
+        "de": [
+          "bzw. (beziehungsweise)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-47",
-        "ru": "антитела",
-        "en": [
-          "antibodies"
+        "id": "block-2-40",
+        "ru": "платформа",
+        "de": [
+          "die Plattform, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-48",
-        "ru": "рассеянный склероз",
-        "en": [
-          "multiple sclerosis"
+        "id": "block-2-41",
+        "ru": "тренд, тенденция",
+        "de": [
+          "der Trend, -s"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-49",
-        "ru": "центральная нервная система",
-        "en": [
-          "central nervous system"
+        "id": "block-2-42",
+        "ru": "согласен",
+        "de": [
+          "einverstanden"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-50",
-        "ru": "мораторий",
-        "en": [
-          "moratorium"
+        "id": "block-2-43",
+        "ru": "порядок",
+        "de": [
+          "die Ordnung, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-51",
-        "ru": "отрезать",
-        "en": [
-          "to snip"
+        "id": "block-2-44",
+        "ru": "правила проживания (в доме)",
+        "de": [
+          "die Hausordnung, -en"
         ],
-        "topic": "innovation-medicine-and-health",
-        "ruVariants": [
-          "отрезать",
-          "делать надрез"
-        ]
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-52",
-        "ru": "редактирование генов",
-        "en": [
-          "gene editing"
+        "id": "block-2-45",
+        "ru": "шум",
+        "de": [
+          "der Lärm (Sg.)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-53",
-        "ru": "лечить болезни",
-        "en": [
-          "to cure diseases"
+        "id": "block-2-46",
+        "ru": "руководство, режиссура",
+        "de": [
+          "die Regie (Sg.)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-54",
-        "ru": "генофонд",
-        "en": [
-          "gene pool"
+        "id": "block-2-47",
+        "ru": "напряжение",
+        "de": [
+          "die Spannung (Sg.)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-55",
-        "ru": "3D-печать",
-        "en": [
-          "3D Printing"
+        "id": "block-2-48",
+        "ru": "роль",
+        "de": [
+          "die Rolle, -n"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-56",
-        "ru": "наследственное заболевание",
-        "en": [
-          "hereditary disease"
+        "id": "block-2-49",
+        "ru": "развлечение, беседа",
+        "de": [
+          "die Unterhaltung (Sg.)"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-57",
-        "ru": "на грани",
-        "en": [
-          "on the cusp of"
+        "id": "block-2-50",
+        "ru": "захватывающий, волнующий",
+        "de": [
+          "aufregend"
         ],
-        "topic": "innovation-medicine-and-health",
-        "ruVariants": [
-          "на грани",
-          "на пороге (чего-либо)"
-        ]
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-58",
-        "ru": "внутренние органы",
-        "en": [
-          "internal organs"
+        "id": "block-2-51",
+        "ru": "конец, заключение",
+        "de": [
+          "der Schluss, -ü-e"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-59",
-        "ru": "био-чернила",
-        "en": [
-          "bioink"
+        "id": "block-2-52",
+        "ru": "в конце, наконец",
+        "de": [
+          "zum Schluss"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-60",
-        "ru": "коучинг",
-        "en": [
-          "coaching"
+        "id": "block-2-53",
+        "ru": "способность, умение",
+        "de": [
+          "die Fähigkeit, -en"
         ],
-        "topic": "innovation-medicine-and-health",
-        "ruVariants": [
-          "коучинг",
-          "тренинг"
-        ]
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-61",
-        "ru": "каденс",
-        "en": [
-          "cadence"
+        "id": "block-2-54",
+        "ru": "знание, познания",
+        "de": [
+          "die Kenntnis, -se"
         ],
-        "topic": "innovation-medicine-and-health",
-        "ruVariants": [
-          "каденс",
-          "частота шагов/оборотов"
-        ]
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-62",
-        "ru": "беговая дорожка",
-        "en": [
-          "treadmill"
+        "id": "block-2-55",
+        "ru": "*(вероятно, опечатка: Sammlung)* – коллекция, собрание",
+        "de": [
+          "die Sigmlung, -en"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-63",
-        "ru": "гребной тренажёр",
-        "en": [
-          "rowing machine"
+        "id": "block-2-56",
+        "ru": "удалять, отдалять",
+        "de": [
+          "entfernen"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-64",
-        "ru": "недоношенный ребёнок",
-        "en": [
-          "premature baby"
+        "id": "block-2-57",
+        "ru": "приблизительно",
+        "de": [
+          "ungefähr"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-65",
-        "ru": "неизлечимый",
-        "en": [
-          "incurable"
+        "id": "block-2-58",
+        "ru": "экологический",
+        "de": [
+          "ökologisch"
         ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       },
       {
-        "id": "innovation-medicine-and-health-66",
-        "ru": "СПИД",
-        "en": [
-          "AIDS (Acquired Immunodeficiency Syndrome)"
+        "id": "block-2-59",
+        "ru": "поколение",
+        "de": [
+          "die Generation, -en"
         ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-67",
-        "ru": "нервное перенапряжение",
-        "en": [
-          "nervous strain"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-68",
-        "ru": "традиционная медицина",
-        "en": [
-          "conventional medicine",
-          "traditional medicines"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-69",
-        "ru": "холистическая медицина",
-        "en": [
-          "holistic medicine"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-70",
-        "ru": "сетчатка",
-        "en": [
-          "retina"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-71",
-        "ru": "излучать",
-        "en": [
-          "to beam",
-          "emit"
-        ],
-        "topic": "innovation-medicine-and-health",
-        "ruVariants": [
-          "излучать",
-          "испускать"
-        ]
-      },
-      {
-        "id": "innovation-medicine-and-health-72",
-        "ru": "вводить в вену",
-        "en": [
-          "to inject into a vein"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-73",
-        "ru": "обнаруживать",
-        "en": [
-          "to detect"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-74",
-        "ru": "вдыхать",
-        "en": [
-          "to inhale"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-75",
-        "ru": "взятие крови",
-        "en": [
-          "blood draw"
-        ],
-        "topic": "innovation-medicine-and-health"
-      },
-      {
-        "id": "innovation-medicine-and-health-76",
-        "ru": "внутривенный катетер",
-        "en": [
-          "intravenous line"
-        ],
-        "topic": "innovation-medicine-and-health"
+        "topic": "block-2"
       }
     ]
   },
   {
-    "id": "environmental-solutions-and-sustainable-developm",
-    "title": "Environmental solutions and sustainable development",
+    "id": "block-3",
+    "title": "Блок 3 · устное 3/8",
     "words": [
       {
-        "id": "environmental-solutions-and-sustainable-developm-77",
-        "ru": "паровой двигатель",
-        "en": [
-          "steam engine"
+        "id": "block-3-1",
+        "ru": "питаться",
+        "de": [
+          "sich ernähren"
         ],
-        "topic": "environmental-solutions-and-sustainable-developm"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "environmental-solutions-and-sustainable-developm-78",
-        "ru": "закрывать",
-        "en": [
-          "to shut (sth) down"
+        "id": "block-3-2",
+        "ru": "питание",
+        "de": [
+          "die Ernährung (Sg.)"
         ],
-        "topic": "environmental-solutions-and-sustainable-developm",
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-3",
+        "ru": "полуфабрикат, готовая еда",
+        "de": [
+          "das Fertiggericht, -e"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-4",
+        "ru": "жирный",
+        "de": [
+          "fett(ig)"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-5",
+        "ru": "корзина",
+        "de": [
+          "der Korb, -ö-e"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-6",
+        "ru": "гарантировать",
+        "de": [
+          "garantieren"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-7",
+        "ru": "(срок годности) годный к хранению",
+        "de": [
+          "haltbar"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-8",
+        "ru": "Молоко годно ещё неделю.",
+        "de": [
+          "Die Milch ist noch eine Woche haltbar."
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-9",
+        "ru": "включительно, включая",
+        "de": [
+          "inkl. (inklusive)"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-10",
+        "ru": "за (в значении «за единицу»)",
+        "de": [
+          "je"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-11",
+        "ru": "За каждую корзину дают килограмм овощей.",
+        "de": [
+          "Je Korb gibt es ein Kilo Gemüse."
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-12",
+        "ru": "доставка",
+        "de": [
+          "die Lieferung, -en"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-13",
+        "ru": "нежирный, постный",
+        "de": [
+          "mager"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-14",
+        "ru": "с низким содержанием жира",
+        "de": [
+          "fettarm"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-15",
+        "ru": "через, посредством",
+        "de": [
+          "per"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-16",
+        "ru": "Можно удобно заказать по телефону.",
+        "de": [
+          "Man kann bequem per Telefon bestellen."
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-17",
+        "ru": "пингвин",
+        "de": [
+          "der Pinguin, -e"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-18",
+        "ru": "продукт",
+        "de": [
+          "das Produkt, -e"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-19",
+        "ru": "творог (в немецком смысле)",
+        "de": [
+          "der Quark (Sg.)"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-20",
+        "ru": "спелый",
+        "de": [
+          "reif"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-21",
+        "ru": "рецепт",
+        "de": [
+          "das Rezept, -e"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-22",
+        "ru": "сезон",
+        "de": [
+          "die Saison, -s"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-23",
+        "ru": "соус",
+        "de": [
+          "die Soße, -n"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-24",
+        "ru": "глубокозамороженный",
+        "de": [
+          "tiefgekühlt"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-25",
+        "ru": "еженедельно",
+        "de": [
+          "wöchentlich"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-26",
+        "ru": "готовить (еду)",
+        "de": [
+          "zubereiten (bereitet zu, hat zubereitet)"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-27",
+        "ru": "мясник",
+        "de": [
+          "der Metzger, -"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-28",
+        "ru": "мясница (женщина-мясник)",
+        "de": [
+          "die Metzgerin, -nen"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-29",
+        "ru": "крестьянин, фермер",
+        "de": [
+          "der Bauer, -n"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-30",
+        "ru": "голод",
+        "de": [
+          "der Hunger (Sg.)"
+        ],
+        "topic": "block-3",
+        "oral": true
+      },
+      {
+        "id": "block-3-31",
+        "ru": "хотеть есть",
+        "de": [
+          "Hunger haben"
+        ],
+        "topic": "block-3",
         "ruVariants": [
-          "закрывать",
-          "отключать (оборудование/бизнес)"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-79",
-        "ru": "атомная энергия",
-        "en": [
-          "nuclear power"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-80",
-        "ru": "оружие",
-        "en": [
-          "weapon"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-81",
-        "ru": "ядерный реактор",
-        "en": [
-          "nuclear reactor"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-82",
-        "ru": "лучевая болезнь",
-        "en": [
-          "radiation sickness"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-83",
-        "ru": "извергать",
-        "en": [
-          "to spew",
-          "emit"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "извергать",
-          "выбрасывать",
-          "испускать"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-84",
-        "ru": "стержень",
-        "en": [
-          "rod"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-85",
-        "ru": "взлетать",
-        "en": [
-          "to soar"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "взлетать",
-          "резко возрастать"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-86",
-        "ru": "радиоактивное облако",
-        "en": [
-          "radioactive cloud"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-87",
-        "ru": "бетонный саркофаг",
-        "en": [
-          "concrete sarcophagus"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-88",
-        "ru": "нехватка",
-        "en": [
-          "shortage"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-89",
-        "ru": "возобновляемая энергия",
-        "en": [
-          "renewable energy"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-90",
-        "ru": "гидроэлектроэнергия",
-        "en": [
-          "hydroelectricity"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-91",
-        "ru": "ветроэнергетика",
-        "en": [
-          "wind power"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-92",
-        "ru": "солнечная энергия",
-        "en": [
-          "solar energy"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-93",
-        "ru": "геотермальная энергия",
-        "en": [
-          "geothermal energy"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-94",
-        "ru": "энергия моря (приливов/волн)",
-        "en": [
-          "marine energy"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-95",
-        "ru": "мощность",
-        "en": [
-          "capacity"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "мощность",
-          "ёмкость"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-96",
-        "ru": "истощать",
-        "en": [
-          "to deplete"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "истощать",
-          "исчерпывать"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-97",
-        "ru": "обозримое будущее",
-        "en": [
-          "foreseeable future"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-98",
-        "ru": "справляться с чем-либо",
-        "en": [
-          "to cope with sth"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-99",
-        "ru": "энергосбережение",
-        "en": [
-          "energy conservation"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-100",
-        "ru": "увеличивать / уменьшать (объёмы)",
-        "en": [
-          "to ramp sth up",
-          "down"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-101",
-        "ru": "неисчерпаемый",
-        "en": [
-          "inexhaustible"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-102",
-        "ru": "браконьерство",
-        "en": [
-          "poaching"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-103",
-        "ru": "редкая порода",
-        "en": [
-          "rare breed"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-104",
-        "ru": "управление дикой природой",
-        "en": [
-          "wildlife management"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-105",
-        "ru": "программа охраны природы",
-        "en": [
-          "conservation programme"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-106",
-        "ru": "клеточное содержание (птицы)",
-        "en": [
-          "battery farming"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-107",
-        "ru": "неволя",
-        "en": [
-          "captivity"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-108",
-        "ru": "исчезающий вид",
-        "en": [
-          "endangered species"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-109",
-        "ru": "зелёный пояс",
-        "en": [
-          "green belt"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-110",
-        "ru": "биоразлагаемая упаковка",
-        "en": [
-          "biodegradable packaging"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-111",
-        "ru": "тропический лес",
-        "en": [
-          "rainforest"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-112",
-        "ru": "эрозия",
-        "en": [
-          "erosion"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-113",
-        "ru": "морская буровая платформа",
-        "en": [
-          "offshore drilling platform"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-114",
-        "ru": "солнечные панели",
-        "en": [
-          "solar panels"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-115",
-        "ru": "угольная шахта",
-        "en": [
-          "coal mine"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-116",
-        "ru": "работающий на угле",
-        "en": [
-          "coal-fired"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-117",
-        "ru": "трубопровод",
-        "en": [
-          "pipeline"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-118",
-        "ru": "нефтяные скважины",
-        "en": [
-          "oil wells"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-119",
-        "ru": "автомобиль с большим расходом топлива",
-        "en": [
-          "gas-guzzler"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-120",
-        "ru": "углеродный след",
-        "en": [
-          "carbon footprint"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-121",
-        "ru": "энергоёмкий",
-        "en": [
-          "power-hungry"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-122",
-        "ru": "экотуризм",
-        "en": [
-          "ecotourism"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-123",
-        "ru": "зелёные города",
-        "en": [
-          "green cities"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-124",
-        "ru": "плотина",
-        "en": [
-          "dam"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-125",
-        "ru": "гидроэнергия",
-        "en": [
-          "hydropower"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-126",
-        "ru": "лучистый",
-        "en": [
-          "radiant"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "лучистый",
-          "излучающий"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-127",
-        "ru": "см. 20",
-        "en": [
-          "to deplete (повтор)"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-128",
-        "ru": "тектоническая плита",
-        "en": [
-          "tectonic plate"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-129",
-        "ru": "устойчивость",
-        "en": [
-          "sustainability"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-130",
-        "ru": "бороться с чем-либо",
-        "en": [
-          "to grapple with (sth)"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-131",
-        "ru": "велосипедная дорожка",
-        "en": [
-          "cycling lane"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-132",
-        "ru": "известность",
-        "en": [
-          "renown"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "известность",
-          "слава"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-133",
-        "ru": "сидячий образ жизни",
-        "en": [
-          "sedentary behavior"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-134",
-        "ru": "перенаселение",
-        "en": [
-          "overcrowding",
-          "overpopulation"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-135",
-        "ru": "токсин / яд",
-        "en": [
-          "toxin",
-          "venom"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-136",
-        "ru": "уносить",
-        "en": [
-          "to carry off"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "уносить",
-          "увлекать"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-137",
-        "ru": "оползень",
-        "en": [
-          "landslide"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-138",
-        "ru": "бесплодная земля",
-        "en": [
-          "barren land"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-139",
-        "ru": "закреплять",
-        "en": [
-          "to anchor"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "закреплять",
-          "ставить на якорь"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-140",
-        "ru": "лесовосстановление",
-        "en": [
-          "reforestation"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-141",
-        "ru": "впитывать",
-        "en": [
-          "to soak",
-          "absorb"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "впитывать",
-          "абсорбировать"
-        ]
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-142",
-        "ru": "хрящ",
-        "en": [
-          "cartilage"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-143",
-        "ru": "связка",
-        "en": [
-          "ligament"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-144",
-        "ru": "хищник",
-        "en": [
-          "predator"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm"
-      },
-      {
-        "id": "environmental-solutions-and-sustainable-developm-145",
-        "ru": "уничтожить",
-        "en": [
-          "to wipe out"
-        ],
-        "topic": "environmental-solutions-and-sustainable-developm",
-        "ruVariants": [
-          "уничтожить",
-          "стереть с лица земли"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "space-and-the-future-of-exploration-космос-и-буд",
-    "title": "Space and the future of exploration (Космос и будущее исследований)",
-    "words": [
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-146",
-        "ru": "свидетель",
-        "en": [
-          "witness"
+          "хотеть есть",
+          "быть голодным"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд",
-        "ruVariants": [
-          "свидетель",
-          "очевидец"
-        ]
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-147",
+        "id": "block-3-32",
         "ru": "хотя",
-        "en": [
-          "albeit",
-          "although"
+        "de": [
+          "obwohl"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд",
-        "ruVariants": [
-          "хотя",
-          "даже если"
-        ]
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-148",
-        "ru": "окаменелость",
-        "en": [
-          "fossil"
+        "id": "block-3-33",
+        "ru": "мюсли",
+        "de": [
+          "das Müsli, -"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-149",
-        "ru": "продолжительность жизни",
-        "en": [
-          "lifespan"
+        "id": "block-3-34",
+        "ru": "попытка, эксперимент",
+        "de": [
+          "der Versuch, -e"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-150",
-        "ru": "превосходить",
-        "en": [
-          "to transcend",
-          "surpass"
+        "id": "block-3-35",
+        "ru": "отказываться (от чего-л.)",
+        "de": [
+          "verzichten (auf)"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд",
-        "ruVariants": [
-          "превосходить",
-          "выходить за пределы"
-        ]
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-151",
-        "ru": "бедствие",
-        "en": [
-          "calamity"
+        "id": "block-3-36",
+        "ru": "на самом деле, действительно",
+        "de": [
+          "tatsächlich"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-152",
-        "ru": "подвиг",
-        "en": [
-          "feat"
+        "id": "block-3-37",
+        "ru": "обычно",
+        "de": [
+          "normalerweise"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-153",
-        "ru": "опосредованно (чувствовать через другого)",
-        "en": [
-          "vicariously"
+        "id": "block-3-38",
+        "ru": "дыня",
+        "de": [
+          "die Melone, -n"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-154",
-        "ru": "спутник",
-        "en": [
-          "satellite"
+        "id": "block-3-39",
+        "ru": "конец рабочего дня",
+        "de": [
+          "der Feierabend, -e"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-155",
-        "ru": "точно определять",
-        "en": [
-          "to pinpoint"
+        "id": "block-3-40",
+        "ru": "переживание, событие, впечатление",
+        "de": [
+          "das Erlebnis, -se"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-156",
-        "ru": "ураган",
-        "en": [
-          "hurricane"
+        "id": "block-3-41",
+        "ru": "группа",
+        "de": [
+          "die Gruppe, -n"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-157",
-        "ru": "очень редко",
-        "en": [
-          "once in a blue moon"
+        "id": "block-3-42",
+        "ru": "комментарий",
+        "de": [
+          "der Kommentar, -e"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-158",
-        "ru": "витать в облаках",
-        "en": [
-          "to be on another planet"
+        "id": "block-3-43",
+        "ru": "комментировать",
+        "de": [
+          "kommentieren"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-159",
-        "ru": "вернуться к реальности",
-        "en": [
-          "to come back down to earth"
+        "id": "block-3-44",
+        "ru": "сеть",
+        "de": [
+          "das Netzwerk, -e"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-160",
-        "ru": "под солнцем (на земле)",
-        "en": [
-          "under the sun"
+        "id": "block-3-45",
+        "ru": "социальный",
+        "de": [
+          "sozial"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-161",
-        "ru": "быть на седьмом небе",
-        "en": [
-          "to be over the moon"
+        "id": "block-3-46",
+        "ru": "Можно делиться фото в социальных сетях.",
+        "de": [
+          "Man kann Fotos in sozialen Netzwerken teilen."
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-162",
-        "ru": "нет предела",
-        "en": [
-          "the sky’s the limit"
+        "id": "block-3-47",
+        "ru": "качество",
+        "de": [
+          "die Qualität, -en"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-163",
-        "ru": "стремиться к недостижимому",
-        "en": [
-          "to reach for the stars"
+        "id": "block-3-48",
+        "ru": "реальность",
+        "de": [
+          "die Realität, -en"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-164",
-        "ru": "космический шаттл",
-        "en": [
-          "space shuttle"
+        "id": "block-3-49",
+        "ru": "владелец",
+        "de": [
+          "der Besitzer, -"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-165",
-        "ru": "космический аппарат",
-        "en": [
-          "spacecraft"
+        "id": "block-3-50",
+        "ru": "владелица",
+        "de": [
+          "die Besitzerin, -nen"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-166",
-        "ru": "содержание",
-        "en": [
-          "upkeep"
+        "id": "block-3-51",
+        "ru": "вводить",
+        "de": [
+          "eingeben (gibt ein, hat eingegeben)"
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд",
-        "ruVariants": [
-          "содержание",
-          "обслуживание"
-        ]
+        "topic": "block-3",
+        "oral": true
       },
       {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-167",
-        "ru": "вращать(ся)",
-        "en": [
-          "to rotate"
+        "id": "block-3-52",
+        "ru": "Нужно просто ввести «Берлин».",
+        "de": [
+          "Man muss nur „Berlin“ eingeben."
         ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-168",
-        "ru": "преследовать",
-        "en": [
-          "to pursue"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд",
-        "ruVariants": [
-          "преследовать",
-          "заниматься",
-          "стремиться"
-        ]
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-169",
-        "ru": "предполагать",
-        "en": [
-          "to assume"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд",
-        "ruVariants": [
-          "предполагать",
-          "допускать"
-        ]
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-170",
-        "ru": "марсиане",
-        "en": [
-          "Martians"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-171",
-        "ru": "передовые (прорывные) технологии",
-        "en": [
-          "groundbreaking technologies"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-172",
-        "ru": "давление окружающей среды",
-        "en": [
-          "ambient pressure"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-173",
-        "ru": "терраформировать",
-        "en": [
-          "terraform"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-174",
-        "ru": "непризнанный герой",
-        "en": [
-          "unsung hero"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
-      },
-      {
-        "id": "space-and-the-future-of-exploration-космос-и-буд-175",
-        "ru": "непреодолимый",
-        "en": [
-          "insurmountable",
-          "insuperable"
-        ],
-        "topic": "space-and-the-future-of-exploration-космос-и-буд"
+        "topic": "block-3",
+        "oral": true
       }
-    ]
+    ],
+    "oral": true
   },
   {
-    "id": "emotions-goals-and-habits-the-art-of-self-develo",
-    "title": "Emotions, Goals, and Habits. The Art of Self-Development (Эмоции, цели, привычки. Искусство саморазвития)",
+    "id": "block-4",
+    "title": "Блок 4",
     "words": [
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-176",
-        "ru": "измеритель",
-        "en": [
-          "gauge"
+        "id": "block-4-1",
+        "ru": "грядка",
+        "de": [
+          "das Beet, -e"
         ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo",
-        "ruVariants": [
-          "измеритель",
-          "оценивать"
-        ]
+        "topic": "block-4"
       },
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-177",
-        "ru": "ведение дневника",
-        "en": [
-          "journaling"
+        "id": "block-4-2",
+        "ru": "цвести",
+        "de": [
+          "blühen"
         ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
+        "topic": "block-4"
       },
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-178",
-        "ru": "поднимать",
-        "en": [
-          "to pick up"
+        "id": "block-4-3",
+        "ru": "земля, почва",
+        "de": [
+          "die Erde (Sg.)"
         ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo",
-        "ruVariants": [
-          "поднимать",
-          "усваивать",
-          "забирать"
-        ]
+        "topic": "block-4"
       },
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-179",
-        "ru": "взаимопонимание",
-        "en": [
-          "rapport"
+        "id": "block-4-4",
+        "ru": "собирать урожай",
+        "de": [
+          "ernten"
         ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
+        "topic": "block-4"
       },
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-180",
-        "ru": "самосознание",
-        "en": [
-          "self-awareness"
+        "id": "block-4-5",
+        "ru": "площадь, участок",
+        "de": [
+          "die Fläche, -n"
         ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
+        "topic": "block-4"
       },
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-181",
-        "ru": "эмпатия",
-        "en": [
-          "empathy"
+        "id": "block-4-6",
+        "ru": "держать, содержать (животных)",
+        "de": [
+          "(Tiere) halten (hält, hat gehalten)"
         ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
+        "topic": "block-4"
       },
       {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-182",
-        "ru": "техники дыхания",
-        "en": [
-          "breathing techniques"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-183",
-        "ru": "управлять эмоциями",
-        "en": [
-          "to handle emotions"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-184",
-        "ru": "эмоциональный интеллект",
-        "en": [
-          "emotional intelligence"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-185",
-        "ru": "справляться с чем-либо",
-        "en": [
-          "to cope with something"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-186",
-        "ru": "тревожность",
-        "en": [
-          "anxiety"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-187",
-        "ru": "реакция",
-        "en": [
-          "flight-fight-freeze response"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-188",
-        "ru": "постепенно исчезать",
-        "en": [
-          "to fade away"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-189",
-        "ru": "сдерживаемые чувства",
-        "en": [
-          "pent-up feelings"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-190",
-        "ru": "придерживаться регулярного графика",
-        "en": [
-          "to stick to a regular schedule"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-191",
-        "ru": "убегать",
-        "en": [
-          "to flee"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-192",
-        "ru": "мстить",
-        "en": [
-          "to take revenge"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-193",
-        "ru": "ворчливость",
-        "en": [
-          "grumpiness"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-194",
-        "ru": "сильное желание чего-либо",
-        "en": [
-          "craving for something"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-195",
-        "ru": "страстно желать",
-        "en": [
-          "to yearn"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-196",
-        "ru": "жажда чего-либо",
-        "en": [
-          "thirst for something"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-197",
-        "ru": "жаждать (чужое)",
-        "en": [
-          "to covet"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-198",
-        "ru": "разрядить (обстановку)",
-        "en": [
-          "to defuse"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-199",
-        "ru": "успокаивать",
-        "en": [
-          "to conciliate",
-          "placate",
-          "appease"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo",
-        "ruVariants": [
-          "успокаивать",
-          "умиротворять"
-        ]
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-200",
-        "ru": "непримиримая ненависть",
-        "en": [
-          "implacable hatred"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-201",
-        "ru": "быть полным жизнерадостности",
-        "en": [
-          "to be full of the joys of spring"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-202",
-        "ru": "чувствовать себя на вершине блаженства",
-        "en": [
-          "to feel on top of the world"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-203",
-        "ru": "очень обрадованный",
-        "en": [
-          "thrilled to bits"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-204",
-        "ru": "быть на седьмом небе",
-        "en": [
-          "to be walking",
-          "floating on air"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-205",
-        "ru": "безмятежно счастливый",
-        "en": [
-          "blissfully happy"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-206",
-        "ru": "ликующий (часто над чьим-то поражением)",
-        "en": [
-          "exultant",
-          "jubilant"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-207",
-        "ru": "стимул",
-        "en": [
-          "incentive"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-208",
-        "ru": "мотивировать",
-        "en": [
-          "to motivate"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-209",
-        "ru": "продвижение (по службе/товара)",
-        "en": [
-          "promotion"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo",
-        "ruVariants": [
-          "продвижение (по службе/товара)",
-          "акция"
-        ]
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-210",
-        "ru": "бросить все дела",
-        "en": [
-          "to drop everything"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-211",
-        "ru": "выполнять несколько дел одновременно",
-        "en": [
-          "to multitask"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-212",
-        "ru": "тот",
-        "en": [
-          "time waster"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo",
-        "ruVariants": [
-          "тот",
-          "кто отнимает время"
-        ]
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-213",
-        "ru": "список дел",
-        "en": [
-          "to-do list"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-214",
-        "ru": "увязнуть в чём-либо",
-        "en": [
-          "to be",
-          "get bogged down"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-215",
-        "ru": "управление временем",
-        "en": [
-          "time management"
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo"
-      },
-      {
-        "id": "emotions-goals-and-habits-the-art-of-self-develo-216",
-        "ru": "Никогда не откладывай на завтра то",
-        "en": [
-          "Never leave till tomorrow that which you can do today."
-        ],
-        "topic": "emotions-goals-and-habits-the-art-of-self-develo",
-        "ruVariants": [
-          "Никогда не откладывай на завтра то",
-          "что можно сделать сегодня."
-        ]
-      }
-    ]
-  },
-  {
-    "id": "worldview-culture-and-ethics-in-modern-society-м",
-    "title": "Worldview, culture and ethics in modern society (Мировоззрение, культура и этика в современном обществе)",
-    "words": [
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-217",
-        "ru": "тематическое исследование",
-        "en": [
-          "case study"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м",
-        "ruVariants": [
-          "тематическое исследование",
-          "кейс"
-        ]
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-218",
-        "ru": "оплакивать",
-        "en": [
-          "to mourn"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м",
-        "ruVariants": [
-          "оплакивать",
-          "скорбеть"
-        ]
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-219",
-        "ru": "веха",
-        "en": [
-          "milestone"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-220",
-        "ru": "сплочённость",
-        "en": [
-          "cohesion"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-221",
-        "ru": "добродетельный / праведный",
-        "en": [
-          "virtuous",
-          "righteous"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-222",
-        "ru": "иерархия",
-        "en": [
-          "hierarchy"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-223",
-        "ru": "включать",
-        "en": [
-          "to encompass",
-          "comprise"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м",
-        "ruVariants": [
-          "включать",
-          "охватывать"
-        ]
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-224",
-        "ru": "поклонение",
-        "en": [
-          "worship"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-225",
-        "ru": "потомок",
-        "en": [
-          "descendant",
-          "offspring"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-226",
-        "ru": "порабощать",
-        "en": [
-          "to enslave",
-          "subjugate"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-227",
-        "ru": "жертва / жертвоприношение",
-        "en": [
-          "sacrifice",
-          "immolation"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-228",
-        "ru": "нищий / бедняк",
-        "en": [
-          "beggar",
-          "pauper"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-229",
-        "ru": "подстрекатель",
-        "en": [
-          "rabble-rouser"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-230",
-        "ru": "изгой",
-        "en": [
-          "outcast"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-231",
-        "ru": "репетировать",
-        "en": [
-          "to rehearse"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-232",
-        "ru": "основа научного поиска",
-        "en": [
-          "the bedrock of scientific exploration"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-233",
-        "ru": "небесное тело",
-        "en": [
-          "celestial body"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-234",
-        "ru": "гипотеза",
-        "en": [
-          "hypothesis"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-235",
-        "ru": "размышлять",
-        "en": [
-          "to ponder",
-          "ruminate"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-236",
-        "ru": "предвещать",
-        "en": [
-          "to foreshadow"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-237",
-        "ru": "работать в тесном сотрудничестве",
-        "en": [
-          "to work hand in hand with"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-238",
-        "ru": "побуждать",
-        "en": [
-          "to prompt",
-          "spur"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-239",
-        "ru": "в чьём-либо стремлении к чему-либо",
-        "en": [
-          "in someone’s quest for something"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-240",
-        "ru": "сделать вывод",
-        "en": [
-          "to draw a",
-          "the conclusion"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-241",
-        "ru": "относиться скептически",
-        "en": [
-          "to take something with a pinch of salt"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-242",
-        "ru": "дать кому-либо возможность оправдаться",
-        "en": [
-          "to give someone the benefit of the doubt"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-243",
-        "ru": "правдоподобный ≠ неправдоподобный",
-        "en": [
-          "plausible ≠ implausible"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-244",
-        "ru": "легковерный",
-        "en": [
-          "gullible"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-245",
-        "ru": "приверженец",
-        "en": [
-          "adherent"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-246",
-        "ru": "оправданный",
-        "en": [
-          "justified"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-247",
-        "ru": "гражданское неповиновение",
-        "en": [
-          "civil disobedience"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-248",
-        "ru": "атеист",
-        "en": [
-          "atheist"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-249",
-        "ru": "придерживаться религиозных убеждений",
-        "en": [
-          "to hold religious beliefs"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-250",
-        "ru": "проведение опроса",
-        "en": [
-          "carrying out",
-          "conducting a poll"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-251",
-        "ru": "воскрешать",
-        "en": [
-          "to resurrect"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-252",
-        "ru": "христианство",
-        "en": [
-          "Christianity"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-253",
-        "ru": "Страстная неделя",
-        "en": [
-          "Holy Week"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-254",
-        "ru": "причастие",
-        "en": [
-          "communion"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-255",
-        "ru": "буддизм",
-        "en": [
-          "Buddhism"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-256",
-        "ru": "индуизм",
-        "en": [
-          "Hinduism"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-257",
-        "ru": "иудаизм",
-        "en": [
-          "Judaism"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      },
-      {
-        "id": "worldview-culture-and-ethics-in-modern-society-м-258",
-        "ru": "ислам",
-        "en": [
-          "Islam"
-        ],
-        "topic": "worldview-culture-and-ethics-in-modern-society-м"
-      }
-    ]
-  },
-  {
-    "id": "environmental-problems-and-challenges-экологичес",
-    "title": "Environmental problems and challenges (Экологические проблемы и вызовы)",
-    "words": [
-      {
-        "id": "environmental-problems-and-challenges-экологичес-259",
-        "ru": "виновник",
-        "en": [
-          "culprit"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-260",
-        "ru": "колебание температуры",
-        "en": [
-          "temperature fluctuation"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-261",
-        "ru": "озоновая дыра",
-        "en": [
-          "ozone hole"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-262",
-        "ru": "озоновый слой",
-        "en": [
-          "ozone layer"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-263",
-        "ru": "перенаселение",
-        "en": [
-          "overpopulation"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-264",
-        "ru": "вырубка лесов",
-        "en": [
-          "deforestation"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-265",
-        "ru": "бремя болезней",
-        "en": [
-          "disease burden"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-266",
-        "ru": "загрязнение",
-        "en": [
-          "pollution",
-          "contamination"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-267",
-        "ru": "загрязнять",
-        "en": [
-          "to pollute"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-268",
-        "ru": "глобальное потепление",
-        "en": [
-          "global warming"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-269",
-        "ru": "изменение климата",
-        "en": [
-          "climate change"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-270",
-        "ru": "биотический (связанный с живыми организмами)",
-        "en": [
-          "biotic"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-271",
+        "id": "block-4-7",
         "ru": "окружающая среда",
-        "en": [
-          "environment"
+        "de": [
+          "die Umwelt (Sg.)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-272",
-        "ru": "разрушение озонового слоя",
-        "en": [
-          "ozone depletion"
+        "id": "block-4-8",
+        "ru": "иначе, другой",
+        "de": [
+          "anders"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-273",
-        "ru": "см. 6",
-        "en": [
-          "deforestation (повтор)"
+        "id": "block-4-9",
+        "ru": "находиться",
+        "de": [
+          "sich befinden (hat sich befunden)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-274",
-        "ru": "парниковые газы",
-        "en": [
-          "greenhouse gases"
+        "id": "block-4-10",
+        "ru": "добровольный",
+        "de": [
+          "freiwillig"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-275",
-        "ru": "биоразнообразие",
-        "en": [
-          "biodiversity"
+        "id": "block-4-11",
+        "ru": "общественный сад",
+        "de": [
+          "der Gemeinschaftsgarten, -ä-"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-276",
-        "ru": "утилизация отходов",
-        "en": [
-          "waste disposal"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-277",
-        "ru": "кислотный дождь",
-        "en": [
-          "acid rain"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-278",
-        "ru": "абиотический (неживой)",
-        "en": [
-          "abiotic"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-279",
-        "ru": "разрушение среды обитания",
-        "en": [
-          "habitat destruction"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-280",
-        "ru": "массовое вымирание",
-        "en": [
-          "massive extinction"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-281",
-        "ru": "вид (биологический)",
-        "en": [
-          "species"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-282",
-        "ru": "смог",
-        "en": [
-          "smog"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-283",
-        "ru": "представлять (проблему)",
-        "en": [
-          "to pose",
-          "represent"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-284",
-        "ru": "лесной/природный пожар",
-        "en": [
-          "wildfire"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-285",
-        "ru": "углекислый газ",
-        "en": [
-          "carbon dioxide"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-286",
-        "ru": "удерживать",
-        "en": [
-          "to trap"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-287",
-        "ru": "наводнение",
-        "en": [
-          "flooding"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-288",
-        "ru": "раздражать",
-        "en": [
-          "to irritate"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-289",
-        "ru": "врождённый дефект",
-        "en": [
-          "birth defect"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-290",
-        "ru": "дыхательная недостаточность",
-        "en": [
-          "respiratory distress"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-291",
-        "ru": "загрязнение воздуха",
-        "en": [
-          "air pollution"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-292",
-        "ru": "ртуть",
-        "en": [
-          "mercury"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-293",
-        "ru": "свинец",
-        "en": [
-          "lead"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-294",
-        "ru": "бензол",
-        "en": [
-          "benzene"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-295",
-        "ru": "сжигание газа или угля",
-        "en": [
-          "gas or coal combustion"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-296",
-        "ru": "сжигание отходов",
-        "en": [
-          "waste incineration"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-297",
-        "ru": "сжигание бензина",
-        "en": [
-          "burning of gasoline"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-298",
-        "ru": "рак",
-        "en": [
-          "cancer"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-299",
-        "ru": "вводить в заблуждение",
-        "en": [
-          "to mislead",
-          "misguide",
-          "deceive"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-300",
-        "ru": "совместная поездка на автомобиле",
-        "en": [
-          "carpool"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-301",
-        "ru": "пищевая цепь",
-        "en": [
-          "food chain"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес"
-      },
-      {
-        "id": "environmental-problems-and-challenges-экологичес-302",
-        "ru": "распад",
-        "en": [
-          "breakdown"
-        ],
-        "topic": "environmental-problems-and-challenges-экологичес",
+        "topic": "block-4",
         "ruVariants": [
-          "распад",
-          "разрушение"
+          "общественный сад",
+          "огород"
         ]
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-303",
-        "ru": "кислород",
-        "en": [
-          "oxygen"
+        "id": "block-4-12",
+        "ru": "большой город",
+        "de": [
+          "die Großstadt, -ä-e"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-304",
-        "ru": "потреблять",
-        "en": [
-          "to consume"
+        "id": "block-4-13",
+        "ru": "мёд",
+        "de": [
+          "der Honig (Sg.)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-305",
-        "ru": "выхлопные газы автомобиля",
-        "en": [
-          "car exhaust"
+        "id": "block-4-14",
+        "ru": "посреди ...",
+        "de": [
+          "mitten in ..."
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-306",
-        "ru": "растворитель",
-        "en": [
-          "solvent"
+        "id": "block-4-15",
+        "ru": "Сад находится в центре города.",
+        "de": [
+          "Der Garten ist mitten in der Stadt."
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-307",
-        "ru": "вырубать (деревья)",
-        "en": [
-          "to cut down",
-          "fell",
-          "chop down"
+        "id": "block-4-16",
+        "ru": "ухаживать",
+        "de": [
+          "pflegen"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-308",
-        "ru": "выброс",
-        "en": [
-          "emission"
+        "id": "block-4-17",
+        "ru": "движение, транспорт",
+        "de": [
+          "der Verkehr (Sg.)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-309",
-        "ru": "ледник",
-        "en": [
-          "glacier"
+        "id": "block-4-18",
+        "ru": "жара",
+        "de": [
+          "die Hitze (Sg.)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-310",
-        "ru": "взлететь до небес (о ценах и т.п.)",
-        "en": [
-          "to skyrocket"
+        "id": "block-4-19",
+        "ru": "климат",
+        "de": [
+          "das Klima (Sg.)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-311",
-        "ru": "нефть",
-        "en": [
-          "oil"
+        "id": "block-4-20",
+        "ru": "ландшафт",
+        "de": [
+          "die Landschaft, -en"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес",
-        "ruVariants": [
-          "нефть",
-          "масло"
-        ]
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-312",
-        "ru": "водяной пар",
-        "en": [
-          "water vapor"
+        "id": "block-4-21",
+        "ru": "температура",
+        "de": [
+          "die Temperatur, -en"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-313",
-        "ru": "ископаемое топливо",
-        "en": [
-          "fossil fuels"
+        "id": "block-4-22",
+        "ru": "опускаться, падать (уровень)",
+        "de": [
+          "sinken (ist gesunken)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-314",
-        "ru": "слизь",
-        "en": [
-          "mucus"
+        "id": "block-4-23",
+        "ru": "подниматься, расти",
+        "de": [
+          "steigen (ist gestiegen)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-315",
-        "ru": "медуза",
-        "en": [
-          "jellyfish"
+        "id": "block-4-24",
+        "ru": "брать с собой",
+        "de": [
+          "mitnehmen (nimmt mit, hat mitgenommen)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-316",
-        "ru": "три (сокращение потребления, повторное использование, переработка)",
-        "en": [
-          "the 3R’s (reduce, reuse, and recycle)"
+        "id": "block-4-25",
+        "ru": "мёрзнуть",
+        "de": [
+          "frieren (hat gefroren)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-317",
-        "ru": "радиоактивные осадки",
-        "en": [
-          "fallout"
+        "id": "block-4-26",
+        "ru": "область, территория",
+        "de": [
+          "das Gebiet, -e"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-318",
-        "ru": "облучать",
-        "en": [
-          "to irradiate"
+        "id": "block-4-27",
+        "ru": "десятилетие",
+        "de": [
+          "das Jahrzehnt, -e"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-319",
-        "ru": "загрязнение почвы",
-        "en": [
-          "soil contamination"
+        "id": "block-4-28",
+        "ru": "экономика",
+        "de": [
+          "die Wirtschaft (Sg.)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-320",
-        "ru": "деградация",
-        "en": [
-          "degradation"
+        "id": "block-4-29",
+        "ru": "сельское хозяйство",
+        "de": [
+          "die Landwirtschaft, -en"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-321",
-        "ru": "кишечник",
-        "en": [
-          "gut"
+        "id": "block-4-30",
+        "ru": "недостаток, нехватка",
+        "de": [
+          "der Mangel, -ä-"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес",
-        "ruVariants": [
-          "кишечник",
-          "внутренности"
-        ]
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-322",
-        "ru": "морское дно",
-        "en": [
-          "seafloor"
+        "id": "block-4-31",
+        "ru": "виноват (быть)",
+        "de": [
+          "schuld (sein)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-323",
-        "ru": "накапливать(ся)",
-        "en": [
-          "to accumulate"
+        "id": "block-4-32",
+        "ru": "Я (не) виноват.",
+        "de": [
+          "Ich bin (nicht) schuld."
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-324",
-        "ru": "бутылка для воды",
-        "en": [
-          "water bottle"
+        "id": "block-4-33",
+        "ru": "причина",
+        "de": [
+          "die Ursache, -n"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-325",
-        "ru": "защитная каска",
-        "en": [
-          "hard hat"
+        "id": "block-4-34",
+        "ru": "меняться",
+        "de": [
+          "(sich) verändern"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-326",
-        "ru": "крышка от бутылки",
-        "en": [
-          "bottle cap"
+        "id": "block-4-35",
+        "ru": "шторм, буря",
+        "de": [
+          "der Sturm, -ü-e"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-327",
-        "ru": "корзина для белья",
-        "en": [
-          "laundry basket"
+        "id": "block-4-36",
+        "ru": "отменяться",
+        "de": [
+          "ausfallen (fällt aus, ist ausgefallen)"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-328",
-        "ru": "сточные воды",
-        "en": [
-          "sewage",
-          "wastewater"
+        "id": "block-4-37",
+        "ru": "повреждать",
+        "de": [
+          "beschädigen"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-329",
-        "ru": "свалка",
-        "en": [
-          "landfill",
-          "dump"
+        "id": "block-4-38",
+        "ru": "бургомистр, мэр",
+        "de": [
+          "der Bürgermeister, -"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-330",
-        "ru": "мусор",
-        "en": [
-          "garbage",
-          "rubbish",
-          "litter"
+        "id": "block-4-39",
+        "ru": "мэр (женщина)",
+        "de": [
+          "die Bürgermeisterin, -nen"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
       },
       {
-        "id": "environmental-problems-and-challenges-экологичес-331",
-        "ru": "выбрасывать что-либо / избавляться от чего-либо",
-        "en": [
-          "throw away something",
-          "get rid of something"
+        "id": "block-4-40",
+        "ru": "свободный от школы (выходной)",
+        "de": [
+          "schulfrei"
         ],
-        "topic": "environmental-problems-and-challenges-экологичес"
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-41",
+        "ru": "получить выходной в школе",
+        "de": [
+          "schulfrei bekommen"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-42",
+        "ru": "сообщать, докладывать",
+        "de": [
+          "melden"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-43",
+        "ru": "центр города",
+        "de": [
+          "die Innenstadt, -ä-e"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-44",
+        "ru": "частично",
+        "de": [
+          "teilweise"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-45",
+        "ru": "туризм",
+        "de": [
+          "der Tourismus (Sg.)"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-46",
+        "ru": "предупреждать о",
+        "de": [
+          "warnen vor"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-47",
+        "ru": "Метеослужба предупреждает о грозах.",
+        "de": [
+          "Der Wetterdienst warnt vor Gewittern."
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-48",
+        "ru": "вегетарианец",
+        "de": [
+          "der Vegetarier, -"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-49",
+        "ru": "вегетарианка",
+        "de": [
+          "die Vegetarierin, -nen"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-50",
+        "ru": "нарастать, увеличиваться",
+        "de": [
+          "zunehmen (nimmt zu, hat zugenommen)"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-51",
+        "ru": "подготовка",
+        "de": [
+          "die Vorbereitung, -en"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-52",
+        "ru": "грязный",
+        "de": [
+          "schmutzig"
+        ],
+        "topic": "block-4"
+      },
+      {
+        "id": "block-4-53",
+        "ru": "диета",
+        "de": [
+          "die Diät, -en"
+        ],
+        "topic": "block-4"
       }
     ]
   },
   {
-    "id": "digital-technologies-automation-and-security-циф",
-    "title": "Digital technologies, automation and security (Цифровые технологии, автоматизация и безопасность)",
+    "id": "block-5",
+    "title": "Блок 5 · устное 4/8",
     "words": [
       {
-        "id": "digital-technologies-automation-and-security-циф-332",
-        "ru": "шлем виртуальной реальности",
-        "en": [
-          "virtual reality headset"
+        "id": "block-5-1",
+        "ru": "(вероятно, Kfz-Mechatroniker) – автомехатроник",
+        "de": [
+          "der Kfz-Mechatrgniker, -"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-333",
-        "ru": "виртуальная реальность",
-        "en": [
-          "virtual reality"
+        "id": "block-5-2",
+        "ru": "автомехатроник (жен.)",
+        "de": [
+          "die Kfz-Mechatrgnikerin, -nen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-334",
-        "ru": "головокружение",
-        "en": [
-          "vertigo",
-          "dizziness"
+        "id": "block-5-3",
+        "ru": "обслуживать, управлять (техникой)",
+        "de": [
+          "bedienen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-335",
-        "ru": "чувство тошноты",
-        "en": [
-          "queasy feeling"
+        "id": "block-5-4",
+        "ru": "выполнять, делать",
+        "de": [
+          "erledigen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-336",
-        "ru": "сократить",
-        "en": [
-          "to cut sth down"
+        "id": "block-5-5",
+        "ru": "фабрика, завод",
+        "de": [
+          "die Fabrik, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф",
-        "ruVariants": [
-          "сократить",
-          "уменьшить",
-          "срубить"
-        ]
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-337",
-        "ru": "сварка",
-        "en": [
-          "welding"
+        "id": "block-5-6",
+        "ru": "парикмахер",
+        "de": [
+          "der Friseur, -e"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-338",
-        "ru": "коллега",
-        "en": [
-          "co-worker",
-          "colleague"
+        "id": "block-5-7",
+        "ru": "парикмахерша",
+        "de": [
+          "die Friseurin, -nen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-339",
-        "ru": "прорыв",
-        "en": [
-          "breakthrough"
+        "id": "block-5-8",
+        "ru": "ремесленник, мастер",
+        "de": [
+          "der Handwerker, -"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-340",
-        "ru": "догонять",
-        "en": [
-          "to catch up"
+        "id": "block-5-9",
+        "ru": "ремесленница",
+        "de": [
+          "die Handwerkerin, -nen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф",
-        "ruVariants": [
-          "догонять",
-          "наверстывать"
-        ]
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-341",
-        "ru": "беспилотный автомобиль",
-        "en": [
-          "self-driving car"
+        "id": "block-5-10",
+        "ru": "мотор, двигатель",
+        "de": [
+          "der Motor, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-342",
-        "ru": "освобождать",
-        "en": [
-          "to free up",
-          "liberate"
+        "id": "block-5-11",
+        "ru": "полицейский",
+        "de": [
+          "der Polizist, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-343",
-        "ru": "искусственный интеллект",
-        "en": [
-          "artificial intelligence (AI)"
+        "id": "block-5-12",
+        "ru": "полицейская",
+        "de": [
+          "die Polizistin, -nen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-344",
-        "ru": "точность",
-        "en": [
-          "precision"
+        "id": "block-5-13",
+        "ru": "проверять",
+        "de": [
+          "prüfen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-345",
-        "ru": "рабочая сила",
-        "en": [
-          "workforce"
+        "id": "block-5-14",
+        "ru": "сверхурочный час",
+        "de": [
+          "die Überstunde, -n"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-346",
-        "ru": "взаимодействие один на один",
-        "en": [
-          "one-on-one interaction"
+        "id": "block-5-15",
+        "ru": "работать сверхурочно",
+        "de": [
+          "Überstunden machen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-347",
-        "ru": "критическое мышление",
-        "en": [
-          "critical thinking"
+        "id": "block-5-16",
+        "ru": "принимать (предложение)",
+        "de": [
+          "annehmen (nimmt an, hat angenommen)"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-348",
-        "ru": "модное словечко",
-        "en": [
-          "buzzword",
-          "catchword"
+        "id": "block-5-17",
+        "ru": "насилие, власть",
+        "de": [
+          "die Gewalt (Sg.)"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-349",
-        "ru": "управление твёрдыми отходами",
-        "en": [
-          "solid waste management"
+        "id": "block-5-18",
+        "ru": "применять",
+        "de": [
+          "anwenden (hat angewendet/angewandt)"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-350",
-        "ru": "бордюр",
-        "en": [
-          "street curb"
+        "id": "block-5-19",
+        "ru": "условия труда",
+        "de": [
+          "die Arbeitsbedingungen, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф",
-        "ruVariants": [
-          "бордюр",
-          "обочина"
-        ]
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-351",
-        "ru": "парковочное место",
-        "en": [
-          "parking spot"
+        "id": "block-5-20",
+        "ru": "условия",
+        "de": [
+          "die Bedingungen, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-352",
-        "ru": "тусклый",
-        "en": [
-          "dim"
+        "id": "block-5-21",
+        "ru": "ученик, стажёр (проходящий обучение)",
+        "de": [
+          "der Auszubildende, -n"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-353",
-        "ru": "запускать (продукт)",
-        "en": [
-          "to roll out"
+        "id": "block-5-22",
+        "ru": "ученица, стажёрка",
+        "de": [
+          "die Auszubildende, -n"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-354",
-        "ru": "рабочий процесс",
-        "en": [
-          "workflow"
+        "id": "block-5-23",
+        "ru": "хорошо ладить, понимать друг друга",
+        "de": [
+          "sich gut verstehen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-355",
-        "ru": "без использования рук (громкая связь и т.п.)",
-        "en": [
-          "hands-free"
+        "id": "block-5-24",
+        "ru": "физический",
+        "de": [
+          "körperlich"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-356",
-        "ru": "настольный компьютер",
-        "en": [
-          "desktop"
+        "id": "block-5-25",
+        "ru": "заработная плата (рабочих)",
+        "de": [
+          "der Lohn, -ö-e"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-357",
-        "ru": "сенсорный экран",
-        "en": [
-          "touchscreen"
+        "id": "block-5-26",
+        "ru": "ругаться, ворчать",
+        "de": [
+          "schimpfen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-358",
-        "ru": "интерактивный плоский телевизор",
-        "en": [
-          "interactive flat-screen TV"
+        "id": "block-5-27",
+        "ru": "специалист",
+        "de": [
+          "der Spezialist, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-359",
-        "ru": "компьютерный гик",
-        "en": [
-          "computer nerd"
+        "id": "block-5-28",
+        "ru": "специалистка",
+        "de": [
+          "die Spezialistin, -nen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-360",
-        "ru": "миниатюра (изображения)",
-        "en": [
-          "thumbnail"
+        "id": "block-5-29",
+        "ru": "постоянно",
+        "de": [
+          "ständig"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-361",
-        "ru": "хранитель экрана",
-        "en": [
-          "screensaver"
+        "id": "block-5-30",
+        "ru": "за углом",
+        "de": [
+          "um die Ecke"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-362",
-        "ru": "лапароскопическая хирургия",
-        "en": [
-          "keyhole surgery"
+        "id": "block-5-31",
+        "ru": "Магазин за углом.",
+        "de": [
+          "Der Laden ist um die Ecke."
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-363",
-        "ru": "сценарий Судного дня",
-        "en": [
-          "doomsday scenario"
+        "id": "block-5-32",
+        "ru": "ответственность",
+        "de": [
+          "die Verantwortung (Sg.)"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-364",
-        "ru": "судьба",
-        "en": [
-          "destiny",
-          "fate"
+        "id": "block-5-33",
+        "ru": "контроль",
+        "de": [
+          "die Kontrolle, -n"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-365",
-        "ru": "предвидеть",
-        "en": [
-          "to envisage",
-          "foresee"
+        "id": "block-5-34",
+        "ru": "открывать",
+        "de": [
+          "eröffnen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-366",
-        "ru": "взрывной рост населения",
-        "en": [
-          "population explosion"
+        "id": "block-5-35",
+        "ru": "самостоятельный",
+        "de": [
+          "selbstständig"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-367",
-        "ru": "искоренять",
-        "en": [
-          "to eradicate"
+        "id": "block-5-36",
+        "ru": "стать самостоятельным, открыть своё дело",
+        "de": [
+          "sich selbstständig machen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-368",
-        "ru": "технофил",
-        "en": [
-          "technophile"
+        "id": "block-5-37",
+        "ru": "обезьяна",
+        "de": [
+          "der Affe, -n"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-369",
-        "ru": "технофоб",
-        "en": [
-          "technophobe"
+        "id": "block-5-38",
+        "ru": "слон",
+        "de": [
+          "der Elefant, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-370",
-        "ru": "ожидаемая продолжительность жизни",
-        "en": [
-          "life expectancy"
+        "id": "block-5-39",
+        "ru": "лев",
+        "de": [
+          "der Löwe, -n"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-371",
-        "ru": "беспроводной",
-        "en": [
-          "wireless"
+        "id": "block-5-40",
+        "ru": "проспект, брошюра, рекламный буклет",
+        "de": [
+          "der Prospekt, -e"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-372",
-        "ru": "спасательная миссия",
-        "en": [
-          "rescue mission"
+        "id": "block-5-41",
+        "ru": "упражнение",
+        "de": [
+          "die Übung, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-373",
-        "ru": "злоумышленник (в кибербезопасности)",
-        "en": [
-          "malicious actor"
+        "id": "block-5-42",
+        "ru": "однако, впрочем",
+        "de": [
+          "allerdings"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-374",
-        "ru": "кибербезопасность",
-        "en": [
-          "cybersecurity"
+        "id": "block-5-43",
+        "ru": "стучать",
+        "de": [
+          "klopfen"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-375",
-        "ru": "сталкиваться",
-        "en": [
-          "to encounter"
+        "id": "block-5-44",
+        "ru": "вид, способ, манера",
+        "de": [
+          "die Art, -en"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-376",
-        "ru": "войти в систему",
-        "en": [
-          "to log on"
+        "id": "block-5-45",
+        "ru": "сдаваться, отказываться; задавать (уроки)",
+        "de": [
+          "aufgeben (gibt auf, hat aufgegeben)"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-377",
-        "ru": "взломать",
-        "en": [
-          "to crack into"
+        "id": "block-5-46",
+        "ru": "восхищённый, восторженный",
+        "de": [
+          "begeistert"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-378",
-        "ru": "кибератака",
-        "en": [
-          "cyberattack"
+        "id": "block-5-47",
+        "ru": "бестселлер",
+        "de": [
+          "der Bestseller, -"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-379",
-        "ru": "укреплять",
-        "en": [
-          "to fortify"
+        "id": "block-5-48",
+        "ru": "настольная игра",
+        "de": [
+          "das Brettspiel, -e"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
       },
       {
-        "id": "digital-technologies-automation-and-security-циф-380",
-        "ru": "защита персональных данных",
-        "en": [
-          "personal data protection"
+        "id": "block-5-49",
+        "ru": "экспорт",
+        "de": [
+          "der Export, -e"
         ],
-        "topic": "digital-technologies-automation-and-security-циф"
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-50",
+        "ru": "противник, оппонент",
+        "de": [
+          "der Gegner, -"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-51",
+        "ru": "противница",
+        "de": [
+          "die Gegnerin, -nen"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-52",
+        "ru": "торговать (чем-л.), действовать",
+        "de": [
+          "handeln (mit)"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-53",
+        "ru": "интерес",
+        "de": [
+          "das Interesse, -n"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-54",
+        "ru": "роман",
+        "de": [
+          "der Roman, -e"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-55",
+        "ru": "технология",
+        "de": [
+          "die Technologie, -n"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-56",
+        "ru": "шерсть",
+        "de": [
+          "die Wolle (Sg.)"
+        ],
+        "topic": "block-5",
+        "oral": true
+      },
+      {
+        "id": "block-5-57",
+        "ru": "сотрудничество",
+        "de": [
+          "die Zusammenarbeit (Sg.)"
+        ],
+        "topic": "block-5",
+        "oral": true
+      }
+    ],
+    "oral": true
+  },
+  {
+    "id": "block-6",
+    "title": "Блок 6",
+    "words": [
+      {
+        "id": "block-6-1",
+        "ru": "прослушивать (грудь)",
+        "de": [
+          "(die Brust) abhören"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-2",
+        "ru": "накладывать (повязку)",
+        "de": [
+          "(einen Verband) anlegen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-3",
+        "ru": "дышать",
+        "de": [
+          "atmen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-4",
+        "ru": "снимать (фильм), записывать; принимать",
+        "de": [
+          "aufnehmen (nimmt auf, hat aufgenommen)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-5",
+        "ru": "ломать (кость)",
+        "de": [
+          "brechen (bricht, hat gebrochen)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-6",
+        "ru": "делать прививку",
+        "de": [
+          "impfen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-7",
+        "ru": "кость",
+        "de": [
+          "der Knochen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-8",
+        "ru": "измерять",
+        "de": [
+          "messen (misst, hat gemessen)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-9",
+        "ru": "измерять температуру",
+        "de": [
+          "Fieber messen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-10",
+        "ru": "оперировать",
+        "de": [
+          "operieren"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-11",
+        "ru": "шприц; укол",
+        "de": [
+          "die Spritze, -n"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-12",
+        "ru": "осматривать, исследовать",
+        "de": [
+          "untersuchen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-13",
+        "ru": "повязка",
+        "de": [
+          "der Verband, -ä-e"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-14",
+        "ru": "лаборатория",
+        "de": [
+          "das Labor, -e"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-15",
+        "ru": "ортопедия",
+        "de": [
+          "die Orthopädie, -"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-16",
+        "ru": "операционная",
+        "de": [
+          "der Operationssaal, -säle"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-17",
+        "ru": "лечить",
+        "de": [
+          "behandeln"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-18",
+        "ru": "соблюдать, обращать внимание",
+        "de": [
+          "beachten"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-19",
+        "ru": "документ",
+        "de": [
+          "das Dokument, -e"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-20",
+        "ru": "упаковывать",
+        "de": [
+          "einpacken"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-21",
+        "ru": "гигиена",
+        "de": [
+          "die Hygiene (Sg.)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-22",
+        "ru": "скука",
+        "de": [
+          "die Langeweile (Sg.)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-23",
+        "ru": "натощак",
+        "de": [
+          "nüchtern"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-24",
+        "ru": "операционная; операция",
+        "de": [
+          "die OP, -s"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-25",
+        "ru": "правило",
+        "de": [
+          "die Regel, -n"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-26",
+        "ru": "улучшаться",
+        "de": [
+          "(sich) verbessern"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-27",
+        "ru": "зубная щётка",
+        "de": [
+          "die Zahnbürste, -n"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-28",
+        "ru": "зубная паста",
+        "de": [
+          "die Zahnpasta, -s"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-29",
+        "ru": "позволять, оставлять",
+        "de": [
+          "lassen (lässt, hat gelassen)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-30",
+        "ru": "намазывать; отменять; красить",
+        "de": [
+          "streichen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-31",
+        "ru": "чистить",
+        "de": [
+          "reinigen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-32",
+        "ru": "шить; зашивать (рану)",
+        "de": [
+          "nähen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-33",
+        "ru": "прощание",
+        "de": [
+          "der Abschied, -e"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-34",
+        "ru": "поднимать; сохранять",
+        "de": [
+          "aufheben (hat aufgehoben)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-35",
+        "ru": "вырастать",
+        "de": [
+          "aufwachsen (wächst auf, ist aufgewachsen)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-36",
+        "ru": "с ограниченными возможностями; инвалид",
+        "de": [
+          "behindert"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-37",
+        "ru": "инвалидность, ограничение",
+        "de": [
+          "die Behinderung, -en"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-38",
+        "ru": "уже",
+        "de": [
+          "bereits"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-39",
+        "ru": "опыт",
+        "de": [
+          "die Erfahrung, -en"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-40",
+        "ru": "воспитывать",
+        "de": [
+          "erziehen (hat erzogen)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-41",
+        "ru": "следовать",
+        "de": [
+          "folgen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-42",
+        "ru": "предмет, объект",
+        "de": [
+          "der Gegenstand, -ä-e"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-43",
+        "ru": "интеграция",
+        "de": [
+          "die Integration (Sg.)"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-44",
+        "ru": "интегрироваться",
+        "de": [
+          "(sich) integrieren"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-45",
+        "ru": "пожилой человек",
+        "de": [
+          "der Senior, -en"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-46",
+        "ru": "пожилая женщина",
+        "de": [
+          "die Seniorin, -nen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-47",
+        "ru": "гордый",
+        "de": [
+          "stolz"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-48",
+        "ru": "терапия",
+        "de": [
+          "die Therapie, -n"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-49",
+        "ru": "дополнительный",
+        "de": [
+          "zusätzlich"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-50",
+        "ru": "стихийное бедствие",
+        "de": [
+          "die Naturkatastrophe, -n"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-51",
+        "ru": "заботиться о",
+        "de": [
+          "sorgen für"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-52",
+        "ru": "утилизировать, выбрасывать",
+        "de": [
+          "entsorgen"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-53",
+        "ru": "спасать",
+        "de": [
+          "retten"
+        ],
+        "topic": "block-6"
+      },
+      {
+        "id": "block-6-54",
+        "ru": "регистрировать, записывать",
+        "de": [
+          "anmelden"
+        ],
+        "topic": "block-6"
       }
     ]
+  },
+  {
+    "id": "block-7",
+    "title": "Блок 7 · устное",
+    "words": [
+      {
+        "id": "block-7-1",
+        "ru": "рубрика «Разное» (в газете)",
+        "de": [
+          "das Vermischte (Sg.) / Vermischtes"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-2",
+        "ru": "местные новости",
+        "de": [
+          "das Lokale (Sg.) / Lokales"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-3",
+        "ru": "оскорблять",
+        "de": [
+          "beleidigen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-4",
+        "ru": "ссора, спор",
+        "de": [
+          "der Streit, -s"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-5",
+        "ru": "чистить зубы",
+        "de": [
+          "die Zähne putzen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-6",
+        "ru": "Я чищу зубы.",
+        "de": [
+          "Ich putze meine Zähne."
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-7",
+        "ru": "федеральный канцлер (Германии)",
+        "de": [
+          "der Bundeskanzler, -"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-8",
+        "ru": "федеральный канцлер (жен.)",
+        "de": [
+          "die Bundeskanzlerin, -nen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-9",
+        "ru": "закусочная, снек-бар",
+        "de": [
+          "der Imbiss, -e"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-10",
+        "ru": "всего, в общей сложности",
+        "de": [
+          "insgesamt"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-11",
+        "ru": "сообщать, извещать",
+        "de": [
+          "mitteilen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-12",
+        "ru": "полиция",
+        "de": [
+          "die Polizei (Sg.)"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-13",
+        "ru": "звать, кричать",
+        "de": [
+          "rufen (rief, hat gerufen)"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-14",
+        "ru": "вызвать полицию",
+        "de": [
+          "die Polizei rufen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-15",
+        "ru": "рекорд",
+        "de": [
+          "der Rekord, -e"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-16",
+        "ru": "справляться, суметь (сделать); создавать",
+        "de": [
+          "schaffen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-17",
+        "ru": "стартовать, начинать",
+        "de": [
+          "starten"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-18",
+        "ru": "маршрут, дистанция",
+        "de": [
+          "die Strecke, -n"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-19",
+        "ru": "чаевые",
+        "de": [
+          "das Trinkgeld (Sg.)"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-20",
+        "ru": "Она дала 50 центов чаевых.",
+        "de": [
+          "Sie gab 50 Cent Trinkgeld."
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-21",
+        "ru": "пропускать, упускать",
+        "de": [
+          "verpassen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-22",
+        "ru": "Он, к сожалению, пропустил рекорд.",
+        "de": [
+          "Er hat den Rekord leider verpasst."
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-23",
+        "ru": "статья (в газете)(",
+        "de": [
+          "der Artikel, -"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-24",
+        "ru": "вызывать полицию",
+        "de": [
+          "die Polizei) alarmieren"
+        ],
+        "topic": "block-7",
+        "ruVariants": [
+          "вызывать полицию",
+          "тревогу"
+        ],
+        "oral": true
+      },
+      {
+        "id": "block-7-25",
+        "ru": "ликовать, радоваться",
+        "de": [
+          "jubeln"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-26",
+        "ru": "экран (в кинотеатре), полотно",
+        "de": [
+          "die Leinwand, ä-e"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-27",
+        "ru": "витрина",
+        "de": [
+          "das Schaufenster, -"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-28",
+        "ru": "чемпионат мира",
+        "de": [
+          "die Weltmeisterschaft, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-29",
+        "ru": "обниматься",
+        "de": [
+          "sich umarmen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-30",
+        "ru": "стрелять; бить (по воротам)",
+        "de": [
+          "schießen (schoss, hat geschossen)"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-31",
+        "ru": "ворота; гол",
+        "de": [
+          "das Tor, -e"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-32",
+        "ru": "забить гол",
+        "de": [
+          "ein Tor schießen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-33",
+        "ru": "настроение, атмосфера",
+        "de": [
+          "die Stimmung, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-34",
+        "ru": "Атмосфера на общественном просмотре отличная.",
+        "de": [
+          "Die Stimmung beim Public Viewing ist toll."
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-35",
+        "ru": "прежде чем",
+        "de": [
+          "bevor"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-36",
+        "ru": "финал",
+        "de": [
+          "das Finale, -"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-37",
+        "ru": "с тех пор, с тех пор как",
+        "de": [
+          "seit / seitdem"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-38",
+        "ru": "так называемый",
+        "de": [
+          "sogenannt (sog.)"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-39",
+        "ru": "Так называемый общественный просмотр — любимое хобби немцев.",
+        "de": [
+          "Das sogenannte Public Viewing ist ein Lieblingshobby von den Deutschen."
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-40",
+        "ru": "восторг, энтузиазм",
+        "de": [
+          "die Begeisterung (Sg.)"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-41",
+        "ru": "событие",
+        "de": [
+          "das Ereignis, -se"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-42",
+        "ru": "царить, господствовать",
+        "de": [
+          "herrschen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-43",
+        "ru": "На стадионе царила очень хорошая атмосфера.",
+        "de": [
+          "Im Stadion herrschte eine sehr gute Stimmung."
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-44",
+        "ru": "психолог",
+        "de": [
+          "der Psychologe, -n"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-45",
+        "ru": "психолог (жен.)",
+        "de": [
+          "die Psychologin, -nen"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-46",
+        "ru": "команда",
+        "de": [
+          "die Mannschaft, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-47",
+        "ru": "мероприятие",
+        "de": [
+          "die Veranstaltung, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-48",
+        "ru": "статистика",
+        "de": [
+          "die Statistik, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-49",
+        "ru": "половина",
+        "de": [
+          "die Hälfte, -n"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-50",
+        "ru": "четверть",
+        "de": [
+          "das Viertel, -"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-51",
+        "ru": "треть",
+        "de": [
+          "das Drittel, -"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-52",
+        "ru": "сообщение о дорожной ситуации",
+        "de": [
+          "die Verkehrsmeldung, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-53",
+        "ru": "сообщение",
+        "de": [
+          "die Meldung, -en"
+        ],
+        "topic": "block-7",
+        "oral": true
+      },
+      {
+        "id": "block-7-54",
+        "ru": "прогноз погоды",
+        "de": [
+          "der Wetterbericht, -e"
+        ],
+        "topic": "block-7",
+        "oral": true
+      }
+    ],
+    "oral": true
+  },
+  {
+    "id": "block-8",
+    "title": "Блок 8 · устное 5/8",
+    "words": [
+      {
+        "id": "block-8-1",
+        "ru": "Европейский Союз",
+        "de": [
+          "die Europäische Union (EU) (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-2",
+        "ru": "не только …, но и …",
+        "de": [
+          "nicht nur ..., sondern auch"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-3",
+        "ru": "финансы",
+        "de": [
+          "die Finanzen (Pl.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-4",
+        "ru": "а (но)",
+        "de": [
+          "sondern"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-5",
+        "ru": "область, сфера",
+        "de": [
+          "der Bereich, -e"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-6",
+        "ru": "Она живёт не в Вене, а в Граце.",
+        "de": [
+          "Sie wohnt nicht in Wien, sondern in Graz."
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-7",
+        "ru": "наука",
+        "de": [
+          "die Wissenschaft, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-8",
+        "ru": "валюта",
+        "de": [
+          "die Währung, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-9",
+        "ru": "как …, так и",
+        "de": [
+          "sowohl ... als auch"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-10",
+        "ru": "вводить",
+        "de": [
+          "einführen"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-11",
+        "ru": "бежать, спасаться бегством2002",
+        "de": [
+          "fliehen (floh, ist geflohen)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-12",
+        "ru": "В 2002 году 19 стран ввели евро.",
+        "de": [
+          "haben 19 Länder den Euro eingeführt."
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-13",
+        "ru": "поддерживать",
+        "de": [
+          "unterstützen"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-14",
+        "ru": "пребывание, проживание",
+        "de": [
+          "der Aufenthalt, -e"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-15",
+        "ru": "мобильность",
+        "de": [
+          "die Mobilität (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-16",
+        "ru": "возвращение",
+        "de": [
+          "die Rückkehr (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-17",
+        "ru": "во время",
+        "de": [
+          "während"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-18",
+        "ru": "ограниченный по времени",
+        "de": [
+          "befristet"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-19",
+        "ru": "страховать; уверять",
+        "de": [
+          "versichern"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-20",
+        "ru": "Рабочее место ограничено по времени (по срочному договору).",
+        "de": [
+          "Die Stelle ist befristet."
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-21",
+        "ru": "Ты застрахован во время работы.",
+        "de": [
+          "Du bist während der Arbeit versichert."
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-22",
+        "ru": "мир",
+        "de": [
+          "der Frieden (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-23",
+        "ru": "опросник, анкета",
+        "de": [
+          "der Fragebogen, -"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-24",
+        "ru": "благосостояние, процветание",
+        "de": [
+          "der Wohlstand (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-25",
+        "ru": "в конце концов, наконец",
+        "de": [
+          "schließlich"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-26",
+        "ru": "толерантность",
+        "de": [
+          "die Toleranz (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-27",
+        "ru": "обязанность",
+        "de": [
+          "die Pflicht, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-28",
+        "ru": "иммиграция",
+        "de": [
+          "die Einwanderung, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-29",
+        "ru": "пунктуальность",
+        "de": [
+          "die Pünktlichkeit (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-30",
+        "ru": "страна иммиграции",
+        "de": [
+          "das Einwanderungsland, -ä-er"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-31",
+        "ru": "придерживаться (чего-л.)",
+        "de": [
+          "sich halten an (hält sich, hielt sich, hat sich gehalten)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-32",
+        "ru": "иммигрировать",
+        "de": [
+          "einwandern"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-33",
+        "ru": "Нужно придерживаться правил.",
+        "de": [
+          "Man muss sich an die Regeln halten."
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-34",
+        "ru": "эмигрировать",
+        "de": [
+          "auswandern"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-35",
+        "ru": "газон",
+        "de": [
+          "der Rasen, -"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-36",
+        "ru": "страна эмиграции",
+        "de": [
+          "das Auswanderungsland, -ä-er"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-37",
+        "ru": "иностранец",
+        "de": [
+          "der Ausländer, -"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-38",
+        "ru": "эмиграция",
+        "de": [
+          "die Auswanderung, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-39",
+        "ru": "иностранка",
+        "de": [
+          "die Ausländerin, -nen"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-40",
+        "ru": "эмигрант",
+        "de": [
+          "der Auswanderer, -"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-41",
+        "ru": "идиот",
+        "de": [
+          "der Idiot, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-42",
+        "ru": "эмигрантка",
+        "de": [
+          "die Auswanderin, -nen"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-43",
+        "ru": "идиотка",
+        "de": [
+          "die Idiotin, -nen"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-44",
+        "ru": "родина",
+        "de": [
+          "die Heimat (Sg.)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-45",
+        "ru": "с детства, с малых лет",
+        "de": [
+          "von klein auf"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-46",
+        "ru": "реалистичный",
+        "de": [
+          "realistisch"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-47",
+        "ru": "Он с детства учил немецкий.",
+        "de": [
+          "Er hat von klein auf Deutsch gelernt."
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-48",
+        "ru": "переезжать, переселяться",
+        "de": [
+          "ziehen (zog, ist gezogen)"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-49",
+        "ru": "между прочим",
+        "de": [
+          "übrigens"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-50",
+        "ru": "ни … ни",
+        "de": [
+          "weder ... noch"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-51",
+        "ru": "ожидание",
+        "de": [
+          "die Erwartung, -en"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-52",
+        "ru": "иначе; кроме того",
+        "de": [
+          "sonst"
+        ],
+        "topic": "block-8",
+        "oral": true
+      },
+      {
+        "id": "block-8-53",
+        "ru": "Я хотел работать, и ничего больше.",
+        "de": [
+          "Ich wollte arbeiten, sonst nichts."
+        ],
+        "topic": "block-8",
+        "oral": true
+      }
+    ],
+    "oral": true
   }
 ];
 

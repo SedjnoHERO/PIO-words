@@ -47,7 +47,7 @@ const MODES_STYLE: CSSProperties = {
 
 export const HomeScreen = ({ onSelectMode }: HomeScreenProps) => (
   <section style={SCREEN_STYLE}>
-    <Header title="Карточки" subtitle={`${TOTAL_WORDS} слов для подготовки`} />
+    <Header title="Немецкий квиз" subtitle={`${TOTAL_WORDS} слов · 8 блоков`} />
     <div style={HERO_STYLE}>
       <span style={HERO_EMOJI} aria-hidden="true">
         ✨

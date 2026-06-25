@@ -8,3 +8,10 @@ temp-docx/
 tools/document.xml
 tools/parsed-preview.json
 tools/inspect-output.txt
+tools/__pycache__/
+tools/exam-normalized.txt
+tools/exam-raw.json
+tools/extract-log.txt
+tools/oral-by-block.json
+tools/sample-first5.json
+tools/exam-parse-summary.json

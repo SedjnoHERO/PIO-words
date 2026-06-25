@@ -48,8 +48,8 @@ export const TopicSelectScreen = ({
 }: TopicSelectScreenProps) => (
   <section style={SCREEN_STYLE}>
     <Header
-      title="Выбери тему"
-      subtitle="Учи слова только из одной темы"
+      title="Выбери блок"
+      subtitle="Учи слова только из одного блока"
       onBack={onBack}
     />
     <TopicList

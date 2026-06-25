@@ -8,6 +8,7 @@
     "build": "vite build",
     "import-words": "node tools/import-words.mjs",
     "import-docx": "node tools/parse-docx.mjs",
+    "import-exam": "python tools/parse_exam_docx.py",
     "preview": "vite preview"
   },
   "dependencies": {

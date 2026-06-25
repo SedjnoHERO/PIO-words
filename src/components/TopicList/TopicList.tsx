@@ -14,6 +14,14 @@ const LIST_STYLE: CSSProperties = {
   width: '100%',
 };
 
+const ROW_STYLE: CSSProperties = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
+  flex: 1,
+  minWidth: 0,
+};
+
 const getTopicButtonStyle = (isSelected: boolean): CSSProperties => ({
   display: 'flex',
   alignItems: 'center',
@@ -34,6 +42,16 @@ const TITLE_STYLE: CSSProperties = {
   color: 'var(--text)',
 };
 
+const ORAL_BADGE_STYLE: CSSProperties = {
+  fontSize: '11px',
+  fontWeight: 800,
+  color: 'var(--accent)',
+  background: 'var(--surface)',
+  padding: '3px 8px',
+  borderRadius: '20px',
+  flexShrink: 0,
+};
+
 const COUNT_STYLE: CSSProperties = {
   fontSize: '13px',
   fontWeight: 700,
@@ -41,6 +59,7 @@ const COUNT_STYLE: CSSProperties = {
   background: 'var(--surface)',
   padding: '4px 10px',
   borderRadius: '20px',
+  flexShrink: 0,
 };
 
 export const TopicList = ({
@@ -48,7 +67,7 @@ export const TopicList = ({
   selectedTopicId,
   onSelect,
 }: TopicListProps) => (
-  <div style={LIST_STYLE} role="listbox" aria-label="Выбор темы">
+  <div style={LIST_STYLE} role="listbox" aria-label="Выбор блока">
     {topics.map((topic) => {
       const isSelected = topic.id === selectedTopicId;
 
@@ -61,7 +80,12 @@ export const TopicList = ({
           style={getTopicButtonStyle(isSelected)}
           onClick={() => onSelect(topic.id)}
         >
-          <span style={TITLE_STYLE}>{topic.title}</span>
+          <span style={ROW_STYLE}>
+            <span style={TITLE_STYLE}>{topic.title}</span>
+            {topic.oral ? (
+              <span style={ORAL_BADGE_STYLE}>устное</span>
+            ) : null}
+          </span>
           <span style={COUNT_STYLE}>{topic.words.length}</span>
         </button>
       );

@@ -1,0 +1,2490 @@
+{
+  "source": "G:\\dinara-exam\\exam.docx",
+  "total": 440,
+  "countByBlock": {
+    "1": 58,
+    "2": 59,
+    "3": 52,
+    "4": 53,
+    "5": 57,
+    "6": 54,
+    "7": 54,
+    "8": 53
+  },
+  "entries": [
+    {
+      "de": "die Fernbeziehung, -en",
+      "ru": "отношения на расстоянии",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Beziehung, -en",
+      "ru": "отношения",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "führen",
+      "ru": "вести",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "Sie führen eine Fernbeziehung.",
+      "ru": "Они поддерживают отношения на расстоянии.",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Trennung, -en",
+      "ru": "разрыв, расставание",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "trotzdem",
+      "ru": "тем не менее, всё равно",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "das Gefühl, -e",
+      "ru": "чувство",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Diskussion, -en",
+      "ru": "дискуссия, обсуждение",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "abhängig",
+      "ru": "зависимый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "Er ist von seinen Eltern abhängig.",
+      "ru": "Он зависит от своих родителей.",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Baustelle, -n",
+      "ru": "стройка, строительная площадка",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "bemerkten (Präteritum von bemerken)",
+      "ru": "заметили",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "berufstätig",
+      "ru": "работающий, имеющий работу",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "sich einigen",
+      "ru": "договариваться, приходить к согласию",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "schwierig",
+      "ru": "трудный, сложный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "einsam",
+      "ru": "одинокий",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "eng",
+      "ru": "тесный, близкий",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "erwachsen",
+      "ru": "взрослый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "flexibel",
+      "ru": "гибкий",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "(sich) gewöhnen an",
+      "ru": "привыкать к",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "hart",
+      "ru": "жёсткий, тяжёлый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "kündigen",
+      "ru": "увольнять / расторгать договор",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Lüge, -n",
+      "ru": "ложь",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "lügen, er/sie hat gelogen",
+      "ru": "лгать",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "merkwürdig",
+      "ru": "странный, любопытный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "offen",
+      "ru": "открытый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "sauer",
+      "ru": "сердитый, злой",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "schätzen",
+      "ru": "ценить, оценивать",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "Man schätzt, dass ca. 8% in einer Fernbeziehung leben.",
+      "ru": "По оценкам, около 8% живут в отношениях на расстоянии.",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Verbindung, -en",
+      "ru": "связь, соединение",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "vermissen",
+      "ru": "скучать (по кому-то/чему-то)",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "(sich) vertrauen",
+      "ru": "доверять друг другу",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "wütend",
+      "ru": "яростный, взбешённый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "negativ",
+      "ru": "негативный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "positiv",
+      "ru": "позитивный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "eifersüchtig",
+      "ru": "ревнивый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "ernst",
+      "ru": "серьёзный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "fleißig",
+      "ru": "старательный, трудолюбивый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "höflich",
+      "ru": "вежливый",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "ordentlich",
+      "ru": "аккуратный, организованный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "treu",
+      "ru": "верный, преданный",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "niemand",
+      "ru": "никто",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "sich kümmern um",
+      "ru": "заботиться о (ком-то/чём-то)",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "(sich) verabreden (mit)",
+      "ru": "договариваться о встрече (с)",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "das Aussehen (Sg.)",
+      "ru": "внешность",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Studie, -n",
+      "ru": "исследование",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Figur, -en",
+      "ru": "фигура (телосложение)",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Frisur, -en",
+      "ru": "причёска",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Abteilung, -en",
+      "ru": "отдел, отделение",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "blind",
+      "ru": "слепой",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "der Satz, ä-e",
+      "ru": "предложение (фраза)",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "von Weitem",
+      "ru": "издалека",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "(sich) beruhigen",
+      "ru": "успокаиваться",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "der Eingang, -ä-e",
+      "ru": "вход",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "erwarten",
+      "ru": "ожидать",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "leiden (an), er/sie hat gelitten",
+      "ru": "страдать (от чего-л.)",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "die Bewegung, -en",
+      "ru": "движение",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "entwickeln",
+      "ru": "развивать",
+      "block": 1,
+      "oral": true
+    },
+    {
+      "de": "ausziehen (ist ausgezogen)",
+      "ru": "съезжать, переезжать (из квартиры)",
+      "block": 2
+    },
+    {
+      "de": "besitzen (hat besessen)",
+      "ru": "владеть, иметь",
+      "block": 2
+    },
+    {
+      "de": "die Bghrmaschine, -n",
+      "ru": "*(вероятно, опечатка: Bohrmaschine)* – дрель",
+      "block": 2
+    },
+    {
+      "de": "die Dignstleistung, -en",
+      "ru": "*(вероятно, Dienstleistung)* – услуга",
+      "block": 2
+    },
+    {
+      "de": "die Leiter, -n",
+      "ru": "лестница (стремянка)",
+      "block": 2
+    },
+    {
+      "de": "reichen",
+      "ru": "хватать, быть достаточным",
+      "block": 2
+    },
+    {
+      "de": "Es reicht.",
+      "ru": "Хватит. / Достаточно.",
+      "block": 2
+    },
+    {
+      "de": "der Stecker, -",
+      "ru": "штекер, вилка",
+      "block": 2
+    },
+    {
+      "de": "die Steuer, -n",
+      "ru": "налог; руль (в контексте транспорта – но здесь, вероятно, налог)",
+      "block": 2
+    },
+    {
+      "de": "vermieten",
+      "ru": "сдавать в аренду",
+      "block": 2
+    },
+    {
+      "de": "die Versicherung, -en",
+      "ru": "страховка",
+      "block": 2
+    },
+    {
+      "de": "das Werkzeug, -e",
+      "ru": "инструмент",
+      "block": 2
+    },
+    {
+      "de": "die Glühbirne, -n",
+      "ru": "лампочка",
+      "block": 2
+    },
+    {
+      "de": "der Hammer, -ä-",
+      "ru": "молоток",
+      "block": 2
+    },
+    {
+      "de": "die Klingel, -n",
+      "ru": "звонок (дверной)",
+      "block": 2
+    },
+    {
+      "de": "der Schalter, -",
+      "ru": "выключатель",
+      "block": 2
+    },
+    {
+      "de": "die Steckdose, -n",
+      "ru": "розетка",
+      "block": 2
+    },
+    {
+      "de": "die Stufe, -n",
+      "ru": "ступенька",
+      "block": 2
+    },
+    {
+      "de": "das Treppenhaus, -äu-er",
+      "ru": "лестничная клетка, подъезд",
+      "block": 2
+    },
+    {
+      "de": "die Zange, -n",
+      "ru": "плоскогубцы, щипцы",
+      "block": 2
+    },
+    {
+      "de": "die Hausgemeinschaft, -en",
+      "ru": "сообщество жильцов дома",
+      "block": 2
+    },
+    {
+      "de": "die Gemeinschaft, -en",
+      "ru": "общество, сообщество",
+      "block": 2
+    },
+    {
+      "de": "der Hausmeister, -",
+      "ru": "домоуправитель, дворник",
+      "block": 2
+    },
+    {
+      "de": "die Hausmeisterin, -nen",
+      "ru": "домоуправительница",
+      "block": 2
+    },
+    {
+      "de": "überlegen",
+      "ru": "обдумывать; (как прилагательное) превосходный",
+      "block": 2
+    },
+    {
+      "de": "einziehen (ist eingezogen)",
+      "ru": "въезжать (в квартиру)",
+      "block": 2
+    },
+    {
+      "de": "erleben",
+      "ru": "переживать, испытывать",
+      "block": 2
+    },
+    {
+      "de": "für (Zeit)",
+      "ru": "на (время)",
+      "block": 2
+    },
+    {
+      "de": "Ich bleibe hier für immer.",
+      "ru": "Я останусь здесь навсегда.",
+      "block": 2
+    },
+    {
+      "de": "der Lautsprecher, -",
+      "ru": "громкоговоритель, колонка",
+      "block": 2
+    },
+    {
+      "de": "miteinander",
+      "ru": "друг с другом, вместе",
+      "block": 2
+    },
+    {
+      "de": "der Rentner, -",
+      "ru": "пенсионер",
+      "block": 2
+    },
+    {
+      "de": "die Rentnerin, -nen",
+      "ru": "пенсионерка",
+      "block": 2
+    },
+    {
+      "de": "über (= mehr als)",
+      "ru": "свыше, более",
+      "block": 2
+    },
+    {
+      "de": "von ... an (Zeit)",
+      "ru": "с ... (начиная с какого-то момента)",
+      "block": 2
+    },
+    {
+      "de": "die Werkstatt, -ä-en",
+      "ru": "мастерская",
+      "block": 2
+    },
+    {
+      "de": "transportieren",
+      "ru": "транспортировать, перевозить",
+      "block": 2
+    },
+    {
+      "de": "(sich) ändern",
+      "ru": "меняться, изменяться",
+      "block": 2
+    },
+    {
+      "de": "bzw. (beziehungsweise)",
+      "ru": "соответственно, или же",
+      "block": 2
+    },
+    {
+      "de": "die Plattform, -en",
+      "ru": "платформа",
+      "block": 2
+    },
+    {
+      "de": "der Trend, -s",
+      "ru": "тренд, тенденция",
+      "block": 2
+    },
+    {
+      "de": "einverstanden",
+      "ru": "согласен",
+      "block": 2
+    },
+    {
+      "de": "die Ordnung, -en",
+      "ru": "порядок",
+      "block": 2
+    },
+    {
+      "de": "die Hausordnung, -en",
+      "ru": "правила проживания (в доме)",
+      "block": 2
+    },
+    {
+      "de": "der Lärm (Sg.)",
+      "ru": "шум",
+      "block": 2
+    },
+    {
+      "de": "die Regie (Sg.)",
+      "ru": "руководство, режиссура",
+      "block": 2
+    },
+    {
+      "de": "die Spannung (Sg.)",
+      "ru": "напряжение",
+      "block": 2
+    },
+    {
+      "de": "die Rolle, -n",
+      "ru": "роль",
+      "block": 2
+    },
+    {
+      "de": "die Unterhaltung (Sg.)",
+      "ru": "развлечение, беседа",
+      "block": 2
+    },
+    {
+      "de": "aufregend",
+      "ru": "захватывающий, волнующий",
+      "block": 2
+    },
+    {
+      "de": "der Schluss, -ü-e",
+      "ru": "конец, заключение",
+      "block": 2
+    },
+    {
+      "de": "zum Schluss",
+      "ru": "в конце, наконец",
+      "block": 2
+    },
+    {
+      "de": "die Fähigkeit, -en",
+      "ru": "способность, умение",
+      "block": 2
+    },
+    {
+      "de": "die Kenntnis, -se",
+      "ru": "знание, познания",
+      "block": 2
+    },
+    {
+      "de": "die Sigmlung, -en",
+      "ru": "*(вероятно, опечатка: Sammlung)* – коллекция, собрание",
+      "block": 2
+    },
+    {
+      "de": "entfernen",
+      "ru": "удалять, отдалять",
+      "block": 2
+    },
+    {
+      "de": "ungefähr",
+      "ru": "приблизительно",
+      "block": 2
+    },
+    {
+      "de": "ökologisch",
+      "ru": "экологический",
+      "block": 2
+    },
+    {
+      "de": "die Generation, -en",
+      "ru": "поколение",
+      "block": 2
+    },
+    {
+      "de": "sich ernähren",
+      "ru": "питаться",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Ernährung (Sg.)",
+      "ru": "питание",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Fertiggericht, -e",
+      "ru": "полуфабрикат, готовая еда",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "fett(ig)",
+      "ru": "жирный",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Korb, -ö-e",
+      "ru": "корзина",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "garantieren",
+      "ru": "гарантировать",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "haltbar",
+      "ru": "(срок годности) годный к хранению",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "Die Milch ist noch eine Woche haltbar.",
+      "ru": "Молоко годно ещё неделю.",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "inkl. (inklusive)",
+      "ru": "включительно, включая",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "je",
+      "ru": "за (в значении «за единицу»)",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "Je Korb gibt es ein Kilo Gemüse.",
+      "ru": "За каждую корзину дают килограмм овощей.",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Lieferung, -en",
+      "ru": "доставка",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "mager",
+      "ru": "нежирный, постный",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "fettarm",
+      "ru": "с низким содержанием жира",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "per",
+      "ru": "через, посредством",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "Man kann bequem per Telefon bestellen.",
+      "ru": "Можно удобно заказать по телефону.",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Pinguin, -e",
+      "ru": "пингвин",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Produkt, -e",
+      "ru": "продукт",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Quark (Sg.)",
+      "ru": "творог (в немецком смысле)",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "reif",
+      "ru": "спелый",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Rezept, -e",
+      "ru": "рецепт",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Saison, -s",
+      "ru": "сезон",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Soße, -n",
+      "ru": "соус",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "tiefgekühlt",
+      "ru": "глубокозамороженный",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "wöchentlich",
+      "ru": "еженедельно",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "zubereiten (bereitet zu, hat zubereitet)",
+      "ru": "готовить (еду)",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Metzger, -",
+      "ru": "мясник",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Metzgerin, -nen",
+      "ru": "мясница (женщина-мясник)",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Bauer, -n",
+      "ru": "крестьянин, фермер",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Hunger (Sg.)",
+      "ru": "голод",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "Hunger haben",
+      "ru": "хотеть есть / быть голодным",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "obwohl",
+      "ru": "хотя",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Müsli, -",
+      "ru": "мюсли",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Versuch, -e",
+      "ru": "попытка, эксперимент",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "verzichten (auf)",
+      "ru": "отказываться (от чего-л.)",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "tatsächlich",
+      "ru": "на самом деле, действительно",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "normalerweise",
+      "ru": "обычно",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Melone, -n",
+      "ru": "дыня",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Feierabend, -e",
+      "ru": "конец рабочего дня",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Erlebnis, -se",
+      "ru": "переживание, событие, впечатление",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Gruppe, -n",
+      "ru": "группа",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Kommentar, -e",
+      "ru": "комментарий",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "kommentieren",
+      "ru": "комментировать",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Netzwerk, -e",
+      "ru": "сеть",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "sozial",
+      "ru": "социальный",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "Man kann Fotos in sozialen Netzwerken teilen.",
+      "ru": "Можно делиться фото в социальных сетях.",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Qualität, -en",
+      "ru": "качество",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Realität, -en",
+      "ru": "реальность",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "der Besitzer, -",
+      "ru": "владелец",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "die Besitzerin, -nen",
+      "ru": "владелица",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "eingeben (gibt ein, hat eingegeben)",
+      "ru": "вводить",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "Man muss nur „Berlin“ eingeben.",
+      "ru": "Нужно просто ввести «Берлин».",
+      "block": 3,
+      "oral": true
+    },
+    {
+      "de": "das Beet, -e",
+      "ru": "грядка",
+      "block": 4
+    },
+    {
+      "de": "blühen",
+      "ru": "цвести",
+      "block": 4
+    },
+    {
+      "de": "die Erde (Sg.)",
+      "ru": "земля, почва",
+      "block": 4
+    },
+    {
+      "de": "ernten",
+      "ru": "собирать урожай",
+      "block": 4
+    },
+    {
+      "de": "die Fläche, -n",
+      "ru": "площадь, участок",
+      "block": 4
+    },
+    {
+      "de": "(Tiere) halten (hält, hat gehalten)",
+      "ru": "держать, содержать (животных)",
+      "block": 4
+    },
+    {
+      "de": "die Umwelt (Sg.)",
+      "ru": "окружающая среда",
+      "block": 4
+    },
+    {
+      "de": "anders",
+      "ru": "иначе, другой",
+      "block": 4
+    },
+    {
+      "de": "sich befinden (hat sich befunden)",
+      "ru": "находиться",
+      "block": 4
+    },
+    {
+      "de": "freiwillig",
+      "ru": "добровольный",
+      "block": 4
+    },
+    {
+      "de": "der Gemeinschaftsgarten, -ä-",
+      "ru": "общественный сад / огород",
+      "block": 4
+    },
+    {
+      "de": "die Großstadt, -ä-e",
+      "ru": "большой город",
+      "block": 4
+    },
+    {
+      "de": "der Honig (Sg.)",
+      "ru": "мёд",
+      "block": 4
+    },
+    {
+      "de": "mitten in ...",
+      "ru": "посреди ...",
+      "block": 4
+    },
+    {
+      "de": "Der Garten ist mitten in der Stadt.",
+      "ru": "Сад находится в центре города.",
+      "block": 4
+    },
+    {
+      "de": "pflegen",
+      "ru": "ухаживать",
+      "block": 4
+    },
+    {
+      "de": "der Verkehr (Sg.)",
+      "ru": "движение, транспорт",
+      "block": 4
+    },
+    {
+      "de": "die Hitze (Sg.)",
+      "ru": "жара",
+      "block": 4
+    },
+    {
+      "de": "das Klima (Sg.)",
+      "ru": "климат",
+      "block": 4
+    },
+    {
+      "de": "die Landschaft, -en",
+      "ru": "ландшафт",
+      "block": 4
+    },
+    {
+      "de": "die Temperatur, -en",
+      "ru": "температура",
+      "block": 4
+    },
+    {
+      "de": "sinken (ist gesunken)",
+      "ru": "опускаться, падать (уровень)",
+      "block": 4
+    },
+    {
+      "de": "steigen (ist gestiegen)",
+      "ru": "подниматься, расти",
+      "block": 4
+    },
+    {
+      "de": "mitnehmen (nimmt mit, hat mitgenommen)",
+      "ru": "брать с собой",
+      "block": 4
+    },
+    {
+      "de": "frieren (hat gefroren)",
+      "ru": "мёрзнуть",
+      "block": 4
+    },
+    {
+      "de": "das Gebiet, -e",
+      "ru": "область, территория",
+      "block": 4
+    },
+    {
+      "de": "das Jahrzehnt, -e",
+      "ru": "десятилетие",
+      "block": 4
+    },
+    {
+      "de": "die Wirtschaft (Sg.)",
+      "ru": "экономика",
+      "block": 4
+    },
+    {
+      "de": "die Landwirtschaft, -en",
+      "ru": "сельское хозяйство",
+      "block": 4
+    },
+    {
+      "de": "der Mangel, -ä-",
+      "ru": "недостаток, нехватка",
+      "block": 4
+    },
+    {
+      "de": "schuld (sein)",
+      "ru": "виноват (быть)",
+      "block": 4
+    },
+    {
+      "de": "Ich bin (nicht) schuld.",
+      "ru": "Я (не) виноват.",
+      "block": 4
+    },
+    {
+      "de": "die Ursache, -n",
+      "ru": "причина",
+      "block": 4
+    },
+    {
+      "de": "(sich) verändern",
+      "ru": "меняться",
+      "block": 4
+    },
+    {
+      "de": "der Sturm, -ü-e",
+      "ru": "шторм, буря",
+      "block": 4
+    },
+    {
+      "de": "ausfallen (fällt aus, ist ausgefallen)",
+      "ru": "отменяться",
+      "block": 4
+    },
+    {
+      "de": "beschädigen",
+      "ru": "повреждать",
+      "block": 4
+    },
+    {
+      "de": "der Bürgermeister, -",
+      "ru": "бургомистр, мэр",
+      "block": 4
+    },
+    {
+      "de": "die Bürgermeisterin, -nen",
+      "ru": "мэр (женщина)",
+      "block": 4
+    },
+    {
+      "de": "schulfrei",
+      "ru": "свободный от школы (выходной)",
+      "block": 4
+    },
+    {
+      "de": "schulfrei bekommen",
+      "ru": "получить выходной в школе",
+      "block": 4
+    },
+    {
+      "de": "melden",
+      "ru": "сообщать, докладывать",
+      "block": 4
+    },
+    {
+      "de": "die Innenstadt, -ä-e",
+      "ru": "центр города",
+      "block": 4
+    },
+    {
+      "de": "teilweise",
+      "ru": "частично",
+      "block": 4
+    },
+    {
+      "de": "der Tourismus (Sg.)",
+      "ru": "туризм",
+      "block": 4
+    },
+    {
+      "de": "warnen vor",
+      "ru": "предупреждать о",
+      "block": 4
+    },
+    {
+      "de": "Der Wetterdienst warnt vor Gewittern.",
+      "ru": "Метеослужба предупреждает о грозах.",
+      "block": 4
+    },
+    {
+      "de": "der Vegetarier, -",
+      "ru": "вегетарианец",
+      "block": 4
+    },
+    {
+      "de": "die Vegetarierin, -nen",
+      "ru": "вегетарианка",
+      "block": 4
+    },
+    {
+      "de": "zunehmen (nimmt zu, hat zugenommen)",
+      "ru": "нарастать, увеличиваться",
+      "block": 4
+    },
+    {
+      "de": "die Vorbereitung, -en",
+      "ru": "подготовка",
+      "block": 4
+    },
+    {
+      "de": "schmutzig",
+      "ru": "грязный",
+      "block": 4
+    },
+    {
+      "de": "die Diät, -en",
+      "ru": "диета",
+      "block": 4
+    },
+    {
+      "de": "der Kfz-Mechatrgniker, -",
+      "ru": "(вероятно, Kfz-Mechatroniker) – автомехатроник",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Kfz-Mechatrgnikerin, -nen",
+      "ru": "автомехатроник (жен.)",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "bedienen",
+      "ru": "обслуживать, управлять (техникой)",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "erledigen",
+      "ru": "выполнять, делать",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Fabrik, -en",
+      "ru": "фабрика, завод",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Friseur, -e",
+      "ru": "парикмахер",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Friseurin, -nen",
+      "ru": "парикмахерша",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Handwerker, -",
+      "ru": "ремесленник, мастер",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Handwerkerin, -nen",
+      "ru": "ремесленница",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Motor, -en",
+      "ru": "мотор, двигатель",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Polizist, -en",
+      "ru": "полицейский",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Polizistin, -nen",
+      "ru": "полицейская",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "prüfen",
+      "ru": "проверять",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Überstunde, -n",
+      "ru": "сверхурочный час",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "Überstunden machen",
+      "ru": "работать сверхурочно",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "annehmen (nimmt an, hat angenommen)",
+      "ru": "принимать (предложение)",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Gewalt (Sg.)",
+      "ru": "насилие, власть",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "anwenden (hat angewendet/angewandt)",
+      "ru": "применять",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Arbeitsbedingungen, -en",
+      "ru": "условия труда",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Bedingungen, -en",
+      "ru": "условия",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Auszubildende, -n",
+      "ru": "ученик, стажёр (проходящий обучение)",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Auszubildende, -n",
+      "ru": "ученица, стажёрка",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "sich gut verstehen",
+      "ru": "хорошо ладить, понимать друг друга",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "körperlich",
+      "ru": "физический",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Lohn, -ö-e",
+      "ru": "заработная плата (рабочих)",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "schimpfen",
+      "ru": "ругаться, ворчать",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Spezialist, -en",
+      "ru": "специалист",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Spezialistin, -nen",
+      "ru": "специалистка",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "ständig",
+      "ru": "постоянно",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "um die Ecke",
+      "ru": "за углом",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "Der Laden ist um die Ecke.",
+      "ru": "Магазин за углом.",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Verantwortung (Sg.)",
+      "ru": "ответственность",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Kontrolle, -n",
+      "ru": "контроль",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "eröffnen",
+      "ru": "открывать",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "selbstständig",
+      "ru": "самостоятельный",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "sich selbstständig machen",
+      "ru": "стать самостоятельным, открыть своё дело",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Affe, -n",
+      "ru": "обезьяна",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Elefant, -en",
+      "ru": "слон",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Löwe, -n",
+      "ru": "лев",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Prospekt, -e",
+      "ru": "проспект, брошюра, рекламный буклет",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Übung, -en",
+      "ru": "упражнение",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "allerdings",
+      "ru": "однако, впрочем",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "klopfen",
+      "ru": "стучать",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Art, -en",
+      "ru": "вид, способ, манера",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "aufgeben (gibt auf, hat aufgegeben)",
+      "ru": "сдаваться, отказываться; задавать (уроки)",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "begeistert",
+      "ru": "восхищённый, восторженный",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Bestseller, -",
+      "ru": "бестселлер",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "das Brettspiel, -e",
+      "ru": "настольная игра",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Export, -e",
+      "ru": "экспорт",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Gegner, -",
+      "ru": "противник, оппонент",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Gegnerin, -nen",
+      "ru": "противница",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "handeln (mit)",
+      "ru": "торговать (чем-л.), действовать",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "das Interesse, -n",
+      "ru": "интерес",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "der Roman, -e",
+      "ru": "роман",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Technologie, -n",
+      "ru": "технология",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Wolle (Sg.)",
+      "ru": "шерсть",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "die Zusammenarbeit (Sg.)",
+      "ru": "сотрудничество",
+      "block": 5,
+      "oral": true
+    },
+    {
+      "de": "(die Brust) abhören",
+      "ru": "прослушивать (грудь)",
+      "block": 6
+    },
+    {
+      "de": "(einen Verband) anlegen",
+      "ru": "накладывать (повязку)",
+      "block": 6
+    },
+    {
+      "de": "atmen",
+      "ru": "дышать",
+      "block": 6
+    },
+    {
+      "de": "aufnehmen (nimmt auf, hat aufgenommen)",
+      "ru": "снимать (фильм), записывать; принимать",
+      "block": 6
+    },
+    {
+      "de": "brechen (bricht, hat gebrochen)",
+      "ru": "ломать (кость)",
+      "block": 6
+    },
+    {
+      "de": "impfen",
+      "ru": "делать прививку",
+      "block": 6
+    },
+    {
+      "de": "der Knochen",
+      "ru": "кость",
+      "block": 6
+    },
+    {
+      "de": "messen (misst, hat gemessen)",
+      "ru": "измерять",
+      "block": 6
+    },
+    {
+      "de": "Fieber messen",
+      "ru": "измерять температуру",
+      "block": 6
+    },
+    {
+      "de": "operieren",
+      "ru": "оперировать",
+      "block": 6
+    },
+    {
+      "de": "die Spritze, -n",
+      "ru": "шприц; укол",
+      "block": 6
+    },
+    {
+      "de": "untersuchen",
+      "ru": "осматривать, исследовать",
+      "block": 6
+    },
+    {
+      "de": "der Verband, -ä-e",
+      "ru": "повязка",
+      "block": 6
+    },
+    {
+      "de": "das Labor, -e",
+      "ru": "лаборатория",
+      "block": 6
+    },
+    {
+      "de": "die Orthopädie, -",
+      "ru": "ортопедия",
+      "block": 6
+    },
+    {
+      "de": "der Operationssaal, -säle",
+      "ru": "операционная",
+      "block": 6
+    },
+    {
+      "de": "behandeln",
+      "ru": "лечить",
+      "block": 6
+    },
+    {
+      "de": "beachten",
+      "ru": "соблюдать, обращать внимание",
+      "block": 6
+    },
+    {
+      "de": "das Dokument, -e",
+      "ru": "документ",
+      "block": 6
+    },
+    {
+      "de": "einpacken",
+      "ru": "упаковывать",
+      "block": 6
+    },
+    {
+      "de": "die Hygiene (Sg.)",
+      "ru": "гигиена",
+      "block": 6
+    },
+    {
+      "de": "die Langeweile (Sg.)",
+      "ru": "скука",
+      "block": 6
+    },
+    {
+      "de": "nüchtern",
+      "ru": "натощак",
+      "block": 6
+    },
+    {
+      "de": "die OP, -s",
+      "ru": "операционная; операция",
+      "block": 6
+    },
+    {
+      "de": "die Regel, -n",
+      "ru": "правило",
+      "block": 6
+    },
+    {
+      "de": "(sich) verbessern",
+      "ru": "улучшаться",
+      "block": 6
+    },
+    {
+      "de": "die Zahnbürste, -n",
+      "ru": "зубная щётка",
+      "block": 6
+    },
+    {
+      "de": "die Zahnpasta, -s",
+      "ru": "зубная паста",
+      "block": 6
+    },
+    {
+      "de": "lassen (lässt, hat gelassen)",
+      "ru": "позволять, оставлять",
+      "block": 6
+    },
+    {
+      "de": "streichen",
+      "ru": "намазывать; отменять; красить",
+      "block": 6
+    },
+    {
+      "de": "reinigen",
+      "ru": "чистить",
+      "block": 6
+    },
+    {
+      "de": "nähen",
+      "ru": "шить; зашивать (рану)",
+      "block": 6
+    },
+    {
+      "de": "der Abschied, -e",
+      "ru": "прощание",
+      "block": 6
+    },
+    {
+      "de": "aufheben (hat aufgehoben)",
+      "ru": "поднимать; сохранять",
+      "block": 6
+    },
+    {
+      "de": "aufwachsen (wächst auf, ist aufgewachsen)",
+      "ru": "вырастать",
+      "block": 6
+    },
+    {
+      "de": "behindert",
+      "ru": "с ограниченными возможностями; инвалид",
+      "block": 6
+    },
+    {
+      "de": "die Behinderung, -en",
+      "ru": "инвалидность, ограничение",
+      "block": 6
+    },
+    {
+      "de": "bereits",
+      "ru": "уже",
+      "block": 6
+    },
+    {
+      "de": "die Erfahrung, -en",
+      "ru": "опыт",
+      "block": 6
+    },
+    {
+      "de": "erziehen (hat erzogen)",
+      "ru": "воспитывать",
+      "block": 6
+    },
+    {
+      "de": "folgen",
+      "ru": "следовать",
+      "block": 6
+    },
+    {
+      "de": "der Gegenstand, -ä-e",
+      "ru": "предмет, объект",
+      "block": 6
+    },
+    {
+      "de": "die Integration (Sg.)",
+      "ru": "интеграция",
+      "block": 6
+    },
+    {
+      "de": "(sich) integrieren",
+      "ru": "интегрироваться",
+      "block": 6
+    },
+    {
+      "de": "der Senior, -en",
+      "ru": "пожилой человек",
+      "block": 6
+    },
+    {
+      "de": "die Seniorin, -nen",
+      "ru": "пожилая женщина",
+      "block": 6
+    },
+    {
+      "de": "stolz",
+      "ru": "гордый",
+      "block": 6
+    },
+    {
+      "de": "die Therapie, -n",
+      "ru": "терапия",
+      "block": 6
+    },
+    {
+      "de": "zusätzlich",
+      "ru": "дополнительный",
+      "block": 6
+    },
+    {
+      "de": "die Naturkatastrophe, -n",
+      "ru": "стихийное бедствие",
+      "block": 6
+    },
+    {
+      "de": "sorgen für",
+      "ru": "заботиться о",
+      "block": 6
+    },
+    {
+      "de": "entsorgen",
+      "ru": "утилизировать, выбрасывать",
+      "block": 6
+    },
+    {
+      "de": "retten",
+      "ru": "спасать",
+      "block": 6
+    },
+    {
+      "de": "anmelden",
+      "ru": "регистрировать, записывать",
+      "block": 6
+    },
+    {
+      "de": "das Vermischte (Sg.) / Vermischtes",
+      "ru": "рубрика «Разное» (в газете)",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Lokale (Sg.) / Lokales",
+      "ru": "местные новости",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "beleidigen",
+      "ru": "оскорблять",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Streit, -s",
+      "ru": "ссора, спор",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Zähne putzen",
+      "ru": "чистить зубы",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "Ich putze meine Zähne.",
+      "ru": "Я чищу зубы.",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Bundeskanzler, -",
+      "ru": "федеральный канцлер (Германии)",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Bundeskanzlerin, -nen",
+      "ru": "федеральный канцлер (жен.)",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Imbiss, -e",
+      "ru": "закусочная, снек-бар",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "insgesamt",
+      "ru": "всего, в общей сложности",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "mitteilen",
+      "ru": "сообщать, извещать",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Polizei (Sg.)",
+      "ru": "полиция",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "rufen (rief, hat gerufen)",
+      "ru": "звать, кричать",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Polizei rufen",
+      "ru": "вызвать полицию",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Rekord, -e",
+      "ru": "рекорд",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "schaffen",
+      "ru": "справляться, суметь (сделать); создавать",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "starten",
+      "ru": "стартовать, начинать",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Strecke, -n",
+      "ru": "маршрут, дистанция",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Trinkgeld (Sg.)",
+      "ru": "чаевые",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "Sie gab 50 Cent Trinkgeld.",
+      "ru": "Она дала 50 центов чаевых.",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "verpassen",
+      "ru": "пропускать, упускать",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "Er hat den Rekord leider verpasst.",
+      "ru": "Он, к сожалению, пропустил рекорд.",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Artikel, -",
+      "ru": "статья (в газете)(",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Polizei) alarmieren",
+      "ru": "вызывать полицию / тревогу",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "jubeln",
+      "ru": "ликовать, радоваться",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Leinwand, ä-e",
+      "ru": "экран (в кинотеатре), полотно",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Schaufenster, -",
+      "ru": "витрина",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Weltmeisterschaft, -en",
+      "ru": "чемпионат мира",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "sich umarmen",
+      "ru": "обниматься",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "schießen (schoss, hat geschossen)",
+      "ru": "стрелять; бить (по воротам)",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Tor, -e",
+      "ru": "ворота; гол",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "ein Tor schießen",
+      "ru": "забить гол",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Stimmung, -en",
+      "ru": "настроение, атмосфера",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "Die Stimmung beim Public Viewing ist toll.",
+      "ru": "Атмосфера на общественном просмотре отличная.",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "bevor",
+      "ru": "прежде чем",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Finale, -",
+      "ru": "финал",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "seit / seitdem",
+      "ru": "с тех пор, с тех пор как",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "sogenannt (sog.)",
+      "ru": "так называемый",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "Das sogenannte Public Viewing ist ein Lieblingshobby von den Deutschen.",
+      "ru": "Так называемый общественный просмотр — любимое хобби немцев.",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Begeisterung (Sg.)",
+      "ru": "восторг, энтузиазм",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Ereignis, -se",
+      "ru": "событие",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "herrschen",
+      "ru": "царить, господствовать",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "Im Stadion herrschte eine sehr gute Stimmung.",
+      "ru": "На стадионе царила очень хорошая атмосфера.",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Psychologe, -n",
+      "ru": "психолог",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Psychologin, -nen",
+      "ru": "психолог (жен.)",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Mannschaft, -en",
+      "ru": "команда",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Veranstaltung, -en",
+      "ru": "мероприятие",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Statistik, -en",
+      "ru": "статистика",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Hälfte, -n",
+      "ru": "половина",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Viertel, -",
+      "ru": "четверть",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "das Drittel, -",
+      "ru": "треть",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Verkehrsmeldung, -en",
+      "ru": "сообщение о дорожной ситуации",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Meldung, -en",
+      "ru": "сообщение",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "der Wetterbericht, -e",
+      "ru": "прогноз погоды",
+      "block": 7,
+      "oral": true
+    },
+    {
+      "de": "die Europäische Union (EU) (Sg.)",
+      "ru": "Европейский Союз",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "nicht nur ..., sondern auch",
+      "ru": "не только …, но и …",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Finanzen (Pl.)",
+      "ru": "финансы",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "sondern",
+      "ru": "а (но)",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Bereich, -e",
+      "ru": "область, сфера",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "Sie wohnt nicht in Wien, sondern in Graz.",
+      "ru": "Она живёт не в Вене, а в Граце.",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Wissenschaft, -en",
+      "ru": "наука",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Währung, -en",
+      "ru": "валюта",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "sowohl ... als auch",
+      "ru": "как …, так и",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "einführen",
+      "ru": "вводить",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "fliehen (floh, ist geflohen)",
+      "ru": "бежать, спасаться бегством2002",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "haben 19 Länder den Euro eingeführt.",
+      "ru": "В 2002 году 19 стран ввели евро.",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "unterstützen",
+      "ru": "поддерживать",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Aufenthalt, -e",
+      "ru": "пребывание, проживание",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Mobilität (Sg.)",
+      "ru": "мобильность",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Rückkehr (Sg.)",
+      "ru": "возвращение",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "während",
+      "ru": "во время",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "befristet",
+      "ru": "ограниченный по времени",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "versichern",
+      "ru": "страховать; уверять",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "Die Stelle ist befristet.",
+      "ru": "Рабочее место ограничено по времени (по срочному договору).",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "Du bist während der Arbeit versichert.",
+      "ru": "Ты застрахован во время работы.",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Frieden (Sg.)",
+      "ru": "мир",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Fragebogen, -",
+      "ru": "опросник, анкета",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Wohlstand (Sg.)",
+      "ru": "благосостояние, процветание",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "schließlich",
+      "ru": "в конце концов, наконец",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Toleranz (Sg.)",
+      "ru": "толерантность",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Pflicht, -en",
+      "ru": "обязанность",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Einwanderung, -en",
+      "ru": "иммиграция",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Pünktlichkeit (Sg.)",
+      "ru": "пунктуальность",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "das Einwanderungsland, -ä-er",
+      "ru": "страна иммиграции",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "sich halten an (hält sich, hielt sich, hat sich gehalten)",
+      "ru": "придерживаться (чего-л.)",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "einwandern",
+      "ru": "иммигрировать",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "Man muss sich an die Regeln halten.",
+      "ru": "Нужно придерживаться правил.",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "auswandern",
+      "ru": "эмигрировать",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Rasen, -",
+      "ru": "газон",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "das Auswanderungsland, -ä-er",
+      "ru": "страна эмиграции",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Ausländer, -",
+      "ru": "иностранец",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Auswanderung, -en",
+      "ru": "эмиграция",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Ausländerin, -nen",
+      "ru": "иностранка",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Auswanderer, -",
+      "ru": "эмигрант",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "der Idiot, -en",
+      "ru": "идиот",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Auswanderin, -nen",
+      "ru": "эмигрантка",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Idiotin, -nen",
+      "ru": "идиотка",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Heimat (Sg.)",
+      "ru": "родина",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "von klein auf",
+      "ru": "с детства, с малых лет",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "realistisch",
+      "ru": "реалистичный",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "Er hat von klein auf Deutsch gelernt.",
+      "ru": "Он с детства учил немецкий.",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "ziehen (zog, ist gezogen)",
+      "ru": "переезжать, переселяться",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "übrigens",
+      "ru": "между прочим",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "weder ... noch",
+      "ru": "ни … ни",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "die Erwartung, -en",
+      "ru": "ожидание",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "sonst",
+      "ru": "иначе; кроме того",
+      "block": 8,
+      "oral": true
+    },
+    {
+      "de": "Ich wollte arbeiten, sonst nichts.",
+      "ru": "Я хотел работать, и ничего больше.",
+      "block": 8,
+      "oral": true
+    }
+  ]
+}
