@@ -9,8 +9,7 @@ interface HeaderProps {
 const HEADER_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
-  gap: '4px',
-  padding: '0 4px',
+  gap: '6px',
 };
 
 const TITLE_ROW_STYLE: CSSProperties = {
@@ -20,31 +19,31 @@ const TITLE_ROW_STYLE: CSSProperties = {
 };
 
 const BACK_BUTTON_STYLE: CSSProperties = {
-  border: 'none',
+  border: '1px solid var(--border)',
   background: 'var(--surface)',
-  color: 'var(--accent)',
-  width: '40px',
-  height: '40px',
-  borderRadius: '12px',
-  fontSize: '20px',
+  color: 'var(--text)',
+  width: '36px',
+  height: '36px',
+  borderRadius: '8px',
+  fontSize: '18px',
   cursor: 'pointer',
   flexShrink: 0,
-  boxShadow: 'var(--shadow-sm)',
 };
 
 const TITLE_STYLE: CSSProperties = {
   margin: 0,
-  fontSize: '24px',
-  fontWeight: 800,
+  fontSize: '22px',
+  fontWeight: 600,
   color: 'var(--text)',
   lineHeight: 1.2,
+  letterSpacing: '-0.02em',
 };
 
 const SUBTITLE_STYLE: CSSProperties = {
   margin: 0,
-  fontSize: '14px',
+  fontSize: '13px',
   color: 'var(--text-muted)',
-  fontWeight: 600,
+  fontWeight: 500,
 };
 
 export const Header = ({ title, subtitle, onBack }: HeaderProps) => (

@@ -277,14 +277,14 @@ def main() -> None:
         "--supplement",
         type=Path,
         action="append",
-        default=[SUPPLEMENT_DEFAULT],
+        default=None,
         help="Additional markdown source (repeatable)",
     )
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-ts", type=Path, default=OUT_TS)
     args = parser.parse_args()
 
-    raw = load_sources(args.docx, args.supplement)
+    raw = load_sources(args.docx, args.supplement or [])
     entries = parse_blocks(raw)
 
     by_block: dict[int, int] = {}
@@ -292,7 +292,7 @@ def main() -> None:
         by_block[entry["block"]] = by_block.get(entry["block"], 0) + 1
 
     payload = {
-        "source": [str(args.docx), *[str(path) for path in args.supplement if path.exists()]],
+        "source": [str(args.docx), *[str(path) for path in (args.supplement or []) if path.exists()]],
         "total": len(entries),
         "countByBlock": {str(k): by_block[k] for k in sorted(by_block)},
         "entries": entries,
