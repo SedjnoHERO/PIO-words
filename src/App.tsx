@@ -19,7 +19,7 @@ const APP_STYLE = {
 
 export const App = () => {
   const [screen, setScreen] = useState<AppScreen>('home');
-  const [mode, setMode] = useState<StudyMode>('ru-to-de');
+  const [mode, setMode] = useState<StudyMode>('ru-to-en');
   const [topicId, setTopicId] = useState<string | null>(null);
 
   const handleSelectMode = useCallback((selectedMode: StudyMode) => {

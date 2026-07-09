@@ -2,33 +2,27 @@ import type { ModeOption } from '../types/vocabulary';
 
 export const MODE_OPTIONS: ModeOption[] = [
   {
-    id: 'ru-to-de',
-    title: 'RU → DE',
-    description: 'Русский на лице, немецкий на обороте',
+    id: 'ru-to-en',
+    title: 'RU → EN',
+    description: 'Русский на лице, английский на обороте',
     icon: '',
   },
   {
-    id: 'de-to-ru',
-    title: 'DE → RU',
-    description: 'Немецкий на лице, русский на обороте',
-    icon: '',
-  },
-  {
-    id: 'oral-only',
-    title: 'Устное',
-    description: 'Только блоки для устного экзамена',
+    id: 'en-to-ru',
+    title: 'EN → RU',
+    description: 'Английский на лице, русский на обороте',
     icon: '',
   },
   {
     id: 'all-mixed',
-    title: 'Все блоки',
+    title: 'Все слова',
     description: 'Случайный порядок',
     icon: '',
   },
   {
     id: 'single-topic',
-    title: 'Один блок',
-    description: 'Выбрать блок',
+    title: 'Одна тема',
+    description: 'Выбрать тему',
     icon: '',
   },
   {

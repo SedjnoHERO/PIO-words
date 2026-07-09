@@ -1,0 +1,43 @@
+computer [kəmˈpjuːtər] — компьютер
+laptop [ˈlæptɑːp] — ноутбук
+screen [skriːn] — экран
+display [dɪˈspleɪ] — дисплей
+keyboard [ˈkiːbɔːrd] — клавиатура
+mouse [maʊs] — мышь
+monitor [ˈmɑːnɪtər] — монитор
+printer [ˈprɪntər] — принтер
+cable [ˈkeɪbəl] — кабель
+file [faɪl] — файл
+folder [ˈfoʊldər] — папка
+document [ˈdɑːkjʊmənt] — документ
+text [tekst] — текст
+image [ˈɪmɪdʒ] — изображение
+name [neɪm] — имя (файла)
+to save [tuː seɪv] — сохранять
+to open [tuː ˈoʊpən] — открывать
+to close [tuː kloʊz] — закрывать
+to delete [tuː dɪˈliːt] — удалять
+to copy [tuː ˈkɑːpi] — копировать
+to paste [tuː peɪst] — вставлять
+internet [ˈɪntərnet] — интернет
+website [ˈwebsaɪt] — веб-сайт
+site [saɪt] — сайт
+web page [ˈweb peɪdʒ] — веб-страница
+browser [ˈbraʊzər] — браузер
+link [lɪŋk] — ссылка
+password [ˈpæswɜːrd] — пароль
+email [ˈiːmeɪl] — электронная почта
+to download [tuː ˌdaʊnˈloʊd] — скачивать
+to upload [tuː ˌʌpˈloʊd] — загрузить
+code [koʊd] — код (программный)
+program [ˈproʊɡræm] — программа
+app/application [ˌæplɪˈkeɪʃən] — приложение
+language [ˈlæŋɡwɪdʒ] — язык
+command [kəˈmænd] — команда
+to run [tuː rʌn] — запускать
+to stop [tuː stɑːp] — останавливать
+error [ˈerər] — ошибка
+bug [bʌɡ] — баг (ошибка в коде)
+to fix [tuː fɪks] — исправлять
+to test [tuː test] — тестировать
+result [rɪˈzʌlt] — результат

@@ -2,7 +2,7 @@ import { VOCABULARY } from '../data/vocabulary';
 import type { StudyMode, WordEntry } from '../types/vocabulary';
 import { shuffleArray } from './shuffle';
 
-export type CardLang = 'ru' | 'de';
+export type CardLang = 'ru' | 'en';
 
 export interface MultiTranslationCard {
   frontText: string;
@@ -14,9 +14,6 @@ export interface MultiTranslationCard {
 const getAllWords = (): WordEntry[] =>
   VOCABULARY.flatMap((group) => group.words);
 
-const getOralWords = (): WordEntry[] =>
-  getAllWords().filter((word) => word.oral);
-
 const getWordsByTopic = (topicId: string): WordEntry[] => {
   const group = VOCABULARY.find((item) => item.id === topicId);
   return group ? [...group.words] : [];
@@ -25,11 +22,11 @@ const getWordsByTopic = (topicId: string): WordEntry[] => {
 const hasMultipleRu = (word: WordEntry): boolean =>
   (word.ruVariants?.length ?? 0) > 1;
 
-const hasMultipleDe = (word: WordEntry): boolean =>
-  word.de.length > 1;
+const hasMultipleEn = (word: WordEntry): boolean =>
+  word.en.length > 1;
 
 export const hasMultipleTranslations = (word: WordEntry): boolean =>
-  hasMultipleRu(word) || hasMultipleDe(word);
+  hasMultipleRu(word) || hasMultipleEn(word);
 
 const getMultiTranslationWords = (): WordEntry[] =>
   getAllWords().filter(hasMultipleTranslations);
@@ -38,32 +35,32 @@ export const resolveMultiTranslationCard = (
   word: WordEntry,
 ): MultiTranslationCard => {
   const multiRu = hasMultipleRu(word);
-  const multiDe = hasMultipleDe(word);
+  const multiEn = hasMultipleEn(word);
   const ruLines = multiRu ? word.ruVariants! : [word.ru];
-  const deLines = word.de;
+  const enLines = word.en;
 
-  if (multiDe && !multiRu) {
+  if (multiEn && !multiRu) {
     return {
       frontText: word.ru,
-      backLines: deLines,
+      backLines: enLines,
       frontLang: 'ru',
-      backLang: 'de',
+      backLang: 'en',
     };
   }
 
-  if (multiRu && !multiDe) {
+  if (multiRu && !multiEn) {
     return {
-      frontText: deLines[0],
+      frontText: enLines[0],
       backLines: ruLines,
-      frontLang: 'de',
+      frontLang: 'en',
       backLang: 'ru',
     };
   }
 
   return {
-    frontText: deLines.join(' / '),
+    frontText: enLines.join(' / '),
     backLines: ruLines,
-    frontLang: 'de',
+    frontLang: 'en',
     backLang: 'ru',
   };
 };
@@ -73,11 +70,9 @@ export const buildDeck = (
   topicId: string | null,
 ): WordEntry[] => {
   switch (mode) {
-    case 'ru-to-de':
-    case 'de-to-ru':
+    case 'ru-to-en':
+    case 'en-to-ru':
       return shuffleArray(getAllWords());
-    case 'oral-only':
-      return shuffleArray(getOralWords());
     case 'all-mixed':
       return shuffleArray(getAllWords());
     case 'single-topic':
@@ -97,8 +92,8 @@ export const getFrontText = (
     return resolveMultiTranslationCard(word).frontText;
   }
 
-  if (mode === 'de-to-ru') {
-    return word.de.join(' / ');
+  if (mode === 'en-to-ru') {
+    return word.en.join(' / ');
   }
 
   return word.ru;
@@ -112,7 +107,7 @@ export const getBackLines = (
     return resolveMultiTranslationCard(word).backLines;
   }
 
-  if (mode === 'de-to-ru') {
+  if (mode === 'en-to-ru') {
     if (word.ruVariants && word.ruVariants.length > 1) {
       return word.ruVariants;
     }
@@ -120,11 +115,11 @@ export const getBackLines = (
     return [word.ru];
   }
 
-  if (mode === 'ru-to-de') {
-    return word.de;
+  if (mode === 'ru-to-en') {
+    return word.en;
   }
 
-  return word.de.length > 1 ? word.de : [word.de[0]];
+  return word.en.length > 1 ? word.en : [word.en[0]];
 };
 
 export const getFrontLang = (
@@ -135,8 +130,8 @@ export const getFrontLang = (
     return resolveMultiTranslationCard(word).frontLang;
   }
 
-  if (mode === 'de-to-ru') {
-    return 'de';
+  if (mode === 'en-to-ru') {
+    return 'en';
   }
 
   return 'ru';
@@ -150,12 +145,12 @@ export const getBackLang = (
     return resolveMultiTranslationCard(word).backLang;
   }
 
-  if (mode === 'de-to-ru') {
+  if (mode === 'en-to-ru') {
     return 'ru';
   }
 
-  return 'de';
+  return 'en';
 };
 
 export const getLangLabel = (lang: CardLang): string =>
-  lang === 'de' ? 'Deutsch' : 'Русский';
+  lang === 'en' ? 'English' : 'Русский';
