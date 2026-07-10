@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+import type { CSSProperties, KeyboardEvent } from 'react';
 import type { StudyMode, WordEntry } from '../../types/vocabulary';
 import {
   getBackLang,
@@ -9,6 +9,7 @@ import {
   getPronunciation,
   shouldShowPronunciation,
 } from '../../utils/deckBuilder';
+import './Flashcard.css';
 
 interface FlashcardProps {
   word: WordEntry;
@@ -22,40 +23,6 @@ const CARD_WRAP_STYLE: CSSProperties = {
   flex: 1,
   width: '100%',
   minHeight: '280px',
-  perspective: '1000px',
-};
-
-const CARD_INNER_STYLE = (isFlipped: boolean): CSSProperties => ({
-  position: 'relative',
-  width: '100%',
-  minHeight: '280px',
-  transformStyle: 'preserve-3d',
-  transition: 'transform 0.35s ease',
-  transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-});
-
-const FACE_BASE: CSSProperties = {
-  position: 'absolute',
-  inset: 0,
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '16px',
-  padding: '24px 16px',
-  borderRadius: '12px',
-  backfaceVisibility: 'hidden',
-  WebkitBackfaceVisibility: 'hidden',
-  border: '1px solid var(--border)',
-  background: 'var(--surface)',
-  cursor: 'pointer',
-  width: '100%',
-  minHeight: '280px',
-};
-
-const BACK_STYLE: CSSProperties = {
-  ...FACE_BASE,
-  transform: 'rotateY(180deg)',
 };
 
 const LABEL_STYLE: CSSProperties = {
@@ -103,6 +70,16 @@ const PRONUNCIATION_STYLE: CSSProperties = {
   lineHeight: 1.4,
 };
 
+const handleFlipKeyDown = (
+  event: KeyboardEvent<HTMLDivElement>,
+  onFlip: () => void,
+): void => {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    onFlip();
+  }
+};
+
 export const Flashcard = ({
   word,
   mode,
@@ -117,24 +94,29 @@ export const Flashcard = ({
   const pronunciation = getPronunciation(word);
   const showFrontPronunciation = shouldShowPronunciation(word, mode, false);
   const showBackPronunciation = shouldShowPronunciation(word, mode, true);
+  const innerClassName = isFlipped
+    ? 'flashcard-inner flashcard-inner--flipped'
+    : 'flashcard-inner';
 
   return (
-    <div style={CARD_WRAP_STYLE}>
-      <button
-        type="button"
-        style={CARD_INNER_STYLE(isFlipped)}
+    <div style={CARD_WRAP_STYLE} className="flashcard-scene">
+      <div
+        className={innerClassName}
         onClick={onFlip}
+        onKeyDown={(event) => handleFlipKeyDown(event, onFlip)}
+        role="button"
+        tabIndex={0}
         aria-label={flipLabel}
       >
-        <span style={FACE_BASE}>
+        <div className="flashcard-face flashcard-face--front">
           <span style={LABEL_STYLE}>{getLangLabel(frontLang)}</span>
           <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
           {showFrontPronunciation && pronunciation && (
             <p style={PRONUNCIATION_STYLE}>[{pronunciation}]</p>
           )}
-        </span>
+        </div>
 
-        <span style={BACK_STYLE}>
+        <div className="flashcard-face flashcard-face--back">
           <span style={LABEL_STYLE}>{backLabel}</span>
           <span style={TRANSLATIONS_LIST_STYLE}>
             {backLines.map((line, index) => (
@@ -146,8 +128,8 @@ export const Flashcard = ({
           {showBackPronunciation && pronunciation && (
             <p style={PRONUNCIATION_STYLE}>[{pronunciation}]</p>
           )}
-        </span>
-      </button>
+        </div>
+      </div>
     </div>
   );
 };
