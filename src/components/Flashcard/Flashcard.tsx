@@ -22,8 +22,8 @@ const CARD_WRAP_STYLE: CSSProperties = {
   display: 'flex',
   flex: 1,
   width: '100%',
-  height: '100%',
-  minHeight: 0,
+  minHeight: '280px',
+  alignSelf: 'stretch',
 };
 
 const LABEL_STYLE: CSSProperties = {

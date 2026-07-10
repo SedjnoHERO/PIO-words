@@ -29,8 +29,9 @@ const SCREEN_STYLE: CSSProperties = {
 
 const CARD_AREA: CSSProperties = {
   display: 'flex',
+  flexDirection: 'column',
   flex: 1,
-  minHeight: 0,
+  minHeight: '280px',
   width: '100%',
 };
 

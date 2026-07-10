@@ -15,17 +15,18 @@ const DECK_STYLE: CSSProperties = {
   alignItems: 'stretch',
   flex: 1,
   width: '100%',
-  height: '100%',
-  minHeight: 0,
+  minHeight: '280px',
+  alignSelf: 'stretch',
   gap: '4px',
 };
 
 const CARD_SLOT: CSSProperties = {
   display: 'flex',
+  flexDirection: 'column',
   flex: 1,
   minWidth: 0,
-  minHeight: 0,
-  height: '100%',
+  minHeight: '280px',
+  alignSelf: 'stretch',
 };
 
 export const CardDeck = ({
