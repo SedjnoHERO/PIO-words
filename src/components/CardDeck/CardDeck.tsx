@@ -13,9 +13,10 @@ const DECK_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'stretch',
-  flex: 1,
   width: '100%',
+  height: '280px',
   minHeight: '280px',
+  flexShrink: 0,
   gap: '4px',
 };
 
@@ -23,7 +24,9 @@ const CARD_SLOT: CSSProperties = {
   display: 'flex',
   flex: 1,
   minWidth: 0,
+  height: '280px',
   minHeight: '280px',
+  flexShrink: 0,
 };
 
 export const CardDeck = ({

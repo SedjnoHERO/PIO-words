@@ -39,7 +39,9 @@ const SIDE_BTN: CSSProperties = {
 
 const FLIP_BTN: CSSProperties = {
   ...BTN_BASE,
-  flex: 1.1,
+  flex: '0 0 88px',
+  width: '88px',
+  minWidth: '88px',
   border: '1px solid var(--text)',
   background: 'var(--text)',
   color: '#ffffff',

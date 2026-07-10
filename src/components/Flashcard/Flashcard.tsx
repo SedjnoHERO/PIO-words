@@ -20,9 +20,10 @@ interface FlashcardProps {
 
 const CARD_WRAP_STYLE: CSSProperties = {
   display: 'flex',
-  flex: 1,
   width: '100%',
+  height: '280px',
   minHeight: '280px',
+  flexShrink: 0,
 };
 
 const LABEL_STYLE: CSSProperties = {

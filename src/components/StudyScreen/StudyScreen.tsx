@@ -31,6 +31,7 @@ const CARD_AREA: CSSProperties = {
   display: 'flex',
   flex: 1,
   minHeight: '280px',
+  alignItems: 'flex-start',
 };
 
 const EMPTY_STYLE: CSSProperties = {
