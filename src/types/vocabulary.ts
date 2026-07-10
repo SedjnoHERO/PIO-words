@@ -10,6 +10,7 @@ export interface WordEntry {
   ru: string;
   en: string[];
   topic: string;
+  pronunciation?: string;
   ruVariants?: string[];
 }
 

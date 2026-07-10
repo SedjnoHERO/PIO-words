@@ -2,6 +2,302 @@ import type { TopicGroup } from '../types/vocabulary';
 
 export const VOCABULARY: TopicGroup[] = [
   {
+    "id": "pronouns",
+    "title": "Pronouns & basics",
+    "words": [
+      {
+        "id": "pronouns-1",
+        "ru": "я",
+        "en": [
+          "I"
+        ],
+        "pronunciation": "ай",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-2",
+        "ru": "ты / вы",
+        "en": [
+          "you"
+        ],
+        "pronunciation": "ю",
+        "topic": "pronouns",
+        "ruVariants": [
+          "ты",
+          "вы"
+        ]
+      },
+      {
+        "id": "pronouns-3",
+        "ru": "он",
+        "en": [
+          "he"
+        ],
+        "pronunciation": "хи",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-4",
+        "ru": "она",
+        "en": [
+          "she"
+        ],
+        "pronunciation": "ши",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-5",
+        "ru": "оно",
+        "en": [
+          "it"
+        ],
+        "pronunciation": "ит",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-6",
+        "ru": "мы",
+        "en": [
+          "we"
+        ],
+        "pronunciation": "уи",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-7",
+        "ru": "они",
+        "en": [
+          "they"
+        ],
+        "pronunciation": "зэй",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-8",
+        "ru": "меня, мне",
+        "en": [
+          "me"
+        ],
+        "pronunciation": "ми",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-9",
+        "ru": "его, ему",
+        "en": [
+          "him"
+        ],
+        "pronunciation": "хим",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-10",
+        "ru": "её, ей",
+        "en": [
+          "her"
+        ],
+        "pronunciation": "хёр",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-11",
+        "ru": "нас, нам",
+        "en": [
+          "us"
+        ],
+        "pronunciation": "ас",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-12",
+        "ru": "их, им",
+        "en": [
+          "them"
+        ],
+        "pronunciation": "зэм",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-13",
+        "ru": "мой (перед сущ.)",
+        "en": [
+          "my"
+        ],
+        "pronunciation": "май",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-14",
+        "ru": "твой / ваш (перед сущ.)",
+        "en": [
+          "your"
+        ],
+        "pronunciation": "ёр",
+        "topic": "pronouns",
+        "ruVariants": [
+          "твой",
+          "ваш (перед сущ.)"
+        ]
+      },
+      {
+        "id": "pronouns-15",
+        "ru": "его (перед сущ.)",
+        "en": [
+          "his"
+        ],
+        "pronunciation": "хиз",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-16",
+        "ru": "её (перед сущ.)",
+        "en": [
+          "her"
+        ],
+        "pronunciation": "хёр",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-17",
+        "ru": "его (о неодуш., перед сущ.)",
+        "en": [
+          "its"
+        ],
+        "pronunciation": "итс",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-18",
+        "ru": "наш (перед сущ.)",
+        "en": [
+          "our"
+        ],
+        "pronunciation": "аур",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-19",
+        "ru": "их (перед сущ.)",
+        "en": [
+          "their"
+        ],
+        "pronunciation": "зэр",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-20",
+        "ru": "мой (без сущ.)",
+        "en": [
+          "mine"
+        ],
+        "pronunciation": "майн",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-21",
+        "ru": "твой / ваш (без сущ.)",
+        "en": [
+          "yours"
+        ],
+        "pronunciation": "ёрз",
+        "topic": "pronouns",
+        "ruVariants": [
+          "твой",
+          "ваш (без сущ.)"
+        ]
+      },
+      {
+        "id": "pronouns-22",
+        "ru": "её (без сущ.)",
+        "en": [
+          "hers"
+        ],
+        "pronunciation": "хёрз",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-23",
+        "ru": "наш (без сущ.)",
+        "en": [
+          "ours"
+        ],
+        "pronunciation": "аурз",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-24",
+        "ru": "их (без сущ.)",
+        "en": [
+          "theirs"
+        ],
+        "pronunciation": "зэрз",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-25",
+        "ru": "этот / это (близко)",
+        "en": [
+          "this"
+        ],
+        "pronunciation": "зис",
+        "topic": "pronouns",
+        "ruVariants": [
+          "этот",
+          "это (близко)"
+        ]
+      },
+      {
+        "id": "pronouns-26",
+        "ru": "тот / то (далеко)",
+        "en": [
+          "that"
+        ],
+        "pronunciation": "зэт",
+        "topic": "pronouns",
+        "ruVariants": [
+          "тот",
+          "то (далеко)"
+        ]
+      },
+      {
+        "id": "pronouns-27",
+        "ru": "эти (близко)",
+        "en": [
+          "these"
+        ],
+        "pronunciation": "зиз",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-28",
+        "ru": "те (далеко)",
+        "en": [
+          "those"
+        ],
+        "pronunciation": "зоуз",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-29",
+        "ru": "здесь",
+        "en": [
+          "here"
+        ],
+        "pronunciation": "хир",
+        "topic": "pronouns"
+      },
+      {
+        "id": "pronouns-30",
+        "ru": "там",
+        "en": [
+          "there"
+        ],
+        "pronunciation": "зэр",
+        "topic": "pronouns"
+      }
+    ]
+  },
+  {
     "id": "computer",
     "title": "Computer English",
     "words": [
@@ -11,6 +307,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "computer"
         ],
+        "pronunciation": "кэмпьЮтэр",
         "topic": "computer"
       },
       {
@@ -19,6 +316,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "laptop"
         ],
+        "pronunciation": "лЭптоп",
         "topic": "computer"
       },
       {
@@ -27,6 +325,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "screen"
         ],
+        "pronunciation": "скрИн",
         "topic": "computer"
       },
       {
@@ -35,6 +334,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "display"
         ],
+        "pronunciation": "дисплЭй",
         "topic": "computer"
       },
       {
@@ -43,6 +343,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "keyboard"
         ],
+        "pronunciation": "кИборд",
         "topic": "computer"
       },
       {
@@ -51,6 +352,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "mouse"
         ],
+        "pronunciation": "мАус",
         "topic": "computer"
       },
       {
@@ -59,6 +361,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "monitor"
         ],
+        "pronunciation": "мОнитэр",
         "topic": "computer"
       },
       {
@@ -67,6 +370,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "printer"
         ],
+        "pronunciation": "прИнтэр",
         "topic": "computer"
       },
       {
@@ -75,6 +379,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "cable"
         ],
+        "pronunciation": "кЭйбл",
         "topic": "computer"
       },
       {
@@ -83,6 +388,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "file"
         ],
+        "pronunciation": "фАйл",
         "topic": "computer"
       },
       {
@@ -91,6 +397,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "folder"
         ],
+        "pronunciation": "фОлдэр",
         "topic": "computer"
       },
       {
@@ -99,6 +406,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "document"
         ],
+        "pronunciation": "дАкьюмэнт",
         "topic": "computer"
       },
       {
@@ -107,6 +415,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "text"
         ],
+        "pronunciation": "тЭкст",
         "topic": "computer"
       },
       {
@@ -115,6 +424,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "image"
         ],
+        "pronunciation": "Имидж",
         "topic": "computer"
       },
       {
@@ -123,6 +433,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "name"
         ],
+        "pronunciation": "нЭйм",
         "topic": "computer"
       },
       {
@@ -131,6 +442,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to save"
         ],
+        "pronunciation": "ту сЭйв",
         "topic": "computer"
       },
       {
@@ -139,6 +451,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to open"
         ],
+        "pronunciation": "ту Оупэн",
         "topic": "computer"
       },
       {
@@ -147,6 +460,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to close"
         ],
+        "pronunciation": "ту клОуз",
         "topic": "computer"
       },
       {
@@ -155,6 +469,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to delete"
         ],
+        "pronunciation": "ту дилИт",
         "topic": "computer"
       },
       {
@@ -163,6 +478,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to copy"
         ],
+        "pronunciation": "ту кОпи",
         "topic": "computer"
       },
       {
@@ -171,6 +487,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to paste"
         ],
+        "pronunciation": "ту пЭйст",
         "topic": "computer"
       },
       {
@@ -179,6 +496,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "internet"
         ],
+        "pronunciation": "Интэрнэт",
         "topic": "computer"
       },
       {
@@ -187,6 +505,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "website"
         ],
+        "pronunciation": "уЭбсайт",
         "topic": "computer"
       },
       {
@@ -195,6 +514,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "site"
         ],
+        "pronunciation": "сАйт",
         "topic": "computer"
       },
       {
@@ -203,6 +523,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "web page"
         ],
+        "pronunciation": "уЭб пЭйдж",
         "topic": "computer"
       },
       {
@@ -211,6 +532,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "browser"
         ],
+        "pronunciation": "брАузэр",
         "topic": "computer"
       },
       {
@@ -219,6 +541,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "link"
         ],
+        "pronunciation": "лИнк",
         "topic": "computer"
       },
       {
@@ -227,6 +550,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "password"
         ],
+        "pronunciation": "пАсвэрд",
         "topic": "computer"
       },
       {
@@ -235,6 +559,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "email"
         ],
+        "pronunciation": "Имэйл",
         "topic": "computer"
       },
       {
@@ -243,14 +568,16 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to download"
         ],
+        "pronunciation": "ту дАунлОуд",
         "topic": "computer"
       },
       {
         "id": "computer-31",
-        "ru": "загрузить",
+        "ru": "загрузить (на сервер)",
         "en": [
           "to upload"
         ],
+        "pronunciation": "ту АплОуд",
         "topic": "computer"
       },
       {
@@ -259,6 +586,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "code"
         ],
+        "pronunciation": "кОуд",
         "topic": "computer"
       },
       {
@@ -267,6 +595,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "program"
         ],
+        "pronunciation": "прОуграм",
         "topic": "computer"
       },
       {
@@ -276,14 +605,16 @@ export const VOCABULARY: TopicGroup[] = [
           "app",
           "application"
         ],
+        "pronunciation": "эп / эпликЭйшн",
         "topic": "computer"
       },
       {
         "id": "computer-35",
-        "ru": "язык",
+        "ru": "язык (программирования)",
         "en": [
           "language"
         ],
+        "pronunciation": "лЭнгвидж",
         "topic": "computer"
       },
       {
@@ -292,6 +623,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "command"
         ],
+        "pronunciation": "кэмЭнд",
         "topic": "computer"
       },
       {
@@ -300,6 +632,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to run"
         ],
+        "pronunciation": "ту рАн",
         "topic": "computer"
       },
       {
@@ -308,6 +641,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to stop"
         ],
+        "pronunciation": "ту стОп",
         "topic": "computer"
       },
       {
@@ -316,6 +650,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "error"
         ],
+        "pronunciation": "Эрэр",
         "topic": "computer"
       },
       {
@@ -324,6 +659,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "bug"
         ],
+        "pronunciation": "бАг",
         "topic": "computer"
       },
       {
@@ -332,6 +668,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to fix"
         ],
+        "pronunciation": "ту фИкс",
         "topic": "computer"
       },
       {
@@ -340,6 +677,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "to test"
         ],
+        "pronunciation": "ту тЭст",
         "topic": "computer"
       },
       {
@@ -348,6 +686,7 @@ export const VOCABULARY: TopicGroup[] = [
         "en": [
           "result"
         ],
+        "pronunciation": "ризАлт",
         "topic": "computer"
       }
     ]

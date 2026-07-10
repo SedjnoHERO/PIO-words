@@ -154,3 +154,31 @@ export const getBackLang = (
 
 export const getLangLabel = (lang: CardLang): string =>
   lang === 'en' ? 'English' : 'Русский';
+
+export const getPronunciation = (word: WordEntry): string | null =>
+  word.pronunciation?.trim() || null;
+
+export const shouldShowPronunciation = (
+  word: WordEntry,
+  mode: StudyMode,
+  isFlipped: boolean,
+): boolean => {
+  if (!getPronunciation(word)) {
+    return false;
+  }
+
+  if (mode === 'en-to-ru') {
+    return !isFlipped;
+  }
+
+  if (mode === 'ru-to-en') {
+    return isFlipped;
+  }
+
+  if (mode === 'multi-translation') {
+    const card = resolveMultiTranslationCard(word);
+    return card.backLang === 'en' ? isFlipped : !isFlipped;
+  }
+
+  return !isFlipped;
+};

@@ -6,6 +6,8 @@ import {
   getFrontLang,
   getFrontText,
   getLangLabel,
+  getPronunciation,
+  shouldShowPronunciation,
 } from '../../utils/deckBuilder';
 
 interface FlashcardProps {
@@ -92,6 +94,15 @@ const TRANSLATION_ITEM_STYLE: CSSProperties = {
   lineHeight: 1.35,
 };
 
+const PRONUNCIATION_STYLE: CSSProperties = {
+  margin: 0,
+  fontSize: '16px',
+  fontWeight: 400,
+  color: 'var(--text-muted)',
+  textAlign: 'center',
+  lineHeight: 1.4,
+};
+
 export const Flashcard = ({
   word,
   mode,
@@ -103,6 +114,9 @@ export const Flashcard = ({
   const backLang = getBackLang(word, mode);
   const backLabel = getLangLabel(backLang);
   const flipLabel = isFlipped ? 'Скрыть' : 'Показать перевод';
+  const pronunciation = getPronunciation(word);
+  const showFrontPronunciation = shouldShowPronunciation(word, mode, false);
+  const showBackPronunciation = shouldShowPronunciation(word, mode, true);
 
   return (
     <div style={CARD_WRAP_STYLE}>
@@ -115,6 +129,9 @@ export const Flashcard = ({
         <span style={FACE_BASE}>
           <span style={LABEL_STYLE}>{getLangLabel(frontLang)}</span>
           <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
+          {showFrontPronunciation && pronunciation && (
+            <p style={PRONUNCIATION_STYLE}>[{pronunciation}]</p>
+          )}
         </span>
 
         <span style={BACK_STYLE}>
@@ -126,6 +143,9 @@ export const Flashcard = ({
               </p>
             ))}
           </span>
+          {showBackPronunciation && pronunciation && (
+            <p style={PRONUNCIATION_STYLE}>[{pronunciation}]</p>
+          )}
         </span>
       </button>
     </div>
