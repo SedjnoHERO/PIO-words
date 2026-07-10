@@ -30,8 +30,8 @@ const SCREEN_STYLE: CSSProperties = {
 const CARD_AREA: CSSProperties = {
   display: 'flex',
   flex: 1,
-  minHeight: '280px',
-  alignItems: 'flex-start',
+  minHeight: 0,
+  width: '100%',
 };
 
 const EMPTY_STYLE: CSSProperties = {

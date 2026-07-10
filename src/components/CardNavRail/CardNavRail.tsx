@@ -14,15 +14,11 @@ const RAIL_BASE: CSSProperties = {
   justifyContent: 'center',
   flex: '0 0 40px',
   width: '40px',
-  height: '280px',
-  minHeight: '280px',
-  maxHeight: '280px',
-  flexShrink: 0,
+  alignSelf: 'stretch',
   border: 'none',
   background: 'transparent',
   cursor: 'pointer',
   fontFamily: 'inherit',
-  alignSelf: 'stretch',
 };
 
 const RAIL_DISABLED: CSSProperties = {
