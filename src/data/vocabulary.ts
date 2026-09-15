@@ -2,692 +2,410 @@ import type { TopicGroup } from '../types/vocabulary';
 
 export const VOCABULARY: TopicGroup[] = [
   {
-    "id": "pronouns",
-    "title": "Pronouns & basics",
+    "id": "letter-a",
+    "title": "Буква А",
     "words": [
       {
-        "id": "pronouns-1",
-        "ru": "я",
-        "en": [
-          "I"
-        ],
-        "pronunciation": "ай",
-        "topic": "pronouns"
+        "id": "letter-a-1",
+        "gap": "Аб..жур",
+        "full": "Абажур",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-2",
-        "ru": "ты / вы",
-        "en": [
-          "you"
-        ],
-        "pronunciation": "ю",
-        "topic": "pronouns",
-        "ruVariants": [
-          "ты",
-          "вы"
-        ]
+        "id": "letter-a-2",
+        "gap": "Аб..немент",
+        "full": "Абонемент",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-3",
-        "ru": "он",
-        "en": [
-          "he"
-        ],
-        "pronunciation": "хи",
-        "topic": "pronouns"
+        "id": "letter-a-3",
+        "gap": "Аб..риген",
+        "full": "Абориген",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-4",
-        "ru": "она",
-        "en": [
-          "she"
-        ],
-        "pronunciation": "ши",
-        "topic": "pronouns"
+        "id": "letter-a-4",
+        "gap": "Абс..лютный",
+        "full": "Абсолютный",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-5",
-        "ru": "оно",
-        "en": [
-          "it"
-        ],
-        "pronunciation": "ит",
-        "topic": "pronouns"
+        "id": "letter-a-5",
+        "gap": "Абс..рд",
+        "full": "Абсурд",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-6",
-        "ru": "мы",
-        "en": [
-          "we"
-        ],
-        "pronunciation": "уи",
-        "topic": "pronouns"
+        "id": "letter-a-6",
+        "gap": "Ав..нгард",
+        "full": "Авангард",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-7",
-        "ru": "они",
-        "en": [
-          "they"
-        ],
-        "pronunciation": "зэй",
-        "topic": "pronouns"
+        "id": "letter-a-7",
+        "gap": "Ав..нтюра",
+        "full": "Авантюра",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-8",
-        "ru": "меня, мне",
-        "en": [
-          "me"
-        ],
-        "pronunciation": "ми",
-        "topic": "pronouns"
+        "id": "letter-a-8",
+        "gap": "Авиам..торный",
+        "full": "Авиамоторный",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-9",
-        "ru": "его, ему",
-        "en": [
-          "him"
-        ],
-        "pronunciation": "хим",
-        "topic": "pronouns"
+        "id": "letter-a-9",
+        "gap": "Авт..граф",
+        "full": "Автограф",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-10",
-        "ru": "её, ей",
-        "en": [
-          "her"
-        ],
-        "pronunciation": "хёр",
-        "topic": "pronouns"
+        "id": "letter-a-10",
+        "gap": "Авт..ритет",
+        "full": "Авторитет",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-11",
-        "ru": "нас, нам",
-        "en": [
-          "us"
-        ],
-        "pronunciation": "ас",
-        "topic": "pronouns"
+        "id": "letter-a-11",
+        "gap": "Агр..ссивный",
+        "full": "Агрессивный",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-12",
-        "ru": "их, им",
-        "en": [
-          "them"
-        ],
-        "pronunciation": "зэм",
-        "topic": "pronouns"
+        "id": "letter-a-12",
+        "gap": "Адм..рал",
+        "full": "Адмирал",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-13",
-        "ru": "мой (перед сущ.)",
-        "en": [
-          "my"
-        ],
-        "pronunciation": "май",
-        "topic": "pronouns"
+        "id": "letter-a-13",
+        "gap": "Адр..сант",
+        "full": "Адресант",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-14",
-        "ru": "твой / ваш (перед сущ.)",
-        "en": [
-          "your"
-        ],
-        "pronunciation": "ёр",
-        "topic": "pronouns",
-        "ruVariants": [
-          "твой",
-          "ваш (перед сущ.)"
-        ]
+        "id": "letter-a-14",
+        "gap": "Адр..сат",
+        "full": "Адресат",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-15",
-        "ru": "его (перед сущ.)",
-        "en": [
-          "his"
-        ],
-        "pronunciation": "хиз",
-        "topic": "pronouns"
+        "id": "letter-a-15",
+        "gap": "Аж..рный",
+        "full": "Ажурный",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-16",
-        "ru": "её (перед сущ.)",
-        "en": [
-          "her"
-        ],
-        "pronunciation": "хёр",
-        "topic": "pronouns"
+        "id": "letter-a-16",
+        "gap": "Айсб..рг",
+        "full": "Айсберг",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-17",
-        "ru": "его (о неодуш., перед сущ.)",
-        "en": [
-          "its"
-        ],
-        "pronunciation": "итс",
-        "topic": "pronouns"
+        "id": "letter-a-17",
+        "gap": "Ак..демия",
+        "full": "Академия",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-18",
-        "ru": "наш (перед сущ.)",
-        "en": [
-          "our"
-        ],
-        "pronunciation": "аур",
-        "topic": "pronouns"
+        "id": "letter-a-18",
+        "gap": "Акв..лангист",
+        "full": "Аквалангист",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-19",
-        "ru": "их (перед сущ.)",
-        "en": [
-          "their"
-        ],
-        "pronunciation": "зэр",
-        "topic": "pronouns"
+        "id": "letter-a-19",
+        "gap": "Аккомп..немент",
+        "full": "Аккомпанемент",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-20",
-        "ru": "мой (без сущ.)",
-        "en": [
-          "mine"
-        ],
-        "pronunciation": "майн",
-        "topic": "pronouns"
+        "id": "letter-a-20",
+        "gap": "Аккомп..ниатор",
+        "full": "Аккомпаниатор",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-21",
-        "ru": "твой / ваш (без сущ.)",
-        "en": [
-          "yours"
-        ],
-        "pronunciation": "ёрз",
-        "topic": "pronouns",
-        "ruVariants": [
-          "твой",
-          "ваш (без сущ.)"
-        ]
+        "id": "letter-a-21",
+        "gap": "Акк..рдеон",
+        "full": "Аккордеон",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-22",
-        "ru": "её (без сущ.)",
-        "en": [
-          "hers"
-        ],
-        "pronunciation": "хёрз",
-        "topic": "pronouns"
+        "id": "letter-a-22",
+        "gap": "Акк..ратный",
+        "full": "Аккуратный",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-23",
-        "ru": "наш (без сущ.)",
-        "en": [
-          "ours"
-        ],
-        "pronunciation": "аурз",
-        "topic": "pronouns"
+        "id": "letter-a-23",
+        "gap": "Акр..бат",
+        "full": "Акробат",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-24",
-        "ru": "их (без сущ.)",
-        "en": [
-          "theirs"
-        ],
-        "pronunciation": "зэрз",
-        "topic": "pronouns"
+        "id": "letter-a-24",
+        "gap": "Ак..стика",
+        "full": "Акустика",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-25",
-        "ru": "этот / это (близко)",
-        "en": [
-          "this"
-        ],
-        "pronunciation": "зис",
-        "topic": "pronouns",
-        "ruVariants": [
-          "этот",
-          "это (близко)"
-        ]
+        "id": "letter-a-25",
+        "gap": "Алг..ритм",
+        "full": "Алгоритм",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-26",
-        "ru": "тот / то (далеко)",
-        "en": [
-          "that"
-        ],
-        "pronunciation": "зэт",
-        "topic": "pronouns",
-        "ruVariants": [
-          "тот",
-          "то (далеко)"
-        ]
+        "id": "letter-a-26",
+        "gap": "Ал..бастровый",
+        "full": "Алебастровый",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-27",
-        "ru": "эти (близко)",
-        "en": [
-          "these"
-        ],
-        "pronunciation": "зиз",
-        "topic": "pronouns"
+        "id": "letter-a-27",
+        "gap": "Алл..гория",
+        "full": "Аллегория",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-28",
-        "ru": "те (далеко)",
-        "en": [
-          "those"
-        ],
-        "pronunciation": "зоуз",
-        "topic": "pronouns"
+        "id": "letter-a-28",
+        "gap": "Алл..ргия",
+        "full": "Аллергия",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-29",
-        "ru": "здесь",
-        "en": [
-          "here"
-        ],
-        "pronunciation": "хир",
-        "topic": "pronouns"
+        "id": "letter-a-29",
+        "gap": "Алл..я",
+        "full": "Аллея",
+        "topic": "letter-a"
       },
       {
-        "id": "pronouns-30",
-        "ru": "там",
-        "en": [
-          "there"
-        ],
-        "pronunciation": "зэр",
-        "topic": "pronouns"
+        "id": "letter-a-30",
+        "gap": "Алф..вит",
+        "full": "Алфавит",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-31",
+        "gap": "Ал..миний",
+        "full": "Алюминий",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-32",
+        "gap": "Ан..логия",
+        "full": "Аналогия",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-33",
+        "gap": "Анн..тация",
+        "full": "Аннотация",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-34",
+        "gap": "Ант..нна",
+        "full": "Антенна",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-35",
+        "gap": "Ап..лляция",
+        "full": "Апелляция",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-36",
+        "gap": "Апл..дировать",
+        "full": "Аплодировать",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-37",
+        "gap": "Апл..дисменты",
+        "full": "Аплодисменты",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-38",
+        "gap": "Апп..ратура",
+        "full": "Аппаратура",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-39",
+        "gap": "Апп..тит",
+        "full": "Аппетит",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-40",
+        "gap": "Арг..мент",
+        "full": "Аргумент",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-41",
+        "gap": "Ар..мат",
+        "full": "Аромат",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-42",
+        "gap": "Арт..ллерия",
+        "full": "Артиллерия",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-43",
+        "gap": "Арх..ология",
+        "full": "Археология",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-44",
+        "gap": "Архит..ктура",
+        "full": "Архитектура",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-45",
+        "gap": "Асимм..трия",
+        "full": "Асимметрия",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-46",
+        "gap": "Асс..стент",
+        "full": "Ассистент",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-47",
+        "gap": "Асс..циация",
+        "full": "Ассоциация",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-48",
+        "gap": "Астр..ном",
+        "full": "Астроном",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-49",
+        "gap": "Асф..льт",
+        "full": "Асфальт",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-50",
+        "gap": "Атм..сфера",
+        "full": "Атмосфера",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-51",
+        "gap": "Атт..стат",
+        "full": "Аттестат",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-52",
+        "gap": "Аттр..кцион",
+        "full": "Аттракцион",
+        "topic": "letter-a"
+      },
+      {
+        "id": "letter-a-53",
+        "gap": "Аф..ризм",
+        "full": "Афоризм",
+        "topic": "letter-a"
       }
     ]
   },
   {
-    "id": "computer",
-    "title": "Computer English",
+    "id": "letter-b",
+    "title": "Буква Б",
     "words": [
       {
-        "id": "computer-1",
-        "ru": "компьютер",
-        "en": [
-          "computer"
-        ],
-        "pronunciation": "кэмпьЮтэр",
-        "topic": "computer"
+        "id": "letter-b-1",
+        "gap": "Б..гровый",
+        "full": "Багровый",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-2",
-        "ru": "ноутбук",
-        "en": [
-          "laptop"
-        ],
-        "pronunciation": "лЭптоп",
-        "topic": "computer"
+        "id": "letter-b-2",
+        "gap": "Б..грянец",
+        "full": "Багрянец",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-3",
-        "ru": "экран",
-        "en": [
-          "screen"
-        ],
-        "pronunciation": "скрИн",
-        "topic": "computer"
+        "id": "letter-b-3",
+        "gap": "Б..гряный",
+        "full": "Багряный",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-4",
-        "ru": "дисплей",
-        "en": [
-          "display"
-        ],
-        "pronunciation": "дисплЭй",
-        "topic": "computer"
+        "id": "letter-b-4",
+        "gap": "Б..калея",
+        "full": "Бакалея",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-5",
-        "ru": "клавиатура",
-        "en": [
-          "keyboard"
-        ],
-        "pronunciation": "кИборд",
-        "topic": "computer"
+        "id": "letter-b-5",
+        "gap": "Б..лалайка",
+        "full": "Балалайка",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-6",
-        "ru": "мышь",
-        "en": [
-          "mouse"
-        ],
-        "pronunciation": "мАус",
-        "topic": "computer"
+        "id": "letter-b-6",
+        "gap": "Б..ллада",
+        "full": "Баллада",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-7",
-        "ru": "монитор",
-        "en": [
-          "monitor"
-        ],
-        "pronunciation": "мОнитэр",
-        "topic": "computer"
+        "id": "letter-b-7",
+        "gap": "Б..ллотироваться",
+        "full": "Баллотироваться",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-8",
-        "ru": "принтер",
-        "en": [
-          "printer"
-        ],
-        "pronunciation": "прИнтэр",
-        "topic": "computer"
+        "id": "letter-b-8",
+        "gap": "Б..рометр",
+        "full": "Барометр",
+        "topic": "letter-b"
       },
       {
-        "id": "computer-9",
-        "ru": "кабель",
-        "en": [
-          "cable"
-        ],
-        "pronunciation": "кЭйбл",
-        "topic": "computer"
+        "id": "letter-b-9",
+        "gap": "Б..ррикада",
+        "full": "Баррикада",
+        "topic": "letter-b"
+      }
+    ]
+  },
+  {
+    "id": "letter-k",
+    "title": "Буква К",
+    "words": [
+      {
+        "id": "letter-k-1",
+        "gap": "К..нструктор",
+        "full": "Конструктор",
+        "topic": "letter-k"
       },
       {
-        "id": "computer-10",
-        "ru": "файл",
-        "en": [
-          "file"
-        ],
-        "pronunciation": "фАйл",
-        "topic": "computer"
+        "id": "letter-k-2",
+        "gap": "К..нтингент",
+        "full": "Контингент",
+        "topic": "letter-k"
       },
       {
-        "id": "computer-11",
-        "ru": "папка",
-        "en": [
-          "folder"
-        ],
-        "pronunciation": "фОлдэр",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-12",
-        "ru": "документ",
-        "en": [
-          "document"
-        ],
-        "pronunciation": "дАкьюмэнт",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-13",
-        "ru": "текст",
-        "en": [
-          "text"
-        ],
-        "pronunciation": "тЭкст",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-14",
-        "ru": "изображение",
-        "en": [
-          "image"
-        ],
-        "pronunciation": "Имидж",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-15",
-        "ru": "имя (файла)",
-        "en": [
-          "name"
-        ],
-        "pronunciation": "нЭйм",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-16",
-        "ru": "сохранять",
-        "en": [
-          "to save"
-        ],
-        "pronunciation": "ту сЭйв",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-17",
-        "ru": "открывать",
-        "en": [
-          "to open"
-        ],
-        "pronunciation": "ту Оупэн",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-18",
-        "ru": "закрывать",
-        "en": [
-          "to close"
-        ],
-        "pronunciation": "ту клОуз",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-19",
-        "ru": "удалять",
-        "en": [
-          "to delete"
-        ],
-        "pronunciation": "ту дилИт",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-20",
-        "ru": "копировать",
-        "en": [
-          "to copy"
-        ],
-        "pronunciation": "ту кОпи",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-21",
-        "ru": "вставлять",
-        "en": [
-          "to paste"
-        ],
-        "pronunciation": "ту пЭйст",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-22",
-        "ru": "интернет",
-        "en": [
-          "internet"
-        ],
-        "pronunciation": "Интэрнэт",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-23",
-        "ru": "веб-сайт",
-        "en": [
-          "website"
-        ],
-        "pronunciation": "уЭбсайт",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-24",
-        "ru": "сайт",
-        "en": [
-          "site"
-        ],
-        "pronunciation": "сАйт",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-25",
-        "ru": "веб-страница",
-        "en": [
-          "web page"
-        ],
-        "pronunciation": "уЭб пЭйдж",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-26",
-        "ru": "браузер",
-        "en": [
-          "browser"
-        ],
-        "pronunciation": "брАузэр",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-27",
-        "ru": "ссылка",
-        "en": [
-          "link"
-        ],
-        "pronunciation": "лИнк",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-28",
-        "ru": "пароль",
-        "en": [
-          "password"
-        ],
-        "pronunciation": "пАсвэрд",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-29",
-        "ru": "электронная почта",
-        "en": [
-          "email"
-        ],
-        "pronunciation": "Имэйл",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-30",
-        "ru": "скачивать",
-        "en": [
-          "to download"
-        ],
-        "pronunciation": "ту дАунлОуд",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-31",
-        "ru": "загрузить (на сервер)",
-        "en": [
-          "to upload"
-        ],
-        "pronunciation": "ту АплОуд",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-32",
-        "ru": "код (программный)",
-        "en": [
-          "code"
-        ],
-        "pronunciation": "кОуд",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-33",
-        "ru": "программа",
-        "en": [
-          "program"
-        ],
-        "pronunciation": "прОуграм",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-34",
-        "ru": "приложение",
-        "en": [
-          "app",
-          "application"
-        ],
-        "pronunciation": "эп / эпликЭйшн",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-35",
-        "ru": "язык (программирования)",
-        "en": [
-          "language"
-        ],
-        "pronunciation": "лЭнгвидж",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-36",
-        "ru": "команда",
-        "en": [
-          "command"
-        ],
-        "pronunciation": "кэмЭнд",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-37",
-        "ru": "запускать",
-        "en": [
-          "to run"
-        ],
-        "pronunciation": "ту рАн",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-38",
-        "ru": "останавливать",
-        "en": [
-          "to stop"
-        ],
-        "pronunciation": "ту стОп",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-39",
-        "ru": "ошибка",
-        "en": [
-          "error"
-        ],
-        "pronunciation": "Эрэр",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-40",
-        "ru": "баг (ошибка в коде)",
-        "en": [
-          "bug"
-        ],
-        "pronunciation": "бАг",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-41",
-        "ru": "исправлять",
-        "en": [
-          "to fix"
-        ],
-        "pronunciation": "ту фИкс",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-42",
-        "ru": "тестировать",
-        "en": [
-          "to test"
-        ],
-        "pronunciation": "ту тЭст",
-        "topic": "computer"
-      },
-      {
-        "id": "computer-43",
-        "ru": "результат",
-        "en": [
-          "result"
-        ],
-        "pronunciation": "ризАлт",
-        "topic": "computer"
+        "id": "letter-k-3",
+        "gap": "К..нтинент",
+        "full": "Континент",
+        "topic": "letter-k"
       }
     ]
   }

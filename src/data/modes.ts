@@ -2,33 +2,27 @@ import type { ModeOption } from '../types/vocabulary';
 
 export const MODE_OPTIONS: ModeOption[] = [
   {
-    id: 'ru-to-en',
-    title: 'RU → EN',
-    description: 'Русский на лице, английский на обороте',
+    id: 'gap-to-full',
+    title: 'Пропуск → слово',
+    description: 'Слово с пропусками, ответ — полное написание',
     icon: '',
   },
   {
-    id: 'en-to-ru',
-    title: 'EN → RU',
-    description: 'Английский на лице, русский на обороте',
+    id: 'full-to-gap',
+    title: 'Слово → пропуск',
+    description: 'Полное слово, ответ — вариант с пропусками',
     icon: '',
   },
   {
     id: 'all-mixed',
     title: 'Все слова',
-    description: 'Случайный порядок',
+    description: 'Случайный порядок всех карточек',
     icon: '',
   },
   {
     id: 'single-topic',
-    title: 'Одна тема',
-    description: 'Выбрать тему',
-    icon: '',
-  },
-  {
-    id: 'multi-translation',
-    title: 'Несколько переводов',
-    description: 'Слова с 2+ вариантами',
+    title: 'Один блок',
+    description: 'Выбрать букву',
     icon: '',
   },
 ];

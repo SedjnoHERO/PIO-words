@@ -49,7 +49,7 @@ export const TopicSelectScreen = ({
   <section style={SCREEN_STYLE}>
     <Header
       title="Выбери блок"
-      subtitle="Учи слова только из одного блока"
+      subtitle="Слова на одну букву"
       onBack={onBack}
     />
     <TopicList

@@ -1,13 +1,11 @@
 import type { CSSProperties, KeyboardEvent } from 'react';
 import type { StudyMode, WordEntry } from '../../types/vocabulary';
 import {
-  getBackLang,
   getBackLines,
-  getFrontLang,
+  getBackSide,
+  getFrontSide,
   getFrontText,
-  getLangLabel,
-  getPronunciation,
-  shouldShowPronunciation,
+  getSideLabel,
 } from '../../utils/deckBuilder';
 import './Flashcard.css';
 
@@ -62,15 +60,6 @@ const TRANSLATION_ITEM_STYLE: CSSProperties = {
   lineHeight: 1.35,
 };
 
-const PRONUNCIATION_STYLE: CSSProperties = {
-  margin: 0,
-  fontSize: '16px',
-  fontWeight: 400,
-  color: 'var(--text-muted)',
-  textAlign: 'center',
-  lineHeight: 1.4,
-};
-
 const handleFlipKeyDown = (
   event: KeyboardEvent<HTMLDivElement>,
   onFlip: () => void,
@@ -88,13 +77,9 @@ export const Flashcard = ({
   onFlip,
 }: FlashcardProps) => {
   const backLines = getBackLines(word, mode);
-  const frontLang = getFrontLang(word, mode);
-  const backLang = getBackLang(word, mode);
-  const backLabel = getLangLabel(backLang);
-  const flipLabel = isFlipped ? 'Скрыть' : 'Показать перевод';
-  const pronunciation = getPronunciation(word);
-  const showFrontPronunciation = shouldShowPronunciation(word, mode, false);
-  const showBackPronunciation = shouldShowPronunciation(word, mode, true);
+  const frontLabel = getSideLabel(getFrontSide(mode));
+  const backLabel = getSideLabel(getBackSide(mode));
+  const flipLabel = isFlipped ? 'Скрыть' : 'Показать ответ';
   const innerClassName = isFlipped
     ? 'flashcard-inner flashcard-inner--flipped'
     : 'flashcard-inner';
@@ -110,25 +95,19 @@ export const Flashcard = ({
         aria-label={flipLabel}
       >
         <div className="flashcard-face flashcard-face--front">
-          <span style={LABEL_STYLE}>{getLangLabel(frontLang)}</span>
+          <span style={LABEL_STYLE}>{frontLabel}</span>
           <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
-          {showFrontPronunciation && pronunciation && (
-            <p style={PRONUNCIATION_STYLE}>[{pronunciation}]</p>
-          )}
         </div>
 
         <div className="flashcard-face flashcard-face--back">
           <span style={LABEL_STYLE}>{backLabel}</span>
           <span style={TRANSLATIONS_LIST_STYLE}>
             {backLines.map((line, index) => (
-              <p key={`${line}-${index}`} style={TRANSLATION_ITEM_STYLE}>
+              <p key={line + '-' + index} style={TRANSLATION_ITEM_STYLE}>
                 {line}
               </p>
             ))}
           </span>
-          {showBackPronunciation && pronunciation && (
-            <p style={PRONUNCIATION_STYLE}>[{pronunciation}]</p>
-          )}
         </div>
       </div>
     </div>

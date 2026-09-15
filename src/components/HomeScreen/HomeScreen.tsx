@@ -26,8 +26,8 @@ const MODES_STYLE: CSSProperties = {
 export const HomeScreen = ({ onSelectMode }: HomeScreenProps) => (
   <section style={SCREEN_STYLE}>
     <Header
-      title="Карточки"
-      subtitle={`${TOTAL_WORDS} слов · ${VOCABULARY.length} блоков`}
+      title="Орфография"
+      subtitle={TOTAL_WORDS + ' слов · ' + VOCABULARY.length + ' блоков'}
     />
     <div style={MODES_STYLE}>
       {MODE_OPTIONS.map((mode) => (

@@ -2,14 +2,7 @@ import { VOCABULARY } from '../data/vocabulary';
 import type { StudyMode, WordEntry } from '../types/vocabulary';
 import { shuffleArray } from './shuffle';
 
-export type CardLang = 'ru' | 'en';
-
-export interface MultiTranslationCard {
-  frontText: string;
-  backLines: string[];
-  frontLang: CardLang;
-  backLang: CardLang;
-}
+export type CardSide = 'gap' | 'full';
 
 const getAllWords = (): WordEntry[] =>
   VOCABULARY.flatMap((group) => group.words);
@@ -19,166 +12,47 @@ const getWordsByTopic = (topicId: string): WordEntry[] => {
   return group ? [...group.words] : [];
 };
 
-const hasMultipleRu = (word: WordEntry): boolean =>
-  (word.ruVariants?.length ?? 0) > 1;
-
-const hasMultipleEn = (word: WordEntry): boolean =>
-  word.en.length > 1;
-
-export const hasMultipleTranslations = (word: WordEntry): boolean =>
-  hasMultipleRu(word) || hasMultipleEn(word);
-
-const getMultiTranslationWords = (): WordEntry[] =>
-  getAllWords().filter(hasMultipleTranslations);
-
-export const resolveMultiTranslationCard = (
-  word: WordEntry,
-): MultiTranslationCard => {
-  const multiRu = hasMultipleRu(word);
-  const multiEn = hasMultipleEn(word);
-  const ruLines = multiRu ? word.ruVariants! : [word.ru];
-  const enLines = word.en;
-
-  if (multiEn && !multiRu) {
-    return {
-      frontText: word.ru,
-      backLines: enLines,
-      frontLang: 'ru',
-      backLang: 'en',
-    };
-  }
-
-  if (multiRu && !multiEn) {
-    return {
-      frontText: enLines[0],
-      backLines: ruLines,
-      frontLang: 'en',
-      backLang: 'ru',
-    };
-  }
-
-  return {
-    frontText: enLines.join(' / '),
-    backLines: ruLines,
-    frontLang: 'en',
-    backLang: 'ru',
-  };
-};
-
 export const buildDeck = (
   mode: StudyMode,
   topicId: string | null,
 ): WordEntry[] => {
   switch (mode) {
-    case 'ru-to-en':
-    case 'en-to-ru':
-      return shuffleArray(getAllWords());
+    case 'gap-to-full':
+    case 'full-to-gap':
     case 'all-mixed':
       return shuffleArray(getAllWords());
     case 'single-topic':
       return topicId ? shuffleArray(getWordsByTopic(topicId)) : [];
-    case 'multi-translation':
-      return shuffleArray(getMultiTranslationWords());
     default:
       return [];
   }
 };
 
-export const getFrontText = (
-  word: WordEntry,
+const resolveDirection = (
   mode: StudyMode,
-): string => {
-  if (mode === 'multi-translation') {
-    return resolveMultiTranslationCard(word).frontText;
+): { front: CardSide; back: CardSide } => {
+  if (mode === 'full-to-gap') {
+    return { front: 'full', back: 'gap' };
   }
 
-  if (mode === 'en-to-ru') {
-    return word.en.join(' / ');
-  }
-
-  return word.ru;
+  return { front: 'gap', back: 'full' };
 };
 
-export const getBackLines = (
-  word: WordEntry,
-  mode: StudyMode,
-): string[] => {
-  if (mode === 'multi-translation') {
-    return resolveMultiTranslationCard(word).backLines;
-  }
-
-  if (mode === 'en-to-ru') {
-    if (word.ruVariants && word.ruVariants.length > 1) {
-      return word.ruVariants;
-    }
-
-    return [word.ru];
-  }
-
-  if (mode === 'ru-to-en') {
-    return word.en;
-  }
-
-  return word.en.length > 1 ? word.en : [word.en[0]];
+export const getFrontText = (word: WordEntry, mode: StudyMode): string => {
+  const { front } = resolveDirection(mode);
+  return front === 'gap' ? word.gap : word.full;
 };
 
-export const getFrontLang = (
-  word: WordEntry,
-  mode: StudyMode,
-): CardLang => {
-  if (mode === 'multi-translation') {
-    return resolveMultiTranslationCard(word).frontLang;
-  }
-
-  if (mode === 'en-to-ru') {
-    return 'en';
-  }
-
-  return 'ru';
+export const getBackLines = (word: WordEntry, mode: StudyMode): string[] => {
+  const { back } = resolveDirection(mode);
+  return [back === 'gap' ? word.gap : word.full];
 };
 
-export const getBackLang = (
-  word: WordEntry,
-  mode: StudyMode,
-): CardLang => {
-  if (mode === 'multi-translation') {
-    return resolveMultiTranslationCard(word).backLang;
-  }
+export const getFrontSide = (mode: StudyMode): CardSide =>
+  resolveDirection(mode).front;
 
-  if (mode === 'en-to-ru') {
-    return 'ru';
-  }
+export const getBackSide = (mode: StudyMode): CardSide =>
+  resolveDirection(mode).back;
 
-  return 'en';
-};
-
-export const getLangLabel = (lang: CardLang): string =>
-  lang === 'en' ? 'English' : 'Русский';
-
-export const getPronunciation = (word: WordEntry): string | null =>
-  word.pronunciation?.trim() || null;
-
-export const shouldShowPronunciation = (
-  word: WordEntry,
-  mode: StudyMode,
-  isFlipped: boolean,
-): boolean => {
-  if (!getPronunciation(word)) {
-    return false;
-  }
-
-  if (mode === 'en-to-ru') {
-    return !isFlipped;
-  }
-
-  if (mode === 'ru-to-en') {
-    return isFlipped;
-  }
-
-  if (mode === 'multi-translation') {
-    const card = resolveMultiTranslationCard(word);
-    return card.backLang === 'en' ? isFlipped : !isFlipped;
-  }
-
-  return !isFlipped;
-};
+export const getSideLabel = (side: CardSide): string =>
+  side === 'gap' ? 'С пропуском' : 'Полное слово';

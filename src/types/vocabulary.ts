@@ -1,23 +1,21 @@
 export type StudyMode =
-  | 'ru-to-en'
-  | 'en-to-ru'
+  | 'gap-to-full'
+  | 'full-to-gap'
   | 'all-mixed'
-  | 'single-topic'
-  | 'multi-translation';
+  | 'single-topic';
 
 export interface WordEntry {
   id: string;
-  ru: string;
-  en: string[];
+  gap: string;
+  full: string;
   topic: string;
-  pronunciation?: string;
-  ruVariants?: string[];
 }
 
 export interface TopicGroup {
   id: string;
   title: string;
   words: WordEntry[];
+  oral?: boolean;
 }
 
 export interface StudySession {
