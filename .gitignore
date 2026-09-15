@@ -2,6 +2,7 @@ node_modules
 dist
 dinarasecret/node_modules
 dinarasecret/dist
+dinarasecret/public/_crop-debug/
 .DS_Store
 *.local
 .env
