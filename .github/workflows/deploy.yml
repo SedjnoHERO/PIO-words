@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, master, festive]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -18,43 +18,32 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout spelling (main)
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          path: spelling
-
-      - name: Checkout Dinara (festive)
-        uses: actions/checkout@v4
-        with:
-          ref: festive
-          path: festive
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: |
-            spelling/package-lock.json
-            festive/package-lock.json
+            package-lock.json
+            dinarasecret/package-lock.json
 
       - name: Build spelling at /PIO-words/
-        working-directory: spelling
         run: |
           npm ci
           npm run build
 
       - name: Build Dinara at /PIO-words/dinarasecret/
-        working-directory: festive
+        working-directory: dinarasecret
         run: |
           npm ci
-          npx vite build --base /PIO-words/dinarasecret/
+          npm run build
 
       - name: Assemble site
         run: |
           mkdir -p site/dinarasecret
-          cp -r spelling/dist/. site/
-          cp -r festive/dist/. site/dinarasecret/
+          cp -r dist/. site/
+          cp -r dinarasecret/dist/. site/dinarasecret/
           touch site/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3

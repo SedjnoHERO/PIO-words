@@ -1,12 +1,8 @@
 node_modules
 dist
-dinarasecret/node_modules
-dinarasecret/dist
 .DS_Store
 *.local
 .env
-.vs/
-gcm-diagnose.log
 tools/.docx-temp
 temp-docx/
 tools/document.xml

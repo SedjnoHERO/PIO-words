@@ -1,0 +1,14 @@
+# Copy words from Word into this format, then run: node tools/import-words.mjs words.txt
+
+[basics] Основы
+привет | hello, hi
+спасибо | thank you, thanks
+пожалуйста | please, you're welcome
+
+[family] Семья
+мама | mother, mom, mum
+папа | father, dad
+
+[verbs] Глаголы
+делать | do, make
+идти | go, walk
