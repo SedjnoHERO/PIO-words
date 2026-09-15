@@ -3,7 +3,6 @@ export type StudyMode =
   | 'de-to-ru'
   | 'all-mixed'
   | 'single-topic'
-  | 'oral-only'
   | 'multi-translation';
 
 export interface WordEntry {

@@ -14,9 +14,6 @@ export interface MultiTranslationCard {
 const getAllWords = (): WordEntry[] =>
   VOCABULARY.flatMap((group) => group.words);
 
-const getOralWords = (): WordEntry[] =>
-  getAllWords().filter((word) => word.oral);
-
 const getWordsByTopic = (topicId: string): WordEntry[] => {
   const group = VOCABULARY.find((item) => item.id === topicId);
   return group ? [...group.words] : [];
@@ -76,8 +73,6 @@ export const buildDeck = (
     case 'ru-to-de':
     case 'de-to-ru':
       return shuffleArray(getAllWords());
-    case 'oral-only':
-      return shuffleArray(getOralWords());
     case 'all-mixed':
       return shuffleArray(getAllWords());
     case 'single-topic':
