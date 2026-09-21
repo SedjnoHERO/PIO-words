@@ -44,8 +44,8 @@ const FACE_BASE: CSSProperties = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '12px',
-  padding: '28px 16px',
+  gap: '10px',
+  padding: '24px 16px',
   borderRadius: '24px',
   backfaceVisibility: 'hidden',
   WebkitBackfaceVisibility: 'hidden',
@@ -54,6 +54,7 @@ const FACE_BASE: CSSProperties = {
   cursor: 'pointer',
   width: '100%',
   minHeight: '280px',
+  overflow: 'auto',
 };
 
 const FRONT_STYLE: CSSProperties = {
@@ -77,7 +78,7 @@ const LABEL_STYLE: CSSProperties = {
 
 const WORD_STYLE: CSSProperties = {
   margin: 0,
-  fontSize: '30px',
+  fontSize: '28px',
   fontWeight: 800,
   color: 'var(--text)',
   textAlign: 'center',
@@ -87,12 +88,17 @@ const WORD_STYLE: CSSProperties = {
 
 const TRANSCRIPTION_STYLE: CSSProperties = {
   margin: 0,
-  fontSize: '15px',
-  fontWeight: 600,
-  color: 'var(--text-muted)',
+  padding: '6px 12px',
+  fontSize: '16px',
+  fontWeight: 700,
+  color: '#5c4a62',
   textAlign: 'center',
-  lineHeight: 1.35,
-  fontFamily: 'Georgia, "Times New Roman", serif',
+  lineHeight: 1.4,
+  fontFamily: 'Georgia, "Times New Roman", Times, serif',
+  background: 'rgba(255, 255, 255, 0.85)',
+  borderRadius: '12px',
+  maxWidth: '100%',
+  wordBreak: 'break-word',
 };
 
 const HINT_STYLE: CSSProperties = {
@@ -106,7 +112,7 @@ const TRANSLATIONS_LIST_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  gap: '10px',
+  gap: '12px',
   width: '100%',
 };
 
@@ -114,7 +120,7 @@ const TRANSLATION_BLOCK_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  gap: '4px',
+  gap: '6px',
   width: '100%',
 };
 
@@ -170,11 +176,11 @@ export const Flashcard = ({
       >
         <span className="flashcard-face" style={FRONT_STYLE}>
           <span style={LABEL_STYLE}>{getLangLabel(frontLang, language)}</span>
-          <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
+          <span style={WORD_STYLE}>{getFrontText(word, mode)}</span>
           {frontTranscription ? (
-            <p style={TRANSCRIPTION_STYLE}>{frontTranscription}</p>
+            <span style={TRANSCRIPTION_STYLE}>{frontTranscription}</span>
           ) : null}
-          <p style={HINT_STYLE}>Нажми, чтобы перевернуть</p>
+          <span style={HINT_STYLE}>Нажми, чтобы перевернуть</span>
         </span>
 
         <span className="flashcard-face" style={BACK_STYLE}>
@@ -193,9 +199,9 @@ export const Flashcard = ({
 
               return (
                 <span key={`${line}-${index}`} style={TRANSLATION_BLOCK_STYLE}>
-                  <p style={TRANSLATION_ITEM_STYLE}>{line}</p>
+                  <span style={TRANSLATION_ITEM_STYLE}>{line}</span>
                   {transcription ? (
-                    <p style={TRANSCRIPTION_STYLE}>{transcription}</p>
+                    <span style={TRANSCRIPTION_STYLE}>{transcription}</span>
                   ) : null}
                 </span>
               );

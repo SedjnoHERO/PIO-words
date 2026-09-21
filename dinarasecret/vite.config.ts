@@ -43,6 +43,10 @@ export default defineConfig({
       workbox: {
         navigateFallback: '/PIO-words/dinarasecret/index.html',
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+        cleanupOutdatedCaches: true,
+      },
+      devOptions: {
+        enabled: false,
       },
     }),
   ],
