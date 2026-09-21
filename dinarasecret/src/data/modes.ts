@@ -10,6 +10,9 @@ const FOREIGN_FLAG: Record<AppLanguage, string> = {
   en: '🇬🇧',
 };
 
+const foreignWord = (language: AppLanguage): string =>
+  language === 'de' ? 'немецком' : 'английском';
+
 export const getModeOptions = (language: AppLanguage): ModeOption[] => {
   const foreign = FOREIGN_LABEL[language];
   const flag = FOREIGN_FLAG[language];
@@ -18,14 +21,26 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
     {
       id: 'ru-to-foreign',
       title: `Русский → ${foreign}`,
-      description: `Слово на русском, перевод на ${foreign.toLowerCase() === 'deutsch' ? 'немецком' : 'английском'}`,
+      description: `Слово на русском, перевод на ${foreignWord(language)}`,
       icon: `🇷🇺→${flag}`,
     },
     {
       id: 'foreign-to-ru',
       title: `${foreign} → Русский`,
-      description: `Слово на ${foreign.toLowerCase() === 'deutsch' ? 'немецком' : 'английском'}, перевод на русском`,
+      description: `Слово на ${foreignWord(language)}, перевод на русском`,
       icon: `${flag}→🇷🇺`,
+    },
+    {
+      id: 'match-pairs',
+      title: 'Соедини пары',
+      description: 'Нажми слово слева и перевод справа',
+      icon: '🔗',
+    },
+    {
+      id: 'choose-one',
+      title: 'Выбор из трёх',
+      description: 'Одно слово сверху — выбери верный перевод',
+      icon: '🎯',
     },
     {
       id: 'all-mixed',

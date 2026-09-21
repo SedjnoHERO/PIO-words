@@ -1,6 +1,8 @@
 import { useCallback, useState } from 'react';
 import { HomeScreen } from './components/HomeScreen/HomeScreen';
 import { LanguageSelectScreen } from './components/LanguageSelectScreen/LanguageSelectScreen';
+import { MatchScreen } from './components/MatchScreen/MatchScreen';
+import { QuizScreen } from './components/QuizScreen/QuizScreen';
 import { StudyScreen } from './components/StudyScreen/StudyScreen';
 import { TopicSelectScreen } from './components/TopicSelectScreen/TopicSelectScreen';
 import type { AppLanguage, StudyMode } from './types/vocabulary';
@@ -17,6 +19,9 @@ const APP_STYLE = {
   padding:
     'max(16px, env(safe-area-inset-top)) 16px max(20px, env(safe-area-inset-bottom))',
 };
+
+const isGameMode = (mode: StudyMode): boolean =>
+  mode === 'match-pairs' || mode === 'choose-one';
 
 export const App = () => {
   const [screen, setScreen] = useState<AppScreen>('language');
@@ -94,7 +99,23 @@ export const App = () => {
         />
       ) : null}
 
-      {screen === 'study' ? (
+      {screen === 'study' && mode === 'match-pairs' ? (
+        <MatchScreen
+          language={language}
+          onBack={handleBackFromStudy}
+          onHome={handleBackToHome}
+        />
+      ) : null}
+
+      {screen === 'study' && mode === 'choose-one' ? (
+        <QuizScreen
+          language={language}
+          onBack={handleBackFromStudy}
+          onHome={handleBackToHome}
+        />
+      ) : null}
+
+      {screen === 'study' && !isGameMode(mode) ? (
         <StudyScreen
           language={language}
           mode={mode}

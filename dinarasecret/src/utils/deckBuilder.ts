@@ -84,6 +84,9 @@ export const buildDeck = (
         : [];
     case 'multi-translation':
       return shuffleArray(getMultiTranslationWords(language));
+    case 'match-pairs':
+    case 'choose-one':
+      return [];
     default:
       return [];
   }

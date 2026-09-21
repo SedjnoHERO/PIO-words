@@ -5,7 +5,9 @@ export type StudyMode =
   | 'foreign-to-ru'
   | 'all-mixed'
   | 'single-topic'
-  | 'multi-translation';
+  | 'multi-translation'
+  | 'match-pairs'
+  | 'choose-one';
 
 export interface WordEntry {
   id: string;
