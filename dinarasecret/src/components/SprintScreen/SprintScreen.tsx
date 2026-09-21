@@ -12,7 +12,9 @@ import {
 } from '../../utils/gameHelpers';
 import { shuffleArray } from '../../utils/shuffle';
 import { recordCorrect, recordWrong } from '../../utils/wordStats';
+import { speakText } from '../../utils/speech';
 import { Header } from '../Header/Header';
+import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface SprintScreenProps {
   language: AppLanguage;
@@ -78,6 +80,7 @@ const PROMPT_CARD: CSSProperties = {
   background: 'linear-gradient(145deg, #ffffff, #fff5f8)',
   boxShadow: 'var(--shadow-md)',
   textAlign: 'center',
+  position: 'relative',
 };
 
 const PROMPT_LABEL: CSSProperties = {
@@ -357,6 +360,10 @@ export const SprintScreen = ({
         </div>
       </div>
       <div style={PROMPT_CARD}>
+        <SpeakButton
+          corner="right"
+          onSpeak={() => speakText(getForeignText(round.word), language)}
+        />
         <span style={PROMPT_LABEL}>{promptLabel}</span>
         <span style={PROMPT_TEXT}>{promptText}</span>
       </div>

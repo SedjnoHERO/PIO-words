@@ -6,9 +6,11 @@ import { scrambleLetters } from '../../utils/answerCheck';
 import { getForeignText, getRuText } from '../../utils/gameHelpers';
 import { shuffleArray } from '../../utils/shuffle';
 import { recordCorrect, recordWrong } from '../../utils/wordStats';
+import { speakText } from '../../utils/speech';
 import { FinishScreen } from '../FinishScreen/FinishScreen';
 import { Header } from '../Header/Header';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
+import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface ScrambleScreenProps {
   language: AppLanguage;
@@ -50,6 +52,7 @@ const PROMPT_CARD: CSSProperties = {
   background: 'linear-gradient(145deg, #ffffff, #fff5f8)',
   boxShadow: 'var(--shadow-md)',
   textAlign: 'center',
+  position: 'relative',
 };
 
 const LABEL_STYLE: CSSProperties = {
@@ -359,6 +362,10 @@ export const ScrambleScreen = ({
       <Header title="Собери слово" onBack={onBack} />
       <ProgressBar current={session.index + 1} total={session.deck.length} />
       <div style={PROMPT_CARD}>
+        <SpeakButton
+          corner="right"
+          onSpeak={() => speakText(getForeignText(current), language)}
+        />
         <span style={LABEL_STYLE}>Русский</span>
         <p style={PROMPT_TEXT}>{promptRu}</p>
         <p style={{ ...FEEDBACK_STYLE, color: feedbackColor }}>{feedbackText}</p>

@@ -9,9 +9,11 @@ import {
 } from '../../utils/gameHelpers';
 import { shuffleArray } from '../../utils/shuffle';
 import { recordCorrect, recordWrong } from '../../utils/wordStats';
+import { speakText } from '../../utils/speech';
 import { FinishScreen } from '../FinishScreen/FinishScreen';
 import { Header } from '../Header/Header';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
+import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface QuizScreenProps {
   language: AppLanguage;
@@ -50,6 +52,7 @@ const PROMPT_CARD: CSSProperties = {
   background: 'linear-gradient(145deg, #ffffff, #fff5f8)',
   boxShadow: 'var(--shadow-md)',
   textAlign: 'center',
+  position: 'relative',
 };
 
 const PROMPT_LABEL: CSSProperties = {
@@ -241,6 +244,10 @@ export const QuizScreen = ({
       <Header title="Выбор из трёх" onBack={onBack} />
       <ProgressBar current={session.index + 1} total={session.deck.length} />
       <div style={PROMPT_CARD}>
+        <SpeakButton
+          corner="right"
+          onSpeak={() => speakText(getForeignText(current), language)}
+        />
         <span style={PROMPT_LABEL}>{promptLabel}</span>
         <span style={PROMPT_TEXT}>{promptText}</span>
       </div>

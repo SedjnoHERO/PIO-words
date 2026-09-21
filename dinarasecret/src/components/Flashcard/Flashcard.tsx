@@ -9,6 +9,8 @@ import {
   getFrontTranscription,
   getLangLabel,
 } from '../../utils/deckBuilder';
+import { speakText } from '../../utils/speech';
+import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface FlashcardProps {
   word: WordEntry;
@@ -188,9 +190,15 @@ export const Flashcard = ({
   const flipLabel = isFlipped ? 'Скрыть перевод' : 'Показать перевод';
 
   const wrapClass = showRevealShine && isFlipped ? 'card-reveal-shine' : '';
+  const foreignSpeech = word.terms.filter(Boolean).join(', ');
 
   return (
     <div style={CARD_WRAP_STYLE} className={wrapClass}>
+      <SpeakButton
+        corner="left"
+        label="Произнести"
+        onSpeak={() => speakText(foreignSpeech, language)}
+      />
       {onToggleFavorite ? (
         <button
           type="button"
