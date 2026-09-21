@@ -62,6 +62,21 @@ const ROUND_DONE: CSSProperties = {
   textAlign: 'center',
 };
 
+const NEXT_BTN: CSSProperties = {
+  marginTop: '8px',
+  minWidth: '160px',
+  height: '48px',
+  padding: '0 20px',
+  border: 'none',
+  borderRadius: '16px',
+  background: 'var(--accent)',
+  color: '#ffffff',
+  fontSize: '16px',
+  fontWeight: 800,
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+};
+
 const buildCards = (words: WordEntry[]): MemoryCard[] => {
   const cards: MemoryCard[] = words.flatMap((word) => [
     {
@@ -131,17 +146,17 @@ export const MemoryScreen = ({
   );
 
   useEffect(() => {
-    if (!isRoundDone || isFinished || showRoundDone) {
+    if (!isRoundDone || isFinished) {
       return;
     }
 
     setShowRoundDone(true);
     const timer = window.setTimeout(() => {
       setupRound(roundIndex + 1);
-    }, 900);
+    }, 450);
 
     return () => window.clearTimeout(timer);
-  }, [isFinished, isRoundDone, roundIndex, setupRound, showRoundDone]);
+  }, [isFinished, isRoundDone, roundIndex, setupRound]);
 
   const handleTile = useCallback(
     (card: MemoryCard) => {
@@ -232,6 +247,13 @@ export const MemoryScreen = ({
           <p style={{ ...HINT_STYLE, color: 'var(--accent)', fontSize: '20px' }}>
             Раунд собран!
           </p>
+          <button
+            type="button"
+            style={NEXT_BTN}
+            onClick={() => setupRound(roundIndex + 1)}
+          >
+            Дальше
+          </button>
         </div>
       </section>
     );

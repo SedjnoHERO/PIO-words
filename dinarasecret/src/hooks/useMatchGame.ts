@@ -86,17 +86,17 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
   }, [leftOrder.length, rightOrder.length, rounds.length, setupRound]);
 
   useEffect(() => {
-    if (!isRoundDone || isFinished || showRoundDone) {
+    if (!isRoundDone || isFinished) {
       return;
     }
 
     setShowRoundDone(true);
     const timer = window.setTimeout(() => {
       setupRound(roundIndex + 1);
-    }, 900);
+    }, 450);
 
     return () => window.clearTimeout(timer);
-  }, [isFinished, isRoundDone, roundIndex, setupRound, showRoundDone]);
+  }, [isFinished, isRoundDone, roundIndex, setupRound]);
 
   const tryMatch = useCallback(
     (leftId: string, rightId: string) => {

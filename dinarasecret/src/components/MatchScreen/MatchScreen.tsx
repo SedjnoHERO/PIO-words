@@ -56,6 +56,21 @@ const ROUND_TITLE: CSSProperties = {
   color: 'var(--accent)',
 };
 
+const NEXT_BTN: CSSProperties = {
+  marginTop: '8px',
+  minWidth: '160px',
+  height: '48px',
+  padding: '0 20px',
+  border: 'none',
+  borderRadius: '16px',
+  background: 'var(--accent)',
+  color: '#ffffff',
+  fontSize: '16px',
+  fontWeight: 800,
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+};
+
 export const MatchScreen = ({
   language,
   onBack,
@@ -116,7 +131,13 @@ export const MatchScreen = ({
             ✨
           </span>
           <p style={ROUND_TITLE}>Раунд собран!</p>
-          <p style={HINT_STYLE}>Дальше автоматически…</p>
+          <button
+            type="button"
+            style={NEXT_BTN}
+            onClick={() => game.setupRound(game.roundIndex + 1)}
+          >
+            Дальше
+          </button>
         </div>
       </section>
     );
