@@ -1,5 +1,6 @@
 import { getVocabulary } from '../data/vocabulary';
 import type { AppLanguage, StudyMode, WordEntry } from '../types/vocabulary';
+import { pickFavoriteWords } from './favorites';
 import { shuffleArray } from './shuffle';
 import { pickWeakWords } from './wordStats';
 
@@ -81,6 +82,8 @@ export const buildDeck = (
       return shuffleArray(getAllWords(language));
     case 'weak-words':
       return shuffleArray(pickWeakWords(language, getAllWords(language)));
+    case 'favorites':
+      return shuffleArray(pickFavoriteWords(language, getAllWords(language)));
     case 'single-topic':
       return topicId
         ? shuffleArray(getWordsByTopic(language, topicId))
@@ -130,7 +133,7 @@ export const getBackLines = (
     return [word.ru];
   }
 
-  if (mode === 'ru-to-foreign' || mode === 'weak-words') {
+  if (mode === 'ru-to-foreign' || mode === 'weak-words' || mode === 'favorites' || mode === 'single-topic') {
     return word.terms;
   }
 

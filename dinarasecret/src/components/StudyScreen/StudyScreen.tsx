@@ -1,15 +1,17 @@
 import { useCallback, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { getModeTitle } from '../../data/modes';
+import { getVocabulary } from '../../data/vocabulary';
+import { pickRandom, MID_STUDY_PRAISE } from '../../data/praiseMessages';
 import { useFlashcards } from '../../hooks/useFlashcards';
 import { useSwipe } from '../../hooks/useSwipe';
 import type { AppLanguage, StudyMode } from '../../types/vocabulary';
-import { pickRandom, MID_STUDY_PRAISE } from '../../data/praiseMessages';
+import { isFavorite, toggleFavorite } from '../../utils/favorites';
 import { getMilestonePraise, vibratePraise } from '../../utils/praiseMilestones';
 import { ActionButtons } from '../ActionButtons/ActionButtons';
+import { CardDeck } from '../CardDeck/CardDeck';
 import { FinishScreen } from '../FinishScreen/FinishScreen';
 import { FireworksBurst } from '../FireworksBurst/FireworksBurst';
-import { CardDeck } from '../CardDeck/CardDeck';
 import { Flashcard } from '../Flashcard/Flashcard';
 import { Header } from '../Header/Header';
 import { PraiseToast } from '../PraiseToast/PraiseToast';
@@ -49,6 +51,34 @@ const EMPTY_STYLE: CSSProperties = {
   padding: '24px',
 };
 
+const getEmptyMessage = (mode: StudyMode): string => {
+  if (mode === 'weak-words') {
+    return 'Пока нет слабых слов. Ошибайся или откладывай в других режимах — и они появятся здесь 💕';
+  }
+
+  if (mode === 'favorites') {
+    return 'Пока пусто. Открой любую карточку и нажми ☆ — слово попадёт сюда.';
+  }
+
+  if (mode === 'single-topic') {
+    return 'Выбери тему, чтобы начать.';
+  }
+
+  return 'В этом режиме пока нет карточек.';
+};
+
+const getStudySubtitle = (
+  language: AppLanguage,
+  mode: StudyMode,
+  topicId: string | null,
+): string | undefined => {
+  if (mode !== 'single-topic' || !topicId) {
+    return undefined;
+  }
+
+  return getVocabulary(language).find((topic) => topic.id === topicId)?.title;
+};
+
 export const StudyScreen = ({
   language,
   mode,
@@ -74,6 +104,7 @@ export const StudyScreen = ({
   const [praiseMessage, setPraiseMessage] = useState<string | null>(null);
   const [fireworkBurstId, setFireworkBurstId] = useState(0);
   const [showRevealShine, setShowRevealShine] = useState(false);
+  const [favoriteTick, setFavoriteTick] = useState(0);
   const shownMilestones = useRef<Set<number>>(new Set());
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const shineTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -125,6 +156,16 @@ export const StudyScreen = ({
     flip();
   }, [flip, isFlipped, triggerRevealCelebration]);
 
+  const handleToggleFavorite = useCallback(() => {
+    if (!currentWord) {
+      return;
+    }
+
+    const nowFavorite = toggleFavorite(language, currentWord.id);
+    setFavoriteTick((value) => value + 1);
+    showPraise(nowFavorite ? 'В избранном ⭐' : 'Убрала из избранного');
+  }, [currentWord, language, showPraise]);
+
   const handleRestart = useCallback(() => {
     shownMilestones.current.clear();
     setPraiseMessage(null);
@@ -146,16 +187,16 @@ export const StudyScreen = ({
     },
   });
 
+  const wordIsFavorite = Boolean(
+    currentWord && isFavorite(language, currentWord.id) && favoriteTick >= 0,
+  );
+
   if (deck.length === 0) {
     return (
       <section style={SCREEN_STYLE}>
         <Header title={getModeTitle(language, mode)} onBack={onBack} />
         <div style={EMPTY_STYLE}>
-          <p>
-            {mode === 'weak-words'
-              ? 'Пока нет слабых слов. Ошибайся или откладывай в других режимах — и они появятся здесь 💕'
-              : 'В этом режиме пока нет карточек. Добавь слова в vocabulary.ts'}
-          </p>
+          <p>{getEmptyMessage(mode)}</p>
           <button type="button" onClick={onBack}>
             Назад
           </button>
@@ -185,7 +226,11 @@ export const StudyScreen = ({
     <section style={SCREEN_STYLE}>
       <FireworksBurst burstId={fireworkBurstId} />
       <PraiseToast message={praiseMessage} />
-      <Header title={getModeTitle(language, mode)} onBack={onBack} />
+      <Header
+        title={getModeTitle(language, mode)}
+        subtitle={getStudySubtitle(language, mode, topicId)}
+        onBack={onBack}
+      />
       <ProgressBar current={progress} total={deck.length} />
       <div style={CARD_AREA} {...swipe}>
         <CardDeck
@@ -200,7 +245,9 @@ export const StudyScreen = ({
             mode={mode}
             isFlipped={isFlipped}
             showRevealShine={showRevealShine}
+            isFavorite={wordIsFavorite}
             onFlip={handleFlip}
+            onToggleFavorite={handleToggleFavorite}
           />
         </CardDeck>
       </div>

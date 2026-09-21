@@ -16,7 +16,9 @@ interface FlashcardProps {
   mode: StudyMode;
   isFlipped: boolean;
   showRevealShine: boolean;
+  isFavorite?: boolean;
   onFlip: () => void;
+  onToggleFavorite?: () => void;
 }
 
 const CARD_WRAP_STYLE: CSSProperties = {
@@ -141,6 +143,25 @@ const BADGE_STYLE: CSSProperties = {
   borderRadius: '20px',
 };
 
+const FAVORITE_BTN: CSSProperties = {
+  position: 'absolute',
+  top: '12px',
+  right: '12px',
+  zIndex: 2,
+  width: '40px',
+  height: '40px',
+  border: 'none',
+  borderRadius: '12px',
+  background: 'rgba(255, 255, 255, 0.92)',
+  boxShadow: 'var(--shadow-sm)',
+  fontSize: '20px',
+  cursor: 'pointer',
+  lineHeight: 1,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+};
+
 const getBackLabel = (mode: StudyMode): string =>
   mode === 'multi-translation' ? 'Все переводы' : '';
 
@@ -150,7 +171,9 @@ export const Flashcard = ({
   mode,
   isFlipped,
   showRevealShine,
+  isFavorite = false,
   onFlip,
+  onToggleFavorite,
 }: FlashcardProps) => {
   const backLines = getBackLines(word, mode);
   const frontLang = getFrontLang(word, mode);
@@ -168,6 +191,22 @@ export const Flashcard = ({
 
   return (
     <div style={CARD_WRAP_STYLE} className={wrapClass}>
+      {onToggleFavorite ? (
+        <button
+          type="button"
+          style={{
+            ...FAVORITE_BTN,
+            color: isFavorite ? 'var(--accent)' : 'var(--text-muted)',
+          }}
+          onClick={(event) => {
+            event.stopPropagation();
+            onToggleFavorite();
+          }}
+          aria-label={isFavorite ? 'Убрать из избранного' : 'В избранное'}
+        >
+          {isFavorite ? '★' : '☆'}
+        </button>
+      ) : null}
       <button
         type="button"
         style={CARD_INNER_STYLE(isFlipped)}
