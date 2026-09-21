@@ -11,7 +11,8 @@ export type StudyMode =
   | 'type-answer'
   | 'scramble-word'
   | 'memory'
-  | 'weak-words';
+  | 'weak-words'
+  | 'sprint';
 
 export interface WordEntry {
   id: string;

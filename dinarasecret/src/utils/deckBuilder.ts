@@ -92,6 +92,7 @@ export const buildDeck = (
     case 'type-answer':
     case 'scramble-word':
     case 'memory':
+    case 'sprint':
       return [];
     default:
       return [];

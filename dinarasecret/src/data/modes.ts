@@ -28,6 +28,7 @@ const CARD_MODE_IDS: StudyMode[] = [
 ];
 
 const GAME_MODE_IDS: StudyMode[] = [
+  'sprint',
   'match-pairs',
   'choose-one',
   'type-answer',
@@ -45,7 +46,7 @@ export const MODE_CATEGORIES: ModeCategory[] = [
   {
     id: 'games',
     title: 'Игры',
-    description: 'Пары, квиз, набор и память',
+    description: 'Спринт, пары, квиз и память',
     icon: '🎮',
   },
 ];
@@ -84,6 +85,12 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
       title: 'Несколько переводов',
       description: 'Слова с 2+ вариантами перевода',
       icon: '📝',
+    },
+    {
+      id: 'sprint',
+      title: 'Спринт',
+      description: '60 секунд — как можно больше верных',
+      icon: '⚡',
     },
     {
       id: 'match-pairs',

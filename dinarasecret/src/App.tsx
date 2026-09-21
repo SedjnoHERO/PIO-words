@@ -6,6 +6,7 @@ import { MemoryScreen } from './components/MemoryScreen/MemoryScreen';
 import { ModeSelectScreen } from './components/ModeSelectScreen/ModeSelectScreen';
 import { QuizScreen } from './components/QuizScreen/QuizScreen';
 import { ScrambleScreen } from './components/ScrambleScreen/ScrambleScreen';
+import { SprintScreen } from './components/SprintScreen/SprintScreen';
 import { StudyScreen } from './components/StudyScreen/StudyScreen';
 import { TopicSelectScreen } from './components/TopicSelectScreen/TopicSelectScreen';
 import { TypeAnswerScreen } from './components/TypeAnswerScreen/TypeAnswerScreen';
@@ -39,6 +40,7 @@ const GAME_MODES: StudyMode[] = [
   'type-answer',
   'scramble-word',
   'memory',
+  'sprint',
 ];
 
 const isGameMode = (mode: StudyMode): boolean => GAME_MODES.includes(mode);
@@ -131,6 +133,14 @@ export const App = () => {
           onSelectTopic={setTopicId}
           onBack={handleBackFromTopic}
           onStart={handleStartTopic}
+        />
+      ) : null}
+
+      {screen === 'study' && mode === 'sprint' ? (
+        <SprintScreen
+          language={language}
+          onBack={handleBackFromStudy}
+          onHome={handleBackToHome}
         />
       ) : null}
 

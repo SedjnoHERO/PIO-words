@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import { buildDeck } from '../utils/deckBuilder';
+import { recordPractice } from '../utils/activityStats';
 import { recordDeferred } from '../utils/wordStats';
 import type { AppLanguage, StudyMode, WordEntry } from '../types/vocabulary';
 
@@ -55,9 +56,13 @@ export const useFlashcards = ({
   }, []);
 
   const next = useCallback(() => {
+    if (currentWord) {
+      recordPractice(language, 1);
+    }
+
     setIsFlipped(false);
     setCurrentIndex((index) => index + 1);
-  }, []);
+  }, [currentWord, language]);
 
   const prev = useCallback(() => {
     setIsFlipped(false);

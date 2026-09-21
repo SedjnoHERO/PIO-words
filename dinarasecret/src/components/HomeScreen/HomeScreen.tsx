@@ -1,9 +1,13 @@
+import { useMemo } from 'react';
 import type { CSSProperties } from 'react';
 import { MODE_CATEGORIES } from '../../data/modes';
 import { getTotalWords } from '../../data/vocabulary';
 import type { AppLanguage, ModeCategoryId } from '../../types/vocabulary';
+import { getActivitySummary } from '../../utils/activityStats';
+import { getWeakWordIds } from '../../utils/wordStats';
 import { CategoryCard } from '../CategoryCard/CategoryCard';
 import { Header } from '../Header/Header';
+import { HomeStatsBar } from '../HomeStatsBar/HomeStatsBar';
 
 interface HomeScreenProps {
   language: AppLanguage;
@@ -14,7 +18,7 @@ interface HomeScreenProps {
 const SCREEN_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
-  gap: '18px',
+  gap: '16px',
   width: '100%',
 };
 
@@ -23,7 +27,7 @@ const HERO_STYLE: CSSProperties = {
   flexDirection: 'column',
   alignItems: 'center',
   gap: '6px',
-  padding: '4px 8px 0',
+  padding: '2px 8px 0',
   textAlign: 'center',
 };
 
@@ -58,6 +62,14 @@ export const HomeScreen = ({
   onBack,
 }: HomeScreenProps) => {
   const total = getTotalWords(language);
+  const stats = useMemo(() => {
+    const activity = getActivitySummary(language);
+    return {
+      todayCount: activity.todayCount,
+      streak: activity.streak,
+      weakCount: getWeakWordIds(language).length,
+    };
+  }, [language]);
 
   return (
     <section style={SCREEN_STYLE}>
@@ -65,6 +77,11 @@ export const HomeScreen = ({
         title={LANGUAGE_TITLE[language]}
         subtitle={`${total} слов · ${LANGUAGE_SUBTITLE[language]}`}
         onBack={onBack}
+      />
+      <HomeStatsBar
+        todayCount={stats.todayCount}
+        streak={stats.streak}
+        weakCount={stats.weakCount}
       />
       <div style={HERO_STYLE}>
         <p style={HERO_TEXT}>Выбери, как хочешь заниматься сегодня 💕</p>

@@ -1,4 +1,5 @@
 import type { AppLanguage, WordEntry } from '../types/vocabulary';
+import { recordPractice } from './activityStats';
 
 export interface WordStat {
   wrong: number;
@@ -51,6 +52,7 @@ const bump = (
     [field]: current[field] + 1,
   };
   writeStats(language, stats);
+  recordPractice(language, 1);
 };
 
 export const recordCorrect = (language: AppLanguage, wordId: string): void => {
