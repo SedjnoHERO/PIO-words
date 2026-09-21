@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import type { MatchChipState } from '../components/MatchScreen/MatchChip';
 import { getVocabulary } from '../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../types/vocabulary';
 import { splitIntoRounds } from '../utils/gameHelpers';
 import { shuffleArray } from '../utils/shuffle';
 import { recordCorrect, recordWrong } from '../utils/wordStats';
-import type { MatchChipState } from '../components/MatchScreen/MatchChip';
 
 interface MatchGameState {
   allWords: WordEntry[];
@@ -41,6 +41,7 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
   const [leftOrder, setLeftOrder] = useState<string[]>([]);
   const [rightOrder, setRightOrder] = useState<string[]>([]);
   const [showRoundDone, setShowRoundDone] = useState(false);
+  const advanceTimerRef = useRef<number | null>(null);
 
   const currentRound = rounds[roundIndex] ?? [];
   const wordsById = useMemo(
@@ -62,8 +63,16 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
     rounds.slice(0, roundIndex).reduce((sum, round) => sum + round.length, 0) +
     matchedIds.length;
 
+  const clearAdvanceTimer = useCallback(() => {
+    if (advanceTimerRef.current !== null) {
+      window.clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = null;
+    }
+  }, []);
+
   const setupRound = useCallback(
     (nextRoundIndex: number) => {
+      clearAdvanceTimer();
       const nextRound = rounds[nextRoundIndex] ?? [];
       const ids = nextRound.map((word) => word.id);
       setRoundIndex(nextRoundIndex);
@@ -76,7 +85,7 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
       setLeftOrder(shuffleArray(ids));
       setRightOrder(shuffleArray(ids));
     },
-    [rounds],
+    [clearAdvanceTimer, rounds],
   );
 
   useEffect(() => {
@@ -85,18 +94,7 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
     }
   }, [leftOrder.length, rightOrder.length, rounds.length, setupRound]);
 
-  useEffect(() => {
-    if (!isRoundDone || isFinished) {
-      return;
-    }
-
-    setShowRoundDone(true);
-    const timer = window.setTimeout(() => {
-      setupRound(roundIndex + 1);
-    }, 450);
-
-    return () => window.clearTimeout(timer);
-  }, [isFinished, isRoundDone, roundIndex, setupRound]);
+  useEffect(() => () => clearAdvanceTimer(), [clearAdvanceTimer]);
 
   const tryMatch = useCallback(
     (leftId: string, rightId: string) => {
@@ -105,11 +103,33 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
         setPopIds([leftId]);
         setSelectedLeft(null);
         setSelectedRight(null);
+
+        const nextMatchedCount = matchedIds.includes(leftId)
+          ? matchedIds.length
+          : matchedIds.length + 1;
+        const completesRound = nextMatchedCount >= currentRound.length;
+        const isLastRound = roundIndex >= rounds.length - 1;
+
         window.setTimeout(() => {
+          setPopIds([]);
           setMatchedIds((prev) =>
             prev.includes(leftId) ? prev : [...prev, leftId],
           );
-          setPopIds([]);
+
+          if (!completesRound) {
+            return;
+          }
+
+          if (isLastRound) {
+            return;
+          }
+
+          setShowRoundDone(true);
+          clearAdvanceTimer();
+          advanceTimerRef.current = window.setTimeout(() => {
+            advanceTimerRef.current = null;
+            setupRound(roundIndex + 1);
+          }, 500);
         }, 360);
         return;
       }
@@ -123,7 +143,15 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
         setSelectedRight(null);
       }, 420);
     },
-    [language],
+    [
+      clearAdvanceTimer,
+      currentRound.length,
+      language,
+      matchedIds,
+      roundIndex,
+      rounds.length,
+      setupRound,
+    ],
   );
 
   const handleLeft = useCallback(

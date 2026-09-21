@@ -1,8 +1,12 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { getVocabulary } from '../../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../../types/vocabulary';
-import { getForeignText, getRuText, splitIntoRounds } from '../../utils/gameHelpers';
+import {
+  getForeignText,
+  getRuText,
+  splitIntoRounds,
+} from '../../utils/gameHelpers';
 import { recordCorrect, recordWrong } from '../../utils/wordStats';
 import { FinishScreen } from '../FinishScreen/FinishScreen';
 import { Header } from '../Header/Header';
@@ -124,6 +128,7 @@ export const MemoryScreen = ({
   const [matched, setMatched] = useState<string[]>([]);
   const [lock, setLock] = useState(false);
   const [showRoundDone, setShowRoundDone] = useState(false);
+  const advanceTimerRef = useRef<number | null>(null);
 
   const currentRound = rounds[roundIndex] ?? [];
   const isRoundDone =
@@ -133,8 +138,16 @@ export const MemoryScreen = ({
     rounds.slice(0, roundIndex).reduce((sum, round) => sum + round.length, 0) +
     matched.length;
 
+  const clearAdvanceTimer = useCallback(() => {
+    if (advanceTimerRef.current !== null) {
+      window.clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = null;
+    }
+  }, []);
+
   const setupRound = useCallback(
     (nextIndex: number) => {
+      clearAdvanceTimer();
       setRoundIndex(nextIndex);
       setCards(buildCards(rounds[nextIndex] ?? []));
       setFlipped([]);
@@ -142,21 +155,10 @@ export const MemoryScreen = ({
       setLock(false);
       setShowRoundDone(false);
     },
-    [rounds],
+    [clearAdvanceTimer, rounds],
   );
 
-  useEffect(() => {
-    if (!isRoundDone || isFinished) {
-      return;
-    }
-
-    setShowRoundDone(true);
-    const timer = window.setTimeout(() => {
-      setupRound(roundIndex + 1);
-    }, 450);
-
-    return () => window.clearTimeout(timer);
-  }, [isFinished, isRoundDone, roundIndex, setupRound]);
+  useEffect(() => () => clearAdvanceTimer(), [clearAdvanceTimer]);
 
   const handleTile = useCallback(
     (card: MemoryCard) => {
@@ -184,15 +186,31 @@ export const MemoryScreen = ({
 
       setLock(true);
 
-      if (
-        first.pairId === second.pairId &&
-        first.side !== second.side
-      ) {
+      if (first.pairId === second.pairId && first.side !== second.side) {
         recordCorrect(language, first.pairId);
+        const nextMatchedCount = matched.includes(first.pairId)
+          ? matched.length
+          : matched.length + 1;
+        const completesRound = nextMatchedCount >= currentRound.length;
+        const isLastRound = roundIndex >= rounds.length - 1;
+
         window.setTimeout(() => {
-          setMatched((prev) => [...prev, first.pairId]);
+          setMatched((prev) =>
+            prev.includes(first.pairId) ? prev : [...prev, first.pairId],
+          );
           setFlipped([]);
           setLock(false);
+
+          if (!completesRound || isLastRound) {
+            return;
+          }
+
+          setShowRoundDone(true);
+          clearAdvanceTimer();
+          advanceTimerRef.current = window.setTimeout(() => {
+            advanceTimerRef.current = null;
+            setupRound(roundIndex + 1);
+          }, 500);
         }, 420);
         return;
       }
@@ -207,7 +225,18 @@ export const MemoryScreen = ({
         setLock(false);
       }, 700);
     },
-    [cards, flipped, language, lock, matched],
+    [
+      cards,
+      clearAdvanceTimer,
+      currentRound.length,
+      flipped,
+      language,
+      lock,
+      matched,
+      roundIndex,
+      rounds.length,
+      setupRound,
+    ],
   );
 
   if (allWords.length < 2) {
