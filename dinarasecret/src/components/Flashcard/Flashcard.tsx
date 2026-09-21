@@ -3,8 +3,10 @@ import type { AppLanguage, StudyMode, WordEntry } from '../../types/vocabulary';
 import {
   getBackLang,
   getBackLines,
+  getBackTranscription,
   getFrontLang,
   getFrontText,
+  getFrontTranscription,
   getLangLabel,
 } from '../../utils/deckBuilder';
 
@@ -83,6 +85,16 @@ const WORD_STYLE: CSSProperties = {
   wordBreak: 'break-word',
 };
 
+const TRANSCRIPTION_STYLE: CSSProperties = {
+  margin: 0,
+  fontSize: '15px',
+  fontWeight: 600,
+  color: 'var(--text-muted)',
+  textAlign: 'center',
+  lineHeight: 1.35,
+  fontFamily: 'Georgia, "Times New Roman", serif',
+};
+
 const HINT_STYLE: CSSProperties = {
   margin: 0,
   fontSize: '13px',
@@ -94,7 +106,15 @@ const TRANSLATIONS_LIST_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  gap: '8px',
+  gap: '10px',
+  width: '100%',
+};
+
+const TRANSLATION_BLOCK_STYLE: CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '4px',
   width: '100%',
 };
 
@@ -129,6 +149,7 @@ export const Flashcard = ({
   const backLines = getBackLines(word, mode);
   const frontLang = getFrontLang(word, mode);
   const backLang = getBackLang(word, mode);
+  const frontTranscription = getFrontTranscription(word, mode, language);
   const backLabel =
     mode === 'multi-translation'
       ? getBackLabel(mode)
@@ -150,6 +171,9 @@ export const Flashcard = ({
         <span className="flashcard-face" style={FRONT_STYLE}>
           <span style={LABEL_STYLE}>{getLangLabel(frontLang, language)}</span>
           <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
+          {frontTranscription ? (
+            <p style={TRANSCRIPTION_STYLE}>{frontTranscription}</p>
+          ) : null}
           <p style={HINT_STYLE}>Нажми, чтобы перевернуть</p>
         </span>
 
@@ -159,11 +183,23 @@ export const Flashcard = ({
             <span style={BADGE_STYLE}>{backLines.length} варианта</span>
           ) : null}
           <span style={TRANSLATIONS_LIST_STYLE}>
-            {backLines.map((line, index) => (
-              <p key={`${line}-${index}`} style={TRANSLATION_ITEM_STYLE}>
-                {line}
-              </p>
-            ))}
+            {backLines.map((line, index) => {
+              const transcription = getBackTranscription(
+                word,
+                mode,
+                language,
+                index,
+              );
+
+              return (
+                <span key={`${line}-${index}`} style={TRANSLATION_BLOCK_STYLE}>
+                  <p style={TRANSLATION_ITEM_STYLE}>{line}</p>
+                  {transcription ? (
+                    <p style={TRANSCRIPTION_STYLE}>{transcription}</p>
+                  ) : null}
+                </span>
+              );
+            })}
           </span>
         </span>
       </button>

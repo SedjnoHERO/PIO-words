@@ -11,7 +11,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "accessory after the fact"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ækˈsɛsəri ˈæftər ðə fækt]"
+        ]
       },
       {
         "id": "crime-and-justice-2",
@@ -19,7 +22,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "accomplish a break-in"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[əˈkɑmplɪʃ ə ˈbreɪˌkɪn]"
+        ]
       },
       {
         "id": "crime-and-justice-3",
@@ -27,7 +33,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "administer drugs"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ədˈmɪnɪstər drəgz]"
+        ]
       },
       {
         "id": "crime-and-justice-4",
@@ -39,6 +48,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "воспитательно-исправительное воздействие на лиц",
           "отбывших срок"
+        ],
+        "transcriptions": [
+          "[ˈæftərˌkɛr]"
         ]
       },
       {
@@ -47,7 +59,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "an alleged criminal"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ən əˈlɛʤd ˈkrɪmənəl]"
+        ]
       },
       {
         "id": "crime-and-justice-6",
@@ -61,6 +76,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "задержать",
           "арестовать"
+        ],
+        "transcriptions": [
+          "[ˌæprɪˈhɛnd]",
+          "[ˈkæpʧər]",
+          "[dɪˈteɪn]"
         ]
       },
       {
@@ -69,7 +89,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Arraign"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[əreɪn]"
+        ]
       },
       {
         "id": "crime-and-justice-8",
@@ -77,7 +100,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Arson"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈɑrsən]"
+        ]
       },
       {
         "id": "crime-and-justice-9",
@@ -85,7 +111,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Assault"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[əˈsɔlt]"
+        ]
       },
       {
         "id": "crime-and-justice-10",
@@ -93,7 +122,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Battery"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈbætəri]"
+        ]
       },
       {
         "id": "crime-and-justice-11",
@@ -101,7 +133,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Bigamy"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈbɪgəmi]"
+        ]
       },
       {
         "id": "crime-and-justice-12",
@@ -109,7 +144,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "bring charges against"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[brɪŋ ˈʧɑrʤɪz əˈgɛnst]"
+        ]
       },
       {
         "id": "crime-and-justice-13",
@@ -117,7 +155,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Burglary"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈbərgləri]"
+        ]
       },
       {
         "id": "crime-and-justice-14",
@@ -130,6 +171,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "оспорить",
           "обжаловать"
+        ],
+        "transcriptions": [
+          "[ˈʧælənʤ]",
+          "[əˈpil]"
         ]
       },
       {
@@ -141,7 +186,13 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "offense",
           "public wrong"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kəˈmɪt]",
+          "[ˈpərpəˌtreɪt ə kraɪm]",
+          "[əˈfɛns]",
+          "[ˈpəblɪk rɔŋ]"
+        ]
       },
       {
         "id": "crime-and-justice-16",
@@ -149,7 +200,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "communicate a disease"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kəmˈjunəˌkeɪt ə dɪˈziz]"
+        ]
       },
       {
         "id": "crime-and-justice-17",
@@ -157,7 +211,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "community service"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kəmˈjunɪti ˈsərvɪs]"
+        ]
       },
       {
         "id": "crime-and-justice-18",
@@ -169,6 +226,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "соблюдать",
           "действовать в соответствии с"
+        ],
+        "transcriptions": [
+          "[kəmˈplaɪ wɪθ]"
         ]
       },
       {
@@ -177,7 +237,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "controlled substances"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kənˈtroʊld ˈsəbstənsɪz]"
+        ]
       },
       {
         "id": "crime-and-justice-20",
@@ -185,7 +248,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Conviction"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kənˈvɪkʃən]"
+        ]
       },
       {
         "id": "crime-and-justice-21",
@@ -193,7 +259,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "corporal punishment"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈkɔrpərəl ˈpənɪʃmənt]"
+        ]
       },
       {
         "id": "crime-and-justice-22",
@@ -201,7 +270,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Counterfeiting"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈkaʊnərˌfɪtɪŋ]"
+        ]
       },
       {
         "id": "crime-and-justice-23",
@@ -209,7 +281,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Coup"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kuː]"
+        ]
       },
       {
         "id": "crime-and-justice-24",
@@ -219,7 +294,12 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "offender",
           "delinquent"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈkrɪmənəl]",
+          "[əˈfɛndər]",
+          "[dɪˈlɪŋkwənt]"
+        ]
       },
       {
         "id": "crime-and-justice-25",
@@ -231,6 +311,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "обвиняемый",
           "подзащитный"
+        ],
+        "transcriptions": [
+          "[dɪˈfɛndənt]"
         ]
       },
       {
@@ -243,6 +326,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "защита",
           "защитник"
+        ],
+        "transcriptions": [
+          "[dɪˈfɛns ˈlɔjər]"
         ]
       },
       {
@@ -256,6 +342,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "намеренный",
           "умышленный"
+        ],
+        "transcriptions": [
+          "[dɪˈlɪbərˌeɪt]",
+          "[priˈmɛdəˌteɪtɪd]"
         ]
       },
       {
@@ -264,7 +354,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Deterrence"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[dɪˈtərəns]"
+        ]
       },
       {
         "id": "crime-and-justice-29",
@@ -272,7 +365,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Diversion"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[dɪˈvərʒən]"
+        ]
       },
       {
         "id": "crime-and-justice-30",
@@ -280,7 +376,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Disorderliness"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[dɪsˈɔrdərlɪnəs]"
+        ]
       },
       {
         "id": "crime-and-justice-31",
@@ -288,7 +387,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "disorderly conduct"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[dɪˈsɔrdərli ˈkɑndəkt]"
+        ]
       },
       {
         "id": "crime-and-justice-32",
@@ -296,7 +398,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "double jeopardy"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈdəbəl ˈʤɛpərdi]"
+        ]
       },
       {
         "id": "crime-and-justice-33",
@@ -304,7 +409,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "duplicity in financial dealings"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[duˈplɪsɪti ɪn ˌfaɪˈnænʃəl ˈdilɪŋz]"
+        ]
       },
       {
         "id": "crime-and-justice-34",
@@ -312,7 +420,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Embezzlement"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ɛmˈbɛzəlmənt]"
+        ]
       },
       {
         "id": "crime-and-justice-35",
@@ -320,7 +431,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Felony"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈfɛləni]"
+        ]
       },
       {
         "id": "crime-and-justice-36",
@@ -328,7 +442,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Forgery"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈfɔrʤəri]"
+        ]
       },
       {
         "id": "crime-and-justice-37",
@@ -336,7 +453,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "gain access to"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[geɪn ˈækˌsɛs tɪ]"
+        ]
       },
       {
         "id": "crime-and-justice-38",
@@ -344,7 +464,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "harshly disciplined"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈhɑrʃli ˈdɪsəplənd]"
+        ]
       },
       {
         "id": "crime-and-justice-39",
@@ -353,7 +476,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "impose penalty",
           "sentence"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˌɪmˈpoʊz ˈpɛnəlti]",
+          "[ˈsɛntəns]"
+        ]
       },
       {
         "id": "crime-and-justice-40",
@@ -363,7 +490,12 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "incarceration",
           "confinement"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˌɪnkəˌpæsɪˈteɪʃən]",
+          "[ˌɪnˌkɑrsərˈeɪʃən]",
+          "[kənˈfaɪnmənt]"
+        ]
       },
       {
         "id": "crime-and-justice-41",
@@ -371,7 +503,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Incorrigibility"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ɪnˌkɔrɪʤəˈbɪləti]"
+        ]
       },
       {
         "id": "crime-and-justice-42",
@@ -383,6 +518,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "сокамерник",
           "заключенный"
+        ],
+        "transcriptions": [
+          "[ˈɪnˌmeɪt]"
         ]
       },
       {
@@ -391,7 +529,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Juvenile"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈʤuvəˌnaɪl]"
+        ]
       },
       {
         "id": "crime-and-justice-44",
@@ -403,6 +544,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "кража",
           "воровство"
+        ],
+        "transcriptions": [
+          "[ˈlɑrsəni]"
         ]
       },
       {
@@ -411,7 +555,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "law-abiding"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈlɔəˌbaɪdɪŋ]"
+        ]
       },
       {
         "id": "crime-and-justice-46",
@@ -420,7 +567,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "length of punishment",
           "term"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[lɛŋθ əv ˈpənɪʃmənt]",
+          "[tərm]"
+        ]
       },
       {
         "id": "crime-and-justice-47",
@@ -428,7 +579,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Lenient"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈlinjənt]"
+        ]
       },
       {
         "id": "crime-and-justice-48",
@@ -436,7 +590,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Libel"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈlaɪbɛl]"
+        ]
       },
       {
         "id": "crime-and-justice-49",
@@ -444,7 +601,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Manslaughter"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈmænsˌlɔtər]"
+        ]
       },
       {
         "id": "crime-and-justice-50",
@@ -452,7 +612,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Mayhem"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈmeɪˌhɛm]"
+        ]
       },
       {
         "id": "crime-and-justice-51",
@@ -460,7 +623,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Misappropriate"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[mɪsəˈproʊpriˌeɪt]"
+        ]
       },
       {
         "id": "crime-and-justice-52",
@@ -468,7 +634,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Misdemeanor"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˌmɪsdəˈminər]"
+        ]
       },
       {
         "id": "crime-and-justice-53",
@@ -476,7 +645,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Mugging"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈməgɪŋ]"
+        ]
       },
       {
         "id": "crime-and-justice-54",
@@ -484,7 +656,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Parole"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[pəroʊl]"
+        ]
       },
       {
         "id": "crime-and-justice-55",
@@ -492,7 +667,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Penitentiary"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˌpɛnɪˈtɛnʧəri]"
+        ]
       },
       {
         "id": "crime-and-justice-56",
@@ -500,7 +678,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Perjury"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈpərʤəri]"
+        ]
       },
       {
         "id": "crime-and-justice-57",
@@ -508,7 +689,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "plea agreement"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[pli əˈgrimənt]"
+        ]
       },
       {
         "id": "crime-and-justice-58",
@@ -516,7 +700,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Probation"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[proʊˈbeɪʃən]"
+        ]
       },
       {
         "id": "crime-and-justice-59",
@@ -525,7 +712,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "prosecutor",
           "prosecuting attorney"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈprɑsɪˌkjutər]",
+          "[ˈprɑsɪˌkjutɪŋ əˈtərni]"
+        ]
       },
       {
         "id": "crime-and-justice-60",
@@ -537,6 +728,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "распитие напитков",
           "появление в нетрезвом виде в общественном месте"
+        ],
+        "transcriptions": [
+          "[ˈpəblɪk ˈdrəŋkənnəs]"
         ]
       },
       {
@@ -546,7 +740,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "punish",
           "penalize"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈpənɪʃ]",
+          "[ˈpɛnəˌlaɪz]"
+        ]
       },
       {
         "id": "crime-and-justice-62",
@@ -554,7 +752,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "refrain from"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[rɪˈfreɪn frəm]"
+        ]
       },
       {
         "id": "crime-and-justice-63",
@@ -567,6 +768,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "перевоспитание",
           "исправление"
+        ],
+        "transcriptions": [
+          "[ˌriəˌbɪləˈteɪʃən]",
+          "[ˈtritmənt]"
         ]
       },
       {
@@ -579,6 +784,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "повторение",
           "рецидив"
+        ],
+        "transcriptions": [
+          "[riˈlæps]"
         ]
       },
       {
@@ -591,6 +799,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "освободить",
           "отпустить на свободу"
+        ],
+        "transcriptions": [
+          "[riˈlis]"
         ]
       },
       {
@@ -599,7 +810,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Repent"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[rɪˈpɛnt]"
+        ]
       },
       {
         "id": "crime-and-justice-67",
@@ -607,7 +821,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Restitution"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˌrɛstɪˈtuʃən]"
+        ]
       },
       {
         "id": "crime-and-justice-68",
@@ -615,7 +832,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Reverse"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[rɪˈvərs]"
+        ]
       },
       {
         "id": "crime-and-justice-69",
@@ -623,7 +843,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Robbery"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈrɑbəri]"
+        ]
       },
       {
         "id": "crime-and-justice-70",
@@ -631,7 +854,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Search"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[sərʧ]"
+        ]
       },
       {
         "id": "crime-and-justice-71",
@@ -639,7 +865,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Sedition"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[sɪˈdɪʃən]"
+        ]
       },
       {
         "id": "crime-and-justice-72",
@@ -647,7 +876,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Seizure"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈsiʒər]"
+        ]
       },
       {
         "id": "crime-and-justice-73",
@@ -655,7 +887,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "selling liquor to minors"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈsɛlɪŋ ˈlɪkər tɪ ˈmaɪnərz]"
+        ]
       },
       {
         "id": "crime-and-justice-74",
@@ -667,6 +902,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "отменить",
           "аннулировать"
+        ],
+        "transcriptions": [
+          "[sɛt əˈsaɪd]"
         ]
       },
       {
@@ -675,7 +913,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Slander"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[sˈlændər]"
+        ]
       },
       {
         "id": "crime-and-justice-76",
@@ -687,6 +928,9 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "ruVariants": [
           "законы",
           "которые касаются расходов"
+        ],
+        "transcriptions": [
+          "[sumptuary lɔz]"
         ]
       },
       {
@@ -695,7 +939,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "surrender a citizen"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[sərˈɛndər ə ˈsɪtɪzən]"
+        ]
       },
       {
         "id": "crime-and-justice-78",
@@ -703,7 +950,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "suspended sentence"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[səˈspɛndɪd ˈsɛntəns]"
+        ]
       },
       {
         "id": "crime-and-justice-79",
@@ -712,7 +962,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "tax evasion",
           "tax cheating"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[tæks ɪˈveɪʒən]",
+          "[tæks ˈʧitɪŋ]"
+        ]
       },
       {
         "id": "crime-and-justice-80",
@@ -720,7 +974,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "testify on one’s behalf"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈtɛstɪˌfaɪ ɔn wənz bɪˈhæf]"
+        ]
       },
       {
         "id": "crime-and-justice-81",
@@ -728,7 +985,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Tort"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[tɔrt]"
+        ]
       },
       {
         "id": "crime-and-justice-82",
@@ -736,7 +996,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "treason"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈtrizən]"
+        ]
       },
       {
         "id": "crime-and-justice-83",
@@ -744,7 +1007,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Uphold"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[əˈphoʊld]"
+        ]
       },
       {
         "id": "crime-and-justice-84",
@@ -752,7 +1018,10 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "terms": [
           "Vagrancy"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[ˈveɪgrənsi]"
+        ]
       },
       {
         "id": "crime-and-justice-85",
@@ -761,7 +1030,11 @@ export const VOCABULARY_EN: TopicGroup[] = [
           "Crime in violent emotional outburst",
           "crime of passion"
         ],
-        "topic": "crime-and-justice"
+        "topic": "crime-and-justice",
+        "transcriptions": [
+          "[kraɪm ɪn ˈvaɪələnt ˈiˌmoʊʃənəl ˈaʊtˌbərst]",
+          "[kraɪm əv ˈpæʃən]"
+        ]
       }
     ]
   }

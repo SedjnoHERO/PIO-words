@@ -13,6 +13,7 @@ export interface WordEntry {
   terms: string[];
   topic: string;
   ruVariants?: string[];
+  transcriptions?: string[];
 }
 
 export interface TopicGroup {

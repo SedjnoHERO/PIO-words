@@ -167,3 +167,37 @@ export const getLangLabel = (
 
   return language === 'de' ? 'Deutsch' : 'English';
 };
+
+export const getFrontTranscription = (
+  word: WordEntry,
+  mode: StudyMode,
+  language: AppLanguage,
+): string | null => {
+  if (language !== 'en' || !word.transcriptions?.length) {
+    return null;
+  }
+
+  if (getFrontLang(word, mode) !== 'foreign') {
+    return null;
+  }
+
+  const values = word.transcriptions.filter(Boolean);
+  return values.length > 0 ? values.join(' / ') : null;
+};
+
+export const getBackTranscription = (
+  word: WordEntry,
+  mode: StudyMode,
+  language: AppLanguage,
+  lineIndex: number,
+): string | null => {
+  if (language !== 'en' || !word.transcriptions?.length) {
+    return null;
+  }
+
+  if (getBackLang(word, mode) !== 'foreign') {
+    return null;
+  }
+
+  return word.transcriptions[lineIndex] || null;
+};
