@@ -1,9 +1,11 @@
 import type { CSSProperties } from 'react';
-import { VOCABULARY } from '../../data/vocabulary';
+import { getVocabulary } from '../../data/vocabulary';
+import type { AppLanguage } from '../../types/vocabulary';
 import { Header } from '../Header/Header';
 import { TopicList } from '../TopicList/TopicList';
 
 interface TopicSelectScreenProps {
+  language: AppLanguage;
   selectedTopicId: string | null;
   onSelectTopic: (topicId: string) => void;
   onBack: () => void;
@@ -41,6 +43,7 @@ const getStartBtnStyle = (disabled: boolean): CSSProperties => ({
 });
 
 export const TopicSelectScreen = ({
+  language,
   selectedTopicId,
   onSelectTopic,
   onBack,
@@ -48,12 +51,12 @@ export const TopicSelectScreen = ({
 }: TopicSelectScreenProps) => (
   <section style={SCREEN_STYLE}>
     <Header
-      title="Выбери блок"
-      subtitle="Учи слова только из одного блока"
+      title="Выбери тему"
+      subtitle="Учи слова только из одной темы"
       onBack={onBack}
     />
     <TopicList
-      topics={VOCABULARY}
+      topics={getVocabulary(language)}
       selectedTopicId={selectedTopicId}
       onSelect={onSelectTopic}
     />

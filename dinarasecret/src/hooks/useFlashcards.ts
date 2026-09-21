@@ -1,8 +1,9 @@
 import { useCallback, useMemo, useState } from 'react';
 import { buildDeck } from '../utils/deckBuilder';
-import type { StudyMode, WordEntry } from '../types/vocabulary';
+import type { AppLanguage, StudyMode, WordEntry } from '../types/vocabulary';
 
 interface UseFlashcardsParams {
+  language: AppLanguage;
   mode: StudyMode;
   topicId: string | null;
 }
@@ -21,11 +22,12 @@ interface UseFlashcardsResult {
 }
 
 export const useFlashcards = ({
+  language,
   mode,
   topicId,
 }: UseFlashcardsParams): UseFlashcardsResult => {
   const [deck, setDeck] = useState<WordEntry[]>(() =>
-    buildDeck(mode, topicId),
+    buildDeck(language, mode, topicId),
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -50,10 +52,10 @@ export const useFlashcards = ({
   }, []);
 
   const restart = useCallback(() => {
-    setDeck(buildDeck(mode, topicId));
+    setDeck(buildDeck(language, mode, topicId));
     setCurrentIndex(0);
     setIsFlipped(false);
-  }, [mode, topicId]);
+  }, [language, mode, topicId]);
 
   return useMemo(
     () => ({

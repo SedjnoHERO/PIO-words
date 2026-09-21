@@ -1,28 +1,43 @@
-import type { ModeOption } from '../types/vocabulary';
+import type { AppLanguage, ModeOption } from '../types/vocabulary';
 
-export const MODE_OPTIONS: ModeOption[] = [
-  {
-    id: 'ru-to-de',
-    title: 'Русский → Deutsch',
-    description: 'Фраза на русском, перевод на немецком',
-    icon: '🇷🇺→🇩🇪',
-  },
-  {
-    id: 'de-to-ru',
-    title: 'Deutsch → Русский',
-    description: 'Фраза на немецком, перевод на русском',
-    icon: '🇩🇪→🇷🇺',
-  },
-  {
-    id: 'all-mixed',
-    title: 'Все вперемешку',
-    description: 'Случайный порядок из всех фраз',
-    icon: '🔀',
-  },
-  {
-    id: 'multi-translation',
-    title: 'Несколько переводов',
-    description: 'Фразы с 2+ вариантами перевода',
-    icon: '📝',
-  },
-];
+const FOREIGN_LABEL: Record<AppLanguage, string> = {
+  de: 'Deutsch',
+  en: 'English',
+};
+
+const FOREIGN_FLAG: Record<AppLanguage, string> = {
+  de: '🇩🇪',
+  en: '🇬🇧',
+};
+
+export const getModeOptions = (language: AppLanguage): ModeOption[] => {
+  const foreign = FOREIGN_LABEL[language];
+  const flag = FOREIGN_FLAG[language];
+
+  return [
+    {
+      id: 'ru-to-foreign',
+      title: `Русский → ${foreign}`,
+      description: `Слово на русском, перевод на ${foreign.toLowerCase() === 'deutsch' ? 'немецком' : 'английском'}`,
+      icon: `🇷🇺→${flag}`,
+    },
+    {
+      id: 'foreign-to-ru',
+      title: `${foreign} → Русский`,
+      description: `Слово на ${foreign.toLowerCase() === 'deutsch' ? 'немецком' : 'английском'}, перевод на русском`,
+      icon: `${flag}→🇷🇺`,
+    },
+    {
+      id: 'all-mixed',
+      title: 'Все вперемешку',
+      description: 'Случайный порядок из всех слов',
+      icon: '🔀',
+    },
+    {
+      id: 'multi-translation',
+      title: 'Несколько переводов',
+      description: 'Слова с 2+ вариантами перевода',
+      icon: '📝',
+    },
+  ];
+};

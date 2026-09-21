@@ -42,16 +42,6 @@ const TITLE_STYLE: CSSProperties = {
   color: 'var(--text)',
 };
 
-const ORAL_BADGE_STYLE: CSSProperties = {
-  fontSize: '11px',
-  fontWeight: 800,
-  color: 'var(--accent)',
-  background: 'var(--surface)',
-  padding: '3px 8px',
-  borderRadius: '20px',
-  flexShrink: 0,
-};
-
 const COUNT_STYLE: CSSProperties = {
   fontSize: '13px',
   fontWeight: 700,
@@ -82,9 +72,6 @@ export const TopicList = ({
         >
           <span style={ROW_STYLE}>
             <span style={TITLE_STYLE}>{topic.title}</span>
-            {topic.oral ? (
-              <span style={ORAL_BADGE_STYLE}>устное</span>
-            ) : null}
           </span>
           <span style={COUNT_STYLE}>{topic.words.length}</span>
         </button>

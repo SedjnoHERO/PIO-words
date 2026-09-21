@@ -1,9 +1,9 @@
 import { useCallback, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { MODE_OPTIONS } from '../../data/modes';
+import { getModeOptions } from '../../data/modes';
 import { useFlashcards } from '../../hooks/useFlashcards';
 import { useSwipe } from '../../hooks/useSwipe';
-import type { StudyMode } from '../../types/vocabulary';
+import type { AppLanguage, StudyMode } from '../../types/vocabulary';
 import { pickRandom, MID_STUDY_PRAISE } from '../../data/praiseMessages';
 import { getMilestonePraise, vibratePraise } from '../../utils/praiseMilestones';
 import { ActionButtons } from '../ActionButtons/ActionButtons';
@@ -16,6 +16,7 @@ import { PraiseToast } from '../PraiseToast/PraiseToast';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
 
 interface StudyScreenProps {
+  language: AppLanguage;
   mode: StudyMode;
   topicId: string | null;
   onBack: () => void;
@@ -48,10 +49,11 @@ const EMPTY_STYLE: CSSProperties = {
   padding: '24px',
 };
 
-const getModeTitle = (mode: StudyMode): string =>
-  MODE_OPTIONS.find((item) => item.id === mode)?.title ?? 'Режим';
+const getModeTitle = (language: AppLanguage, mode: StudyMode): string =>
+  getModeOptions(language).find((item) => item.id === mode)?.title ?? 'Режим';
 
 export const StudyScreen = ({
+  language,
   mode,
   topicId,
   onBack,
@@ -68,7 +70,7 @@ export const StudyScreen = ({
     next,
     prev,
     restart,
-  } = useFlashcards({ mode, topicId });
+  } = useFlashcards({ language, mode, topicId });
 
   const [praiseMessage, setPraiseMessage] = useState<string | null>(null);
   const [fireworkBurstId, setFireworkBurstId] = useState(0);
@@ -148,7 +150,7 @@ export const StudyScreen = ({
   if (deck.length === 0) {
     return (
       <section style={SCREEN_STYLE}>
-        <Header title={getModeTitle(mode)} onBack={onBack} />
+        <Header title={getModeTitle(language, mode)} onBack={onBack} />
         <div style={EMPTY_STYLE}>
           <p>В этом режиме пока нет карточек. Добавь слова в vocabulary.ts</p>
           <button type="button" onClick={onBack}>
@@ -162,7 +164,7 @@ export const StudyScreen = ({
   if (isFinished) {
     return (
       <section style={SCREEN_STYLE}>
-        <Header title={getModeTitle(mode)} onBack={onBack} />
+        <Header title={getModeTitle(language, mode)} onBack={onBack} />
         <FinishScreen
           total={deck.length}
           onRestart={handleRestart}
@@ -180,7 +182,7 @@ export const StudyScreen = ({
     <section style={SCREEN_STYLE}>
       <FireworksBurst burstId={fireworkBurstId} />
       <PraiseToast message={praiseMessage} />
-      <Header title={getModeTitle(mode)} onBack={onBack} />
+      <Header title={getModeTitle(language, mode)} onBack={onBack} />
       <ProgressBar current={progress} total={deck.length} />
       <div style={CARD_AREA} {...swipe}>
         <CardDeck
@@ -191,6 +193,7 @@ export const StudyScreen = ({
         >
           <Flashcard
             word={currentWord}
+            language={language}
             mode={mode}
             isFlipped={isFlipped}
             showRevealShine={showRevealShine}

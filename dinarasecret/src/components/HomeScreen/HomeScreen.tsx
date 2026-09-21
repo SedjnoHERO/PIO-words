@@ -1,12 +1,14 @@
 import type { CSSProperties } from 'react';
-import { MODE_OPTIONS } from '../../data/modes';
-import { TOTAL_WORDS } from '../../data/vocabulary';
-import type { StudyMode } from '../../types/vocabulary';
+import { getModeOptions } from '../../data/modes';
+import { getTotalWords } from '../../data/vocabulary';
+import type { AppLanguage, StudyMode } from '../../types/vocabulary';
 import { Header } from '../Header/Header';
 import { ModeCard } from '../ModeCard/ModeCard';
 
 interface HomeScreenProps {
+  language: AppLanguage;
   onSelectMode: (mode: StudyMode) => void;
+  onBack: () => void;
 }
 
 const SCREEN_STYLE: CSSProperties = {
@@ -45,21 +47,45 @@ const MODES_STYLE: CSSProperties = {
   width: '100%',
 };
 
-export const HomeScreen = ({ onSelectMode }: HomeScreenProps) => (
-  <section style={SCREEN_STYLE}>
-    <Header title="Немецкий квиз" subtitle={`${TOTAL_WORDS} фраз · Германия`} />
-    <div style={HERO_STYLE}>
-      <span style={HERO_EMOJI} aria-hidden="true">
-        ✨
-      </span>
-      <p style={HERO_TEXT}>
-        Выбери режим и учи слова в удобном темпе. Ты умница — у тебя всё получится! 💕
-      </p>
-    </div>
-    <div style={MODES_STYLE}>
-      {MODE_OPTIONS.map((mode) => (
-        <ModeCard key={mode.id} mode={mode} onSelect={onSelectMode} />
-      ))}
-    </div>
-  </section>
-);
+const LANGUAGE_TITLE: Record<AppLanguage, string> = {
+  de: 'Немецкий квиз',
+  en: 'Английский квиз',
+};
+
+const LANGUAGE_SUBTITLE: Record<AppLanguage, string> = {
+  de: 'Германия · география и население',
+  en: 'Crime and Justice · коллоквиум',
+};
+
+export const HomeScreen = ({
+  language,
+  onSelectMode,
+  onBack,
+}: HomeScreenProps) => {
+  const modes = getModeOptions(language);
+  const total = getTotalWords(language);
+
+  return (
+    <section style={SCREEN_STYLE}>
+      <Header
+        title={LANGUAGE_TITLE[language]}
+        subtitle={`${total} слов · ${LANGUAGE_SUBTITLE[language]}`}
+        onBack={onBack}
+      />
+      <div style={HERO_STYLE}>
+        <span style={HERO_EMOJI} aria-hidden="true">
+          ✨
+        </span>
+        <p style={HERO_TEXT}>
+          Выбери режим и учи слова в удобном темпе. Ты умница — у тебя всё
+          получится! 💕
+        </p>
+      </div>
+      <div style={MODES_STYLE}>
+        {modes.map((mode) => (
+          <ModeCard key={mode.id} mode={mode} onSelect={onSelectMode} />
+        ))}
+      </div>
+    </section>
+  );
+};

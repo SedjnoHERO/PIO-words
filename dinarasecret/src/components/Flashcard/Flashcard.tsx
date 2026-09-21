@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import type { StudyMode, WordEntry } from '../../types/vocabulary';
+import type { AppLanguage, StudyMode, WordEntry } from '../../types/vocabulary';
 import {
   getBackLang,
   getBackLines,
@@ -10,6 +10,7 @@ import {
 
 interface FlashcardProps {
   word: WordEntry;
+  language: AppLanguage;
   mode: StudyMode;
   isFlipped: boolean;
   showRevealShine: boolean;
@@ -119,6 +120,7 @@ const getBackLabel = (mode: StudyMode): string =>
 
 export const Flashcard = ({
   word,
+  language,
   mode,
   isFlipped,
   showRevealShine,
@@ -130,7 +132,7 @@ export const Flashcard = ({
   const backLabel =
     mode === 'multi-translation'
       ? getBackLabel(mode)
-      : getLangLabel(backLang);
+      : getLangLabel(backLang, language);
   const showMultiBadge =
     mode === 'multi-translation' || backLines.length > 1;
   const flipLabel = isFlipped ? 'Скрыть перевод' : 'Показать перевод';
@@ -146,7 +148,7 @@ export const Flashcard = ({
         aria-label={flipLabel}
       >
         <span className="flashcard-face" style={FRONT_STYLE}>
-          <span style={LABEL_STYLE}>{getLangLabel(frontLang)}</span>
+          <span style={LABEL_STYLE}>{getLangLabel(frontLang, language)}</span>
           <p style={WORD_STYLE}>{getFrontText(word, mode)}</p>
           <p style={HINT_STYLE}>Нажми, чтобы перевернуть</p>
         </span>

@@ -1,6 +1,8 @@
+export type AppLanguage = 'de' | 'en';
+
 export type StudyMode =
-  | 'ru-to-de'
-  | 'de-to-ru'
+  | 'ru-to-foreign'
+  | 'foreign-to-ru'
   | 'all-mixed'
   | 'single-topic'
   | 'multi-translation';
@@ -8,17 +10,15 @@ export type StudyMode =
 export interface WordEntry {
   id: string;
   ru: string;
-  de: string[];
+  terms: string[];
   topic: string;
   ruVariants?: string[];
-  oral?: boolean;
 }
 
 export interface TopicGroup {
   id: string;
   title: string;
   words: WordEntry[];
-  oral?: boolean;
 }
 
 export interface StudySession {
@@ -31,6 +31,13 @@ export interface StudySession {
 
 export interface ModeOption {
   id: StudyMode;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface LanguageOption {
+  id: AppLanguage;
   title: string;
   description: string;
   icon: string;

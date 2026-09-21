@@ -1,10 +1,11 @@
 import { useCallback, useState } from 'react';
 import { HomeScreen } from './components/HomeScreen/HomeScreen';
+import { LanguageSelectScreen } from './components/LanguageSelectScreen/LanguageSelectScreen';
 import { StudyScreen } from './components/StudyScreen/StudyScreen';
 import { TopicSelectScreen } from './components/TopicSelectScreen/TopicSelectScreen';
-import type { StudyMode } from './types/vocabulary';
+import type { AppLanguage, StudyMode } from './types/vocabulary';
 
-type AppScreen = 'home' | 'topic-select' | 'study';
+type AppScreen = 'language' | 'home' | 'topic-select' | 'study';
 
 const APP_STYLE = {
   display: 'flex',
@@ -18,9 +19,16 @@ const APP_STYLE = {
 };
 
 export const App = () => {
-  const [screen, setScreen] = useState<AppScreen>('home');
-  const [mode, setMode] = useState<StudyMode>('ru-to-de');
+  const [screen, setScreen] = useState<AppScreen>('language');
+  const [language, setLanguage] = useState<AppLanguage>('de');
+  const [mode, setMode] = useState<StudyMode>('ru-to-foreign');
   const [topicId, setTopicId] = useState<string | null>(null);
+
+  const handleSelectLanguage = useCallback((selected: AppLanguage) => {
+    setLanguage(selected);
+    setTopicId(null);
+    setScreen('home');
+  }, []);
 
   const handleSelectMode = useCallback((selectedMode: StudyMode) => {
     setMode(selectedMode);
@@ -36,6 +44,11 @@ export const App = () => {
 
   const handleStartTopic = useCallback(() => {
     setScreen('study');
+  }, []);
+
+  const handleBackToLanguage = useCallback(() => {
+    setScreen('language');
+    setTopicId(null);
   }, []);
 
   const handleBackToHome = useCallback(() => {
@@ -59,12 +72,21 @@ export const App = () => {
 
   return (
     <main style={APP_STYLE}>
+      {screen === 'language' ? (
+        <LanguageSelectScreen onSelectLanguage={handleSelectLanguage} />
+      ) : null}
+
       {screen === 'home' ? (
-        <HomeScreen onSelectMode={handleSelectMode} />
+        <HomeScreen
+          language={language}
+          onSelectMode={handleSelectMode}
+          onBack={handleBackToLanguage}
+        />
       ) : null}
 
       {screen === 'topic-select' ? (
         <TopicSelectScreen
+          language={language}
           selectedTopicId={topicId}
           onSelectTopic={setTopicId}
           onBack={handleBackFromTopic}
@@ -74,6 +96,7 @@ export const App = () => {
 
       {screen === 'study' ? (
         <StudyScreen
+          language={language}
           mode={mode}
           topicId={topicId}
           onBack={handleBackFromStudy}
