@@ -1,7 +1,7 @@
 import type { WordEntry } from '../types/vocabulary';
 import { shuffleArray } from './shuffle';
 
-export const MATCH_ROUND_SIZE = 6;
+export const MATCH_ROUND_SIZE = 4;
 
 export const getForeignText = (word: WordEntry): string =>
   word.terms[0] ?? '';

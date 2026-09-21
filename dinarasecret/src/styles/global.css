@@ -51,6 +51,78 @@ button:active {
   border-radius: 16px;
 }
 
+@keyframes match-pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.72);
+    opacity: 0;
+  }
+}
+
+@keyframes match-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes match-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(232, 93, 138, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(232, 93, 138, 0);
+  }
+}
+
+@keyframes match-banner-in {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.match-chip-pop {
+  animation: match-pop 0.38s ease forwards;
+  pointer-events: none;
+}
+
+.match-chip-shake {
+  animation: match-shake 0.38s ease;
+}
+
+.match-chip-waiting {
+  animation: match-glow 1.4s ease infinite;
+}
+
+.match-pick-banner {
+  animation: match-banner-in 0.22s ease;
+}
+
 @media (min-width: 768px) {
   body {
     background: linear-gradient(180deg, #fff0f5 0%, var(--bg) 30%);
