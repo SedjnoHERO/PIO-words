@@ -1,4 +1,10 @@
-import type { AppLanguage, ModeOption } from '../types/vocabulary';
+import type {
+  AppLanguage,
+  ModeCategory,
+  ModeCategoryId,
+  ModeOption,
+  StudyMode,
+} from '../types/vocabulary';
 
 const FOREIGN_LABEL: Record<AppLanguage, string> = {
   de: 'Deutsch',
@@ -12,6 +18,37 @@ const FOREIGN_FLAG: Record<AppLanguage, string> = {
 
 const foreignWord = (language: AppLanguage): string =>
   language === 'de' ? 'немецком' : 'английском';
+
+const CARD_MODE_IDS: StudyMode[] = [
+  'ru-to-foreign',
+  'foreign-to-ru',
+  'weak-words',
+  'all-mixed',
+  'multi-translation',
+];
+
+const GAME_MODE_IDS: StudyMode[] = [
+  'match-pairs',
+  'choose-one',
+  'type-answer',
+  'scramble-word',
+  'memory',
+];
+
+export const MODE_CATEGORIES: ModeCategory[] = [
+  {
+    id: 'cards',
+    title: 'Карточки',
+    description: 'Классическое изучение и слабые слова',
+    icon: '🃏',
+  },
+  {
+    id: 'games',
+    title: 'Игры',
+    description: 'Пары, квиз, набор и память',
+    icon: '🎮',
+  },
+];
 
 export const getModeOptions = (language: AppLanguage): ModeOption[] => {
   const foreign = FOREIGN_LABEL[language];
@@ -31,39 +68,9 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
       icon: `${flag}→🇷🇺`,
     },
     {
-      id: 'match-pairs',
-      title: 'Соедини пары',
-      description: 'Нажми слово слева и перевод справа',
-      icon: '🔗',
-    },
-    {
-      id: 'choose-one',
-      title: 'Выбор из трёх',
-      description: 'Одно слово сверху — выбери верный перевод',
-      icon: '🎯',
-    },
-    {
-      id: 'type-answer',
-      title: 'Напиши перевод',
-      description: 'Введи перевод сам — с мягкой проверкой',
-      icon: '⌨️',
-    },
-    {
-      id: 'scramble-word',
-      title: 'Собери слово',
-      description: 'Буквы перемешаны — собери термин',
-      icon: '🔤',
-    },
-    {
-      id: 'memory',
-      title: 'Память',
-      description: 'Найди пары на перевёрнутых карточках',
-      icon: '🃏',
-    },
-    {
       id: 'weak-words',
       title: 'Только слабые',
-      description: 'Слова, где чаще ошибалась или откладывала',
+      description: 'Где чаще ошибалась или откладывала',
       icon: '💪',
     },
     {
@@ -78,5 +85,58 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
       description: 'Слова с 2+ вариантами перевода',
       icon: '📝',
     },
+    {
+      id: 'match-pairs',
+      title: 'Соедини пары',
+      description: 'Слово слева и перевод справа',
+      icon: '🔗',
+    },
+    {
+      id: 'choose-one',
+      title: 'Выбор из трёх',
+      description: 'Одно слово — три варианта',
+      icon: '🎯',
+    },
+    {
+      id: 'type-answer',
+      title: 'Напиши перевод',
+      description: 'Введи перевод сам',
+      icon: '⌨️',
+    },
+    {
+      id: 'scramble-word',
+      title: 'Собери слово',
+      description: 'Буквы перемешаны — собери термин',
+      icon: '🔤',
+    },
+    {
+      id: 'memory',
+      title: 'Память',
+      description: 'Найди пары на карточках',
+      icon: '🎴',
+    },
   ];
 };
+
+export const getModesByCategory = (
+  language: AppLanguage,
+  categoryId: ModeCategoryId,
+): ModeOption[] => {
+  const ids = categoryId === 'cards' ? CARD_MODE_IDS : GAME_MODE_IDS;
+  const all = getModeOptions(language);
+
+  return ids
+    .map((id) => all.find((mode) => mode.id === id))
+    .filter((mode): mode is ModeOption => Boolean(mode));
+};
+
+export const getCategoryById = (
+  categoryId: ModeCategoryId,
+): ModeCategory | undefined =>
+  MODE_CATEGORIES.find((category) => category.id === categoryId);
+
+export const getModeTitle = (
+  language: AppLanguage,
+  mode: StudyMode,
+): string =>
+  getModeOptions(language).find((item) => item.id === mode)?.title ?? 'Режим';

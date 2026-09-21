@@ -3,14 +3,24 @@ import { HomeScreen } from './components/HomeScreen/HomeScreen';
 import { LanguageSelectScreen } from './components/LanguageSelectScreen/LanguageSelectScreen';
 import { MatchScreen } from './components/MatchScreen/MatchScreen';
 import { MemoryScreen } from './components/MemoryScreen/MemoryScreen';
+import { ModeSelectScreen } from './components/ModeSelectScreen/ModeSelectScreen';
 import { QuizScreen } from './components/QuizScreen/QuizScreen';
 import { ScrambleScreen } from './components/ScrambleScreen/ScrambleScreen';
 import { StudyScreen } from './components/StudyScreen/StudyScreen';
 import { TopicSelectScreen } from './components/TopicSelectScreen/TopicSelectScreen';
 import { TypeAnswerScreen } from './components/TypeAnswerScreen/TypeAnswerScreen';
-import type { AppLanguage, StudyMode } from './types/vocabulary';
+import type {
+  AppLanguage,
+  ModeCategoryId,
+  StudyMode,
+} from './types/vocabulary';
 
-type AppScreen = 'language' | 'home' | 'topic-select' | 'study';
+type AppScreen =
+  | 'language'
+  | 'home'
+  | 'mode-select'
+  | 'topic-select'
+  | 'study';
 
 const APP_STYLE = {
   display: 'flex',
@@ -36,6 +46,7 @@ const isGameMode = (mode: StudyMode): boolean => GAME_MODES.includes(mode);
 export const App = () => {
   const [screen, setScreen] = useState<AppScreen>('language');
   const [language, setLanguage] = useState<AppLanguage>('de');
+  const [categoryId, setCategoryId] = useState<ModeCategoryId>('cards');
   const [mode, setMode] = useState<StudyMode>('ru-to-foreign');
   const [topicId, setTopicId] = useState<string | null>(null);
 
@@ -43,6 +54,11 @@ export const App = () => {
     setLanguage(selected);
     setTopicId(null);
     setScreen('home');
+  }, []);
+
+  const handleSelectCategory = useCallback((selected: ModeCategoryId) => {
+    setCategoryId(selected);
+    setScreen('mode-select');
   }, []);
 
   const handleSelectMode = useCallback((selectedMode: StudyMode) => {
@@ -72,7 +88,7 @@ export const App = () => {
   }, []);
 
   const handleBackFromTopic = useCallback(() => {
-    setScreen('home');
+    setScreen('mode-select');
     setTopicId(null);
   }, []);
 
@@ -82,7 +98,7 @@ export const App = () => {
       return;
     }
 
-    setScreen('home');
+    setScreen('mode-select');
   }, [mode]);
 
   return (
@@ -94,8 +110,17 @@ export const App = () => {
       {screen === 'home' ? (
         <HomeScreen
           language={language}
-          onSelectMode={handleSelectMode}
+          onSelectCategory={handleSelectCategory}
           onBack={handleBackToLanguage}
+        />
+      ) : null}
+
+      {screen === 'mode-select' ? (
+        <ModeSelectScreen
+          language={language}
+          categoryId={categoryId}
+          onSelectMode={handleSelectMode}
+          onBack={handleBackToHome}
         />
       ) : null}
 

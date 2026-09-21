@@ -43,6 +43,15 @@ export interface ModeOption {
   icon: string;
 }
 
+export type ModeCategoryId = 'cards' | 'games';
+
+export interface ModeCategory {
+  id: ModeCategoryId;
+  title: string;
+  description: string;
+  icon: string;
+}
+
 export interface LanguageOption {
   id: AppLanguage;
   title: string;

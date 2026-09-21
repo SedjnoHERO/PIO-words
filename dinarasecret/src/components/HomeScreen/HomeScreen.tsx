@@ -1,20 +1,20 @@
 import type { CSSProperties } from 'react';
-import { getModeOptions } from '../../data/modes';
+import { MODE_CATEGORIES } from '../../data/modes';
 import { getTotalWords } from '../../data/vocabulary';
-import type { AppLanguage, StudyMode } from '../../types/vocabulary';
+import type { AppLanguage, ModeCategoryId } from '../../types/vocabulary';
+import { CategoryCard } from '../CategoryCard/CategoryCard';
 import { Header } from '../Header/Header';
-import { ModeCard } from '../ModeCard/ModeCard';
 
 interface HomeScreenProps {
   language: AppLanguage;
-  onSelectMode: (mode: StudyMode) => void;
+  onSelectCategory: (categoryId: ModeCategoryId) => void;
   onBack: () => void;
 }
 
 const SCREEN_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
-  gap: '20px',
+  gap: '18px',
   width: '100%',
 };
 
@@ -22,28 +22,23 @@ const HERO_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  gap: '8px',
-  padding: '12px 8px 4px',
+  gap: '6px',
+  padding: '4px 8px 0',
   textAlign: 'center',
-};
-
-const HERO_EMOJI: CSSProperties = {
-  fontSize: '48px',
-  lineHeight: 1,
 };
 
 const HERO_TEXT: CSSProperties = {
   margin: 0,
-  fontSize: '15px',
+  fontSize: '14px',
   fontWeight: 600,
   color: 'var(--text-muted)',
-  lineHeight: 1.5,
+  lineHeight: 1.45,
 };
 
-const MODES_STYLE: CSSProperties = {
+const LIST_STYLE: CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
-  gap: '10px',
+  gap: '12px',
   width: '100%',
 };
 
@@ -59,10 +54,9 @@ const LANGUAGE_SUBTITLE: Record<AppLanguage, string> = {
 
 export const HomeScreen = ({
   language,
-  onSelectMode,
+  onSelectCategory,
   onBack,
 }: HomeScreenProps) => {
-  const modes = getModeOptions(language);
   const total = getTotalWords(language);
 
   return (
@@ -73,17 +67,15 @@ export const HomeScreen = ({
         onBack={onBack}
       />
       <div style={HERO_STYLE}>
-        <span style={HERO_EMOJI} aria-hidden="true">
-          ✨
-        </span>
-        <p style={HERO_TEXT}>
-          Выбери режим и учи слова в удобном темпе. Ты умница — у тебя всё
-          получится! 💕
-        </p>
+        <p style={HERO_TEXT}>Выбери, как хочешь заниматься сегодня 💕</p>
       </div>
-      <div style={MODES_STYLE}>
-        {modes.map((mode) => (
-          <ModeCard key={mode.id} mode={mode} onSelect={onSelectMode} />
+      <div style={LIST_STYLE}>
+        {MODE_CATEGORIES.map((category) => (
+          <CategoryCard
+            key={category.id}
+            category={category}
+            onSelect={onSelectCategory}
+          />
         ))}
       </div>
     </section>

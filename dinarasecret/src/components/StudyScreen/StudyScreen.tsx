@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { getModeOptions } from '../../data/modes';
+import { getModeTitle } from '../../data/modes';
 import { useFlashcards } from '../../hooks/useFlashcards';
 import { useSwipe } from '../../hooks/useSwipe';
 import type { AppLanguage, StudyMode } from '../../types/vocabulary';
@@ -48,9 +48,6 @@ const EMPTY_STYLE: CSSProperties = {
   textAlign: 'center',
   padding: '24px',
 };
-
-const getModeTitle = (language: AppLanguage, mode: StudyMode): string =>
-  getModeOptions(language).find((item) => item.id === mode)?.title ?? 'Режим';
 
 export const StudyScreen = ({
   language,
