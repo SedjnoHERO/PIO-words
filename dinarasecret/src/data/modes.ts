@@ -43,6 +43,30 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
       icon: '🎯',
     },
     {
+      id: 'type-answer',
+      title: 'Напиши перевод',
+      description: 'Введи перевод сам — с мягкой проверкой',
+      icon: '⌨️',
+    },
+    {
+      id: 'scramble-word',
+      title: 'Собери слово',
+      description: 'Буквы перемешаны — собери термин',
+      icon: '🔤',
+    },
+    {
+      id: 'memory',
+      title: 'Память',
+      description: 'Найди пары на перевёрнутых карточках',
+      icon: '🃏',
+    },
+    {
+      id: 'weak-words',
+      title: 'Только слабые',
+      description: 'Слова, где чаще ошибалась или откладывала',
+      icon: '💪',
+    },
+    {
       id: 'all-mixed',
       title: 'Все вперемешку',
       description: 'Случайный порядок из всех слов',

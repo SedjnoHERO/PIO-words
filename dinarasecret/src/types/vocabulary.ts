@@ -7,7 +7,11 @@ export type StudyMode =
   | 'single-topic'
   | 'multi-translation'
   | 'match-pairs'
-  | 'choose-one';
+  | 'choose-one'
+  | 'type-answer'
+  | 'scramble-word'
+  | 'memory'
+  | 'weak-words';
 
 export interface WordEntry {
   id: string;

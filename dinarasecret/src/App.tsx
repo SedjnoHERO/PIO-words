@@ -2,9 +2,12 @@ import { useCallback, useState } from 'react';
 import { HomeScreen } from './components/HomeScreen/HomeScreen';
 import { LanguageSelectScreen } from './components/LanguageSelectScreen/LanguageSelectScreen';
 import { MatchScreen } from './components/MatchScreen/MatchScreen';
+import { MemoryScreen } from './components/MemoryScreen/MemoryScreen';
 import { QuizScreen } from './components/QuizScreen/QuizScreen';
+import { ScrambleScreen } from './components/ScrambleScreen/ScrambleScreen';
 import { StudyScreen } from './components/StudyScreen/StudyScreen';
 import { TopicSelectScreen } from './components/TopicSelectScreen/TopicSelectScreen';
+import { TypeAnswerScreen } from './components/TypeAnswerScreen/TypeAnswerScreen';
 import type { AppLanguage, StudyMode } from './types/vocabulary';
 
 type AppScreen = 'language' | 'home' | 'topic-select' | 'study';
@@ -20,8 +23,15 @@ const APP_STYLE = {
     'max(16px, env(safe-area-inset-top)) 16px max(20px, env(safe-area-inset-bottom))',
 };
 
-const isGameMode = (mode: StudyMode): boolean =>
-  mode === 'match-pairs' || mode === 'choose-one';
+const GAME_MODES: StudyMode[] = [
+  'match-pairs',
+  'choose-one',
+  'type-answer',
+  'scramble-word',
+  'memory',
+];
+
+const isGameMode = (mode: StudyMode): boolean => GAME_MODES.includes(mode);
 
 export const App = () => {
   const [screen, setScreen] = useState<AppScreen>('language');
@@ -109,6 +119,30 @@ export const App = () => {
 
       {screen === 'study' && mode === 'choose-one' ? (
         <QuizScreen
+          language={language}
+          onBack={handleBackFromStudy}
+          onHome={handleBackToHome}
+        />
+      ) : null}
+
+      {screen === 'study' && mode === 'type-answer' ? (
+        <TypeAnswerScreen
+          language={language}
+          onBack={handleBackFromStudy}
+          onHome={handleBackToHome}
+        />
+      ) : null}
+
+      {screen === 'study' && mode === 'scramble-word' ? (
+        <ScrambleScreen
+          language={language}
+          onBack={handleBackFromStudy}
+          onHome={handleBackToHome}
+        />
+      ) : null}
+
+      {screen === 'study' && mode === 'memory' ? (
+        <MemoryScreen
           language={language}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}

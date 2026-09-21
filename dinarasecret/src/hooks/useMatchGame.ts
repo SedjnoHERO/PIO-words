@@ -3,6 +3,7 @@ import { getVocabulary } from '../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../types/vocabulary';
 import { splitIntoRounds } from '../utils/gameHelpers';
 import { shuffleArray } from '../utils/shuffle';
+import { recordCorrect, recordWrong } from '../utils/wordStats';
 import type { MatchChipState } from '../components/MatchScreen/MatchChip';
 
 interface MatchGameState {
@@ -97,27 +98,33 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
     return () => window.clearTimeout(timer);
   }, [isFinished, isRoundDone, roundIndex, setupRound, showRoundDone]);
 
-  const tryMatch = useCallback((leftId: string, rightId: string) => {
-    if (leftId === rightId) {
-      setPopIds([leftId]);
-      setSelectedLeft(null);
-      setSelectedRight(null);
-      window.setTimeout(() => {
-        setMatchedIds((prev) =>
-          prev.includes(leftId) ? prev : [...prev, leftId],
-        );
-        setPopIds([]);
-      }, 360);
-      return;
-    }
+  const tryMatch = useCallback(
+    (leftId: string, rightId: string) => {
+      if (leftId === rightId) {
+        recordCorrect(language, leftId);
+        setPopIds([leftId]);
+        setSelectedLeft(null);
+        setSelectedRight(null);
+        window.setTimeout(() => {
+          setMatchedIds((prev) =>
+            prev.includes(leftId) ? prev : [...prev, leftId],
+          );
+          setPopIds([]);
+        }, 360);
+        return;
+      }
 
-    setWrongIds([leftId, rightId]);
-    window.setTimeout(() => {
-      setWrongIds([]);
-      setSelectedLeft(null);
-      setSelectedRight(null);
-    }, 420);
-  }, []);
+      recordWrong(language, leftId);
+      recordWrong(language, rightId);
+      setWrongIds([leftId, rightId]);
+      window.setTimeout(() => {
+        setWrongIds([]);
+        setSelectedLeft(null);
+        setSelectedRight(null);
+      }, 420);
+    },
+    [language],
+  );
 
   const handleLeft = useCallback(
     (id: string) => {

@@ -1,6 +1,7 @@
 import { getVocabulary } from '../data/vocabulary';
 import type { AppLanguage, StudyMode, WordEntry } from '../types/vocabulary';
 import { shuffleArray } from './shuffle';
+import { pickWeakWords } from './wordStats';
 
 export type CardLang = 'ru' | 'foreign';
 
@@ -78,6 +79,8 @@ export const buildDeck = (
     case 'foreign-to-ru':
     case 'all-mixed':
       return shuffleArray(getAllWords(language));
+    case 'weak-words':
+      return shuffleArray(pickWeakWords(language, getAllWords(language)));
     case 'single-topic':
       return topicId
         ? shuffleArray(getWordsByTopic(language, topicId))
@@ -86,6 +89,9 @@ export const buildDeck = (
       return shuffleArray(getMultiTranslationWords(language));
     case 'match-pairs':
     case 'choose-one':
+    case 'type-answer':
+    case 'scramble-word':
+    case 'memory':
       return [];
     default:
       return [];
@@ -123,7 +129,7 @@ export const getBackLines = (
     return [word.ru];
   }
 
-  if (mode === 'ru-to-foreign') {
+  if (mode === 'ru-to-foreign' || mode === 'weak-words') {
     return word.terms;
   }
 

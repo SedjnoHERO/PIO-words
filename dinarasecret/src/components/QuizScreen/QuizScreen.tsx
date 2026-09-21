@@ -8,6 +8,7 @@ import {
   getRuText,
 } from '../../utils/gameHelpers';
 import { shuffleArray } from '../../utils/shuffle';
+import { recordCorrect, recordWrong } from '../../utils/wordStats';
 import { FinishScreen } from '../FinishScreen/FinishScreen';
 import { Header } from '../Header/Header';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
@@ -169,6 +170,12 @@ export const QuizScreen = ({
       setChosenId(option.id);
       setFeedback(isCorrect ? 'correct' : 'wrong');
 
+      if (isCorrect) {
+        recordCorrect(language, current.id);
+      } else {
+        recordWrong(language, current.id);
+      }
+
       window.setTimeout(() => {
         const nextIndex = session.index + 1;
         if (nextIndex >= session.deck.length) {
@@ -189,7 +196,7 @@ export const QuizScreen = ({
         setChosenId(null);
       }, isCorrect ? 650 : 900);
     },
-    [current, feedback, pool, session.deck, session.index],
+    [current, feedback, language, pool, session.deck, session.index],
   );
 
   if (pool.length < 3) {

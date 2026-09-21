@@ -66,9 +66,11 @@ export const StudyScreen = ({
     isFlipped,
     progress,
     isFinished,
+    canDefer,
     flip,
     next,
     prev,
+    defer,
     restart,
   } = useFlashcards({ language, mode, topicId });
 
@@ -152,7 +154,11 @@ export const StudyScreen = ({
       <section style={SCREEN_STYLE}>
         <Header title={getModeTitle(language, mode)} onBack={onBack} />
         <div style={EMPTY_STYLE}>
-          <p>В этом режиме пока нет карточек. Добавь слова в vocabulary.ts</p>
+          <p>
+            {mode === 'weak-words'
+              ? 'Пока нет слабых слов. Ошибайся или откладывай в других режимах — и они появятся здесь 💕'
+              : 'В этом режиме пока нет карточек. Добавь слова в vocabulary.ts'}
+          </p>
           <button type="button" onClick={onBack}>
             Назад
           </button>
@@ -205,8 +211,10 @@ export const StudyScreen = ({
         onPrev={prev}
         onFlip={handleFlip}
         onNext={handleNext}
+        onDefer={defer}
         canPrev={currentIndex > 0}
         canNext={currentIndex < deck.length - 1}
+        canDefer={canDefer}
         isFlipped={isFlipped}
       />
     </section>
