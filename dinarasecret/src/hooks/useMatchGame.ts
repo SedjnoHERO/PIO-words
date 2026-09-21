@@ -14,8 +14,8 @@ interface MatchGameState {
   selectedLeft: string | null;
   selectedRight: string | null;
   wordsById: Map<string, WordEntry>;
-  visibleLeft: string[];
-  visibleRight: string[];
+  leftOrder: string[];
+  rightOrder: string[];
   isRoundDone: boolean;
   isFinished: boolean;
   showRoundDone: boolean;
@@ -47,13 +47,6 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
   const wordsById = useMemo(
     () => new Map(currentRound.map((word) => [word.id, word])),
     [currentRound],
-  );
-
-  const visibleLeft = leftOrder.filter(
-    (id) => !matchedIds.includes(id) || popIds.includes(id),
-  );
-  const visibleRight = rightOrder.filter(
-    (id) => !matchedIds.includes(id) || popIds.includes(id),
   );
 
   const isRoundDone =
@@ -193,6 +186,10 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
       return 'pop';
     }
 
+    if (matchedIds.includes(id)) {
+      return 'gone';
+    }
+
     if (wrongIds.includes(id)) {
       return 'wrong';
     }
@@ -224,8 +221,8 @@ export const useMatchGame = (language: AppLanguage): MatchGameState => {
     selectedLeft,
     selectedRight,
     wordsById,
-    visibleLeft,
-    visibleRight,
+    leftOrder,
+    rightOrder,
     isRoundDone,
     isFinished,
     showRoundDone,

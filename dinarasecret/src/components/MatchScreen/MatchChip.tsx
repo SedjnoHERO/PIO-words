@@ -5,7 +5,8 @@ export type MatchChipState =
   | 'selected'
   | 'waiting'
   | 'pop'
-  | 'wrong';
+  | 'wrong'
+  | 'gone';
 
 interface MatchChipProps {
   label: string;
@@ -21,18 +22,32 @@ const getChipStyle = (
   const base: CSSProperties = {
     width: '100%',
     minHeight: '64px',
-    padding: '12px 10px',
+    height: '64px',
+    padding: '8px 10px',
     borderRadius: '18px',
     border: '2px solid transparent',
     fontSize: '14px',
     fontWeight: 800,
     fontFamily: 'inherit',
     textAlign: 'center',
-    cursor: state === 'pop' ? 'default' : 'pointer',
-    lineHeight: 1.3,
+    cursor: state === 'pop' || state === 'gone' ? 'default' : 'pointer',
+    lineHeight: 1.25,
     wordBreak: 'break-word',
-    transition: 'background 0.15s ease, border-color 0.15s ease, color 0.15s ease',
+    overflow: 'hidden',
+    transition:
+      'background 0.15s ease, border-color 0.15s ease, color 0.15s ease, opacity 0.2s ease',
   };
+
+  if (state === 'gone') {
+    return {
+      ...base,
+      opacity: 0,
+      pointerEvents: 'none',
+      background: 'transparent',
+      borderColor: 'transparent',
+      boxShadow: 'none',
+    };
+  }
 
   if (state === 'pop') {
     return {
@@ -50,7 +65,6 @@ const getChipStyle = (
       borderColor: 'var(--accent)',
       color: '#ffffff',
       boxShadow: 'var(--shadow-md)',
-      transform: 'scale(1.03)',
     };
   }
 
@@ -66,7 +80,7 @@ const getChipStyle = (
   if (state === 'waiting') {
     return {
       ...base,
-      background: tone === 'ru' ? '#fff7fb' : '#f7fbff',
+      background: tone === 'ru' ? '#fff7fb' : '#f3f8ff',
       borderColor: 'var(--accent-light)',
       color: 'var(--text)',
     };
@@ -83,7 +97,7 @@ const getChipStyle = (
 
 const getAnimClass = (state: MatchChipState): string => {
   if (state === 'pop') {
-    return 'match-chip-pop';
+    return 'match-chip-fade';
   }
 
   if (state === 'wrong') {
@@ -108,8 +122,9 @@ export const MatchChip = ({
     className={getAnimClass(state)}
     style={getChipStyle(state, tone)}
     onClick={onClick}
-    disabled={state === 'pop'}
+    disabled={state === 'pop' || state === 'gone'}
+    aria-hidden={state === 'gone'}
   >
-    {label}
+    {state === 'gone' ? '' : label}
   </button>
 );

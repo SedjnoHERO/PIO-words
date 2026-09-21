@@ -1,15 +1,10 @@
 import type { CSSProperties } from 'react';
 import type { AppLanguage } from '../../types/vocabulary';
-import {
-  getForeignText,
-  getRuText,
-} from '../../utils/gameHelpers';
 import { FinishScreen } from '../FinishScreen/FinishScreen';
 import { Header } from '../Header/Header';
 import { ProgressBar } from '../ProgressBar/ProgressBar';
 import { useMatchGame } from '../../hooks/useMatchGame';
 import { MatchBoard } from './MatchBoard';
-import { MatchPickBanner } from './MatchPickBanner';
 
 interface MatchScreenProps {
   language: AppLanguage;
@@ -28,6 +23,7 @@ const SCREEN_STYLE: CSSProperties = {
 
 const HINT_STYLE: CSSProperties = {
   margin: 0,
+  minHeight: '20px',
   fontSize: '13px',
   fontWeight: 700,
   color: 'var(--text-muted)',
@@ -77,24 +73,6 @@ export const MatchScreen = ({
   onHome,
 }: MatchScreenProps) => {
   const game = useMatchGame(language);
-
-  const selectedWord = game.selectedLeft
-    ? game.wordsById.get(game.selectedLeft)
-    : game.selectedRight
-      ? game.wordsById.get(game.selectedRight)
-      : null;
-  const selectedSideLabel = game.selectedLeft
-    ? 'Русский'
-    : game.selectedRight
-      ? language === 'de'
-        ? 'Deutsch'
-        : 'English'
-      : '';
-  const selectedLabel = selectedWord
-    ? game.selectedLeft
-      ? getRuText(selectedWord)
-      : getForeignText(selectedWord)
-    : '';
 
   if (game.allWords.length < 2) {
     return (
@@ -154,15 +132,11 @@ export const MatchScreen = ({
         current={game.globalProgress}
         total={game.allWords.length}
       />
-      {selectedWord ? (
-        <MatchPickBanner label={selectedLabel} sideLabel={selectedSideLabel} />
-      ) : (
-        <p style={HINT_STYLE}>Нажми слово — потом его перевод</p>
-      )}
+      <p style={HINT_STYLE}>Нажми слово — потом его перевод</p>
       <MatchBoard
         language={language}
-        leftIds={game.visibleLeft}
-        rightIds={game.visibleRight}
+        leftIds={game.leftOrder}
+        rightIds={game.rightOrder}
         wordsById={game.wordsById}
         chipState={game.chipState}
         onLeft={game.handleLeft}

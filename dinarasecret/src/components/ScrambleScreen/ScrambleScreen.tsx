@@ -26,7 +26,7 @@ interface ScrambleSession {
   index: number;
   target: string;
   pool: LetterTile[];
-  built: LetterTile[];
+  slots: Array<LetterTile | null>;
 }
 
 const SCREEN_STYLE: CSSProperties = {
@@ -44,7 +44,7 @@ const PROMPT_CARD: CSSProperties = {
   alignItems: 'center',
   justifyContent: 'center',
   gap: '8px',
-  minHeight: '110px',
+  minHeight: '130px',
   padding: '20px 16px',
   borderRadius: '24px',
   background: 'linear-gradient(145deg, #ffffff, #fff5f8)',
@@ -68,12 +68,21 @@ const PROMPT_TEXT: CSSProperties = {
   wordBreak: 'break-word',
 };
 
+const FEEDBACK_STYLE: CSSProperties = {
+  margin: 0,
+  minHeight: '18px',
+  fontSize: '13px',
+  fontWeight: 700,
+  textAlign: 'center',
+};
+
 const SLOT_ROW: CSSProperties = {
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'center',
+  alignContent: 'flex-start',
   gap: '8px',
-  minHeight: '56px',
+  minHeight: '60px',
   padding: '12px',
   borderRadius: '18px',
   background: 'var(--accent-soft)',
@@ -83,14 +92,16 @@ const POOL_ROW: CSSProperties = {
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'center',
+  alignContent: 'flex-start',
   gap: '8px',
   marginTop: 'auto',
+  minHeight: '100px',
 };
 
 const TILE_STYLE: CSSProperties = {
-  minWidth: '40px',
+  width: '40px',
   height: '44px',
-  padding: '0 12px',
+  padding: 0,
   borderRadius: '12px',
   border: 'none',
   background: 'var(--surface)',
@@ -100,6 +111,15 @@ const TILE_STYLE: CSSProperties = {
   fontFamily: 'inherit',
   color: 'var(--text)',
   cursor: 'pointer',
+  flexShrink: 0,
+};
+
+const SLOT_EMPTY: CSSProperties = {
+  ...TILE_STYLE,
+  background: 'rgba(255, 255, 255, 0.55)',
+  boxShadow: 'none',
+  border: '2px dashed var(--border)',
+  cursor: 'default',
 };
 
 const ACTIONS: CSSProperties = {
@@ -139,14 +159,15 @@ const pickTarget = (word: WordEntry): string =>
 const createRound = (
   deck: WordEntry[],
   index: number,
-): Pick<ScrambleSession, 'target' | 'pool' | 'built'> => {
+): Pick<ScrambleSession, 'target' | 'pool' | 'slots'> => {
   const word = deck[index];
   const target = word ? pickTarget(word) : '';
+  const pool = target ? makeTiles(target) : [];
 
   return {
     target,
-    pool: target ? makeTiles(target) : [],
-    built: [],
+    pool,
+    slots: Array.from({ length: target.length }, () => null),
   };
 };
 
@@ -178,7 +199,13 @@ export const ScrambleScreen = ({
   const current = session.deck[session.index] ?? null;
   const isFinished =
     session.deck.length > 0 && session.index >= session.deck.length;
-  const builtText = session.built.map((tile) => tile.char).join('');
+  const builtText = session.slots.map((tile) => tile?.char ?? '').join('');
+  const usedIds = useMemo(
+    () => new Set(session.slots.filter(Boolean).map((tile) => tile!.id)),
+    [session.slots],
+  );
+  const filledCount = session.slots.filter(Boolean).length;
+  const allFilled = filledCount === session.target.length && session.target.length > 0;
 
   const handleRestart = useCallback(() => {
     setSession(createSession(language));
@@ -203,30 +230,39 @@ export const ScrambleScreen = ({
 
   const handlePickPool = useCallback(
     (tile: LetterTile) => {
-      if (status !== 'play') {
+      if (status !== 'play' || usedIds.has(tile.id)) {
         return;
       }
 
-      setSession((prev) => ({
-        ...prev,
-        pool: prev.pool.filter((item) => item.id !== tile.id),
-        built: [...prev.built, tile],
-      }));
+      setSession((prev) => {
+        const emptyIndex = prev.slots.findIndex((slot) => slot === null);
+        if (emptyIndex < 0) {
+          return prev;
+        }
+
+        const nextSlots = [...prev.slots];
+        nextSlots[emptyIndex] = tile;
+        return { ...prev, slots: nextSlots };
+      });
     },
-    [status],
+    [status, usedIds],
   );
 
-  const handlePickBuilt = useCallback(
-    (tile: LetterTile) => {
+  const handlePickSlot = useCallback(
+    (slotIndex: number) => {
       if (status !== 'play') {
         return;
       }
 
-      setSession((prev) => ({
-        ...prev,
-        built: prev.built.filter((item) => item.id !== tile.id),
-        pool: [...prev.pool, tile],
-      }));
+      setSession((prev) => {
+        if (!prev.slots[slotIndex]) {
+          return prev;
+        }
+
+        const nextSlots = [...prev.slots];
+        nextSlots[slotIndex] = null;
+        return { ...prev, slots: nextSlots };
+      });
     },
     [status],
   );
@@ -238,12 +274,12 @@ export const ScrambleScreen = ({
 
     setSession((prev) => ({
       ...prev,
-      ...createRound(prev.deck, prev.index),
+      slots: prev.slots.map(() => null),
     }));
   }, [current, status]);
 
   const handleCheck = useCallback(() => {
-    if (!current || status !== 'play' || session.pool.length > 0) {
+    if (!current || status !== 'play' || !allFilled) {
       return;
     }
 
@@ -264,11 +300,11 @@ export const ScrambleScreen = ({
       setStatus('play');
     }, 900);
   }, [
+    allFilled,
     builtText,
     current,
     goNext,
     language,
-    session.pool.length,
     session.target,
     status,
   ]);
@@ -277,6 +313,20 @@ export const ScrambleScreen = ({
     () => (current ? getRuText(current) : ''),
     [current],
   );
+
+  const feedbackText =
+    status === 'wrong'
+      ? `Нужно: ${current ? getForeignText(current) : ''}`
+      : status === 'correct'
+        ? 'Собрала!'
+        : ' ';
+
+  const feedbackColor =
+    status === 'wrong'
+      ? '#a12b3a'
+      : status === 'correct'
+        ? '#1f7a3f'
+        : 'transparent';
 
   if (session.deck.length === 0) {
     return (
@@ -311,46 +361,48 @@ export const ScrambleScreen = ({
       <div style={PROMPT_CARD}>
         <span style={LABEL_STYLE}>Русский</span>
         <p style={PROMPT_TEXT}>{promptRu}</p>
-        {status === 'wrong' ? (
-          <p style={{ ...HINT_STYLE, color: '#a12b3a' }}>
-            Нужно: {getForeignText(current)}
-          </p>
-        ) : null}
-        {status === 'correct' ? (
-          <p style={{ ...HINT_STYLE, color: '#1f7a3f' }}>Собрала!</p>
-        ) : null}
+        <p style={{ ...FEEDBACK_STYLE, color: feedbackColor }}>{feedbackText}</p>
       </div>
       <div style={SLOT_ROW}>
-        {session.built.length === 0 ? (
-          <span style={HINT_STYLE}>Собери здесь</span>
-        ) : (
-          session.built.map((tile) => (
+        {session.slots.map((tile, index) =>
+          tile ? (
             <button
-              key={tile.id}
+              key={`slot-${index}-${tile.id}`}
               type="button"
               style={TILE_STYLE}
-              onClick={() => handlePickBuilt(tile)}
+              onClick={() => handlePickSlot(index)}
             >
               {tile.char}
             </button>
-          ))
+          ) : (
+            <span key={`empty-${index}`} style={SLOT_EMPTY} />
+          ),
         )}
       </div>
       <div style={POOL_ROW}>
-        {session.pool.map((tile) => (
-          <button
-            key={tile.id}
-            type="button"
-            style={{
-              ...TILE_STYLE,
-              background: 'var(--accent)',
-              color: '#ffffff',
-            }}
-            onClick={() => handlePickPool(tile)}
-          >
-            {tile.char}
-          </button>
-        ))}
+        {session.pool.map((tile) => {
+          const isUsed = usedIds.has(tile.id);
+
+          return (
+            <button
+              key={tile.id}
+              type="button"
+              style={{
+                ...TILE_STYLE,
+                background: isUsed ? 'transparent' : 'var(--accent)',
+                color: isUsed ? 'transparent' : '#ffffff',
+                boxShadow: isUsed ? 'none' : TILE_STYLE.boxShadow,
+                cursor: isUsed ? 'default' : 'pointer',
+                pointerEvents: isUsed ? 'none' : 'auto',
+              }}
+              onClick={() => handlePickPool(tile)}
+              disabled={isUsed}
+              aria-hidden={isUsed}
+            >
+              {isUsed ? '' : tile.char}
+            </button>
+          );
+        })}
       </div>
       <div style={ACTIONS}>
         <button
@@ -371,10 +423,10 @@ export const ScrambleScreen = ({
             ...ACTION_BTN,
             background: 'var(--accent)',
             color: '#ffffff',
-            opacity: session.pool.length === 0 && status === 'play' ? 1 : 0.5,
+            opacity: allFilled && status === 'play' ? 1 : 0.5,
           }}
           onClick={handleCheck}
-          disabled={session.pool.length > 0 || status !== 'play'}
+          disabled={!allFilled || status !== 'play'}
         >
           Готово
         </button>

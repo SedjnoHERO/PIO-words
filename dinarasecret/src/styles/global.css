@@ -51,17 +51,11 @@ button:active {
   border-radius: 16px;
 }
 
-@keyframes match-pop {
-  0% {
-    transform: scale(1);
+@keyframes match-fade {
+  from {
     opacity: 1;
   }
-  40% {
-    transform: scale(1.06);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.72);
+  to {
     opacity: 0;
   }
 }
@@ -95,19 +89,8 @@ button:active {
   }
 }
 
-@keyframes match-banner-in {
-  from {
-    transform: translateY(8px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.match-chip-pop {
-  animation: match-pop 0.38s ease forwards;
+.match-chip-fade {
+  animation: match-fade 0.28s ease forwards;
   pointer-events: none;
 }
 
@@ -117,10 +100,6 @@ button:active {
 
 .match-chip-waiting {
   animation: match-glow 1.4s ease infinite;
-}
-
-.match-pick-banner {
-  animation: match-banner-in 0.22s ease;
 }
 
 @media (min-width: 768px) {
