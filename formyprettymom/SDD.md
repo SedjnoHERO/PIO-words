@@ -68,6 +68,7 @@ interface TopicGroup {
 
 | id | Title (RU) | Focus |
 |----|------------|--------|
+| `basics` | Простые слова | have/want/need/can/like + short A2 patterns |
 | `reception` | Ресепшен / отель | check-in, keys, wifi, room |
 | `shops` | Магазины | prices, sizes, payment |
 | `directions` | Как пройти | wayfinding, left/right, landmarks |
@@ -75,6 +76,8 @@ interface TopicGroup {
 | `liner` | Лайнер / круиз | cabin, deck, excursions |
 | `transport` | Транспорт | taxi, bus, tickets |
 | `cafe` | Кафе / ресторан | order, bill, allergy |
+
+Level: keep all entries at **A2 or below** — short words and simple travel phrases.
 
 Each topic mixes `word` + `phrase` entries. Modes that need filtering:
 
