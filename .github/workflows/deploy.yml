@@ -27,6 +27,7 @@ jobs:
           cache-dependency-path: |
             package-lock.json
             dinarasecret/package-lock.json
+            formyprettymom/package-lock.json
 
       - name: Build spelling at /PIO-words/
         run: |
@@ -39,11 +40,18 @@ jobs:
           npm ci
           npm run build
 
+      - name: Build Travel notes at /PIO-words/formyprettymom/
+        working-directory: formyprettymom
+        run: |
+          npm ci
+          npm run build
+
       - name: Assemble site
         run: |
-          mkdir -p site/dinarasecret
+          mkdir -p site/dinarasecret site/formyprettymom
           cp -r dist/. site/
           cp -r dinarasecret/dist/. site/dinarasecret/
+          cp -r formyprettymom/dist/. site/formyprettymom/
           touch site/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3

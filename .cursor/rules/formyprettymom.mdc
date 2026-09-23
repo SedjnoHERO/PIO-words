@@ -1,0 +1,27 @@
+---
+description: formyprettymom travel PWA — follow SDD and isolated fork rules
+globs: formyprettymom/**
+alwaysApply: false
+---
+
+# formyprettymom
+
+Before large changes, read `formyprettymom/SDD.md`.
+
+## Product
+
+- Secret travel phrasebook at `/PIO-words/formyprettymom/`
+- Languages: English (`en`) + French (`fr`) only
+- Content: tourism (reception, shops, directions, asking, liner, transport, cafe)
+- Entries have `kind: 'word' | 'phrase'` and transcriptions
+- Same study/game modes as Dinara, plus words-only / phrases-only / single-topic
+- Restrained teal/slate design (Outfit + Fraunces) — not pink Dinara UI
+- localStorage keys must use `mom-` prefix
+
+## Constraints
+
+- Do not modify `dinarasecret/` or root spelling app except CI assemble paths
+- Flex layouts only — no `display: grid`
+- Components preferably ≤ 150 lines
+- Code in English; UI strings in Russian
+- Commits: Conventional Commits (English)
