@@ -107,7 +107,7 @@ export const LanguageSelectScreen = ({
   <section style={SCREEN_STYLE}>
     <Header title="Язык поездки" subtitle="Английский или французский" />
     <div style={HERO_STYLE}>
-      <p style={BRAND_STYLE}>Travel notes</p>
+      <p style={BRAND_STYLE}>English For Travelling</p>
       <p style={HERO_TEXT}>
         Тихий разговорник: ресепшен, магазины, как пройти, лайнер и всё нужное
         в дороге.

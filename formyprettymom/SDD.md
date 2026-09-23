@@ -112,14 +112,14 @@ Speech: Web Speech for `en-GB` / `fr-FR`. Favorites / weak / activity storage ke
 | Font UI | **Outfit** | Body / buttons |
 | Font display | **Fraunces** | Titles / brand |
 
-Tone: quiet travel journal — no hearts, no pink fireworks overload. Keep confetti/praise optional but toned (teal accents). Hero brand: discreet wordmark “Travel notes” / short Russian subtitle for mom.
+Tone: quiet travel journal — no hearts, no pink fireworks overload. Keep confetti/praise optional but toned (teal accents). Hero brand: discreet wordmark “English For Travelling” / short Russian subtitle for mom.
 
 PWA:
 
-- `name`: Travel notes  
-- `short_name`: Notes  
+- `name`: English For Travelling  
+- `short_name`: Travelling  
 - `theme_color` / `background_color`: `#f3f5f4`  
-- Icons: distinct from Dinara pig — elegant passport/compass mark  
+- Icons: “English For Travelling” wordmark with small compass/plane accent  
 
 ## 7. Vocabulary volume (v1 target)
 

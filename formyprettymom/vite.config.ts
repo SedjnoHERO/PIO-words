@@ -11,8 +11,8 @@ export default defineConfig({
       includeAssets: ['apple-touch-icon.png'],
       manifest: {
         id: '/PIO-words/formyprettymom/',
-        name: 'Travel notes',
-        short_name: 'Notes',
+        name: 'English For Travelling',
+        short_name: 'Travelling',
         description: 'English and French travel phrases',
         theme_color: '#f3f5f4',
         background_color: '#f3f5f4',

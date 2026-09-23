@@ -93,7 +93,7 @@ export const HomeScreen = ({
         weakCount={stats.weakCount}
       />
       <div style={HERO_STYLE}>
-        <p style={BRAND_STYLE}>Travel notes</p>
+        <p style={BRAND_STYLE}>English For Travelling</p>
         <p style={HERO_TEXT}>Сдержанный разговорник для поездки</p>
       </div>
       <div style={LIST_STYLE}>
