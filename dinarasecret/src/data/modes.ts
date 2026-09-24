@@ -22,6 +22,7 @@ const foreignWord = (language: AppLanguage): string =>
 const CARD_MODE_IDS: StudyMode[] = [
   'ru-to-foreign',
   'foreign-to-ru',
+  'single-topic',
   'favorites',
   'weak-words',
   'all-mixed',
@@ -68,6 +69,12 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
       title: `${foreign} → Русский`,
       description: `Слово на ${foreignWord(language)}, перевод на русском`,
       icon: `${flag}→🇷🇺`,
+    },
+    {
+      id: 'single-topic',
+      title: 'По теме',
+      description: 'Куски фраз или 17 предложений отдельно',
+      icon: '📚',
     },
     {
       id: 'favorites',
