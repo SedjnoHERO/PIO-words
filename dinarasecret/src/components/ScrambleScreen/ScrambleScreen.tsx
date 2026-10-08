@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { getVocabulary } from '../../data/vocabulary';
+import { getWords } from '../../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../../types/vocabulary';
 import { scrambleLetters } from '../../utils/answerCheck';
 import { getForeignText, getRuText } from '../../utils/gameHelpers';
@@ -14,6 +14,7 @@ import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface ScrambleScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   onBack: () => void;
   onHome: () => void;
 }
@@ -174,10 +175,9 @@ const createRound = (
   };
 };
 
-const createSession = (language: AppLanguage): ScrambleSession => {
+const createSession = (language: AppLanguage, topicId: string | null): ScrambleSession => {
   const deck = shuffleArray(
-    getVocabulary(language)
-      .flatMap((group) => group.words)
+    getWords(language, topicId)
       .filter((word) => pickTarget(word).length >= 2),
   );
   const round = createRound(deck, 0);
@@ -191,11 +191,12 @@ const createSession = (language: AppLanguage): ScrambleSession => {
 
 export const ScrambleScreen = ({
   language,
+  topicId,
   onBack,
   onHome,
 }: ScrambleScreenProps) => {
   const [session, setSession] = useState<ScrambleSession>(() =>
-    createSession(language),
+    createSession(language, topicId),
   );
   const [status, setStatus] = useState<'play' | 'correct' | 'wrong'>('play');
 
@@ -211,9 +212,9 @@ export const ScrambleScreen = ({
   const allFilled = filledCount === session.target.length && session.target.length > 0;
 
   const handleRestart = useCallback(() => {
-    setSession(createSession(language));
+    setSession(createSession(language, topicId));
     setStatus('play');
-  }, [language]);
+  }, [language, topicId]);
 
   const goNext = useCallback(() => {
     const nextIndex = session.index + 1;

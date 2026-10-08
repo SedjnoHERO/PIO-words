@@ -1,4 +1,4 @@
-import { getVocabulary } from '../data/vocabulary';
+import { getWords } from '../data/vocabulary';
 import type { AppLanguage, StudyMode, WordEntry } from '../types/vocabulary';
 import { pickFavoriteWords } from './favorites';
 import { shuffleArray } from './shuffle';
@@ -13,17 +13,6 @@ export interface MultiTranslationCard {
   backLang: CardLang;
 }
 
-const getAllWords = (language: AppLanguage): WordEntry[] =>
-  getVocabulary(language).flatMap((group) => group.words);
-
-const getWordsByTopic = (
-  language: AppLanguage,
-  topicId: string,
-): WordEntry[] => {
-  const group = getVocabulary(language).find((item) => item.id === topicId);
-  return group ? [...group.words] : [];
-};
-
 const hasMultipleRu = (word: WordEntry): boolean =>
   (word.ruVariants?.length ?? 0) > 1;
 
@@ -32,9 +21,6 @@ const hasMultipleTerms = (word: WordEntry): boolean =>
 
 export const hasMultipleTranslations = (word: WordEntry): boolean =>
   hasMultipleRu(word) || hasMultipleTerms(word);
-
-const getMultiTranslationWords = (language: AppLanguage): WordEntry[] =>
-  getAllWords(language).filter(hasMultipleTranslations);
 
 export const resolveMultiTranslationCard = (
   word: WordEntry,
@@ -75,21 +61,23 @@ export const buildDeck = (
   mode: StudyMode,
   topicId: string | null,
 ): WordEntry[] => {
+  const words = getWords(language, topicId);
+
   switch (mode) {
     case 'ru-to-foreign':
     case 'foreign-to-ru':
     case 'all-mixed':
-      return shuffleArray(getAllWords(language));
+      return shuffleArray(words);
     case 'weak-words':
-      return shuffleArray(pickWeakWords(language, getAllWords(language)));
+      return shuffleArray(pickWeakWords(language, words));
     case 'favorites':
-      return shuffleArray(pickFavoriteWords(language, getAllWords(language)));
+      return shuffleArray(pickFavoriteWords(language, words));
     case 'single-topic':
       return topicId
-        ? shuffleArray(getWordsByTopic(language, topicId))
+        ? shuffleArray(words)
         : [];
     case 'multi-translation':
-      return shuffleArray(getMultiTranslationWords(language));
+      return shuffleArray(words.filter(hasMultipleTranslations));
     case 'match-pairs':
     case 'choose-one':
     case 'type-answer':

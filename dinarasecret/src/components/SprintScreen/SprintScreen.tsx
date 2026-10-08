@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { getVocabulary } from '../../data/vocabulary';
+import { getWords } from '../../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../../types/vocabulary';
 import {
   recordSprintScore,
@@ -18,6 +18,7 @@ import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface SprintScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   onBack: () => void;
   onHome: () => void;
 }
@@ -226,12 +227,13 @@ const makeRound = (pool: WordEntry[]): SprintRound | null => {
 
 export const SprintScreen = ({
   language,
+  topicId,
   onBack,
   onHome,
 }: SprintScreenProps) => {
   const pool = useMemo(
-    () => getVocabulary(language).flatMap((group) => group.words),
-    [language],
+    () => getWords(language, topicId),
+    [language, topicId],
   );
   const [secondsLeft, setSecondsLeft] = useState(SPRINT_SECONDS);
   const [score, setScore] = useState(0);

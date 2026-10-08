@@ -7,7 +7,7 @@ import { TopicList } from '../TopicList/TopicList';
 interface TopicSelectScreenProps {
   language: AppLanguage;
   selectedTopicId: string | null;
-  onSelectTopic: (topicId: string) => void;
+  onSelectTopic: (topicId: string | null) => void;
   onBack: () => void;
   onStart: () => void;
 }
@@ -36,12 +36,6 @@ const START_BTN: CSSProperties = {
   opacity: 1,
 };
 
-const getStartBtnStyle = (disabled: boolean): CSSProperties => ({
-  ...START_BTN,
-  opacity: disabled ? 0.45 : 1,
-  pointerEvents: disabled ? 'none' : 'auto',
-});
-
 export const TopicSelectScreen = ({
   language,
   selectedTopicId,
@@ -52,7 +46,7 @@ export const TopicSelectScreen = ({
   <section style={SCREEN_STYLE}>
     <Header
       title="Выбери тему"
-      subtitle="Учи слова только из одной темы"
+      subtitle="Все темы или одна — для карточек и игр"
       onBack={onBack}
     />
     <TopicList
@@ -62,11 +56,10 @@ export const TopicSelectScreen = ({
     />
     <button
       type="button"
-      style={getStartBtnStyle(!selectedTopicId)}
+      style={START_BTN}
       onClick={onStart}
-      disabled={!selectedTopicId}
     >
-      Начать
+      Далее
     </button>
   </section>
 );

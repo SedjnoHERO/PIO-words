@@ -22,3 +22,8 @@ export const getVocabulary = (language: AppLanguage) =>
 
 export const getTotalWords = (language: AppLanguage): number =>
   getVocabulary(language).reduce((sum, group) => sum + group.words.length, 0);
+
+export const getWords = (language: AppLanguage, topicId: string | null) =>
+  getVocabulary(language)
+    .filter((group) => topicId === null || group.id === topicId)
+    .flatMap((group) => group.words);

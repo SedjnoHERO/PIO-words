@@ -8,11 +8,13 @@ import type {
   ModeCategoryId,
   StudyMode,
 } from '../../types/vocabulary';
+import { getVocabulary } from '../../data/vocabulary';
 import { Header } from '../Header/Header';
 import { ModeCard } from '../ModeCard/ModeCard';
 
 interface ModeSelectScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   categoryId: ModeCategoryId;
   onSelectMode: (mode: StudyMode) => void;
   onBack: () => void;
@@ -34,6 +36,7 @@ const LIST_STYLE: CSSProperties = {
 
 export const ModeSelectScreen = ({
   language,
+  topicId,
   categoryId,
   onSelectMode,
   onBack,
@@ -45,7 +48,7 @@ export const ModeSelectScreen = ({
     <section style={SCREEN_STYLE}>
       <Header
         title={category?.title ?? 'Режимы'}
-        subtitle={category?.description}
+        subtitle={getVocabulary(language).find((topic) => topic.id === topicId)?.title ?? 'Все темы'}
         onBack={onBack}
       />
       <div style={LIST_STYLE}>

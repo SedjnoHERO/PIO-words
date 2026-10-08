@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import type { CSSProperties, FormEvent } from 'react';
-import { getVocabulary } from '../../data/vocabulary';
+import { getWords } from '../../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../../types/vocabulary';
 import { answersMatch } from '../../utils/answerCheck';
 import {
@@ -17,6 +17,7 @@ import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface TypeAnswerScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   onBack: () => void;
   onHome: () => void;
 }
@@ -122,9 +123,9 @@ const getAccepted = (word: WordEntry, promptSide: PromptSide): string[] => {
   return variants;
 };
 
-const createSession = (language: AppLanguage): TypeSession => {
+const createSession = (language: AppLanguage, topicId: string | null): TypeSession => {
   const deck = shuffleArray(
-    getVocabulary(language).flatMap((group) => group.words),
+    getWords(language, topicId),
   );
 
   return {
@@ -136,11 +137,12 @@ const createSession = (language: AppLanguage): TypeSession => {
 
 export const TypeAnswerScreen = ({
   language,
+  topicId,
   onBack,
   onHome,
 }: TypeAnswerScreenProps) => {
   const [session, setSession] = useState<TypeSession>(() =>
-    createSession(language),
+    createSession(language, topicId),
   );
   const [value, setValue] = useState('');
   const [feedback, setFeedback] = useState<Feedback>('none');
@@ -159,11 +161,11 @@ export const TypeAnswerScreen = ({
   }, [current, session.promptSide]);
 
   const handleRestart = useCallback(() => {
-    setSession(createSession(language));
+    setSession(createSession(language, topicId));
     setValue('');
     setFeedback('none');
     setReveal(null);
-  }, [language]);
+  }, [language, topicId]);
 
   const goNext = useCallback(() => {
     const nextIndex = session.index + 1;

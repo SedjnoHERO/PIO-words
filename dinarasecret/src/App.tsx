@@ -55,7 +55,7 @@ export const App = () => {
   const handleSelectLanguage = useCallback((selected: AppLanguage) => {
     setLanguage(selected);
     setTopicId(null);
-    setScreen('home');
+    setScreen('topic-select');
   }, []);
 
   const handleSelectCategory = useCallback((selected: ModeCategoryId) => {
@@ -66,17 +66,11 @@ export const App = () => {
   const handleSelectMode = useCallback((selectedMode: StudyMode) => {
     setMode(selectedMode);
 
-    if (selectedMode === 'single-topic') {
-      setScreen('topic-select');
-      return;
-    }
-
-    setTopicId(null);
     setScreen('study');
   }, []);
 
   const handleStartTopic = useCallback(() => {
-    setScreen('study');
+    setScreen('home');
   }, []);
 
   const handleBackToLanguage = useCallback(() => {
@@ -86,22 +80,15 @@ export const App = () => {
 
   const handleBackToHome = useCallback(() => {
     setScreen('home');
-    setTopicId(null);
   }, []);
 
-  const handleBackFromTopic = useCallback(() => {
-    setScreen('mode-select');
-    setTopicId(null);
+  const handleBackToTopics = useCallback(() => {
+    setScreen('topic-select');
   }, []);
 
   const handleBackFromStudy = useCallback(() => {
-    if (mode === 'single-topic') {
-      setScreen('topic-select');
-      return;
-    }
-
     setScreen('mode-select');
-  }, [mode]);
+  }, []);
 
   return (
     <main style={APP_STYLE}>
@@ -112,14 +99,16 @@ export const App = () => {
       {screen === 'home' ? (
         <HomeScreen
           language={language}
+          topicId={topicId}
           onSelectCategory={handleSelectCategory}
-          onBack={handleBackToLanguage}
+          onBack={handleBackToTopics}
         />
       ) : null}
 
       {screen === 'mode-select' ? (
         <ModeSelectScreen
           language={language}
+          topicId={topicId}
           categoryId={categoryId}
           onSelectMode={handleSelectMode}
           onBack={handleBackToHome}
@@ -131,7 +120,7 @@ export const App = () => {
           language={language}
           selectedTopicId={topicId}
           onSelectTopic={setTopicId}
-          onBack={handleBackFromTopic}
+          onBack={handleBackToLanguage}
           onStart={handleStartTopic}
         />
       ) : null}
@@ -139,6 +128,7 @@ export const App = () => {
       {screen === 'study' && mode === 'sprint' ? (
         <SprintScreen
           language={language}
+          topicId={topicId}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}
         />
@@ -147,6 +137,7 @@ export const App = () => {
       {screen === 'study' && mode === 'match-pairs' ? (
         <MatchScreen
           language={language}
+          topicId={topicId}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}
         />
@@ -155,6 +146,7 @@ export const App = () => {
       {screen === 'study' && mode === 'choose-one' ? (
         <QuizScreen
           language={language}
+          topicId={topicId}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}
         />
@@ -163,6 +155,7 @@ export const App = () => {
       {screen === 'study' && mode === 'type-answer' ? (
         <TypeAnswerScreen
           language={language}
+          topicId={topicId}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}
         />
@@ -171,6 +164,7 @@ export const App = () => {
       {screen === 'study' && mode === 'scramble-word' ? (
         <ScrambleScreen
           language={language}
+          topicId={topicId}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}
         />
@@ -179,6 +173,7 @@ export const App = () => {
       {screen === 'study' && mode === 'memory' ? (
         <MemoryScreen
           language={language}
+          topicId={topicId}
           onBack={handleBackFromStudy}
           onHome={handleBackToHome}
         />

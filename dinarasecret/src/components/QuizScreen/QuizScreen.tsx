@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { getVocabulary } from '../../data/vocabulary';
+import { getWords } from '../../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../../types/vocabulary';
 import {
   buildQuizOptions,
@@ -17,6 +17,7 @@ import { SpeakButton } from '../SpeakButton/SpeakButton';
 
 interface QuizScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   onBack: () => void;
   onHome: () => void;
 }
@@ -125,8 +126,8 @@ const getOptionStyle = (
   };
 };
 
-const createSession = (language: AppLanguage): QuizSession => {
-  const pool = getVocabulary(language).flatMap((group) => group.words);
+const createSession = (language: AppLanguage, topicId: string | null): QuizSession => {
+  const pool = getWords(language, topicId);
   const deck = shuffleArray(pool);
   const first = deck[0];
 
@@ -140,15 +141,16 @@ const createSession = (language: AppLanguage): QuizSession => {
 
 export const QuizScreen = ({
   language,
+  topicId,
   onBack,
   onHome,
 }: QuizScreenProps) => {
   const pool = useMemo(
-    () => getVocabulary(language).flatMap((group) => group.words),
-    [language],
+    () => getWords(language, topicId),
+    [language, topicId],
   );
   const [session, setSession] = useState<QuizSession>(() =>
-    createSession(language),
+    createSession(language, topicId),
   );
   const [feedback, setFeedback] = useState<Feedback>('none');
   const [chosenId, setChosenId] = useState<string | null>(null);
@@ -158,10 +160,10 @@ export const QuizScreen = ({
     session.deck.length > 0 && session.index >= session.deck.length;
 
   const handleRestart = useCallback(() => {
-    setSession(createSession(language));
+    setSession(createSession(language, topicId));
     setFeedback('none');
     setChosenId(null);
-  }, [language]);
+  }, [language, topicId]);
 
   const handlePick = useCallback(
     (option: WordEntry) => {

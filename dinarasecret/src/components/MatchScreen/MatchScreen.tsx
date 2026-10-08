@@ -8,6 +8,7 @@ import { MatchBoard } from './MatchBoard';
 
 interface MatchScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   onBack: () => void;
   onHome: () => void;
 }
@@ -69,10 +70,11 @@ const NEXT_BTN: CSSProperties = {
 
 export const MatchScreen = ({
   language,
+  topicId,
   onBack,
   onHome,
 }: MatchScreenProps) => {
-  const game = useMatchGame(language);
+  const game = useMatchGame(language, topicId);
 
   if (game.allWords.length < 2) {
     return (

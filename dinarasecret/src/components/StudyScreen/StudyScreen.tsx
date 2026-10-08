@@ -69,10 +69,9 @@ const getEmptyMessage = (mode: StudyMode): string => {
 
 const getStudySubtitle = (
   language: AppLanguage,
-  mode: StudyMode,
   topicId: string | null,
 ): string | undefined => {
-  if (mode !== 'single-topic' || !topicId) {
+  if (!topicId) {
     return undefined;
   }
 
@@ -228,7 +227,7 @@ export const StudyScreen = ({
       <PraiseToast message={praiseMessage} />
       <Header
         title={getModeTitle(language, mode)}
-        subtitle={getStudySubtitle(language, mode, topicId)}
+        subtitle={getStudySubtitle(language, topicId)}
         onBack={onBack}
       />
       <ProgressBar current={progress} total={deck.length} />

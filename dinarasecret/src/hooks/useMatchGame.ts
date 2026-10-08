@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { MatchChipState } from '../components/MatchScreen/MatchChip';
-import { getVocabulary } from '../data/vocabulary';
+import { getWords } from '../data/vocabulary';
 import type { AppLanguage, WordEntry } from '../types/vocabulary';
 import { splitIntoRounds } from '../utils/gameHelpers';
 import { shuffleArray } from '../utils/shuffle';
@@ -26,10 +26,10 @@ interface MatchGameState {
   setupRound: (nextRoundIndex: number) => void;
 }
 
-export const useMatchGame = (language: AppLanguage): MatchGameState => {
+export const useMatchGame = (language: AppLanguage, topicId: string | null): MatchGameState => {
   const allWords = useMemo(
-    () => getVocabulary(language).flatMap((group) => group.words),
-    [language],
+    () => getWords(language, topicId),
+    [language, topicId],
   );
   const rounds = useMemo(() => splitIntoRounds(allWords), [allWords]);
   const [roundIndex, setRoundIndex] = useState(0);

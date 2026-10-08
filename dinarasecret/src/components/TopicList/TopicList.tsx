@@ -4,7 +4,7 @@ import type { TopicGroup } from '../../types/vocabulary';
 interface TopicListProps {
   topics: TopicGroup[];
   selectedTopicId: string | null;
-  onSelect: (topicId: string) => void;
+  onSelect: (topicId: string | null) => void;
 }
 
 const LIST_STYLE: CSSProperties = {
@@ -57,7 +57,19 @@ export const TopicList = ({
   selectedTopicId,
   onSelect,
 }: TopicListProps) => (
-  <div style={LIST_STYLE} role="listbox" aria-label="Выбор блока">
+  <div style={LIST_STYLE} role="listbox" aria-label="Выбор темы">
+    <button
+      type="button"
+      role="option"
+      aria-selected={selectedTopicId === null}
+      style={getTopicButtonStyle(selectedTopicId === null)}
+      onClick={() => onSelect(null)}
+    >
+      <span style={TITLE_STYLE}>Все темы</span>
+      <span style={COUNT_STYLE}>
+        {topics.reduce((total, topic) => total + topic.words.length, 0)}
+      </span>
+    </button>
     {topics.map((topic) => {
       const isSelected = topic.id === selectedTopicId;
 

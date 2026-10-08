@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import type { CSSProperties } from 'react';
 import { MODE_CATEGORIES } from '../../data/modes';
-import { getTotalWords } from '../../data/vocabulary';
+import { getWords, getVocabulary } from '../../data/vocabulary';
 import type { AppLanguage, ModeCategoryId } from '../../types/vocabulary';
 import { getActivitySummary } from '../../utils/activityStats';
 import { getWeakWordIds } from '../../utils/wordStats';
@@ -11,6 +11,7 @@ import { HomeStatsBar } from '../HomeStatsBar/HomeStatsBar';
 
 interface HomeScreenProps {
   language: AppLanguage;
+  topicId: string | null;
   onSelectCategory: (categoryId: ModeCategoryId) => void;
   onBack: () => void;
 }
@@ -51,17 +52,14 @@ const LANGUAGE_TITLE: Record<AppLanguage, string> = {
   en: 'Английский квиз',
 };
 
-const LANGUAGE_SUBTITLE: Record<AppLanguage, string> = {
-  de: 'Германия: фразы, предложения и история',
-  en: 'Crime and Justice · коллоквиум',
-};
-
 export const HomeScreen = ({
   language,
+  topicId,
   onSelectCategory,
   onBack,
 }: HomeScreenProps) => {
-  const total = getTotalWords(language);
+  const total = getWords(language, topicId).length;
+  const topicTitle = getVocabulary(language).find((topic) => topic.id === topicId)?.title ?? 'Все темы';
   const stats = useMemo(() => {
     const activity = getActivitySummary(language);
     return {
@@ -75,7 +73,7 @@ export const HomeScreen = ({
     <section style={SCREEN_STYLE}>
       <Header
         title={LANGUAGE_TITLE[language]}
-        subtitle={`${total} слов · ${LANGUAGE_SUBTITLE[language]}`}
+        subtitle={`${total} слов · ${topicTitle}`}
         onBack={onBack}
       />
       <HomeStatsBar
