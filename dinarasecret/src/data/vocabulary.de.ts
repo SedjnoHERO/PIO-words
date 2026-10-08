@@ -678,5 +678,516 @@ export const VOCABULARY_DE: TopicGroup[] = [
         "topic": "deutschland-saetze"
       }
     ]
+  },
+  {
+    "id": "geschichte",
+    "title": "История Германии",
+    "words": [
+      {
+        "id": "geschichte-1",
+        "ru": "Вторая Мировая война",
+        "terms": [
+          "der Zweite Weltkrieg"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-2",
+        "ru": "Антиги́тлеровская коали́ция, страны-победительницы во Второй Мировой войне",
+        "terms": [
+          "die Alliierten Sieger"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-3",
+        "ru": "документ, подтверждающий, что человек не являлся нацистом",
+        "terms": [
+          "der Persilschein"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-4",
+        "ru": "Западные державы",
+        "terms": [
+          "die Westmächte"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-5",
+        "ru": "лагерь уничтожения/лагерь смерти",
+        "terms": [
+          "das Vernichtungslager"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-6",
+        "ru": "Германская Демократическая Республика",
+        "terms": [
+          "die Deutsche Demokratische Republik"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-7",
+        "ru": "женщины, работающие на расчистке развалин разрушенных зданий",
+        "terms": [
+          "die Trümmerfrauen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-8",
+        "ru": "полоса смерти",
+        "terms": [
+          "der Todesstreifen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-9",
+        "ru": "падение Берлинской стены",
+        "terms": [
+          "der Mauerfall"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-10",
+        "ru": "стена пала",
+        "terms": [
+          "die Mauer fiel"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-11",
+        "ru": "экономическое чудо",
+        "terms": [
+          "das Wirtschaftswunder"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-12",
+        "ru": "доводить до катастрофы / до края пропасти",
+        "terms": [
+          "in den Abgrund treiben"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-13",
+        "ru": "самое ужасное преступление",
+        "terms": [
+          "das grausamste Verbrechen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-14",
+        "ru": "разрушенные города",
+        "terms": [
+          "zerstörte Städte"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-15",
+        "ru": "страдать от голода/голодать",
+        "terms": [
+          "Hunger leiden",
+          "hungern"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-16",
+        "ru": "забывать прошлое",
+        "terms": [
+          "die Vergangenheit vergessen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-17",
+        "ru": "делить Германию на четыре зоны оккупации",
+        "terms": [
+          "Deutschland in vier Besatzungszonen teilen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-18",
+        "ru": "возвращаться с войны или из плена",
+        "terms": [
+          "aus dem Krieg oder der Gefangenschaft zurückkehren"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-19",
+        "ru": "заботиться о себе и детях",
+        "terms": [
+          "für sich und die Kinder sorgen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-20",
+        "ru": "преследоваться нацистами/нацисты преследуют",
+        "terms": [
+          "von den Nazis verfolgt werden"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-21",
+        "ru": "подтверждать документом/сертификатом/справкой",
+        "terms": [
+          "mit dem Schein bestätigen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-22",
+        "ru": "способствовать созданию парламентской демократии",
+        "terms": [
+          "den Aufbau einer parlamentarischen Demokratie fördern"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-23",
+        "ru": "совершать побег через стену",
+        "terms": [
+          "über die Mauer flüchten"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-24",
+        "ru": "долгосрочное пребывание/постоянное местонахождение",
+        "terms": [
+          "ein dauerhafter Aufenthalt"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-25",
+        "ru": "закрывать доступ в Западный Берлин",
+        "terms": [
+          "den Zugang nach West-Berlin schließen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-26",
+        "ru": "быть безработным",
+        "terms": [
+          "arbeitslos sein"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-27",
+        "ru": "вводить новую валюту",
+        "terms": [
+          "eine neue Währung einführen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-28",
+        "ru": "достичь цели",
+        "terms": [
+          "das Ziel erreichen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-29",
+        "ru": "отделять друг от друга / разлучать друг с другом",
+        "terms": [
+          "voneinander trennen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-30",
+        "ru": "определяться чем-либо/характеризоваться чем-либо",
+        "terms": [
+          "durch etwas geprägt werden"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-31",
+        "ru": "достигать апогея/кульминационного момента",
+        "terms": [
+          "den Höhepunkt erreichen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-32",
+        "ru": "отравлять/загрязнять окружающую среду",
+        "terms": [
+          "die Umwelt vergiften"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-33",
+        "ru": "беспечно относиться к окружающей среде",
+        "terms": [
+          "sorglos die Umwelt behandeln"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-34",
+        "ru": "объяснять, прояснять, разъяснять кому-либо",
+        "terms": [
+          "klarmachen jemandem Dativ"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-35",
+        "ru": "видеть угрозу будущему в войнах, ядерном оружии и оборонной/военной промышленности",
+        "terms": [
+          "die Zukunft durch Kriege, Atomwaffen, Rüstungsindustrie bedroht sehen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-36",
+        "ru": "выступать за реализацию экологической политики",
+        "terms": [
+          "sich für die umweltfreundliche Politik einsetzen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-37",
+        "ru": "открыто выражать недовольство чем-либо, кем-либо",
+        "terms": [
+          "die Unzufriedenheit mit etwas (Dativ) offen bekunden"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-38",
+        "ru": "порождать расовую ненависть/расовую неприязнь",
+        "terms": [
+          "Rassenwahn bringen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-39",
+        "ru": "стоить жизни",
+        "terms": [
+          "das Leben kosten"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-40",
+        "ru": "транспортное сообщение парализовано/остановлено",
+        "terms": [
+          "die Verkehrsverbindungen legen lahm"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-41",
+        "ru": "начинать вновь/заново",
+        "terms": [
+          "neu beginnen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-42",
+        "ru": "провозглашение Основного закона",
+        "terms": [
+          "die Verkündung des Grundgesetzes"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-43",
+        "ru": "прокладывать путь",
+        "terms": [
+          "den Weg ebnen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-44",
+        "ru": "стать символом послевоенного времени",
+        "terms": [
+          "zum Symbol der Nachkriegszeit werden"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-45",
+        "ru": "покупать на черном рынке",
+        "terms": [
+          "auf dem schwarzen Markt kaufen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-46",
+        "ru": "нехватка рабочей силы",
+        "terms": [
+          "der Arbeitskräftemangel"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-47",
+        "ru": "возвращаться на Родину",
+        "terms": [
+          "in ihre Heimat zurückkehren"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-48",
+        "ru": "стать страной иммиграции",
+        "terms": [
+          "ein Einwanderungsland werden"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-49",
+        "ru": "приводить к привлечению рабочей силы / работников",
+        "terms": [
+          "zur Anwerbung ausländischer Arbeitnehmer und Arbeitnehmerinnen führen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-50",
+        "ru": "восстанавливать промышленность",
+        "terms": [
+          "die Industrie neu aufbauen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-51",
+        "ru": "квалифицированные/обученные/подготовленные специалисты",
+        "terms": [
+          "gut ausgebildete Fachkräfte"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-52",
+        "ru": "заплатить за что-либо жизнью",
+        "terms": [
+          "etwas mit dem Leben bezahlen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-53",
+        "ru": "считать едва ли возможным",
+        "terms": [
+          "kaum für möglich halten"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-54",
+        "ru": "под давлением населения",
+        "terms": [
+          "unter dem Druck der Bevölkerung"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-55",
+        "ru": "открывать переходы (погранпереходы) в Западный Берлин",
+        "terms": [
+          "die Übergänge in den Westen öffnen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-56",
+        "ru": "человек, имеющий высшее образование",
+        "terms": [
+          "der Akademiker"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-57",
+        "ru": "проходить проверку по всем направлениям",
+        "terms": [
+          "sich in viele Richtungen austesten"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-58",
+        "ru": "существенно менять политическую культуру и общество",
+        "terms": [
+          "die politische Kultur und die Gesellschaft nachhaltig verändern"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-59",
+        "ru": "подходить к концу, завершаться, заканчиваться",
+        "terms": [
+          "zu Ende gehen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-60",
+        "ru": "создавать атмосферу",
+        "terms": [
+          "eine Atmosphäre schaffen"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-61",
+        "ru": "существенным образом менять",
+        "terms": [
+          "sich grundlegend verändern"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-62",
+        "ru": "Стиральные машины, холодильники, телевизоры и радиоприемники становятся ходовым товаром.",
+        "terms": [
+          "Waschmaschinen, Kühlschränke, Fernsehgeräte und Radioapparate sind Verkaufsschlager"
+        ],
+        "topic": "geschichte"
+      },
+      {
+        "id": "geschichte-63",
+        "ru": "нарушать Основные права",
+        "terms": [
+          "Grundrechte verletzen"
+        ],
+        "topic": "geschichte"
+      }
+    ]
   }
 ];

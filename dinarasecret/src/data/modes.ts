@@ -73,7 +73,7 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
     {
       id: 'single-topic',
       title: 'По теме',
-      description: 'Куски фраз или 17 предложений отдельно',
+      description: 'Слова и выражения по выбранной теме',
       icon: '📚',
     },
     {

@@ -6,7 +6,7 @@ export const LANGUAGE_OPTIONS: LanguageOption[] = [
   {
     id: 'de',
     title: 'Немецкий',
-    description: 'Куски фраз + 17 предложений на перевод',
+    description: 'Германия: фразы, предложения и история',
     icon: '🇩🇪',
   },
   {

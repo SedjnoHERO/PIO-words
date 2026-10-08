@@ -52,7 +52,7 @@ const LANGUAGE_TITLE: Record<AppLanguage, string> = {
 };
 
 const LANGUAGE_SUBTITLE: Record<AppLanguage, string> = {
-  de: 'Куски фраз + 17 предложений',
+  de: 'Германия: фразы, предложения и история',
   en: 'Crime and Justice · коллоквиум',
 };
 
