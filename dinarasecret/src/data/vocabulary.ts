@@ -12,7 +12,7 @@ export const LANGUAGE_OPTIONS: LanguageOption[] = [
   {
     id: 'en',
     title: 'Английский',
-    description: 'Crime and Justice · лексика к коллоквиуму',
+    description: 'Crime and Justice · Спорт',
     icon: '🇬🇧',
   },
 ];

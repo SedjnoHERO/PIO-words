@@ -1037,5 +1037,1435 @@ export const VOCABULARY_EN: TopicGroup[] = [
         ]
       }
     ]
+  },
+  {
+    "id": "sport",
+    "title": "Спорт",
+    "words": [
+      {
+        "id": "sport-1",
+        "ru": "Стрельба из лука",
+        "terms": [
+          "Archery"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-2",
+        "ru": "Баскетбол 3x3",
+        "terms": [
+          "3x3 Basketball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-3",
+        "ru": "Спортивная гимнастика",
+        "terms": [
+          "Artistic Gymnastics"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-4",
+        "ru": "Синхронное плавание",
+        "terms": [
+          "Artistic Swimming"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-5",
+        "ru": "Легкая атлетика",
+        "terms": [
+          "Athletics"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-6",
+        "ru": "Бадминтон",
+        "terms": [
+          "Badminton"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-7",
+        "ru": "Бейсбол / Софтбол",
+        "terms": [
+          "Baseball Softball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-8",
+        "ru": "Баскетбол",
+        "terms": [
+          "Basketball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-9",
+        "ru": "Пляжный волейбол",
+        "terms": [
+          "Beach Volleyball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-10",
+        "ru": "Бокс",
+        "terms": [
+          "Boxing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-11",
+        "ru": "Брейкинг",
+        "terms": [
+          "Breaking"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-12",
+        "ru": "Гребной слалом",
+        "terms": [
+          "Canoe Slalom"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-13",
+        "ru": "Гребной спринт",
+        "terms": [
+          "Canoe Sprint"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-14",
+        "ru": "Спортивное скалолазание",
+        "terms": [
+          "Climbing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-15",
+        "ru": "Крикет",
+        "terms": [
+          "Cricket"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-16",
+        "ru": "BMX-фристайл",
+        "terms": [
+          "Cycling BMX Freestyle"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-17",
+        "ru": "BMX-гонки",
+        "terms": [
+          "Cycling BMX Racing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-18",
+        "ru": "Маунтинбайк",
+        "terms": [
+          "Cycling Mountain Bike"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-19",
+        "ru": "Шоссейные велогонки",
+        "terms": [
+          "Cycling Road"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-20",
+        "ru": "Трековые велогонки",
+        "terms": [
+          "Cycling Track"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-21",
+        "ru": "Прыжки в воду",
+        "terms": [
+          "Diving"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-22",
+        "ru": "Конный спорт",
+        "terms": [
+          "Equestrian"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-23",
+        "ru": "Фехтование",
+        "terms": [
+          "Fencing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-24",
+        "ru": "Флаг-футбол",
+        "terms": [
+          "Flag Football"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-25",
+        "ru": "Футбол",
+        "terms": [
+          "Football"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-26",
+        "ru": "Гольф",
+        "terms": [
+          "Golf"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-27",
+        "ru": "Гандбол",
+        "terms": [
+          "Handball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-28",
+        "ru": "Хоккей на траве",
+        "terms": [
+          "Hockey"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-29",
+        "ru": "Дзюдо",
+        "terms": [
+          "Judo"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-30",
+        "ru": "Карате",
+        "terms": [
+          "Karate"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-31",
+        "ru": "Лакросс",
+        "terms": [
+          "Lacrosse"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-32",
+        "ru": "Марафонское плавание",
+        "terms": [
+          "Marathon Swimming"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-33",
+        "ru": "Современное пятиборье",
+        "terms": [
+          "Modern Pentathlon"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-34",
+        "ru": "Художественная гимнастика",
+        "terms": [
+          "Rhythmic Gymnastics"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-35",
+        "ru": "Академическая гребля",
+        "terms": [
+          "Rowing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-36",
+        "ru": "Регби-7",
+        "terms": [
+          "Rugby Sevens"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-37",
+        "ru": "Парусный спорт",
+        "terms": [
+          "Sailing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-38",
+        "ru": "Стрельба",
+        "terms": [
+          "Shooting"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-39",
+        "ru": "Скейтбординг",
+        "terms": [
+          "Skateboarding"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-40",
+        "ru": "Сквош",
+        "terms": [
+          "Squash"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-41",
+        "ru": "Серфинг",
+        "terms": [
+          "Surfing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-42",
+        "ru": "Плавание",
+        "terms": [
+          "Swimming"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-43",
+        "ru": "Настольный теннис",
+        "terms": [
+          "Table Tennis"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-44",
+        "ru": "Тхэквондо",
+        "terms": [
+          "Taekwondo"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-45",
+        "ru": "Теннис",
+        "terms": [
+          "Tennis"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-46",
+        "ru": "Прыжки на батуте",
+        "terms": [
+          "Trampoline Gymnastics"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-47",
+        "ru": "Триатлон",
+        "terms": [
+          "Triathlon"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-48",
+        "ru": "Волейбол",
+        "terms": [
+          "Volleyball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-49",
+        "ru": "Водное поло",
+        "terms": [
+          "Water Polo"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-50",
+        "ru": "Тяжелая атлетика",
+        "terms": [
+          "Weightlifting"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-51",
+        "ru": "Борьба",
+        "terms": [
+          "Wrestling"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-52",
+        "ru": "Горнолыжный спорт",
+        "terms": [
+          "Alpine Skiing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-53",
+        "ru": "Биатлон",
+        "terms": [
+          "Biathlon"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-54",
+        "ru": "Бобслей",
+        "terms": [
+          "Bobsleigh"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-55",
+        "ru": "Лыжные гонки",
+        "terms": [
+          "Cross-Country Skiing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-56",
+        "ru": "Кёрлинг",
+        "terms": [
+          "Curling"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-57",
+        "ru": "Фигурное катание",
+        "terms": [
+          "Figure Skating"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-58",
+        "ru": "Лыжный фристайл",
+        "terms": [
+          "Freestyle Skiing"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-59",
+        "ru": "Хоккей с шайбой",
+        "terms": [
+          "Ice Hockey"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-60",
+        "ru": "Санный спорт",
+        "terms": [
+          "Luge"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-61",
+        "ru": "Лыжное двоеборье",
+        "terms": [
+          "Nordic Combined"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-62",
+        "ru": "Шорт-трек",
+        "terms": [
+          "Short-Track Speed Skating"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-63",
+        "ru": "Скелетон",
+        "terms": [
+          "Skeleton"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-64",
+        "ru": "Прыжки с трамплина",
+        "terms": [
+          "Ski Jumping"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-65",
+        "ru": "Ски-альпинизм",
+        "terms": [
+          "Ski Mountaineering"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-66",
+        "ru": "Сноуборд",
+        "terms": [
+          "Snowboard"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-67",
+        "ru": "Конькобежный спорт",
+        "terms": [
+          "Speed Skating"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-68",
+        "ru": "управлять мячом",
+        "terms": [
+          "to maneuver a ball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-69",
+        "ru": "обрабатывать мяч(касаться рукой)",
+        "terms": [
+          "to handle a ball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-70",
+        "ru": "ударить по мячу",
+        "terms": [
+          "to hit a ball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-71",
+        "ru": "одиночный/парный разряд(теннис)",
+        "terms": [
+          "singles/ doubles (tennis)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-72",
+        "ru": "перелететь через сетку (с отскоком)",
+        "terms": [
+          "to bounce over a net"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-73",
+        "ru": "присуждать очки",
+        "terms": [
+          "to award points"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-74",
+        "ru": "отбить мяч",
+        "terms": [
+          "to return a ball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-75",
+        "ru": "закатить мяч в лунку",
+        "terms": [
+          "to hole a ball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-76",
+        "ru": "меняться местами/ чередовать",
+        "terms": [
+          "to alternate positions"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-77",
+        "ru": "прыжок с шестом",
+        "terms": [
+          "pole vault"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-78",
+        "ru": "шест",
+        "terms": [
+          "a pole"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-79",
+        "ru": "волан",
+        "terms": [
+          "a shuttlecock"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-80",
+        "ru": "лунка",
+        "terms": [
+          "a hole (golf)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-81",
+        "ru": "клюшка",
+        "terms": [
+          "a club (golf)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-82",
+        "ru": "клюшка",
+        "terms": [
+          "a stick (hockey)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-83",
+        "ru": "бита",
+        "terms": [
+          "a bat (baseball/ cricket)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-84",
+        "ru": "ракетка",
+        "terms": [
+          "a racket/ bat/ paddle (table tennis)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-85",
+        "ru": "пул (бильярд)",
+        "terms": [
+          "pool"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-86",
+        "ru": "кий",
+        "terms": [
+          "a cue"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-87",
+        "ru": "штанга/перекладина",
+        "terms": [
+          "a bar"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-88",
+        "ru": "бутсы (футбольные)",
+        "terms": [
+          "(football) boots"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-89",
+        "ru": "наплечники",
+        "terms": [
+          "shoulder pads"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-90",
+        "ru": "бейсболка",
+        "terms": [
+          "a baseball cap"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-91",
+        "ru": "кислородный баллон",
+        "terms": [
+          "an oxygen tank"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-92",
+        "ru": "аквалангист",
+        "terms": [
+          "a scuba diver"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-93",
+        "ru": "кроссовки с шипами",
+        "terms": [
+          "running spikes"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-94",
+        "ru": "шлем",
+        "terms": [
+          "a helmet"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-95",
+        "ru": "гидрокостюм",
+        "terms": [
+          "a wetsuit"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-96",
+        "ru": "наколенники",
+        "terms": [
+          "kneepads"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-97",
+        "ru": "снукер",
+        "terms": [
+          "snooker"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-98",
+        "ru": "футбольное поле",
+        "terms": [
+          "a football/soccer pitch/field"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-99",
+        "ru": "поле для гольфа",
+        "terms": [
+          "a golf course"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-100",
+        "ru": "хоккейная площадка / каток",
+        "terms": [
+          "an ice hockey rink"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-101",
+        "ru": "бейсбольное поле",
+        "terms": [
+          "a baseball field/ diamond"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-102",
+        "ru": "метание копья",
+        "terms": [
+          "javelin (throw)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-103",
+        "ru": "метание диска",
+        "terms": [
+          "discus (throw)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-104",
+        "ru": "дайвинг",
+        "terms": [
+          "scuba diving"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-105",
+        "ru": "легкая атлетика",
+        "terms": [
+          "track and field AmB"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-106",
+        "ru": "побить рекорд",
+        "terms": [
+          "to break a record"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-107",
+        "ru": "прыгун с шестом",
+        "terms": [
+          "a pole vaulter"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-108",
+        "ru": "единоборства/боевые искусства",
+        "terms": [
+          "martial arts"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-109",
+        "ru": "разгромить сокрушить",
+        "terms": [
+          "to wipe the floor with smb."
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-110",
+        "ru": "занять 1-ое место",
+        "terms": [
+          "to finish in first place"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-111",
+        "ru": "команда-победительница",
+        "terms": [
+          "a winning team"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-112",
+        "ru": "хозяева поля/команда хозяев",
+        "terms": [
+          "a home team"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-113",
+        "ru": "одержить решительную победу",
+        "terms": [
+          "to sweep to victory"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-114",
+        "ru": "софтбол",
+        "terms": [
+          "softball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-115",
+        "ru": "Австралийский футбол",
+        "terms": [
+          "Australian Rules football/ footy"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-116",
+        "ru": "нетбол",
+        "terms": [
+          "netball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-117",
+        "ru": "забивать голы",
+        "terms": [
+          "to score goals"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-118",
+        "ru": "подавать мяч",
+        "terms": [
+          "to serve a ball (tennis)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-119",
+        "ru": "забрасывать мяч в корзину",
+        "terms": [
+          "to shoot baskets"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-120",
+        "ru": "наносить удары в боксе",
+        "terms": [
+          "to land punches"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-121",
+        "ru": "попасть в яблочко",
+        "terms": [
+          "to hit bull's-eyes"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-122",
+        "ru": "нокаутировать/свалить с ног",
+        "terms": [
+          "to knock out"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-123",
+        "ru": "бить головой по мячу/играть головой",
+        "terms": [
+          "to head a ball"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-124",
+        "ru": "забить сверху",
+        "terms": [
+          "to slam dunk (basketball)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-125",
+        "ru": "гребля на байдарках/каякинг",
+        "terms": [
+          "kayaking"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-126",
+        "ru": "грести",
+        "terms": [
+          "to paddle"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-127",
+        "ru": "набирать очки",
+        "terms": [
+          "to score points"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-128",
+        "ru": "обязательства",
+        "terms": [
+          "obligations"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-129",
+        "ru": "трени тактико-технич. направленности",
+        "terms": [
+          "practices"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-130",
+        "ru": "тренировки физической направленности",
+        "terms": [
+          "training sessions"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-131",
+        "ru": "своевременно уведомить кого-либо",
+        "terms": [
+          "to provide smb. with prompt notice of"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-132",
+        "ru": "исполнение/условие контракта",
+        "terms": [
+          "the fulfillment of a contract"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-133",
+        "ru": "частичные выплаты",
+        "terms": [
+          "installments"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-134",
+        "ru": "премиальные/премии",
+        "terms": [
+          "bonuses"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-135",
+        "ru": "дополнительные льготы/ соцпакет",
+        "terms": [
+          "fringe benefits"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-136",
+        "ru": "включая/не включая уплату налога",
+        "terms": [
+          "including/ excluding tax"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-137",
+        "ru": "выплаты/льготы",
+        "terms": [
+          "benefits"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-138",
+        "ru": "расторжение контракта/расторгнуть контракт",
+        "terms": [
+          "termination of a contract/ to terminate a contract"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-139",
+        "ru": "регулирующее право",
+        "terms": [
+          "governing law"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-140",
+        "ru": "оказывать услуги",
+        "terms": [
+          "to render services"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-141",
+        "ru": "в соответствии с настоящим контрактом",
+        "terms": [
+          "pursuant to this Contract"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-142",
+        "ru": "тренировочные сборы",
+        "terms": [
+          "training camps"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-143",
+        "ru": "тренировки",
+        "terms": [
+          "workouts"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-144",
+        "ru": "занятия по отработке навыков выносливости",
+        "terms": [
+          "skill or conditioning sessions"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-145",
+        "ru": "товарищеский матч/показательный",
+        "terms": [
+          "Exhibition game"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-146",
+        "ru": "до (начала сезона)",
+        "terms": [
+          "prior to (the Season)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-147",
+        "ru": "матч всех звезд",
+        "terms": [
+          "the All-Star Game"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-148",
+        "ru": "матч новичков и второгодников",
+        "terms": [
+          "the Rookie-Sophomore Game"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-149",
+        "ru": "решающий матч/ игры плей-офф",
+        "terms": [
+          "Playoff games"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-150",
+        "ru": "после (окончания сезона)",
+        "terms": [
+          "subsequent to (the Season)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-151",
+        "ru": "как предусмотрено в настоящем контракте",
+        "terms": [
+          "as set forth in this Contact"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-152",
+        "ru": "пропорционально",
+        "terms": [
+          "pro rata"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-153",
+        "ru": "за вычетом удержанных сумм",
+        "terms": [
+          "less withheld amounts/ less amounts withheld"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-154",
+        "ru": "присутствовать",
+        "terms": [
+          "to be in attendance"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-155",
+        "ru": "при условии, что",
+        "terms": [
+          "provided (that)"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-156",
+        "ru": "выплатить в качестве компенсации",
+        "terms": [
+          "to pay in compensation"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-157",
+        "ru": "расходы на проживание",
+        "terms": [
+          "lodging expenses"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-158",
+        "ru": "играть на выезде (площадке соперника)",
+        "terms": [
+          "to play ‘’on the road’’"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-159",
+        "ru": "играть на домашнем поле",
+        "terms": [
+          "to play on the home field"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-160",
+        "ru": "запрещенные вещества",
+        "terms": [
+          "prohibited substances"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-161",
+        "ru": "прямо выраженные положения",
+        "terms": [
+          "express provisions"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-162",
+        "ru": "из сего(документа/настоящего",
+        "terms": [
+          "hereof"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-163",
+        "ru": "немедленное увольнение",
+        "terms": [
+          "immediate dismissal"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-164",
+        "ru": "отстранение от работы",
+        "terms": [
+          "disqualification from employment"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-165",
+        "ru": "несмотря на",
+        "terms": [
+          "notwithstanding"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-166",
+        "ru": "к сему (доку)/настоящему",
+        "terms": [
+          "hereto"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-167",
+        "ru": "передача прав/ переуступка",
+        "terms": [
+          "assignment"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-168",
+        "ru": "передать контракт Команде",
+        "terms": [
+          "to assign the Contract to"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-169",
+        "ru": "добросовестно исполнять",
+        "terms": [
+          "to faithfully perform"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-170",
+        "ru": "команда-правопреемник",
+        "terms": [
+          "the assignee team"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-171",
+        "ru": "нанести ущерб способностям и мастерству",
+        "terms": [
+          "to impair or destroy one’s ability and skill"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-172",
+        "ru": "по запросу Команды",
+        "terms": [
+          "at the request of the Team"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-173",
+        "ru": "письменное согласие",
+        "terms": [
+          "written consent"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-174",
+        "ru": "вовлекать кого-л. в действие с высоким риском травмы / подвергать риску телесного повреждения",
+        "terms": [
+          "to involve or expose smb. to a substantial risk of bodily injury"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-175",
+        "ru": "включая, но не ограничиваясь",
+        "terms": [
+          "including, but not limited to"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-176",
+        "ru": "спуск по веревке/скалолазание",
+        "terms": [
+          "rappelling"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-177",
+        "ru": "оформить страховой полис",
+        "terms": [
+          "to procure an insurance policy"
+        ],
+        "topic": "sport"
+      },
+      {
+        "id": "sport-178",
+        "ru": "подписание/заключение Настоящего Контракта",
+        "terms": [
+          "the execution of this Contract"
+        ],
+        "topic": "sport"
+      }
+    ]
   }
 ];
