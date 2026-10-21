@@ -22,7 +22,7 @@ const getChipStyle = (
   const base: CSSProperties = {
     width: '100%',
     minHeight: '64px',
-    height: '64px',
+    height: 'auto',
     padding: '8px 10px',
     borderRadius: '18px',
     border: '2px solid transparent',

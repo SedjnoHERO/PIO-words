@@ -2467,5 +2467,615 @@ export const VOCABULARY_EN: TopicGroup[] = [
         "topic": "sport"
       }
     ]
+  },
+  {
+    "id": "sport-definitions",
+    "title": "Спорт — определения",
+    "kind": "definitions",
+    "words": [
+      {
+        "id": "sport-definitions-1",
+        "ru": "Стрельба из лука",
+        "terms": [
+          "Archery"
+        ],
+        "definition": "A sport where people shoot arrows from a bow at a target.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-2",
+        "ru": "Баскетбол 3x3",
+        "terms": [
+          "3x3 Basketball"
+        ],
+        "definition": "A basketball game with two teams of three players and one basket.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-3",
+        "ru": "Спортивная гимнастика",
+        "terms": [
+          "Artistic Gymnastics"
+        ],
+        "definition": "A sport where people do careful body movements, jumps and balance exercises, often on special equipment.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-4",
+        "ru": "Синхронное плавание",
+        "terms": [
+          "Artistic Swimming"
+        ],
+        "definition": "A sport where swimmers do dance-like movements in water, usually to music.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-5",
+        "ru": "Легкая атлетика",
+        "terms": [
+          "Athletics"
+        ],
+        "definition": "Sports like running, jumping and throwing.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-6",
+        "ru": "Бадминтон",
+        "terms": [
+          "Badminton"
+        ],
+        "definition": "A game where players hit a small object with feathers over a net with rackets.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-7",
+        "ru": "Бейсбол / Софтбол",
+        "terms": [
+          "Baseball Softball"
+        ],
+        "definition": "Two similar ball games where players hit a ball with a bat and run around bases.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-8",
+        "ru": "Баскетбол",
+        "terms": [
+          "Basketball"
+        ],
+        "definition": "A game where two teams try to throw a ball into a high basket.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-9",
+        "ru": "Пляжный волейбол",
+        "terms": [
+          "Beach Volleyball"
+        ],
+        "definition": "Volleyball played on sand by two teams.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-10",
+        "ru": "Бокс",
+        "terms": [
+          "Boxing"
+        ],
+        "definition": "A sport where two people fight with their hands using special gloves.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-11",
+        "ru": "Брейкинг",
+        "terms": [
+          "Breaking"
+        ],
+        "definition": "A style of street dance done as a sport, with fast and difficult movements.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-12",
+        "ru": "Гребной слалом",
+        "terms": [
+          "Canoe Slalom"
+        ],
+        "definition": "A sport where people move a small boat through gates on fast water.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-13",
+        "ru": "Гребной спринт",
+        "terms": [
+          "Canoe Sprint"
+        ],
+        "definition": "A race where people move small boats fast on flat water.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-14",
+        "ru": "Спортивное скалолазание",
+        "terms": [
+          "Climbing"
+        ],
+        "definition": "A sport where people climb up walls or rocks.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-15",
+        "ru": "Крикет",
+        "terms": [
+          "Cricket"
+        ],
+        "definition": "A game where two teams hit a ball with a bat and run between two sets of sticks to score points.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-16",
+        "ru": "BMX-фристайл",
+        "terms": [
+          "Cycling BMX Freestyle"
+        ],
+        "definition": "A sport where riders do tricks and jumps on small bicycles.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-17",
+        "ru": "BMX-гонки",
+        "terms": [
+          "Cycling BMX Racing"
+        ],
+        "definition": "A race on small bicycles over a special track with jumps.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-18",
+        "ru": "Маунтинбайк",
+        "terms": [
+          "Cycling Mountain Bike"
+        ],
+        "definition": "Cycling on rough roads and hills with strong bicycles.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-19",
+        "ru": "Шоссейные велогонки",
+        "terms": [
+          "Cycling Road"
+        ],
+        "definition": "Bicycle racing on roads.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-20",
+        "ru": "Трековые велогонки",
+        "terms": [
+          "Cycling Track"
+        ],
+        "definition": "Bicycle racing on a special track in a stadium.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-21",
+        "ru": "Прыжки в воду",
+        "terms": [
+          "Diving"
+        ],
+        "definition": "A sport where people jump into water and do turns and movements in the air.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-22",
+        "ru": "Конный спорт",
+        "terms": [
+          "Equestrian"
+        ],
+        "definition": "Sports where people ride horses.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-23",
+        "ru": "Фехтование",
+        "terms": [
+          "Fencing"
+        ],
+        "definition": "A sport where two people fight with long thin swords.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-24",
+        "ru": "Флаг-футбол",
+        "terms": [
+          "Flag Football"
+        ],
+        "definition": "A game like American football where players take a flag from another player instead of tackling.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-25",
+        "ru": "Футбол",
+        "terms": [
+          "Football"
+        ],
+        "definition": "A game where two teams try to kick a ball into a goal.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-26",
+        "ru": "Гольф",
+        "terms": [
+          "Golf"
+        ],
+        "definition": "A game where people hit a small ball into holes with a club.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-27",
+        "ru": "Гандбол",
+        "terms": [
+          "Handball"
+        ],
+        "definition": "A game where two teams throw a ball into a goal with their hands.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-28",
+        "ru": "Хоккей на траве",
+        "terms": [
+          "Hockey"
+        ],
+        "definition": "A sport where two teams hit a ball with sticks to score goals.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-29",
+        "ru": "Дзюдо",
+        "terms": [
+          "Judo"
+        ],
+        "definition": "A sport where people fight using throws and holds.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-30",
+        "ru": "Карате",
+        "terms": [
+          "Karate"
+        ],
+        "definition": "A sport where people fight with hands and feet using special moves.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-31",
+        "ru": "Лакросс",
+        "terms": [
+          "Lacrosse"
+        ],
+        "definition": "A game where players use long sticks with nets to throw and catch a ball and score goals.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-32",
+        "ru": "Марафонское плавание",
+        "terms": [
+          "Marathon Swimming"
+        ],
+        "definition": "Long-distance swimming in open water.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-33",
+        "ru": "Современное пятиборье",
+        "terms": [
+          "Modern Pentathlon"
+        ],
+        "definition": "A sport with five parts: fencing, swimming, horse riding, running and shooting.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-34",
+        "ru": "Художественная гимнастика",
+        "terms": [
+          "Rhythmic Gymnastics"
+        ],
+        "definition": "A sport where gymnasts do movements with ribbons, balls and other objects, often to music.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-35",
+        "ru": "Академическая гребля",
+        "terms": [
+          "Rowing"
+        ],
+        "definition": "A sport where people use long oars to move a boat.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-36",
+        "ru": "Регби-7",
+        "terms": [
+          "Rugby Sevens"
+        ],
+        "definition": "A rugby game with teams of seven players.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-37",
+        "ru": "Парусный спорт",
+        "terms": [
+          "Sailing"
+        ],
+        "definition": "A sport where people race in boats moved by wind and sails.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-38",
+        "ru": "Стрельба",
+        "terms": [
+          "Shooting"
+        ],
+        "definition": "A sport where people shoot at targets with guns.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-39",
+        "ru": "Скейтбординг",
+        "terms": [
+          "Skateboarding"
+        ],
+        "definition": "A sport where people ride and do tricks on a skateboard.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-40",
+        "ru": "Сквош",
+        "terms": [
+          "Squash"
+        ],
+        "definition": "A game where players hit a small ball against a wall with rackets.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-41",
+        "ru": "Серфинг",
+        "terms": [
+          "Surfing"
+        ],
+        "definition": "A sport where people ride on waves on a board.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-42",
+        "ru": "Плавание",
+        "terms": [
+          "Swimming"
+        ],
+        "definition": "A sport where people move through water using arms and legs.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-43",
+        "ru": "Настольный теннис",
+        "terms": [
+          "Table Tennis"
+        ],
+        "definition": "A game where players hit a small ball over a low net on a table with small rackets.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-44",
+        "ru": "Тхэквондо",
+        "terms": [
+          "Taekwondo"
+        ],
+        "definition": "A Korean fighting sport where people use kicks and hit with hands and feet.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-45",
+        "ru": "Теннис",
+        "terms": [
+          "Tennis"
+        ],
+        "definition": "A game where players hit a ball over a net with rackets.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-46",
+        "ru": "Прыжки на батуте",
+        "terms": [
+          "Trampoline Gymnastics"
+        ],
+        "definition": "A sport where people jump high and do tricks on a trampoline.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-47",
+        "ru": "Триатлон",
+        "terms": [
+          "Triathlon"
+        ],
+        "definition": "A race with three parts: swimming, cycling and running.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-48",
+        "ru": "Волейбол",
+        "terms": [
+          "Volleyball"
+        ],
+        "definition": "A game where two teams hit a ball over a net.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-49",
+        "ru": "Водное поло",
+        "terms": [
+          "Water Polo"
+        ],
+        "definition": "A game where two teams try to throw a ball into a goal in water.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-50",
+        "ru": "Тяжелая атлетика",
+        "terms": [
+          "Weightlifting"
+        ],
+        "definition": "A sport where people lift heavy weights.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-51",
+        "ru": "Борьба",
+        "terms": [
+          "Wrestling"
+        ],
+        "definition": "A sport where two people try to hold or throw each other down.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-52",
+        "ru": "Горнолыжный спорт",
+        "terms": [
+          "Alpine Skiing"
+        ],
+        "definition": "Skiing down snow-covered mountains.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-53",
+        "ru": "Биатлон",
+        "terms": [
+          "Biathlon"
+        ],
+        "definition": "A winter sport with cross-country skiing and shooting.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-54",
+        "ru": "Бобслей",
+        "terms": [
+          "Bobsleigh"
+        ],
+        "definition": "A winter sport where people ride a fast sled on an ice track.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-55",
+        "ru": "Лыжные гонки",
+        "terms": [
+          "Cross-Country Skiing"
+        ],
+        "definition": "Skiing across snow using long skis.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-56",
+        "ru": "Кёрлинг",
+        "terms": [
+          "Curling"
+        ],
+        "definition": "A winter sport where players slide stones on ice toward a target.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-57",
+        "ru": "Фигурное катание",
+        "terms": [
+          "Figure Skating"
+        ],
+        "definition": "A sport where people skate and do movements and jumps on ice.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-58",
+        "ru": "Лыжный фристайл",
+        "terms": [
+          "Freestyle Skiing"
+        ],
+        "definition": "Skiing with jumps and tricks.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-59",
+        "ru": "Хоккей с шайбой",
+        "terms": [
+          "Ice Hockey"
+        ],
+        "definition": "A game on ice where two teams hit a puck into a goal with sticks.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-60",
+        "ru": "Санный спорт",
+        "terms": [
+          "Luge"
+        ],
+        "definition": "A winter sport where a person lies on their back on a small sled and slides fast on ice.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-61",
+        "ru": "Лыжное двоеборье",
+        "terms": [
+          "Nordic Combined"
+        ],
+        "definition": "A winter sport with ski jumping and cross-country skiing.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-62",
+        "ru": "Шорт-трек",
+        "terms": [
+          "Short-Track Speed Skating"
+        ],
+        "definition": "Skating races on a short ice track.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-63",
+        "ru": "Скелетон",
+        "terms": [
+          "Skeleton"
+        ],
+        "definition": "A winter sport where a person lies on their stomach on a small sled and slides fast on ice.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-64",
+        "ru": "Прыжки с трамплина",
+        "terms": [
+          "Ski Jumping"
+        ],
+        "definition": "A sport where people ski down a ramp and jump as far as possible.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-65",
+        "ru": "Ски-альпинизм",
+        "terms": [
+          "Ski Mountaineering"
+        ],
+        "definition": "A sport where people ski up mountains and then down.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-66",
+        "ru": "Сноуборд",
+        "terms": [
+          "Snowboard"
+        ],
+        "definition": "A sport where people stand on a board and ride on snow.",
+        "topic": "sport-definitions"
+      },
+      {
+        "id": "sport-definitions-67",
+        "ru": "Конькобежный спорт",
+        "terms": [
+          "Speed Skating"
+        ],
+        "definition": "Racing on ice skates.",
+        "topic": "sport-definitions"
+      }
+    ]
   }
 ];

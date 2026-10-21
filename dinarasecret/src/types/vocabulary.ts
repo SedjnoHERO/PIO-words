@@ -20,11 +20,13 @@ export interface WordEntry {
   ru: string;
   terms: string[];
   topic: string;
+  definition?: string;
   ruVariants?: string[];
   transcriptions?: string[];
 }
 
 export interface TopicGroup {
+  kind?: 'definitions';
   id: string;
   title: string;
   words: WordEntry[];

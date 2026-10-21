@@ -54,7 +54,7 @@ export const MatchBoard = ({
   return (
     <div style={BOARD_STYLE}>
       <div style={COLUMN_STYLE}>
-        <p style={HEADER_STYLE}>Русский</p>
+        <p style={HEADER_STYLE}>{wordsById.values().next().value?.definition ? 'Определение' : 'Русский'}</p>
         {leftIds.map((id) => {
           const word = wordsById.get(id);
           return word ? (

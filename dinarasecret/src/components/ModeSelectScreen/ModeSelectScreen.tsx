@@ -8,7 +8,7 @@ import type {
   ModeCategoryId,
   StudyMode,
 } from '../../types/vocabulary';
-import { getVocabulary } from '../../data/vocabulary';
+import { getVocabulary, isDefinitionTopic } from '../../data/vocabulary';
 import { Header } from '../Header/Header';
 import { ModeCard } from '../ModeCard/ModeCard';
 
@@ -42,7 +42,7 @@ export const ModeSelectScreen = ({
   onBack,
 }: ModeSelectScreenProps) => {
   const category = getCategoryById(categoryId);
-  const modes = getModesByCategory(language, categoryId);
+  const modes = getModesByCategory(language, categoryId, isDefinitionTopic(language, topicId));
 
   return (
     <section style={SCREEN_STYLE}>

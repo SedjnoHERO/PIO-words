@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { getModeTitle } from '../../data/modes';
-import { getVocabulary } from '../../data/vocabulary';
+import { getVocabulary, isDefinitionTopic } from '../../data/vocabulary';
 import { pickRandom, MID_STUDY_PRAISE } from '../../data/praiseMessages';
 import { useFlashcards } from '../../hooks/useFlashcards';
 import { useSwipe } from '../../hooks/useSwipe';
@@ -193,7 +193,7 @@ export const StudyScreen = ({
   if (deck.length === 0) {
     return (
       <section style={SCREEN_STYLE}>
-        <Header title={getModeTitle(language, mode)} onBack={onBack} />
+        <Header title={(isDefinitionTopic(language, topicId) ? 'Определение → слово' : getModeTitle(language, mode))} onBack={onBack} />
         <div style={EMPTY_STYLE}>
           <p>{getEmptyMessage(mode)}</p>
           <button type="button" onClick={onBack}>
@@ -207,7 +207,7 @@ export const StudyScreen = ({
   if (isFinished) {
     return (
       <section style={SCREEN_STYLE}>
-        <Header title={getModeTitle(language, mode)} onBack={onBack} />
+        <Header title={(isDefinitionTopic(language, topicId) ? 'Определение → слово' : getModeTitle(language, mode))} onBack={onBack} />
         <FinishScreen
           total={deck.length}
           onRestart={handleRestart}
@@ -226,7 +226,7 @@ export const StudyScreen = ({
       <FireworksBurst burstId={fireworkBurstId} />
       <PraiseToast message={praiseMessage} />
       <Header
-        title={getModeTitle(language, mode)}
+        title={(isDefinitionTopic(language, topicId) ? 'Определение → слово' : getModeTitle(language, mode))}
         subtitle={getStudySubtitle(language, topicId)}
         onBack={onBack}
       />

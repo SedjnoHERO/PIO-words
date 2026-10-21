@@ -6,7 +6,7 @@ export const MATCH_ROUND_SIZE = 4;
 export const getForeignText = (word: WordEntry): string =>
   word.terms[0] ?? '';
 
-export const getRuText = (word: WordEntry): string => word.ru;
+export const getRuText = (word: WordEntry): string => word.definition ?? word.ru;
 
 export const pickDistractors = (
   correct: WordEntry,

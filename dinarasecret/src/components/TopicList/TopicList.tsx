@@ -65,9 +65,9 @@ export const TopicList = ({
       style={getTopicButtonStyle(selectedTopicId === null)}
       onClick={() => onSelect(null)}
     >
-      <span style={TITLE_STYLE}>Все темы</span>
+      <span style={TITLE_STYLE}>Все темы с переводом</span>
       <span style={COUNT_STYLE}>
-        {topics.reduce((total, topic) => total + topic.words.length, 0)}
+        {topics.filter((topic) => topic.kind !== 'definitions').reduce((total, topic) => total + topic.words.length, 0)}
       </span>
     </button>
     {topics.map((topic) => {

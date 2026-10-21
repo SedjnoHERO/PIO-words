@@ -135,7 +135,16 @@ export const getModeOptions = (language: AppLanguage): ModeOption[] => {
 export const getModesByCategory = (
   language: AppLanguage,
   categoryId: ModeCategoryId,
+  definitions = false,
 ): ModeOption[] => {
+  if (definitions) {
+    return categoryId === 'cards'
+      ? [{ id: 'ru-to-foreign', title: 'Определение → слово', description: 'Описание и ответ на английском', icon: '🃏' }]
+      : [
+          { id: 'choose-one', title: 'Выбери подходящее', description: 'Определение и три названия на английском', icon: '🎯' },
+          { id: 'match-pairs', title: 'Соедини пары', description: 'Найди название для каждого определения', icon: '🔗' },
+        ];
+  }
   const ids = categoryId === 'cards' ? CARD_MODE_IDS : GAME_MODE_IDS;
   const all = getModeOptions(language);
 

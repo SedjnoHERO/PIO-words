@@ -134,7 +134,7 @@ export const MatchScreen = ({
         current={game.globalProgress}
         total={game.allWords.length}
       />
-      <p style={HINT_STYLE}>Нажми слово — потом его перевод</p>
+      <p style={HINT_STYLE}>{game.allWords[0]?.definition ? 'Нажми определение — потом название спорта' : 'Нажми слово — потом его перевод'}</p>
       <MatchBoard
         language={language}
         leftIds={game.leftOrder}

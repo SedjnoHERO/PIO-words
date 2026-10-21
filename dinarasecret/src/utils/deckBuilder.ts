@@ -94,6 +94,8 @@ export const getFrontText = (
   word: WordEntry,
   mode: StudyMode,
 ): string => {
+  if (word.definition) return word.definition;
+
   if (mode === 'multi-translation') {
     return resolveMultiTranslationCard(word).frontText;
   }
@@ -132,6 +134,8 @@ export const getFrontLang = (
   word: WordEntry,
   mode: StudyMode,
 ): CardLang => {
+  if (word.definition) return 'foreign';
+
   if (mode === 'multi-translation') {
     return resolveMultiTranslationCard(word).frontLang;
   }

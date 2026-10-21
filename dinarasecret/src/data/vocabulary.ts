@@ -21,9 +21,12 @@ export const getVocabulary = (language: AppLanguage) =>
   language === 'de' ? VOCABULARY_DE : VOCABULARY_EN;
 
 export const getTotalWords = (language: AppLanguage): number =>
-  getVocabulary(language).reduce((sum, group) => sum + group.words.length, 0);
+  getWords(language, null).length;
 
 export const getWords = (language: AppLanguage, topicId: string | null) =>
   getVocabulary(language)
-    .filter((group) => topicId === null || group.id === topicId)
+    .filter((group) => topicId === null ? group.kind !== 'definitions' : group.id === topicId)
     .flatMap((group) => group.words);
+
+export const isDefinitionTopic = (language: AppLanguage, topicId: string | null): boolean =>
+  getVocabulary(language).some((group) => group.id === topicId && group.kind === 'definitions');

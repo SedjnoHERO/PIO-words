@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import type { CSSProperties } from 'react';
 import { MODE_CATEGORIES } from '../../data/modes';
-import { getWords, getVocabulary } from '../../data/vocabulary';
+import { getWords, getVocabulary, isDefinitionTopic } from '../../data/vocabulary';
 import type { AppLanguage, ModeCategoryId } from '../../types/vocabulary';
 import { getActivitySummary } from '../../utils/activityStats';
 import { getWeakWordIds } from '../../utils/wordStats';
@@ -88,7 +88,11 @@ export const HomeScreen = ({
         {MODE_CATEGORIES.map((category) => (
           <CategoryCard
             key={category.id}
-            category={category}
+            category={isDefinitionTopic(language, topicId)
+              ? { ...category, description: category.id === 'cards'
+                ? 'Определение → слово на английском'
+                : 'Выбери подходящее и соедини пары' }
+              : category}
             onSelect={onSelectCategory}
           />
         ))}

@@ -134,7 +134,7 @@ const createSession = (language: AppLanguage, topicId: string | null): QuizSessi
   return {
     deck,
     index: 0,
-    promptSide: Math.random() > 0.5 ? 'foreign' : 'ru',
+    promptSide: first?.definition ? 'ru' : Math.random() > 0.5 ? 'foreign' : 'ru',
     options: first ? buildQuizOptions(first, pool) : [],
   };
 };
@@ -194,7 +194,7 @@ export const QuizScreen = ({
         setSession((prev) => ({
           ...prev,
           index: nextIndex,
-          promptSide: Math.random() > 0.5 ? 'foreign' : 'ru',
+          promptSide: nextWord.definition ? 'ru' : Math.random() > 0.5 ? 'foreign' : 'ru',
           options: buildQuizOptions(nextWord, pool),
         }));
         setFeedback('none');
@@ -234,7 +234,7 @@ export const QuizScreen = ({
     session.promptSide === 'foreign'
       ? getForeignText(current)
       : getRuText(current);
-  const promptLabel =
+  const promptLabel = current.definition ? 'Определение на английском' :
     session.promptSide === 'foreign'
       ? language === 'de'
         ? 'Deutsch'
@@ -248,7 +248,7 @@ export const QuizScreen = ({
       <div style={PROMPT_CARD}>
         <SpeakButton
           corner="right"
-          onSpeak={() => speakText(getForeignText(current), language)}
+          onSpeak={() => speakText(current.definition ?? getForeignText(current), language)}
         />
         <span style={PROMPT_LABEL}>{promptLabel}</span>
         <span style={PROMPT_TEXT}>{promptText}</span>

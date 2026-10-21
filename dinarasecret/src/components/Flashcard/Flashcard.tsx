@@ -187,10 +187,14 @@ export const Flashcard = ({
       : getLangLabel(backLang, language);
   const showMultiBadge =
     mode === 'multi-translation' || backLines.length > 1;
-  const flipLabel = isFlipped ? 'Скрыть перевод' : 'Показать перевод';
+  const flipLabel = word.definition
+    ? isFlipped ? 'Скрыть ответ' : 'Показать ответ'
+    : isFlipped ? 'Скрыть перевод' : 'Показать перевод';
 
   const wrapClass = showRevealShine && isFlipped ? 'card-reveal-shine' : '';
-  const foreignSpeech = word.terms.filter(Boolean).join(', ');
+  const foreignSpeech = word.definition && !isFlipped
+    ? word.definition
+    : word.terms.filter(Boolean).join(', ');
 
   return (
     <div style={CARD_WRAP_STYLE} className={wrapClass}>
@@ -222,7 +226,7 @@ export const Flashcard = ({
         aria-label={flipLabel}
       >
         <span className="flashcard-face" style={FRONT_STYLE}>
-          <span style={LABEL_STYLE}>{getLangLabel(frontLang, language)}</span>
+          <span style={LABEL_STYLE}>{word.definition ? 'Определение на английском' : getLangLabel(frontLang, language)}</span>
           <span style={WORD_STYLE}>{getFrontText(word, mode)}</span>
           {frontTranscription ? (
             <span style={TRANSCRIPTION_STYLE}>{frontTranscription}</span>
